@@ -1,0 +1,5 @@
+*Capacitor
+C1 1 0 1pF
+C2 1 2 2pF
+V1 2 0 3volts
+.END

@@ -1,0 +1,8 @@
+*R_2R Ladder
+Vmsb 1 0 0
+Vlsb 2 0 0
+R1 1 3 20k
+R2 2 3 20k
+R3 3 4 20k
+R4  4 0 20k
+.END

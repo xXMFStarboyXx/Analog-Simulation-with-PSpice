@@ -1,0 +1,4 @@
+ lib=E:\Cadence\tools\PSpice\Library\ediode.lib, offset=21066, size=217
+ lib=E:\Cadence\tools\PSpice\Library\breakout.lib, offset=8241, size=133
+ lib=E:\Cadence\tools\PSpice\Library\diode.lib, offset=464441, size=687
+ lib=E:\Cadence\tools\PSpice\Library\opamp.lib, offset=4947, size=2573

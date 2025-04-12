@@ -1,0 +1,1107 @@
+**** Analysis Setup ****
+
+**** 04/06/25 18:35:49 **** PSpice 24.1.0 (22 October 2024) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-AC"  [ C:\Cadence\Pspice sim\sense_cascode-PSpiceFiles\SCHEMATIC1\AC.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "AC.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "../../../sense_cascode-pspicefiles/sense_cascode.lib" 
+* From [PSPICE NETLIST] section of C:\Users\ROG\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\24.1.0\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.AC DEC 100 1Meg 600Meg
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source SENSE_CASCODE
+V_V1         N01866 0 12Vdc
+V_V2         N01936 0 50
+V_V3         N26542 0  AC 1
++SIN 0 1 5 0 0 0
+D_D1         0 N22961 D1N755 
+R_R2         N01866 N22961 R_R2 390 TC=0,0 
+.model        R_R2 RES R=1     DEV 10%/10% TC1=0 TC2=0
+C_C1         0 N22961 C_C1 3300u  TC=0,0 
+.model        C_C1 CAP C=1     DEV 10%/10% TC1=0 TC2=0 VC1=0 VC2=0
+R_R3         N01430 N22961 R_R3 1.1K TC=0,0 
+.model        R_R3 RES R=1     DEV 10%/10% TC1=0 TC2=0
+R_R1         OUT N39220 R_R1 300 TC=0,0 
+.model        R_R1 RES R=1     DEV 10%/10% TC1=0 TC2=0
+L_L1         N39220 N01936 L_L1 .22u  
+.model        l_L1 IND L=1     DEV 10%/10% TC1=0 TC2=0 IL1=0 IL2=0
+R_R4         N26542 N43174 R_R4 75 TC=0,0 
+.model        R_R4 RES R=1     DEV 0%/0% TC1=0 TC2=0
+C_C2         N43174 N01430 C_C2 330u  TC=0,0 
+.model        C_C2 CAP C=1     DEV 20/20% TC1=0 TC2=0 VC1=0 VC2=0
+C_C3         0 N26201 C_C3 15p  TC=0,0 
+.model        C_C3 CAP C=1     DEV 10%/10% TC1=0 TC2=0 VC1=0 VC2=0
+R_R5         N01228 N26201 R_R5 68 TC=0,0 
+.model        R_R5 RES R=1     DEV 10%/10% TC1=0 TC2=0
+R_R6         0 N01430 R_R6 1.8K TC=0,0 
+.model        R_R6 RES R=1     DEV 10%/10% TC1=0 TC2=0
+R_R7         0 N01228 R_R7 33 TC=0,0 
+.model        R_R7 RES R=1     DEV 10%/10% TC1=0 TC2=0
+X_Q1         OUT N22961 N21518 awb2n3724 PARAMS:                               
++              
+X_Q2         N21518 N01430 N01228 awb2n5179 PARAMS:                            
++                 
+
+**** RESUMING AC.cir ****
+.END
+
+**** 04/06/25 18:35:49 **** PSpice 24.1.0 (22 October 2024) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-AC"  [ C:\Cadence\Pspice sim\sense_cascode-PSpiceFiles\SCHEMATIC1\AC.sim ] 
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               D1N755          
+          IS    2.077000E-15 
+         ISR    1.645000E-09 
+          BV    7.5          
+         IBV    2.5701       
+         NBV     .39227      
+        IBVL   40.222000E-06 
+        NBVL     .25042      
+          RS    2.467        
+         CJO  104.000000E-12 
+          VJ     .75         
+           M     .5061       
+        TBV1  533.330000E-06 
+
+
+**** 04/06/25 18:35:49 **** PSpice 24.1.0 (22 October 2024) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-AC"  [ C:\Cadence\Pspice sim\sense_cascode-PSpiceFiles\SCHEMATIC1\AC.sim ] 
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_Q1.model4     X_Q2.model4     
+               NPN             NPN             
+       LEVEL    1               1            
+          IS   10.000000E-15    4.479000E-15 
+          EG    1.11            1.11         
+          BF  138              83            
+          NF    1               1.07         
+         VAF   65              24            
+         IKF     .371            .1          
+         ISE   29.400000E-12  347.100000E-12 
+          NE    2.1335          3.66         
+          BR    1               1            
+          NR    1               1.07         
+         VAR   50             500            
+         IKR     .08                         
+          NC                    1            
+         ISS    0               0            
+          RB    1              36            
+         RBM    1              36            
+          RE     .01             .5          
+          RC     .42            1            
+         CJE   63.340000E-12  910.000000E-15 
+         VJE     .55             .661        
+         MJE     .3546           .294        
+         CJC   12.460000E-12  835.000000E-15 
+         VJC     .55            1            
+         MJC     .2977           .28         
+        XCJC     .5              .5          
+         CJS    0               0            
+         VJS     .7              .7          
+         MJS     .5              .5          
+          TF  438.100000E-12  112.000000E-12 
+         XTF    5                .12         
+         VTF   10                            
+         ITF    7                            
+          TR   77.300000E-09    1.000000E-09 
+         XTB    1.5815          2.3          
+          KF    0               0            
+          AF    1               1            
+          CN    2.42            2.42         
+           D     .87             .87         
+
+
+**** 04/06/25 18:35:49 **** PSpice 24.1.0 (22 October 2024) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-AC"  [ C:\Cadence\Pspice sim\sense_cascode-PSpiceFiles\SCHEMATIC1\AC.sim ] 
+
+
+ ****     Resistor MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               R_R2            R_R3            R_R1            R_R4            
+           R    1               1               1               1            
+
+
+               R_R5            R_R6            R_R7            
+           R    1               1               1            
+
+
+**** 04/06/25 18:35:49 **** PSpice 24.1.0 (22 October 2024) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-AC"  [ C:\Cadence\Pspice sim\sense_cascode-PSpiceFiles\SCHEMATIC1\AC.sim ] 
+
+
+ ****     Capacitor MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               C_C1            C_C2            C_C3            
+           C    1               1               1            
+
+
+**** 04/06/25 18:35:49 **** PSpice 24.1.0 (22 October 2024) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-AC"  [ C:\Cadence\Pspice sim\sense_cascode-PSpiceFiles\SCHEMATIC1\AC.sim ] 
+
+
+ ****     Inductor MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               L_L1            
+           L    1            
+
+**** Param: R_R2.Value = 390
+**** Param: C_C1.Value = 3300u
+**** Param: R_R3.Value = 1.1K
+**** Param: R_R1.Value = 300
+**** Param: L_L1.Value = .22u
+**** Param: C_C2.Value = 330u
+**** Param: C_C3.Value = 15p
+**** Param: R_R5.Value = 68
+**** Param: R_R6.Value = 1.8K
+**** Param: R_R7.Value = 33
+**** Param: D1N755(model).bv = 7.5
+
+**** Command: doALL
+
+**** 04/06/25 18:35:49 **** PSpice 24.1.0 (22 October 2024) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-AC"  [ C:\Cadence\Pspice sim\sense_cascode-PSpiceFiles\SCHEMATIC1\AC.sim ] 
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     Sensitivity nominal run          
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(  OUT)   26.2310  (N01228)    2.6813 (N01430)    3.6306 (N01866)   12.0000     
+
+(N01936)   50.0000 (N21518)    6.6924 (N22961)    7.4597 (N26201)    2.6813     
+
+(N26542)    0.0000 (N39220)   50.0000 (N43174)    0.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -1.164E-02
+    V_V2        -7.923E-02
+    V_V3         0.000E+00
+
+    TOTAL POWER DISSIPATION   4.10E+00  WATTS
+
+**** Param: R_R2.Value = 405.60000000000002
+**** Param: C_C1.Value = 3300u
+**** Param: R_R3.Value = 1.1K
+**** Param: R_R1.Value = 300
+**** Param: L_L1.Value = .22u
+**** Param: C_C2.Value = 330u
+**** Param: C_C3.Value = 15p
+**** Param: R_R5.Value = 68
+**** Param: R_R6.Value = 1.8K
+**** Param: R_R7.Value = 33
+**** Param: D1N755(model).bv = 7.5
+
+**** Command: doALL
+
+**** 04/06/25 18:35:49 **** PSpice 24.1.0 (22 October 2024) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-AC"  [ C:\Cadence\Pspice sim\sense_cascode-PSpiceFiles\SCHEMATIC1\AC.sim ] 
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     Sensitivity run 1                
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(  OUT)   26.2370  (N01228)    2.6806 (N01430)    3.6299 (N01866)   12.0000     
+
+(N01936)   50.0000 (N21518)    6.6907 (N22961)    7.4580 (N26201)    2.6806     
+
+(N26542)    0.0000 (N39220)   50.0000 (N43174)    0.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -1.120E-02
+    V_V2        -7.921E-02
+    V_V3         0.000E+00
+
+    TOTAL POWER DISSIPATION   4.09E+00  WATTS
+
+**** Param: R_R2.Value = 390
+**** Param: C_C1.Value = 3.43200000000000m
+**** Param: R_R3.Value = 1.1K
+**** Param: R_R1.Value = 300
+**** Param: L_L1.Value = .22u
+**** Param: C_C2.Value = 330u
+**** Param: C_C3.Value = 15p
+**** Param: R_R5.Value = 68
+**** Param: R_R6.Value = 1.8K
+**** Param: R_R7.Value = 33
+**** Param: D1N755(model).bv = 7.5
+
+**** Command: doALL
+
+**** 04/06/25 18:35:49 **** PSpice 24.1.0 (22 October 2024) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-AC"  [ C:\Cadence\Pspice sim\sense_cascode-PSpiceFiles\SCHEMATIC1\AC.sim ] 
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     Sensitivity run 2                
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(  OUT)   26.2310  (N01228)    2.6813 (N01430)    3.6306 (N01866)   12.0000     
+
+(N01936)   50.0000 (N21518)    6.6924 (N22961)    7.4597 (N26201)    2.6813     
+
+(N26542)    0.0000 (N39220)   50.0000 (N43174)    0.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -1.164E-02
+    V_V2        -7.923E-02
+    V_V3         0.000E+00
+
+    TOTAL POWER DISSIPATION   4.10E+00  WATTS
+
+**** Param: R_R2.Value = 390
+**** Param: C_C1.Value = 3300u
+**** Param: R_R3.Value = 1.14400000000000k
+**** Param: R_R1.Value = 300
+**** Param: L_L1.Value = .22u
+**** Param: C_C2.Value = 330u
+**** Param: C_C3.Value = 15p
+**** Param: R_R5.Value = 68
+**** Param: R_R6.Value = 1.8K
+**** Param: R_R7.Value = 33
+**** Param: D1N755(model).bv = 7.5
+
+**** Command: doALL
+
+**** 04/06/25 18:35:49 **** PSpice 24.1.0 (22 October 2024) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-AC"  [ C:\Cadence\Pspice sim\sense_cascode-PSpiceFiles\SCHEMATIC1\AC.sim ] 
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     Sensitivity run 3                
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(  OUT)   26.7270  (N01228)    2.6247 (N01430)    3.5705 (N01866)   12.0000     
+
+(N01936)   50.0000 (N21518)    6.6936 (N22961)    7.4600 (N26201)    2.6247     
+
+(N26542)    0.0000 (N39220)   50.0000 (N43174)    0.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -1.164E-02
+    V_V2        -7.758E-02
+    V_V3         0.000E+00
+
+    TOTAL POWER DISSIPATION   4.02E+00  WATTS
+
+**** Param: R_R2.Value = 390
+**** Param: C_C1.Value = 3300u
+**** Param: R_R3.Value = 1.1K
+**** Param: R_R1.Value = 312
+**** Param: L_L1.Value = .22u
+**** Param: C_C2.Value = 330u
+**** Param: C_C3.Value = 15p
+**** Param: R_R5.Value = 68
+**** Param: R_R6.Value = 1.8K
+**** Param: R_R7.Value = 33
+**** Param: D1N755(model).bv = 7.5
+
+**** Command: doALL
+
+**** 04/06/25 18:35:49 **** PSpice 24.1.0 (22 October 2024) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-AC"  [ C:\Cadence\Pspice sim\sense_cascode-PSpiceFiles\SCHEMATIC1\AC.sim ] 
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     Sensitivity run 4                
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(  OUT)   25.2830  (N01228)    2.6813 (N01430)    3.6306 (N01866)   12.0000     
+
+(N01936)   50.0000 (N21518)    6.6920 (N22961)    7.4596 (N26201)    2.6813     
+
+(N26542)    0.0000 (N39220)   50.0000 (N43174)    0.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -1.164E-02
+    V_V2        -7.922E-02
+    V_V3         0.000E+00
+
+    TOTAL POWER DISSIPATION   4.10E+00  WATTS
+
+**** Param: R_R2.Value = 390
+**** Param: C_C1.Value = 3300u
+**** Param: R_R3.Value = 1.1K
+**** Param: R_R1.Value = 300
+**** Param: L_L1.Value = 228.79999999999998n
+**** Param: C_C2.Value = 330u
+**** Param: C_C3.Value = 15p
+**** Param: R_R5.Value = 68
+**** Param: R_R6.Value = 1.8K
+**** Param: R_R7.Value = 33
+**** Param: D1N755(model).bv = 7.5
+
+**** Command: doALL
+
+**** 04/06/25 18:35:49 **** PSpice 24.1.0 (22 October 2024) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-AC"  [ C:\Cadence\Pspice sim\sense_cascode-PSpiceFiles\SCHEMATIC1\AC.sim ] 
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     Sensitivity run 5                
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(  OUT)   26.2310  (N01228)    2.6813 (N01430)    3.6306 (N01866)   12.0000     
+
+(N01936)   50.0000 (N21518)    6.6924 (N22961)    7.4597 (N26201)    2.6813     
+
+(N26542)    0.0000 (N39220)   50.0000 (N43174)    0.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -1.164E-02
+    V_V2        -7.923E-02
+    V_V3         0.000E+00
+
+    TOTAL POWER DISSIPATION   4.10E+00  WATTS
+
+**** Param: R_R2.Value = 390
+**** Param: C_C1.Value = 3300u
+**** Param: R_R3.Value = 1.1K
+**** Param: R_R1.Value = 300
+**** Param: L_L1.Value = .22u
+**** Param: C_C2.Value = 8.00033000000000
+**** Param: C_C3.Value = 15p
+**** Param: R_R5.Value = 68
+**** Param: R_R6.Value = 1.8K
+**** Param: R_R7.Value = 33
+**** Param: D1N755(model).bv = 7.5
+
+**** Command: doALL
+
+**** 04/06/25 18:35:49 **** PSpice 24.1.0 (22 October 2024) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-AC"  [ C:\Cadence\Pspice sim\sense_cascode-PSpiceFiles\SCHEMATIC1\AC.sim ] 
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     Sensitivity run 6                
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(  OUT)   26.2310  (N01228)    2.6813 (N01430)    3.6306 (N01866)   12.0000     
+
+(N01936)   50.0000 (N21518)    6.6924 (N22961)    7.4597 (N26201)    2.6813     
+
+(N26542)    0.0000 (N39220)   50.0000 (N43174)    0.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -1.164E-02
+    V_V2        -7.923E-02
+    V_V3         0.000E+00
+
+    TOTAL POWER DISSIPATION   4.10E+00  WATTS
+
+**** Param: R_R2.Value = 390
+**** Param: C_C1.Value = 3300u
+**** Param: R_R3.Value = 1.1K
+**** Param: R_R1.Value = 300
+**** Param: L_L1.Value = .22u
+**** Param: C_C2.Value = 330u
+**** Param: C_C3.Value = 15.60000000000000p
+**** Param: R_R5.Value = 68
+**** Param: R_R6.Value = 1.8K
+**** Param: R_R7.Value = 33
+**** Param: D1N755(model).bv = 7.5
+
+**** Command: doALL
+
+**** 04/06/25 18:35:49 **** PSpice 24.1.0 (22 October 2024) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-AC"  [ C:\Cadence\Pspice sim\sense_cascode-PSpiceFiles\SCHEMATIC1\AC.sim ] 
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     Sensitivity run 7                
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(  OUT)   26.2310  (N01228)    2.6813 (N01430)    3.6306 (N01866)   12.0000     
+
+(N01936)   50.0000 (N21518)    6.6924 (N22961)    7.4597 (N26201)    2.6813     
+
+(N26542)    0.0000 (N39220)   50.0000 (N43174)    0.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -1.164E-02
+    V_V2        -7.923E-02
+    V_V3         0.000E+00
+
+    TOTAL POWER DISSIPATION   4.10E+00  WATTS
+
+**** Param: R_R2.Value = 390
+**** Param: C_C1.Value = 3300u
+**** Param: R_R3.Value = 1.1K
+**** Param: R_R1.Value = 300
+**** Param: L_L1.Value = .22u
+**** Param: C_C2.Value = 330u
+**** Param: C_C3.Value = 15p
+**** Param: R_R5.Value = 70.72000000000000
+**** Param: R_R6.Value = 1.8K
+**** Param: R_R7.Value = 33
+**** Param: D1N755(model).bv = 7.5
+
+**** Command: doALL
+
+**** 04/06/25 18:35:49 **** PSpice 24.1.0 (22 October 2024) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-AC"  [ C:\Cadence\Pspice sim\sense_cascode-PSpiceFiles\SCHEMATIC1\AC.sim ] 
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     Sensitivity run 8                
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(  OUT)   26.2310  (N01228)    2.6813 (N01430)    3.6306 (N01866)   12.0000     
+
+(N01936)   50.0000 (N21518)    6.6924 (N22961)    7.4597 (N26201)    2.6813     
+
+(N26542)    0.0000 (N39220)   50.0000 (N43174)    0.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -1.164E-02
+    V_V2        -7.923E-02
+    V_V3         0.000E+00
+
+    TOTAL POWER DISSIPATION   4.10E+00  WATTS
+
+**** Param: R_R2.Value = 390
+**** Param: C_C1.Value = 3300u
+**** Param: R_R3.Value = 1.1K
+**** Param: R_R1.Value = 300
+**** Param: L_L1.Value = .22u
+**** Param: C_C2.Value = 330u
+**** Param: C_C3.Value = 15p
+**** Param: R_R5.Value = 68
+**** Param: R_R6.Value = 1.87200000000000k
+**** Param: R_R7.Value = 33
+**** Param: D1N755(model).bv = 7.5
+
+**** Command: doALL
+
+**** 04/06/25 18:35:49 **** PSpice 24.1.0 (22 October 2024) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-AC"  [ C:\Cadence\Pspice sim\sense_cascode-PSpiceFiles\SCHEMATIC1\AC.sim ] 
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     Sensitivity run 9                
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(  OUT)   25.9460  (N01228)    2.7139 (N01430)    3.6652 (N01866)   12.0000     
+
+(N01936)   50.0000 (N21518)    6.6920 (N22961)    7.4598 (N26201)    2.7139     
+
+(N26542)    0.0000 (N39220)   50.0000 (N43174)    0.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -1.164E-02
+    V_V2        -8.018E-02
+    V_V3         0.000E+00
+
+    TOTAL POWER DISSIPATION   4.15E+00  WATTS
+
+**** Param: R_R2.Value = 390
+**** Param: C_C1.Value = 3300u
+**** Param: R_R3.Value = 1.1K
+**** Param: R_R1.Value = 300
+**** Param: L_L1.Value = .22u
+**** Param: C_C2.Value = 330u
+**** Param: C_C3.Value = 15p
+**** Param: R_R5.Value = 68
+**** Param: R_R6.Value = 1.8K
+**** Param: R_R7.Value = 34.32000000000000
+**** Param: D1N755(model).bv = 7.5
+
+**** Command: doALL
+
+**** 04/06/25 18:35:49 **** PSpice 24.1.0 (22 October 2024) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-AC"  [ C:\Cadence\Pspice sim\sense_cascode-PSpiceFiles\SCHEMATIC1\AC.sim ] 
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     Sensitivity run 10               
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(  OUT)   26.8230  (N01228)    2.7185 (N01430)    3.6641 (N01866)   12.0000     
+
+(N01936)   50.0000 (N21518)    6.6935 (N22961)    7.4599 (N26201)    2.7185     
+
+(N26542)    0.0000 (N39220)   50.0000 (N43174)    0.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -1.164E-02
+    V_V2        -7.726E-02
+    V_V3         0.000E+00
+
+    TOTAL POWER DISSIPATION   4.00E+00  WATTS
+
+**** Param: R_R2.Value = 390
+**** Param: C_C1.Value = 3300u
+**** Param: R_R3.Value = 1.1K
+**** Param: R_R1.Value = 300
+**** Param: L_L1.Value = .22u
+**** Param: C_C2.Value = 330u
+**** Param: C_C3.Value = 15p
+**** Param: R_R5.Value = 68
+**** Param: R_R6.Value = 1.8K
+**** Param: R_R7.Value = 33
+**** Param: D1N755(model).bv = 7.80000000000000
+
+**** Command: doALL
+
+**** 04/06/25 18:35:49 **** PSpice 24.1.0 (22 October 2024) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-AC"  [ C:\Cadence\Pspice sim\sense_cascode-PSpiceFiles\SCHEMATIC1\AC.sim ] 
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     Sensitivity run 11               
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(  OUT)   25.1580  (N01228)    2.8033 (N01430)    3.7589 (N01866)   12.0000     
+
+(N01936)   50.0000 (N21518)    6.9868 (N22961)    7.7560 (N26201)    2.8033     
+
+(N26542)    0.0000 (N39220)   50.0000 (N43174)    0.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -1.088E-02
+    V_V2        -8.281E-02
+    V_V3         0.000E+00
+
+    TOTAL POWER DISSIPATION   4.27E+00  WATTS
+
+**** Param: R_R2.Value = 351
+**** Param: C_C1.Value = 3.63000000000000m
+**** Param: R_R3.Value = 990
+**** Param: R_R1.Value = 330
+**** Param: L_L1.Value = 242n
+**** Param: C_C2.Value = 264u
+**** Param: C_C3.Value = 16.50000000000000p
+**** Param: R_R5.Value = 74.80000000000001
+**** Param: R_R6.Value = 1.98000000000000k
+**** Param: R_R7.Value = 29.70000000000000
+**** Param: D1N755(model).bv = 8.25000000000000
+
+**** Command: doALL
+
+**** 04/06/25 18:35:49 **** PSpice 24.1.0 (22 October 2024) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-AC"  [ C:\Cadence\Pspice sim\sense_cascode-PSpiceFiles\SCHEMATIC1\AC.sim ] 
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     Sensitivity minimum run 1        
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(  OUT)   16.4460  (N01228)    3.1072 (N01430)    4.0997 (N01866)   12.0000     
+
+(N01936)   50.0000 (N21518)    7.4230 (N22961)    8.2025 (N26201)    3.1072     
+
+(N26542)    0.0000 (N39220)   50.0000 (N43174)    0.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -1.082E-02
+    V_V2        -1.017E-01
+    V_V3         0.000E+00
+
+    TOTAL POWER DISSIPATION   5.21E+00  WATTS
+
+**** Param: R_R2.Value = 351
+**** Param: C_C1.Value = 2.97000000000000m
+**** Param: R_R3.Value = 990
+**** Param: R_R1.Value = 270
+**** Param: L_L1.Value = 198n
+**** Param: C_C2.Value = 20.00032999999999
+**** Param: C_C3.Value = 13.50000000000000p
+**** Param: R_R5.Value = 61.20000000000000
+**** Param: R_R6.Value = 1.98000000000000k
+**** Param: R_R7.Value = 36.30000000000000
+**** Param: D1N755(model).bv = 8.25000000000000
+
+**** Command: doALL
+
+**** 04/06/25 18:35:49 **** PSpice 24.1.0 (22 October 2024) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-AC"  [ C:\Cadence\Pspice sim\sense_cascode-PSpiceFiles\SCHEMATIC1\AC.sim ] 
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     Sensitivity minimum run 2        
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(  OUT)   25.7530  (N01228)    3.3470 (N01430)    4.3169 (N01866)   12.0000     
+
+(N01936)   50.0000 (N21518)    7.4326 (N22961)    8.2043 (N26201)    3.3470     
+
+(N26542)    0.0000 (N39220)   50.0000 (N43174)    0.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -1.081E-02
+    V_V2        -8.981E-02
+    V_V3         0.000E+00
+
+    TOTAL POWER DISSIPATION   4.62E+00  WATTS
+
+**** Param: R_R2.Value = 351
+**** Param: C_C1.Value = 2.97000000000000m
+**** Param: R_R3.Value = 990
+**** Param: R_R1.Value = 270
+**** Param: L_L1.Value = 198n
+**** Param: C_C2.Value = 20.00032999999999
+**** Param: C_C3.Value = 13.50000000000000p
+**** Param: R_R5.Value = 61.20000000000000
+**** Param: R_R6.Value = 1.98000000000000k
+**** Param: R_R7.Value = 36.30000000000000
+**** Param: D1N755(model).bv = 8.25000000000000
+
+**** Command: doALL
+
+**** 04/06/25 18:35:49 **** PSpice 24.1.0 (22 October 2024) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-AC"  [ C:\Cadence\Pspice sim\sense_cascode-PSpiceFiles\SCHEMATIC1\AC.sim ] 
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     Sensitivity minimum run 3        
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(  OUT)   25.7530  (N01228)    3.3470 (N01430)    4.3169 (N01866)   12.0000     
+
+(N01936)   50.0000 (N21518)    7.4326 (N22961)    8.2043 (N26201)    3.3470     
+
+(N26542)    0.0000 (N39220)   50.0000 (N43174)    0.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -1.081E-02
+    V_V2        -8.981E-02
+    V_V3         0.000E+00
+
+    TOTAL POWER DISSIPATION   4.62E+00  WATTS
+
+**** Param: R_R2.Value = 429
+**** Param: C_C1.Value = 2.97000000000000m
+**** Param: R_R3.Value = 1.21000000000000k
+**** Param: R_R1.Value = 270
+**** Param: L_L1.Value = 198n
+**** Param: C_C2.Value = 20.00032999999999
+**** Param: C_C3.Value = 13.50000000000000p
+**** Param: R_R5.Value = 61.20000000000000
+**** Param: R_R6.Value = 1.62000000000000k
+**** Param: R_R7.Value = 36.30000000000000
+**** Param: D1N755(model).bv = 6.75000000000000
+
+**** Command: doALL
+
+**** 04/06/25 18:35:49 **** PSpice 24.1.0 (22 October 2024) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-AC"  [ C:\Cadence\Pspice sim\sense_cascode-PSpiceFiles\SCHEMATIC1\AC.sim ] 
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     Sensitivity maximum run 1        
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(  OUT)   33.7790  (N01228)    2.2311 (N01430)    3.1439 (N01866)   12.0000     
+
+(N01936)   50.0000 (N21518)    5.9587 (N22961)    6.7148 (N26201)    2.2311     
+
+(N26542)    0.0000 (N39220)   50.0000 (N43174)    0.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -1.232E-02
+    V_V2        -6.008E-02
+    V_V3         0.000E+00
+
+    TOTAL POWER DISSIPATION   3.15E+00  WATTS
+
+**** Param: R_R2.Value = 429
+**** Param: C_C1.Value = 3.63000000000000m
+**** Param: R_R3.Value = 1.21000000000000k
+**** Param: R_R1.Value = 330
+**** Param: L_L1.Value = 242n
+**** Param: C_C2.Value = 264u
+**** Param: C_C3.Value = 16.50000000000000p
+**** Param: R_R5.Value = 74.80000000000001
+**** Param: R_R6.Value = 1.62000000000000k
+**** Param: R_R7.Value = 29.70000000000000
+**** Param: D1N755(model).bv = 6.75000000000000
+
+**** Command: doALL
+
+**** 04/06/25 18:35:49 **** PSpice 24.1.0 (22 October 2024) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-AC"  [ C:\Cadence\Pspice sim\sense_cascode-PSpiceFiles\SCHEMATIC1\AC.sim ] 
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     Sensitivity maximum run 2        
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(  OUT)   27.4070  (N01228)    2.0828 (N01430)    3.0116 (N01866)   12.0000     
+
+(N01936)   50.0000 (N21518)    5.9520 (N22961)    6.7141 (N26201)    2.0828     
+
+(N26542)    0.0000 (N39220)   50.0000 (N43174)    0.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -1.232E-02
+    V_V2        -6.846E-02
+    V_V3         0.000E+00
+
+    TOTAL POWER DISSIPATION   3.57E+00  WATTS
+
+**** Param: R_R2.Value = 429
+**** Param: C_C1.Value = 3.63000000000000m
+**** Param: R_R3.Value = 1.21000000000000k
+**** Param: R_R1.Value = 330
+**** Param: L_L1.Value = 242n
+**** Param: C_C2.Value = 264u
+**** Param: C_C3.Value = 16.50000000000000p
+**** Param: R_R5.Value = 74.80000000000001
+**** Param: R_R6.Value = 1.62000000000000k
+**** Param: R_R7.Value = 29.70000000000000
+**** Param: D1N755(model).bv = 6.75000000000000
+
+**** Command: doALL
+
+**** 04/06/25 18:35:49 **** PSpice 24.1.0 (22 October 2024) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-AC"  [ C:\Cadence\Pspice sim\sense_cascode-PSpiceFiles\SCHEMATIC1\AC.sim ] 
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     Sensitivity maximum run 3        
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(  OUT)   27.4070  (N01228)    2.0828 (N01430)    3.0116 (N01866)   12.0000     
+
+(N01936)   50.0000 (N21518)    5.9520 (N22961)    6.7141 (N26201)    2.0828     
+
+(N26542)    0.0000 (N39220)   50.0000 (N43174)    0.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -1.232E-02
+    V_V2        -6.846E-02
+    V_V3         0.000E+00
+
+    TOTAL POWER DISSIPATION   3.57E+00  WATTS
+
+
+**** Command: FINISH
+
+**** 04/06/25 18:35:49 **** PSpice 24.1.0 (22 October 2024) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-AC"  [ C:\Cadence\Pspice sim\sense_cascode-PSpiceFiles\SCHEMATIC1\AC.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .59
+

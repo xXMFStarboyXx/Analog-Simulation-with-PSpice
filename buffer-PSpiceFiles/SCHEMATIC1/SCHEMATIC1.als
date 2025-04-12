@@ -1,0 +1,17 @@
+.ALIASES
+R_R1            R1(1=IN 2=N00185 ) CN @BUFFER.SCHEMATIC1(sch_1):INS65@ANALOG.R.Normal(chips)
+R_R2            R2(1=0 2=N00185 ) CN @BUFFER.SCHEMATIC1(sch_1):INS81@ANALOG.R.Normal(chips)
+V_V1            V1(+=IN -=0 ) CN @BUFFER.SCHEMATIC1(sch_1):INS748@SOURCSTM.VSTIM.Normal(chips)
+X_U1            U1(+=0 -=N01221 V+=VDD V-=VCC OUT=N01196 ) CN @BUFFER.SCHEMATIC1(sch_1):INS819@OPAMP.LF411.Normal(chips)
+V_V2            V2(+=VDD -=0 ) CN @BUFFER.SCHEMATIC1(sch_1):INS890@SOURCE.VDC.Normal(chips)
+V_V3            V3(+=VCC -=0 ) CN @BUFFER.SCHEMATIC1(sch_1):INS920@SOURCE.VDC.Normal(chips)
+R_R3            R3(1=N01221 2=N00185 ) CN @BUFFER.SCHEMATIC1(sch_1):INS1043@ANALOG.R.Normal(chips)
+R_R4            R4(1=N01196 2=N01221 ) CN @BUFFER.SCHEMATIC1(sch_1):INS1081@ANALOG.R.Normal(chips)
+R_R5            R5(1=N01202 2=N01196 ) CN @BUFFER.SCHEMATIC1(sch_1):INS1119@ANALOG.R.Normal(chips)
+C_C1            C1(1=0 2=N00185 ) CN @BUFFER.SCHEMATIC1(sch_1):INS1738@ANALOG.C.Normal(chips)
+C_C2            C2(1=0 2=N01202 ) CN @BUFFER.SCHEMATIC1(sch_1):INS1833@ANALOG.C.Normal(chips)
+_    _(OUT=0)
+_    _(IN=IN)
+_    _(VCC=VCC)
+_    _(VDD=VDD)
+.ENDALIASES

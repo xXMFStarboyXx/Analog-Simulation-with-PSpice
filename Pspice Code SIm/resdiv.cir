@@ -1,0 +1,6 @@
+* resistor divider circuit
+IIN 1 0 3.0amp
+R2 2 0 2.0ohm
+R1 1 2 1.0ohm
+.SENS v(2)
+.END

@@ -1,0 +1,19 @@
+* source XFORMER
+R_R1         N00282 N00886  20  
+R_R2         N00230 N00901  20  
+R_R3         N00180 N00239  40  
+L_L1         N00230 0  25MH  TC=0,0 
+L_L2         N00275 0  25MH  TC=0,0 
+C_C1         0 N00180  5.3UF  TC=0,0 
+V_V1         N00282 0 DC 0Vdc AC 20Vac 
+Kn_K1         L_L1 L_L2     0.8
+V_X1         N00886 N00275 0V
+          
+.PRINT        AC   
++ IR(V_X1) 
++ II(V_X1)  
+V_X2         N00901 N00239 0V
+          
+.PRINT        AC   
++ IR(V_X2) 
++ II(V_X2)  

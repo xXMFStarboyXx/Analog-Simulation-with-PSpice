@@ -1,0 +1,1828 @@
+Starting advanced analysis session
+*****************************************
+
+******* Analysis Started On:Thu Apr 10 19:46:38 2025
+
+Advance Analyses Project File Name : C:/Cadence/Pspice sim/pp_cascode-PSpiceFiles/SCHEMATIC1/SCHEMATIC1.$ap
+
+
+Processing analysis specifications
+
+Listing Profiles:
+ - pp_dc.sim
+ - pp_ac.sim
+
+
+-- Loading simulation profile pp_dc.sim --
+
+
+************ Parametric sweep Run 1 ************
+
+Param : r7.value  (R_R7.Value) = 3.30000000000000
+Param : r3.value  (R_R3.Value) = 110
+
+Specs : i(q1:c) = 160.33698137490325m
+Specs : w(q1) = 37.77801618179272m
+
+
+************ Parametric sweep Run 2 ************
+
+Param : r7.value  (R_R7.Value) = 3.30000000000000
+Param : r3.value  (R_R3.Value) = 1.21000000000000k
+
+Specs : i(q1:c) = 145.44949437694044m
+Specs : w(q1) = 29.35471010241197m
+
+
+************ Parametric sweep Run 3 ************
+
+Param : r7.value  (R_R7.Value) = 3.30000000000000
+Param : r3.value  (R_R3.Value) = 2.31000000000000k
+
+Specs : i(q1:c) = 103.31773316280236m
+Specs : w(q1) = 1.27400621789796
+
+
+************ Parametric sweep Run 4 ************
+
+Param : r7.value  (R_R7.Value) = 3.30000000000000
+Param : r3.value  (R_R3.Value) = 3.41000000000000k
+
+Specs : i(q1:c) = 74.38805760338560m
+Specs : w(q1) = 1.56222854005727
+
+
+************ Parametric sweep Run 5 ************
+
+Param : r7.value  (R_R7.Value) = 3.30000000000000
+Param : r3.value  (R_R3.Value) = 4.51000000000000k
+
+Specs : i(q1:c) = 56.29918518040873m
+Specs : w(q1) = 1.48700062832433
+
+
+************ Parametric sweep Run 6 ************
+
+Param : r7.value  (R_R7.Value) = 3.30000000000000
+Param : r3.value  (R_R3.Value) = 5.61000000000000k
+
+Specs : i(q1:c) = 43.66279106225535m
+Specs : w(q1) = 1.31825598499914
+
+
+************ Parametric sweep Run 7 ************
+
+Param : r7.value  (R_R7.Value) = 3.30000000000000
+Param : r3.value  (R_R3.Value) = 6.71000000000000k
+
+Specs : i(q1:c) = 34.22630199704570m
+Specs : w(q1) = 1.12990771201860
+
+
+************ Parametric sweep Run 8 ************
+
+Param : r7.value  (R_R7.Value) = 3.30000000000000
+Param : r3.value  (R_R3.Value) = 7.81000000000000k
+
+Specs : i(q1:c) = 26.86596777395775m
+Specs : w(q1) = 946.00525141118453m
+
+
+************ Parametric sweep Run 9 ************
+
+Param : r7.value  (R_R7.Value) = 3.30000000000000
+Param : r3.value  (R_R3.Value) = 8.91000000000000k
+
+Specs : i(q1:c) = 20.93037693640195m
+Specs : w(q1) = 773.95811290906386m
+
+
+************ Parametric sweep Run 10 ************
+
+Param : r7.value  (R_R7.Value) = 3.30000000000000
+Param : r3.value  (R_R3.Value) = 10.01000000000000k
+
+Specs : i(q1:c) = 16.08580136224010m
+Specs : w(q1) = 618.08066784448511m
+
+
+************ Parametric sweep Run 11 ************
+
+Param : r7.value  (R_R7.Value) = 36.30000000000000
+Param : r3.value  (R_R3.Value) = 110
+
+Specs : i(q1:c) = 143.77462320337287m
+Specs : w(q1) = 34.78316064057552m
+
+
+************ Parametric sweep Run 12 ************
+
+Param : r7.value  (R_R7.Value) = 36.30000000000000
+Param : r3.value  (R_R3.Value) = 1.21000000000000k
+
+Specs : i(q1:c) = 70.75918584451324m
+Specs : w(q1) = 1.56315511633267
+
+
+************ Parametric sweep Run 13 ************
+
+Param : r7.value  (R_R7.Value) = 36.30000000000000
+Param : r3.value  (R_R3.Value) = 2.31000000000000k
+
+Specs : i(q1:c) = 46.16724641404751m
+Specs : w(q1) = 1.35935697374121
+
+
+************ Parametric sweep Run 14 ************
+
+Param : r7.value  (R_R7.Value) = 36.30000000000000
+Param : r3.value  (R_R3.Value) = 3.41000000000000k
+
+Specs : i(q1:c) = 32.97531199434469m
+Specs : w(q1) = 1.10094141841180
+
+
+************ Parametric sweep Run 15 ************
+
+Param : r7.value  (R_R7.Value) = 36.30000000000000
+Param : r3.value  (R_R3.Value) = 4.51000000000000k
+
+Specs : i(q1:c) = 24.63269251232017m
+Specs : w(q1) = 883.78167898965728m
+
+
+************ Parametric sweep Run 16 ************
+
+Param : r7.value  (R_R7.Value) = 36.30000000000000
+Param : r3.value  (R_R3.Value) = 5.61000000000000k
+
+Specs : i(q1:c) = 18.85937659172930m
+Specs : w(q1) = 709.13216244438820m
+
+
+************ Parametric sweep Run 17 ************
+
+Param : r7.value  (R_R7.Value) = 36.30000000000000
+Param : r3.value  (R_R3.Value) = 6.71000000000000k
+
+Specs : i(q1:c) = 14.62661471331457m
+Specs : w(q1) = 568.42738431811506m
+
+
+************ Parametric sweep Run 18 ************
+
+Param : r7.value  (R_R7.Value) = 36.30000000000000
+Param : r3.value  (R_R3.Value) = 7.81000000000000k
+
+Specs : i(q1:c) = 11.39642069181099m
+Specs : w(q1) = 453.84908292140449m
+
+
+************ Parametric sweep Run 19 ************
+
+Param : r7.value  (R_R7.Value) = 36.30000000000000
+Param : r3.value  (R_R3.Value) = 8.91000000000000k
+
+Specs : i(q1:c) = 8.84998886774120m
+Specs : w(q1) = 359.11092986983073m
+
+
+************ Parametric sweep Run 20 ************
+
+Param : r7.value  (R_R7.Value) = 36.30000000000000
+Param : r3.value  (R_R3.Value) = 10.01000000000000k
+
+Specs : i(q1:c) = 6.81610741394806m
+Specs : w(q1) = 280.69251873396280m
+
+
+************ Parametric sweep Run 21 ************
+
+Param : r7.value  (R_R7.Value) = 69.30000000000000
+Param : r3.value  (R_R3.Value) = 110
+
+Specs : i(q1:c) = 82.11518477739239m
+Specs : w(q1) = 1.53463888629550
+
+
+************ Parametric sweep Run 22 ************
+
+Param : r7.value  (R_R7.Value) = 69.30000000000000
+Param : r3.value  (R_R3.Value) = 1.21000000000000k
+
+Specs : i(q1:c) = 43.80117138926411m
+Specs : w(q1) = 1.32077310711041
+
+
+************ Parametric sweep Run 23 ************
+
+Param : r7.value  (R_R7.Value) = 69.30000000000000
+Param : r3.value  (R_R3.Value) = 2.31000000000000k
+
+Specs : i(q1:c) = 28.89200598041621m
+Specs : w(q1) = 999.89170599832244m
+
+
+************ Parametric sweep Run 24 ************
+
+Param : r7.value  (R_R7.Value) = 69.30000000000000
+Param : r3.value  (R_R3.Value) = 3.41000000000000k
+
+Specs : i(q1:c) = 20.69239103770137m
+Specs : w(q1) = 766.75819701732212m
+
+
+************ Parametric sweep Run 25 ************
+
+Param : r7.value  (R_R7.Value) = 69.30000000000000
+Param : r3.value  (R_R3.Value) = 4.51000000000000k
+
+Specs : i(q1:c) = 15.47632674469702m
+Specs : w(q1) = 597.53886885812426m
+
+
+************ Parametric sweep Run 26 ************
+
+Param : r7.value  (R_R7.Value) = 69.30000000000000
+Param : r3.value  (R_R3.Value) = 5.61000000000000k
+
+Specs : i(q1:c) = 11.86490556212106m
+Specs : w(q1) = 470.85529080173734m
+
+
+************ Parametric sweep Run 27 ************
+
+Param : r7.value  (R_R7.Value) = 69.30000000000000
+Param : r3.value  (R_R3.Value) = 6.71000000000000k
+
+Specs : i(q1:c) = 9.22046254338584m
+Specs : w(q1) = 373.15478029068498m
+
+
+************ Parametric sweep Run 28 ************
+
+Param : r7.value  (R_R7.Value) = 69.30000000000000
+Param : r3.value  (R_R3.Value) = 7.81000000000000k
+
+Specs : i(q1:c) = 7.20583633292108m
+Specs : w(q1) = 295.92485343685303m
+
+
+************ Parametric sweep Run 29 ************
+
+Param : r7.value  (R_R7.Value) = 69.30000000000000
+Param : r3.value  (R_R3.Value) = 8.91000000000000k
+
+Specs : i(q1:c) = 5.62580654894847m
+Specs : w(q1) = 233.66390349337442m
+
+
+************ Parametric sweep Run 30 ************
+
+Param : r7.value  (R_R7.Value) = 69.30000000000000
+Param : r3.value  (R_R3.Value) = 10.01000000000000k
+
+Specs : i(q1:c) = 4.35482247191528m
+Specs : w(q1) = 182.49745423902729m
+
+
+************ Parametric sweep Run 31 ************
+
+Param : r7.value  (R_R7.Value) = 102.30000000000000
+Param : r3.value  (R_R3.Value) = 110
+
+Specs : i(q1:c) = 57.11169511849974m
+Specs : w(q1) = 1.49472418162284
+
+
+************ Parametric sweep Run 32 ************
+
+Param : r7.value  (R_R7.Value) = 102.30000000000000
+Param : r3.value  (R_R3.Value) = 1.21000000000000k
+
+Specs : i(q1:c) = 31.50602880941517m
+Specs : w(q1) = 1.06582157596023
+
+
+************ Parametric sweep Run 33 ************
+
+Param : r7.value  (R_R7.Value) = 102.30000000000000
+Param : r3.value  (R_R3.Value) = 2.31000000000000k
+
+Specs : i(q1:c) = 20.91980801615593m
+Specs : w(q1) = 773.79068501705979m
+
+
+************ Parametric sweep Run 34 ************
+
+Param : r7.value  (R_R7.Value) = 102.30000000000000
+Param : r3.value  (R_R3.Value) = 3.41000000000000k
+
+Specs : i(q1:c) = 15.02560404985158m
+Specs : w(q1) = 582.16486656486131m
+
+
+************ Parametric sweep Run 35 ************
+
+Param : r7.value  (R_R7.Value) = 102.30000000000000
+Param : r3.value  (R_R3.Value) = 4.51000000000000k
+
+Specs : i(q1:c) = 11.26097593400945m
+Specs : w(q1) = 448.91589581453093m
+
+
+************ Parametric sweep Run 36 ************
+
+Param : r7.value  (R_R7.Value) = 102.30000000000000
+Param : r3.value  (R_R3.Value) = 5.61000000000000k
+
+Specs : i(q1:c) = 8.65047672465060m
+Specs : w(q1) = 351.55265375911398m
+
+
+************ Parametric sweep Run 37 ************
+
+Param : r7.value  (R_R7.Value) = 102.30000000000000
+Param : r3.value  (R_R3.Value) = 6.71000000000000k
+
+Specs : i(q1:c) = 6.73776514109346m
+Specs : w(q1) = 277.63667239961774m
+
+
+************ Parametric sweep Run 38 ************
+
+Param : r7.value  (R_R7.Value) = 102.30000000000000
+Param : r3.value  (R_R3.Value) = 7.81000000000000k
+
+Specs : i(q1:c) = 5.28018659367388m
+Specs : w(q1) = 219.84737084351977m
+
+
+************ Parametric sweep Run 39 ************
+
+Param : r7.value  (R_R7.Value) = 102.30000000000000
+Param : r3.value  (R_R3.Value) = 8.91000000000000k
+
+Specs : i(q1:c) = 4.13680329658445m
+Specs : w(q1) = 173.63175186595436m
+
+
+************ Parametric sweep Run 40 ************
+
+Param : r7.value  (R_R7.Value) = 102.30000000000000
+Param : r3.value  (R_R3.Value) = 10.01000000000000k
+
+Specs : i(q1:c) = 3.21676580609061m
+Specs : w(q1) = 135.87777923578770m
+
+
+************ Parametric sweep Run 41 ************
+
+Param : r7.value  (R_R7.Value) = 135.30000000000001
+Param : r3.value  (R_R3.Value) = 110
+
+Specs : i(q1:c) = 43.73304559375308m
+Specs : w(q1) = 1.31962159601729
+
+
+************ Parametric sweep Run 42 ************
+
+Param : r7.value  (R_R7.Value) = 135.30000000000001
+Param : r3.value  (R_R3.Value) = 1.21000000000000k
+
+Specs : i(q1:c) = 24.55558424543636m
+Specs : w(q1) = 881.67962763448668m
+
+
+************ Parametric sweep Run 43 ************
+
+Param : r7.value  (R_R7.Value) = 135.30000000000001
+Param : r3.value  (R_R3.Value) = 2.31000000000000k
+
+Specs : i(q1:c) = 16.37576561326470m
+Specs : w(q1) = 627.90863232100435m
+
+
+************ Parametric sweep Run 44 ************
+
+Param : r7.value  (R_R7.Value) = 135.30000000000001
+Param : r3.value  (R_R3.Value) = 3.41000000000000k
+
+Specs : i(q1:c) = 11.78836332146133m
+Specs : w(q1) = 468.10000481987413m
+
+
+************ Parametric sweep Run 45 ************
+
+Param : r7.value  (R_R7.Value) = 135.30000000000001
+Param : r3.value  (R_R3.Value) = 4.51000000000000k
+
+Specs : i(q1:c) = 8.85030581321127m
+Specs : w(q1) = 359.15320110267743m
+
+
+************ Parametric sweep Run 46 ************
+
+Param : r7.value  (R_R7.Value) = 135.30000000000001
+Param : r3.value  (R_R3.Value) = 5.61000000000000k
+
+Specs : i(q1:c) = 6.81029072174104m
+Specs : w(q1) = 280.48121973714757m
+
+
+************ Parametric sweep Run 47 ************
+
+Param : r7.value  (R_R7.Value) = 135.30000000000001
+Param : r3.value  (R_R3.Value) = 6.71000000000000k
+
+Specs : i(q1:c) = 5.31446439578693m
+Specs : w(q1) = 221.22200527636357m
+
+
+************ Parametric sweep Run 48 ************
+
+Param : r7.value  (R_R7.Value) = 135.30000000000001
+Param : r3.value  (R_R3.Value) = 7.81000000000000k
+
+Specs : i(q1:c) = 4.17400468510163m
+Specs : w(q1) = 175.14820473490806m
+
+
+************ Parametric sweep Run 49 ************
+
+Param : r7.value  (R_R7.Value) = 135.30000000000001
+Param : r3.value  (R_R3.Value) = 8.91000000000000k
+
+Specs : i(q1:c) = 3.27900699774371m
+Specs : w(q1) = 138.45105996273591m
+
+
+************ Parametric sweep Run 50 ************
+
+Param : r7.value  (R_R7.Value) = 135.30000000000001
+Param : r3.value  (R_R3.Value) = 10.01000000000000k
+
+Specs : i(q1:c) = 2.55848566949183m
+Specs : w(q1) = 108.56181485056071m
+
+
+************ Parametric sweep Run 51 ************
+
+Param : r7.value  (R_R7.Value) = 168.30000000000001
+Param : r3.value  (R_R3.Value) = 110
+
+Specs : i(q1:c) = 35.42247380919609m
+Specs : w(q1) = 1.15689676720171
+
+
+************ Parametric sweep Run 52 ************
+
+Param : r7.value  (R_R7.Value) = 168.30000000000001
+Param : r3.value  (R_R3.Value) = 1.21000000000000k
+
+Specs : i(q1:c) = 20.10495301152653m
+Specs : w(q1) = 748.58761685031050m
+
+
+************ Parametric sweep Run 53 ************
+
+Param : r7.value  (R_R7.Value) = 168.30000000000001
+Param : r3.value  (R_R3.Value) = 2.31000000000000k
+
+Specs : i(q1:c) = 13.44903953119303m
+Specs : w(q1) = 527.41366288559732m
+
+
+************ Parametric sweep Run 54 ************
+
+Param : r7.value  (R_R7.Value) = 168.30000000000001
+Param : r3.value  (R_R3.Value) = 3.41000000000000k
+
+Specs : i(q1:c) = 9.69855441591109m
+Specs : w(q1) = 391.14115734632486m
+
+
+************ Parametric sweep Run 55 ************
+
+Param : r7.value  (R_R7.Value) = 168.30000000000001
+Param : r3.value  (R_R3.Value) = 4.51000000000000k
+
+Specs : i(q1:c) = 7.29177682051681m
+Specs : w(q1) = 299.27568519745853m
+
+
+************ Parametric sweep Run 56 ************
+
+Param : r7.value  (R_R7.Value) = 168.30000000000001
+Param : r3.value  (R_R3.Value) = 5.61000000000000k
+
+Specs : i(q1:c) = 5.61892647558512m
+Specs : w(q1) = 233.39304666521383m
+
+
+************ Parametric sweep Run 57 ************
+
+Param : r7.value  (R_R7.Value) = 168.30000000000001
+Param : r3.value  (R_R3.Value) = 6.71000000000000k
+
+Specs : i(q1:c) = 4.39153874647272m
+Specs : w(q1) = 183.99684190090557m
+
+
+************ Parametric sweep Run 58 ************
+
+Param : r7.value  (R_R7.Value) = 168.30000000000001
+Param : r3.value  (R_R3.Value) = 7.81000000000000k
+
+Specs : i(q1:c) = 3.45531222852047m
+Specs : w(q1) = 145.71797291301718m
+
+
+************ Parametric sweep Run 59 ************
+
+Param : r7.value  (R_R7.Value) = 168.30000000000001
+Param : r3.value  (R_R3.Value) = 8.91000000000000k
+
+Specs : i(q1:c) = 2.72029743833803m
+Specs : w(q1) = 115.30275478728650m
+
+
+************ Parametric sweep Run 60 ************
+
+Param : r7.value  (R_R7.Value) = 168.30000000000001
+Param : r3.value  (R_R3.Value) = 10.01000000000000k
+
+Specs : i(q1:c) = 2.12830707196679m
+Specs : w(q1) = 90.57304937388174m
+
+
+************ Parametric sweep Run 61 ************
+
+Param : r7.value  (R_R7.Value) = 201.30000000000001
+Param : r3.value  (R_R3.Value) = 110
+
+Specs : i(q1:c) = 29.76347705903112m
+Specs : w(q1) = 1.02242738241200
+
+
+************ Parametric sweep Run 62 ************
+
+Param : r7.value  (R_R7.Value) = 201.30000000000001
+Param : r3.value  (R_R3.Value) = 1.21000000000000k
+
+Specs : i(q1:c) = 17.01610249226099m
+Specs : w(q1) = 649.25418230508262m
+
+
+************ Parametric sweep Run 63 ************
+
+Param : r7.value  (R_R7.Value) = 201.30000000000001
+Param : r3.value  (R_R3.Value) = 2.31000000000000k
+
+Specs : i(q1:c) = 11.40905961366705m
+Specs : w(q1) = 454.34025706275770m
+
+
+************ Parametric sweep Run 64 ************
+
+Param : r7.value  (R_R7.Value) = 201.30000000000001
+Param : r3.value  (R_R3.Value) = 3.41000000000000k
+
+Specs : i(q1:c) = 8.23903307453128m
+Specs : w(q1) = 335.84762641983656m
+
+
+************ Parametric sweep Run 65 ************
+
+Param : r7.value  (R_R7.Value) = 201.30000000000001
+Param : r3.value  (R_R3.Value) = 4.51000000000000k
+
+Specs : i(q1:c) = 6.20176485535920m
+Specs : w(q1) = 256.53822836730421m
+
+
+************ Parametric sweep Run 66 ************
+
+Param : r7.value  (R_R7.Value) = 201.30000000000001
+Param : r3.value  (R_R3.Value) = 5.61000000000000k
+
+Specs : i(q1:c) = 4.78459988895759m
+Specs : w(q1) = 199.91406677603263m
+
+
+************ Parametric sweep Run 67 ************
+
+Param : r7.value  (R_R7.Value) = 201.30000000000001
+Param : r3.value  (R_R3.Value) = 6.71000000000000k
+
+Specs : i(q1:c) = 3.74426754776829m
+Specs : w(q1) = 157.58832672491442m
+
+
+************ Parametric sweep Run 68 ************
+
+Param : r7.value  (R_R7.Value) = 201.30000000000001
+Param : r3.value  (R_R3.Value) = 7.81000000000000k
+
+Specs : i(q1:c) = 2.95041238729531m
+Specs : w(q1) = 124.85967285212502m
+
+
+************ Parametric sweep Run 69 ************
+
+Param : r7.value  (R_R7.Value) = 201.30000000000001
+Param : r3.value  (R_R3.Value) = 8.91000000000000k
+
+Specs : i(q1:c) = 2.32695652202899m
+Specs : w(q1) = 98.89552954780375m
+
+
+************ Parametric sweep Run 70 ************
+
+Param : r7.value  (R_R7.Value) = 201.30000000000001
+Param : r3.value  (R_R3.Value) = 10.01000000000000k
+
+Specs : i(q1:c) = 1.82462659497414m
+Specs : w(q1) = 77.80855431109593m
+
+
+************ Parametric sweep Run 71 ************
+
+Param : r7.value  (R_R7.Value) = 234.30000000000001
+Param : r3.value  (R_R3.Value) = 110
+
+Specs : i(q1:c) = 25.66304510981185m
+Specs : w(q1) = 913.01524528686093m
+
+
+************ Parametric sweep Run 72 ************
+
+Param : r7.value  (R_R7.Value) = 234.30000000000001
+Param : r3.value  (R_R3.Value) = 1.21000000000000k
+
+Specs : i(q1:c) = 14.74868903932229m
+Specs : w(q1) = 572.70676040277192m
+
+
+************ Parametric sweep Run 73 ************
+
+Param : r7.value  (R_R7.Value) = 234.30000000000001
+Param : r3.value  (R_R3.Value) = 2.31000000000000k
+
+Specs : i(q1:c) = 9.90662106626755m
+Specs : w(q1) = 398.93302268471365m
+
+
+************ Parametric sweep Run 74 ************
+
+Param : r7.value  (R_R7.Value) = 234.30000000000001
+Param : r3.value  (R_R3.Value) = 3.41000000000000k
+
+Specs : i(q1:c) = 7.16229984618996m
+Specs : w(q1) = 294.24183673795557m
+
+
+************ Parametric sweep Run 75 ************
+
+Param : r7.value  (R_R7.Value) = 234.30000000000001
+Param : r3.value  (R_R3.Value) = 4.51000000000000k
+
+Specs : i(q1:c) = 5.39662343869327m
+Specs : w(q1) = 224.51597838847314m
+
+
+************ Parametric sweep Run 76 ************
+
+Param : r7.value  (R_R7.Value) = 234.30000000000001
+Param : r3.value  (R_R3.Value) = 5.61000000000000k
+
+Specs : i(q1:c) = 4.16759236886790m
+Specs : w(q1) = 174.88951725904994m
+
+
+************ Parametric sweep Run 77 ************
+
+Param : r7.value  (R_R7.Value) = 234.30000000000001
+Param : r3.value  (R_R3.Value) = 6.71000000000000k
+
+Specs : i(q1:c) = 3.26498185337636m
+Specs : w(q1) = 137.87364996359366m
+
+
+************ Parametric sweep Run 78 ************
+
+Param : r7.value  (R_R7.Value) = 234.30000000000001
+Param : r3.value  (R_R3.Value) = 7.81000000000000k
+
+Specs : i(q1:c) = 2.57599367767557m
+Specs : w(q1) = 109.29456668444129m
+
+
+************ Parametric sweep Run 79 ************
+
+Param : r7.value  (R_R7.Value) = 234.30000000000001
+Param : r3.value  (R_R3.Value) = 8.91000000000000k
+
+Specs : i(q1:c) = 2.03473768700706m
+Specs : w(q1) = 86.64744223897544m
+
+
+************ Parametric sweep Run 80 ************
+
+Param : r7.value  (R_R7.Value) = 234.30000000000001
+Param : r3.value  (R_R3.Value) = 10.01000000000000k
+
+Specs : i(q1:c) = 1.59849815266986m
+Specs : w(q1) = 68.26868709225722m
+
+
+************ Parametric sweep Run 81 ************
+
+Param : r7.value  (R_R7.Value) = 267.30000000000001
+Param : r3.value  (R_R3.Value) = 110
+
+Specs : i(q1:c) = 22.55573465158844m
+Specs : w(q1) = 823.40047565231396m
+
+
+************ Parametric sweep Run 82 ************
+
+Param : r7.value  (R_R7.Value) = 267.30000000000001
+Param : r3.value  (R_R3.Value) = 1.21000000000000k
+
+Specs : i(q1:c) = 13.01416904778356m
+Specs : w(q1) = 512.07566150770037m
+
+
+************ Parametric sweep Run 83 ************
+
+Param : r7.value  (R_R7.Value) = 267.30000000000001
+Param : r3.value  (R_R3.Value) = 2.31000000000000k
+
+Specs : i(q1:c) = 8.75426479211449m
+Specs : w(q1) = 355.52342864457404m
+
+
+************ Parametric sweep Run 84 ************
+
+Param : r7.value  (R_R7.Value) = 267.30000000000001
+Param : r3.value  (R_R3.Value) = 3.41000000000000k
+
+Specs : i(q1:c) = 6.33528398241056m
+Specs : w(q1) = 261.81635865723621m
+
+
+************ Parametric sweep Run 85 ************
+
+Param : r7.value  (R_R7.Value) = 267.30000000000001
+Param : r3.value  (R_R3.Value) = 4.51000000000000k
+
+Specs : i(q1:c) = 4.77753404669940m
+Specs : w(q1) = 199.63132192311488m
+
+
+************ Parametric sweep Run 86 ************
+
+Param : r7.value  (R_R7.Value) = 267.30000000000001
+Param : r3.value  (R_R3.Value) = 5.61000000000000k
+
+Specs : i(q1:c) = 3.69266769551393m
+Specs : w(q1) = 155.47376566419433m
+
+
+************ Parametric sweep Run 87 ************
+
+Param : r7.value  (R_R7.Value) = 267.30000000000001
+Param : r3.value  (R_R3.Value) = 6.71000000000000k
+
+Specs : i(q1:c) = 2.89565097383909m
+Specs : w(q1) = 122.58911886018151m
+
+
+************ Parametric sweep Run 88 ************
+
+Param : r7.value  (R_R7.Value) = 267.30000000000001
+Param : r3.value  (R_R3.Value) = 7.81000000000000k
+
+Specs : i(q1:c) = 2.28709815842461m
+Specs : w(q1) = 97.22831924571034m
+
+
+************ Parametric sweep Run 89 ************
+
+Param : r7.value  (R_R7.Value) = 267.30000000000001
+Param : r3.value  (R_R3.Value) = 8.91000000000000k
+
+Specs : i(q1:c) = 1.80891232649277m
+Specs : w(q1) = 77.14786595359462m
+
+
+************ Parametric sweep Run 90 ************
+
+Param : r7.value  (R_R7.Value) = 267.30000000000001
+Param : r3.value  (R_R3.Value) = 10.01000000000000k
+
+Specs : i(q1:c) = 1.42340109963831m
+Specs : w(q1) = 60.86121650932663m
+
+
+************ Parametric sweep Run 91 ************
+
+Param : r7.value  (R_R7.Value) = 300.30000000000001
+Param : r3.value  (R_R3.Value) = 110
+
+Specs : i(q1:c) = 20.11990957920398m
+Specs : w(q1) = 749.11171112345232m
+
+
+************ Parametric sweep Run 92 ************
+
+Param : r7.value  (R_R7.Value) = 300.30000000000001
+Param : r3.value  (R_R3.Value) = 1.21000000000000k
+
+Specs : i(q1:c) = 11.64471994797964m
+Specs : w(q1) = 462.93625813160804m
+
+
+************ Parametric sweep Run 93 ************
+
+Param : r7.value  (R_R7.Value) = 300.30000000000001
+Param : r3.value  (R_R3.Value) = 2.31000000000000k
+
+Specs : i(q1:c) = 7.84249776436243m
+Specs : w(q1) = 320.61572060124212m
+
+
+************ Parametric sweep Run 94 ************
+
+Param : r7.value  (R_R7.Value) = 300.30000000000001
+Param : r3.value  (R_R3.Value) = 3.41000000000000k
+
+Specs : i(q1:c) = 5.68013885537046m
+Specs : w(q1) = 235.84055850217416m
+
+
+************ Parametric sweep Run 95 ************
+
+Param : r7.value  (R_R7.Value) = 300.30000000000001
+Param : r3.value  (R_R3.Value) = 4.51000000000000k
+
+Specs : i(q1:c) = 4.28663296224577m
+Specs : w(q1) = 179.73746124375714m
+
+
+************ Parametric sweep Run 96 ************
+
+Param : r7.value  (R_R7.Value) = 300.30000000000001
+Param : r3.value  (R_R3.Value) = 5.61000000000000k
+
+Specs : i(q1:c) = 3.31573309224812m
+Specs : w(q1) = 139.96892606735005m
+
+
+************ Parametric sweep Run 97 ************
+
+Param : r7.value  (R_R7.Value) = 300.30000000000001
+Param : r3.value  (R_R3.Value) = 6.71000000000000k
+
+Specs : i(q1:c) = 2.60223253019800m
+Specs : w(q1) = 110.38877424885501m
+
+
+************ Parametric sweep Run 98 ************
+
+Param : r7.value  (R_R7.Value) = 300.30000000000001
+Param : r3.value  (R_R3.Value) = 7.81000000000000k
+
+Specs : i(q1:c) = 2.05732040046813m
+Specs : w(q1) = 87.59619431354467m
+
+
+************ Parametric sweep Run 99 ************
+
+Param : r7.value  (R_R7.Value) = 300.30000000000001
+Param : r3.value  (R_R3.Value) = 8.91000000000000k
+
+Specs : i(q1:c) = 1.62905104612509m
+Specs : w(q1) = 69.56047288394790m
+
+
+************ Parametric sweep Run 100 ************
+
+Param : r7.value  (R_R7.Value) = 300.30000000000001
+Param : r3.value  (R_R3.Value) = 10.01000000000000k
+
+Specs : i(q1:c) = 1.28370168867438m
+Specs : w(q1) = 54.93844763201347m
+
+
+
+-- Loading simulation profile pp_ac.sim --
+
+
+************ Parametric sweep Run 1 ************
+
+Param : r7.value  (R_R7.Value) = 3.30000000000000
+Param : r3.value  (R_R3.Value) = 110
+
+Specs : cutoff_lowpass_3db(v(out)) = 3.00367390649291meg
+Specs : max(db(v(out))) = -15.99126997544863
+
+
+************ Parametric sweep Run 2 ************
+
+Param : r7.value  (R_R7.Value) = 3.30000000000000
+Param : r3.value  (R_R3.Value) = 1.21000000000000k
+
+Specs : cutoff_lowpass_3db(v(out)) = 2.65533113671447meg
+Specs : max(db(v(out))) = -6.37699429484815
+
+
+************ Parametric sweep Run 3 ************
+
+Param : r7.value  (R_R7.Value) = 3.30000000000000
+Param : r3.value  (R_R3.Value) = 2.31000000000000k
+
+Specs : cutoff_lowpass_3db(v(out)) = 80.55918928633317meg
+Specs : max(db(v(out))) = 31.67116963222314
+
+
+************ Parametric sweep Run 4 ************
+
+Param : r7.value  (R_R7.Value) = 3.30000000000000
+Param : r3.value  (R_R3.Value) = 3.41000000000000k
+
+Specs : cutoff_lowpass_3db(v(out)) = 82.14765769130588meg
+Specs : max(db(v(out))) = 32.32368644143075
+
+
+************ Parametric sweep Run 5 ************
+
+Param : r7.value  (R_R7.Value) = 3.30000000000000
+Param : r3.value  (R_R3.Value) = 4.51000000000000k
+
+Specs : cutoff_lowpass_3db(v(out)) = 81.27412211859007meg
+Specs : max(db(v(out))) = 32.65018791935581
+
+
+************ Parametric sweep Run 6 ************
+
+Param : r7.value  (R_R7.Value) = 3.30000000000000
+Param : r3.value  (R_R3.Value) = 5.61000000000000k
+
+Specs : cutoff_lowpass_3db(v(out)) = 80.68426079927292meg
+Specs : max(db(v(out))) = 32.79263819691460
+
+
+************ Parametric sweep Run 7 ************
+
+Param : r7.value  (R_R7.Value) = 3.30000000000000
+Param : r3.value  (R_R3.Value) = 6.71000000000000k
+
+Specs : cutoff_lowpass_3db(v(out)) = 80.75461315965192meg
+Specs : max(db(v(out))) = 32.80145649538036
+
+
+************ Parametric sweep Run 8 ************
+
+Param : r7.value  (R_R7.Value) = 3.30000000000000
+Param : r3.value  (R_R3.Value) = 7.81000000000000k
+
+Specs : cutoff_lowpass_3db(v(out)) = 81.57505499836144meg
+Specs : max(db(v(out))) = 32.69144895655096
+
+
+************ Parametric sweep Run 9 ************
+
+Param : r7.value  (R_R7.Value) = 3.30000000000000
+Param : r3.value  (R_R3.Value) = 8.91000000000000k
+
+Specs : cutoff_lowpass_3db(v(out)) = 83.22952481373382meg
+Specs : max(db(v(out))) = 32.45617208402875
+
+
+************ Parametric sweep Run 10 ************
+
+Param : r7.value  (R_R7.Value) = 3.30000000000000
+Param : r3.value  (R_R3.Value) = 10.01000000000000k
+
+Specs : cutoff_lowpass_3db(v(out)) = 85.83281307968949meg
+Specs : max(db(v(out))) = 32.06935892950900
+
+
+************ Parametric sweep Run 11 ************
+
+Param : r7.value  (R_R7.Value) = 36.30000000000000
+Param : r3.value  (R_R3.Value) = 110
+
+Specs : cutoff_lowpass_3db(v(out)) = 2.99025321176205meg
+Specs : max(db(v(out))) = -1.67071961084343
+
+
+************ Parametric sweep Run 12 ************
+
+Param : r7.value  (R_R7.Value) = 36.30000000000000
+Param : r3.value  (R_R3.Value) = 1.21000000000000k
+
+Specs : cutoff_lowpass_3db(v(out)) = 192.89704396104233meg
+Specs : max(db(v(out))) = 17.84070603050114
+
+
+************ Parametric sweep Run 13 ************
+
+Param : r7.value  (R_R7.Value) = 36.30000000000000
+Param : r3.value  (R_R3.Value) = 2.31000000000000k
+
+Specs : cutoff_lowpass_3db(v(out)) = 199.50901280741391meg
+Specs : max(db(v(out))) = 18.52470826365601
+
+
+************ Parametric sweep Run 14 ************
+
+Param : r7.value  (R_R7.Value) = 36.30000000000000
+Param : r3.value  (R_R3.Value) = 3.41000000000000k
+
+Specs : cutoff_lowpass_3db(v(out)) = 201.56119495790878meg
+Specs : max(db(v(out))) = 18.73343698351167
+
+
+************ Parametric sweep Run 15 ************
+
+Param : r7.value  (R_R7.Value) = 36.30000000000000
+Param : r3.value  (R_R3.Value) = 4.51000000000000k
+
+Specs : cutoff_lowpass_3db(v(out)) = 201.97580960665576meg
+Specs : max(db(v(out))) = 18.76784008062953
+
+
+************ Parametric sweep Run 16 ************
+
+Param : r7.value  (R_R7.Value) = 36.30000000000000
+Param : r3.value  (R_R3.Value) = 5.61000000000000k
+
+Specs : cutoff_lowpass_3db(v(out)) = 201.41363233044657meg
+Specs : max(db(v(out))) = 18.70127149659701
+
+
+************ Parametric sweep Run 17 ************
+
+Param : r7.value  (R_R7.Value) = 36.30000000000000
+Param : r3.value  (R_R3.Value) = 6.71000000000000k
+
+Specs : cutoff_lowpass_3db(v(out)) = 200.10629871226200meg
+Specs : max(db(v(out))) = 18.55219103471979
+
+
+************ Parametric sweep Run 18 ************
+
+Param : r7.value  (R_R7.Value) = 36.30000000000000
+Param : r3.value  (R_R3.Value) = 7.81000000000000k
+
+Specs : cutoff_lowpass_3db(v(out)) = 198.03462794561591meg
+Specs : max(db(v(out))) = 18.31960041671655
+
+
+************ Parametric sweep Run 19 ************
+
+Param : r7.value  (R_R7.Value) = 36.30000000000000
+Param : r3.value  (R_R3.Value) = 8.91000000000000k
+
+Specs : cutoff_lowpass_3db(v(out)) = 195.12470816953174meg
+Specs : max(db(v(out))) = 17.98785156353920
+
+
+************ Parametric sweep Run 20 ************
+
+Param : r7.value  (R_R7.Value) = 36.30000000000000
+Param : r3.value  (R_R3.Value) = 10.01000000000000k
+
+Specs : cutoff_lowpass_3db(v(out)) = 191.05856211936620meg
+Specs : max(db(v(out))) = 17.52861724634020
+
+
+************ Parametric sweep Run 21 ************
+
+Param : r7.value  (R_R7.Value) = 69.30000000000000
+Param : r3.value  (R_R3.Value) = 110
+
+Specs : cutoff_lowpass_3db(v(out)) = 210.16603347370238meg
+Specs : max(db(v(out))) = 10.07116374828106
+
+
+************ Parametric sweep Run 22 ************
+
+Param : r7.value  (R_R7.Value) = 69.30000000000000
+Param : r3.value  (R_R3.Value) = 1.21000000000000k
+
+Specs : cutoff_lowpass_3db(v(out)) = 216.73027331320566meg
+Specs : max(db(v(out))) = 14.89906618521306
+
+
+************ Parametric sweep Run 23 ************
+
+Param : r7.value  (R_R7.Value) = 69.30000000000000
+Param : r3.value  (R_R3.Value) = 2.31000000000000k
+
+Specs : cutoff_lowpass_3db(v(out)) = 218.03475562554704meg
+Specs : max(db(v(out))) = 15.30815521405212
+
+
+************ Parametric sweep Run 24 ************
+
+Param : r7.value  (R_R7.Value) = 69.30000000000000
+Param : r3.value  (R_R3.Value) = 3.41000000000000k
+
+Specs : cutoff_lowpass_3db(v(out)) = 217.45595072019165meg
+Specs : max(db(v(out))) = 15.35957547428398
+
+
+************ Parametric sweep Run 25 ************
+
+Param : r7.value  (R_R7.Value) = 69.30000000000000
+Param : r3.value  (R_R3.Value) = 4.51000000000000k
+
+Specs : cutoff_lowpass_3db(v(out)) = 215.89462974832071meg
+Specs : max(db(v(out))) = 15.26073791488422
+
+
+************ Parametric sweep Run 26 ************
+
+Param : r7.value  (R_R7.Value) = 69.30000000000000
+Param : r3.value  (R_R3.Value) = 5.61000000000000k
+
+Specs : cutoff_lowpass_3db(v(out)) = 213.61927806214300meg
+Specs : max(db(v(out))) = 15.05857642076173
+
+
+************ Parametric sweep Run 27 ************
+
+Param : r7.value  (R_R7.Value) = 69.30000000000000
+Param : r3.value  (R_R3.Value) = 6.71000000000000k
+
+Specs : cutoff_lowpass_3db(v(out)) = 210.64957116630686meg
+Specs : max(db(v(out))) = 14.76029782665466
+
+
+************ Parametric sweep Run 28 ************
+
+Param : r7.value  (R_R7.Value) = 69.30000000000000
+Param : r3.value  (R_R3.Value) = 7.81000000000000k
+
+Specs : cutoff_lowpass_3db(v(out)) = 206.97249448122747meg
+Specs : max(db(v(out))) = 14.35632289209522
+
+
+************ Parametric sweep Run 29 ************
+
+Param : r7.value  (R_R7.Value) = 69.30000000000000
+Param : r3.value  (R_R3.Value) = 8.91000000000000k
+
+Specs : cutoff_lowpass_3db(v(out)) = 202.47464746042533meg
+Specs : max(db(v(out))) = 13.82276988682773
+
+
+************ Parametric sweep Run 30 ************
+
+Param : r7.value  (R_R7.Value) = 69.30000000000000
+Param : r3.value  (R_R3.Value) = 10.01000000000000k
+
+Specs : cutoff_lowpass_3db(v(out)) = 196.91660964247185meg
+Specs : max(db(v(out))) = 13.12428600053374
+
+
+************ Parametric sweep Run 31 ************
+
+Param : r7.value  (R_R7.Value) = 102.30000000000000
+Param : r3.value  (R_R3.Value) = 110
+
+Specs : cutoff_lowpass_3db(v(out)) = 225.81096782424285meg
+Specs : max(db(v(out))) = 8.98514698776730
+
+
+************ Parametric sweep Run 32 ************
+
+Param : r7.value  (R_R7.Value) = 102.30000000000000
+Param : r3.value  (R_R3.Value) = 1.21000000000000k
+
+Specs : cutoff_lowpass_3db(v(out)) = 225.64306348404972meg
+Specs : max(db(v(out))) = 13.36925303483936
+
+
+************ Parametric sweep Run 33 ************
+
+Param : r7.value  (R_R7.Value) = 102.30000000000000
+Param : r3.value  (R_R3.Value) = 2.31000000000000k
+
+Specs : cutoff_lowpass_3db(v(out)) = 224.84578906242760meg
+Specs : max(db(v(out))) = 13.61939303693770
+
+
+************ Parametric sweep Run 34 ************
+
+Param : r7.value  (R_R7.Value) = 102.30000000000000
+Param : r3.value  (R_R3.Value) = 3.41000000000000k
+
+Specs : cutoff_lowpass_3db(v(out)) = 222.81833958559369meg
+Specs : max(db(v(out))) = 13.55347806591572
+
+
+************ Parametric sweep Run 35 ************
+
+Param : r7.value  (R_R7.Value) = 102.30000000000000
+Param : r3.value  (R_R3.Value) = 4.51000000000000k
+
+Specs : cutoff_lowpass_3db(v(out)) = 220.05389143284094meg
+Specs : max(db(v(out))) = 13.34052386670812
+
+
+************ Parametric sweep Run 36 ************
+
+Param : r7.value  (R_R7.Value) = 102.30000000000000
+Param : r3.value  (R_R3.Value) = 5.61000000000000k
+
+Specs : cutoff_lowpass_3db(v(out)) = 216.66992023700908meg
+Specs : max(db(v(out))) = 13.01669912973820
+
+
+************ Parametric sweep Run 37 ************
+
+Param : r7.value  (R_R7.Value) = 102.30000000000000
+Param : r3.value  (R_R3.Value) = 6.71000000000000k
+
+Specs : cutoff_lowpass_3db(v(out)) = 212.69397076823600meg
+Specs : max(db(v(out))) = 12.58395256436868
+
+
+************ Parametric sweep Run 38 ************
+
+Param : r7.value  (R_R7.Value) = 102.30000000000000
+Param : r3.value  (R_R3.Value) = 7.81000000000000k
+
+Specs : cutoff_lowpass_3db(v(out)) = 208.11287722124456meg
+Specs : max(db(v(out))) = 12.02619729309917
+
+
+************ Parametric sweep Run 39 ************
+
+Param : r7.value  (R_R7.Value) = 102.30000000000000
+Param : r3.value  (R_R3.Value) = 8.91000000000000k
+
+Specs : cutoff_lowpass_3db(v(out)) = 202.81659529331176meg
+Specs : max(db(v(out))) = 11.31857404984985
+
+
+************ Parametric sweep Run 40 ************
+
+Param : r7.value  (R_R7.Value) = 102.30000000000000
+Param : r3.value  (R_R3.Value) = 10.01000000000000k
+
+Specs : cutoff_lowpass_3db(v(out)) = 196.59162908725537meg
+Specs : max(db(v(out))) = 10.42652358345376
+
+
+************ Parametric sweep Run 41 ************
+
+Param : r7.value  (R_R7.Value) = 135.30000000000001
+Param : r3.value  (R_R3.Value) = 110
+
+Specs : cutoff_lowpass_3db(v(out)) = 232.59588610766798meg
+Specs : max(db(v(out))) = 8.22013976870377
+
+
+************ Parametric sweep Run 42 ************
+
+Param : r7.value  (R_R7.Value) = 135.30000000000001
+Param : r3.value  (R_R3.Value) = 1.21000000000000k
+
+Specs : cutoff_lowpass_3db(v(out)) = 229.73240835234373meg
+Specs : max(db(v(out))) = 12.39496848047464
+
+
+************ Parametric sweep Run 43 ************
+
+Param : r7.value  (R_R7.Value) = 135.30000000000001
+Param : r3.value  (R_R3.Value) = 2.31000000000000k
+
+Specs : cutoff_lowpass_3db(v(out)) = 227.57495682090811meg
+Specs : max(db(v(out))) = 12.53106959139794
+
+
+************ Parametric sweep Run 44 ************
+
+Param : r7.value  (R_R7.Value) = 135.30000000000001
+Param : r3.value  (R_R3.Value) = 3.41000000000000k
+
+Specs : cutoff_lowpass_3db(v(out)) = 224.55312388812848meg
+Specs : max(db(v(out))) = 12.36439785548522
+
+
+************ Parametric sweep Run 45 ************
+
+Param : r7.value  (R_R7.Value) = 135.30000000000001
+Param : r3.value  (R_R3.Value) = 4.51000000000000k
+
+Specs : cutoff_lowpass_3db(v(out)) = 220.89492346582679meg
+Specs : max(db(v(out))) = 12.05024590763825
+
+
+************ Parametric sweep Run 46 ************
+
+Param : r7.value  (R_R7.Value) = 135.30000000000001
+Param : r3.value  (R_R3.Value) = 5.61000000000000k
+
+Specs : cutoff_lowpass_3db(v(out)) = 216.75213105785056meg
+Specs : max(db(v(out))) = 11.61561188758269
+
+
+************ Parametric sweep Run 47 ************
+
+Param : r7.value  (R_R7.Value) = 135.30000000000001
+Param : r3.value  (R_R3.Value) = 6.71000000000000k
+
+Specs : cutoff_lowpass_3db(v(out)) = 212.12235412476343meg
+Specs : max(db(v(out))) = 11.06006413446822
+
+
+************ Parametric sweep Run 48 ************
+
+Param : r7.value  (R_R7.Value) = 135.30000000000001
+Param : r3.value  (R_R3.Value) = 7.81000000000000k
+
+Specs : cutoff_lowpass_3db(v(out)) = 206.99624607231746meg
+Specs : max(db(v(out))) = 10.36703542865044
+
+
+************ Parametric sweep Run 49 ************
+
+Param : r7.value  (R_R7.Value) = 135.30000000000001
+Param : r3.value  (R_R3.Value) = 8.91000000000000k
+
+Specs : cutoff_lowpass_3db(v(out)) = 201.26223088025372meg
+Specs : max(db(v(out))) = 9.51331351042350
+
+
+************ Parametric sweep Run 50 ************
+
+Param : r7.value  (R_R7.Value) = 135.30000000000001
+Param : r3.value  (R_R3.Value) = 10.01000000000000k
+
+Specs : cutoff_lowpass_3db(v(out)) = 194.75424298778327meg
+Specs : max(db(v(out))) = 8.46408324615724
+
+
+************ Parametric sweep Run 51 ************
+
+Param : r7.value  (R_R7.Value) = 168.30000000000001
+Param : r3.value  (R_R3.Value) = 110
+
+Specs : cutoff_lowpass_3db(v(out)) = 236.11236218791902meg
+Specs : max(db(v(out))) = 7.66108292347750
+
+
+************ Parametric sweep Run 52 ************
+
+Param : r7.value  (R_R7.Value) = 168.30000000000001
+Param : r3.value  (R_R3.Value) = 1.21000000000000k
+
+Specs : cutoff_lowpass_3db(v(out)) = 231.59321408455784meg
+Specs : max(db(v(out))) = 11.70322892917261
+
+
+************ Parametric sweep Run 53 ************
+
+Param : r7.value  (R_R7.Value) = 168.30000000000001
+Param : r3.value  (R_R3.Value) = 2.31000000000000k
+
+Specs : cutoff_lowpass_3db(v(out)) = 228.48860423953158meg
+Specs : max(db(v(out))) = 11.74191678649876
+
+
+************ Parametric sweep Run 54 ************
+
+Param : r7.value  (R_R7.Value) = 168.30000000000001
+Param : r3.value  (R_R3.Value) = 3.41000000000000k
+
+Specs : cutoff_lowpass_3db(v(out)) = 224.65943573893350meg
+Specs : max(db(v(out))) = 11.48602340125588
+
+
+************ Parametric sweep Run 55 ************
+
+Param : r7.value  (R_R7.Value) = 168.30000000000001
+Param : r3.value  (R_R3.Value) = 4.51000000000000k
+
+Specs : cutoff_lowpass_3db(v(out)) = 220.35618750530546meg
+Specs : max(db(v(out))) = 11.07678195452151
+
+
+************ Parametric sweep Run 56 ************
+
+Param : r7.value  (R_R7.Value) = 168.30000000000001
+Param : r3.value  (R_R3.Value) = 5.61000000000000k
+
+Specs : cutoff_lowpass_3db(v(out)) = 215.67232545232076meg
+Specs : max(db(v(out))) = 10.53954238766423
+
+
+************ Parametric sweep Run 57 ************
+
+Param : r7.value  (R_R7.Value) = 168.30000000000001
+Param : r3.value  (R_R3.Value) = 6.71000000000000k
+
+Specs : cutoff_lowpass_3db(v(out)) = 210.58971948035270meg
+Specs : max(db(v(out))) = 9.87410206593692
+
+
+************ Parametric sweep Run 58 ************
+
+Param : r7.value  (R_R7.Value) = 168.30000000000001
+Param : r3.value  (R_R3.Value) = 7.81000000000000k
+
+Specs : cutoff_lowpass_3db(v(out)) = 205.12583277984626meg
+Specs : max(db(v(out))) = 9.06295946121355
+
+
+************ Parametric sweep Run 59 ************
+
+Param : r7.value  (R_R7.Value) = 168.30000000000001
+Param : r3.value  (R_R3.Value) = 8.91000000000000k
+
+Specs : cutoff_lowpass_3db(v(out)) = 199.15829711887011meg
+Specs : max(db(v(out))) = 8.08467156831673
+
+
+************ Parametric sweep Run 60 ************
+
+Param : r7.value  (R_R7.Value) = 168.30000000000001
+Param : r3.value  (R_R3.Value) = 10.01000000000000k
+
+Specs : cutoff_lowpass_3db(v(out)) = 192.44269224471702meg
+Specs : max(db(v(out))) = 6.91001300289685
+
+
+************ Parametric sweep Run 61 ************
+
+Param : r7.value  (R_R7.Value) = 201.30000000000001
+Param : r3.value  (R_R3.Value) = 110
+
+Specs : cutoff_lowpass_3db(v(out)) = 238.03087184247178meg
+Specs : max(db(v(out))) = 7.23085994582052
+
+
+************ Parametric sweep Run 62 ************
+
+Param : r7.value  (R_R7.Value) = 201.30000000000001
+Param : r3.value  (R_R3.Value) = 1.21000000000000k
+
+Specs : cutoff_lowpass_3db(v(out)) = 232.36771377000659meg
+Specs : max(db(v(out))) = 11.17011756955995
+
+
+************ Parametric sweep Run 63 ************
+
+Param : r7.value  (R_R7.Value) = 201.30000000000001
+Param : r3.value  (R_R3.Value) = 2.31000000000000k
+
+Specs : cutoff_lowpass_3db(v(out)) = 228.44047594933051meg
+Specs : max(db(v(out))) = 11.12508727171889
+
+
+************ Parametric sweep Run 64 ************
+
+Param : r7.value  (R_R7.Value) = 201.30000000000001
+Param : r3.value  (R_R3.Value) = 3.41000000000000k
+
+Specs : cutoff_lowpass_3db(v(out)) = 223.99770080099427meg
+Specs : max(db(v(out))) = 10.78474426109755
+
+
+************ Parametric sweep Run 65 ************
+
+Param : r7.value  (R_R7.Value) = 201.30000000000001
+Param : r3.value  (R_R3.Value) = 4.51000000000000k
+
+Specs : cutoff_lowpass_3db(v(out)) = 219.19937549660594meg
+Specs : max(db(v(out))) = 10.28638684550067
+
+
+************ Parametric sweep Run 66 ************
+
+Param : r7.value  (R_R7.Value) = 201.30000000000001
+Param : r3.value  (R_R3.Value) = 5.61000000000000k
+
+Specs : cutoff_lowpass_3db(v(out)) = 214.08426106811675meg
+Specs : max(db(v(out))) = 9.65680791718790
+
+
+************ Parametric sweep Run 67 ************
+
+Param : r7.value  (R_R7.Value) = 201.30000000000001
+Param : r3.value  (R_R3.Value) = 6.71000000000000k
+
+Specs : cutoff_lowpass_3db(v(out)) = 208.71470663608727meg
+Specs : max(db(v(out))) = 8.89048534048536
+
+
+************ Parametric sweep Run 68 ************
+
+Param : r7.value  (R_R7.Value) = 201.30000000000001
+Param : r3.value  (R_R3.Value) = 7.81000000000000k
+
+Specs : cutoff_lowpass_3db(v(out)) = 203.01327430184898meg
+Specs : max(db(v(out))) = 7.97583772662469
+
+
+************ Parametric sweep Run 69 ************
+
+Param : r7.value  (R_R7.Value) = 201.30000000000001
+Param : r3.value  (R_R3.Value) = 8.91000000000000k
+
+Specs : cutoff_lowpass_3db(v(out)) = 196.88396599324372meg
+Specs : max(db(v(out))) = 6.89222901443627
+
+
+************ Parametric sweep Run 70 ************
+
+Param : r7.value  (R_R7.Value) = 201.30000000000001
+Param : r3.value  (R_R3.Value) = 10.01000000000000k
+
+Specs : cutoff_lowpass_3db(v(out)) = 190.05696727480984meg
+Specs : max(db(v(out))) = 5.61544577063861
+
+
+************ Parametric sweep Run 71 ************
+
+Param : r7.value  (R_R7.Value) = 234.30000000000001
+Param : r3.value  (R_R3.Value) = 110
+
+Specs : cutoff_lowpass_3db(v(out)) = 239.05237595104376meg
+Specs : max(db(v(out))) = 6.88528770834294
+
+
+************ Parametric sweep Run 72 ************
+
+Param : r7.value  (R_R7.Value) = 234.30000000000001
+Param : r3.value  (R_R3.Value) = 1.21000000000000k
+
+Specs : cutoff_lowpass_3db(v(out)) = 232.47925124278231meg
+Specs : max(db(v(out))) = 10.73855398494769
+
+
+************ Parametric sweep Run 73 ************
+
+Param : r7.value  (R_R7.Value) = 234.30000000000001
+Param : r3.value  (R_R3.Value) = 2.31000000000000k
+
+Specs : cutoff_lowpass_3db(v(out)) = 227.88210470628565meg
+Specs : max(db(v(out))) = 10.61499033204169
+
+
+************ Parametric sweep Run 74 ************
+
+Param : r7.value  (R_R7.Value) = 234.30000000000001
+Param : r3.value  (R_R3.Value) = 3.41000000000000k
+
+Specs : cutoff_lowpass_3db(v(out)) = 222.92972386832594meg
+Specs : max(db(v(out))) = 10.19486568747612
+
+
+************ Parametric sweep Run 75 ************
+
+Param : r7.value  (R_R7.Value) = 234.30000000000001
+Param : r3.value  (R_R3.Value) = 4.51000000000000k
+
+Specs : cutoff_lowpass_3db(v(out)) = 217.70344861273375meg
+Specs : max(db(v(out))) = 9.61523081178769
+
+
+************ Parametric sweep Run 76 ************
+
+Param : r7.value  (R_R7.Value) = 234.30000000000001
+Param : r3.value  (R_R3.Value) = 5.61000000000000k
+
+Specs : cutoff_lowpass_3db(v(out)) = 212.31710625239228meg
+Specs : max(db(v(out))) = 8.89647904633292
+
+
+************ Parametric sweep Run 77 ************
+
+Param : r7.value  (R_R7.Value) = 234.30000000000001
+Param : r3.value  (R_R3.Value) = 6.71000000000000k
+
+Specs : cutoff_lowpass_3db(v(out)) = 206.72324297897924meg
+Specs : max(db(v(out))) = 8.04036353175364
+
+
+************ Parametric sweep Run 78 ************
+
+Param : r7.value  (R_R7.Value) = 234.30000000000001
+Param : r3.value  (R_R3.Value) = 7.81000000000000k
+
+Specs : cutoff_lowpass_3db(v(out)) = 200.86889989226134meg
+Specs : max(db(v(out))) = 7.03541955581622
+
+
+************ Parametric sweep Run 79 ************
+
+Param : r7.value  (R_R7.Value) = 234.30000000000001
+Param : r3.value  (R_R3.Value) = 8.91000000000000k
+
+Specs : cutoff_lowpass_3db(v(out)) = 194.63797675471548meg
+Specs : max(db(v(out))) = 5.86228979280276
+
+
+************ Parametric sweep Run 80 ************
+
+Param : r7.value  (R_R7.Value) = 234.30000000000001
+Param : r3.value  (R_R3.Value) = 10.01000000000000k
+
+Specs : cutoff_lowpass_3db(v(out)) = 187.65795632962184meg
+Specs : max(db(v(out))) = 4.50239718241895
+
+
+************ Parametric sweep Run 81 ************
+
+Param : r7.value  (R_R7.Value) = 267.30000000000001
+Param : r3.value  (R_R3.Value) = 110
+
+Specs : cutoff_lowpass_3db(v(out)) = 239.54356102201649meg
+Specs : max(db(v(out))) = 6.59657548101166
+
+
+************ Parametric sweep Run 82 ************
+
+Param : r7.value  (R_R7.Value) = 267.30000000000001
+Param : r3.value  (R_R3.Value) = 1.21000000000000k
+
+Specs : cutoff_lowpass_3db(v(out)) = 232.19427553854626meg
+Specs : max(db(v(out))) = 10.37439653985642
+
+
+************ Parametric sweep Run 83 ************
+
+Param : r7.value  (R_R7.Value) = 267.30000000000001
+Param : r3.value  (R_R3.Value) = 2.31000000000000k
+
+Specs : cutoff_lowpass_3db(v(out)) = 227.03857629345589meg
+Specs : max(db(v(out))) = 10.17615630697779
+
+
+************ Parametric sweep Run 84 ************
+
+Param : r7.value  (R_R7.Value) = 267.30000000000001
+Param : r3.value  (R_R3.Value) = 3.41000000000000k
+
+Specs : cutoff_lowpass_3db(v(out)) = 221.63364477785018meg
+Specs : max(db(v(out))) = 9.68208897705444
+
+
+************ Parametric sweep Run 85 ************
+
+Param : r7.value  (R_R7.Value) = 267.30000000000001
+Param : r3.value  (R_R3.Value) = 4.51000000000000k
+
+Specs : cutoff_lowpass_3db(v(out)) = 216.10296633297992meg
+Specs : max(db(v(out))) = 9.02350369100610
+
+
+************ Parametric sweep Run 86 ************
+
+Param : r7.value  (R_R7.Value) = 267.30000000000001
+Param : r3.value  (R_R3.Value) = 5.61000000000000k
+
+Specs : cutoff_lowpass_3db(v(out)) = 210.47198538914543meg
+Specs : max(db(v(out))) = 8.22553433378215
+
+
+************ Parametric sweep Run 87 ************
+
+Param : r7.value  (R_R7.Value) = 267.30000000000001
+Param : r3.value  (R_R3.Value) = 6.71000000000000k
+
+Specs : cutoff_lowpass_3db(v(out)) = 204.73471685686553meg
+Specs : max(db(v(out))) = 7.28765617213150
+
+
+************ Parametric sweep Run 88 ************
+
+Param : r7.value  (R_R7.Value) = 267.30000000000001
+Param : r3.value  (R_R3.Value) = 7.81000000000000k
+
+Specs : cutoff_lowpass_3db(v(out)) = 198.77407212364545meg
+Specs : max(db(v(out))) = 6.20166341497845
+
+
+************ Parametric sweep Run 89 ************
+
+Param : r7.value  (R_R7.Value) = 267.30000000000001
+Param : r3.value  (R_R3.Value) = 8.91000000000000k
+
+Specs : cutoff_lowpass_3db(v(out)) = 192.43122721567539meg
+Specs : max(db(v(out))) = 4.95178589252171
+
+
+************ Parametric sweep Run 90 ************
+
+Param : r7.value  (R_R7.Value) = 267.30000000000001
+Param : r3.value  (R_R3.Value) = 10.01000000000000k
+
+Specs : cutoff_lowpass_3db(v(out)) = 185.31820539528599meg
+Specs : max(db(v(out))) = 3.52363588547971
+
+
+************ Parametric sweep Run 91 ************
+
+Param : r7.value  (R_R7.Value) = 300.30000000000001
+Param : r3.value  (R_R3.Value) = 110
+
+Specs : cutoff_lowpass_3db(v(out)) = 239.67914031291662meg
+Specs : max(db(v(out))) = 6.34898175268322
+
+
+************ Parametric sweep Run 92 ************
+
+Param : r7.value  (R_R7.Value) = 300.30000000000001
+Param : r3.value  (R_R3.Value) = 1.21000000000000k
+
+Specs : cutoff_lowpass_3db(v(out)) = 231.67191944219525meg
+Specs : max(db(v(out))) = 10.05684626502161
+
+
+************ Parametric sweep Run 93 ************
+
+Param : r7.value  (R_R7.Value) = 300.30000000000001
+Param : r3.value  (R_R3.Value) = 2.31000000000000k
+
+Specs : cutoff_lowpass_3db(v(out)) = 226.01307434866141meg
+Specs : max(db(v(out))) = 9.78881946880986
+
+
+************ Parametric sweep Run 94 ************
+
+Param : r7.value  (R_R7.Value) = 300.30000000000001
+Param : r3.value  (R_R3.Value) = 3.41000000000000k
+
+Specs : cutoff_lowpass_3db(v(out)) = 220.25104185620538meg
+Specs : max(db(v(out))) = 9.22305831927254
+
+
+************ Parametric sweep Run 95 ************
+
+Param : r7.value  (R_R7.Value) = 300.30000000000001
+Param : r3.value  (R_R3.Value) = 4.51000000000000k
+
+Specs : cutoff_lowpass_3db(v(out)) = 214.47654662151564meg
+Specs : max(db(v(out))) = 8.49045348076538
+
+
+************ Parametric sweep Run 96 ************
+
+Param : r7.value  (R_R7.Value) = 300.30000000000001
+Param : r3.value  (R_R3.Value) = 5.61000000000000k
+
+Specs : cutoff_lowpass_3db(v(out)) = 208.67677356120444meg
+Specs : max(db(v(out))) = 7.61767332911505
+
+
+************ Parametric sweep Run 97 ************
+
+Param : r7.value  (R_R7.Value) = 300.30000000000001
+Param : r3.value  (R_R3.Value) = 6.71000000000000k
+
+Specs : cutoff_lowpass_3db(v(out)) = 202.79157954746162meg
+Specs : max(db(v(out))) = 6.60671325555599
+
+
+************ Parametric sweep Run 98 ************
+
+Param : r7.value  (R_R7.Value) = 300.30000000000001
+Param : r3.value  (R_R3.Value) = 7.81000000000000k
+
+Specs : cutoff_lowpass_3db(v(out)) = 196.74208156169760meg
+Specs : max(db(v(out))) = 5.44955058525426
+
+
+************ Parametric sweep Run 99 ************
+
+Param : r7.value  (R_R7.Value) = 300.30000000000001
+Param : r3.value  (R_R3.Value) = 8.91000000000000k
+
+Specs : cutoff_lowpass_3db(v(out)) = 190.30847249677186meg
+Specs : max(db(v(out))) = 4.13458936392391
+
+
+************ Parametric sweep Run 100 ************
+
+Param : r7.value  (R_R7.Value) = 300.30000000000001
+Param : r3.value  (R_R3.Value) = 10.01000000000000k
+
+Specs : cutoff_lowpass_3db(v(out)) = 183.00923421838172meg
+Specs : max(db(v(out))) = 2.65018588802366
+Analysis complete
+
+******* Analysis stopped at:Thu Apr 10 19:46:44 2025
+
+Analysis time: 00:00:06
+
+
+End of advanced analysis session

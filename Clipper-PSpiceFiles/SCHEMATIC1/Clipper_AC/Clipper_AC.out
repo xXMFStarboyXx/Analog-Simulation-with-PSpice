@@ -1,0 +1,120 @@
+
+**** 01/08/25 16:39:45 **** PSpice 24.1.0 (22 October 2024) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-Clipper_AC"  [ C:\Cadence\Pspice sim\Clipper-PSpiceFiles\SCHEMATIC1\Clipper_AC.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "Clipper_AC.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\ROG\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\24.1.0\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.AC DEC 11 10 100Meg
+.OPTIONS ADVCONV
+.PROBE64 V(*) I(*) W(*) D(*) NOISE(*) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source CLIPPER
+R_R1         IN MID  1k TC=0,0 
+R_R2         MID VCC  1k TC=0,0 
+R_R3         0 MID  1k TC=0,0 
+R_R4         0 OUT  1k TC=0,0 
+D_D1         MID VCC D1N3940 
+D_D2         0 MID D1N3940 
+V_V2         IN 0 DC 0Vdc AC 1Vac 
+V_V1         VCC 0 5
+C_C1         MID OUT  0.47u  TC=0,0 
+
+**** RESUMING Clipper_AC.cir ****
+.END
+
+**** 01/08/25 16:39:45 **** PSpice 24.1.0 (22 October 2024) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-Clipper_AC"  [ C:\Cadence\Pspice sim\Clipper-PSpiceFiles\SCHEMATIC1\Clipper_AC.sim ] 
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               D1N3940         
+          IS  400.000000E-12 
+           N    1.48         
+          BV  600            
+         IBV  100.000000E-06 
+          RS     .105        
+          TT  800.000000E-09 
+         CJO   19.500000E-12 
+          VJ     .4          
+           M     .38         
+          FC     .9          
+          EG    1.36         
+         XTI   -8            
+
+
+**** 01/08/25 16:39:45 **** PSpice 24.1.0 (22 October 2024) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-Clipper_AC"  [ C:\Cadence\Pspice sim\Clipper-PSpiceFiles\SCHEMATIC1\Clipper_AC.sim ] 
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(   IN)    0.0000  (  MID)    1.6667  (  OUT)    0.0000  (  VCC)    5.0000  
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V2         1.667E-03
+    V_V1        -3.333E-03
+
+    TOTAL POWER DISSIPATION   1.67E-02  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 01/08/25 16:39:45 **** PSpice 24.1.0 (22 October 2024) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-Clipper_AC"  [ C:\Cadence\Pspice sim\Clipper-PSpiceFiles\SCHEMATIC1\Clipper_AC.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .02
+

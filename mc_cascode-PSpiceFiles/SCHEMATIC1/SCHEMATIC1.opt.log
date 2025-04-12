@@ -1,0 +1,1964 @@
+Starting advanced analysis session
+*****************************************
+
+******* Analysis Started On:Thu Apr 10 12:18:47 2025
+
+Advance Analyses Project File Name : c:/cadence/pspice sim/mc_cascode-PSpiceFiles/SCHEMATIC1/SCHEMATIC1.$ap
+
+
+Processing analysis specifications
+** Engine Name: Modified LSQ Engine
+** Modified LSQ Engine Options:
+
+method: Unconstrained Least Squares
+Delta: 1%
+Threshold: 0
+Cutback: 0.25
+Max. Iterations: 50
+One Spec: least squares
+Recalculate: auto
+
+** Optimization Problem Successfully created
+** No. of Parameters =  4 No. Of Specifications = 4
+
+Listing Profiles:
+ - opt_dc.sim
+ - opt_ac.sim
+
+
+
+************ Optimization Run 0 (Nominal) ************
+
+Param : R7.Value  (R_R7.Value) = 33
+Param : R3.Value  (R_R3.Value) = 5k
+Param : C3.Value  (C_C3.Value) = 15p
+Param : R1.Value  (R_R1.Value) = 300
+
+Specs : I(Q1:C) = 23.17684968308831m
+Specs : W(Q1) = 841.61873527982300m
+Specs : Cutoff_Lowpass_3dB(V(out)) = 199.23685178610555meg
+Specs : max(db(V(out))) = 19.29691764817405
+Error of I(Q1:C) = -1.815e+08  {Min = 181.50000000000000meg, Max = }
+Error of W(Q1) = -16.1584  {Min = 17db, Max = }
+Error of Cutoff_Lowpass_3dB(V(out)) = 1.99237e+08  {Min = , Max = 1W}
+Error of max(db(V(out))) = 19.2469  {Min = , Max = 50mA}
+
+************ Optimization Run 1 ************
+
+x:         3.3           5        0.15           3 
+F:     -0.6111     -0.6056   2.214e+08       428.2 
+LSQ mode = 1
+
+------------ Sensitivity Run 1.1 
+
+
+Param : R7.Value  (R_R7.Value) = 33.33000000000001
+Param : R3.Value  (R_R3.Value) = 5k
+Param : C3.Value  (C_C3.Value) = 15p
+Param : R1.Value  (R_R1.Value) = 300
+
+Specs : I(Q1:C) = 23.03397372016012m
+Specs : W(Q1) = 837.41282794143228m
+Specs : Cutoff_Lowpass_3dB(V(out)) = 199.52254767150731meg
+Specs : max(db(V(out))) = 19.23936010942236
+Error of I(Q1:C) = -1.815e+08  {Min = 181.50000000000000meg, Max = }
+Error of W(Q1) = -16.1626  {Min = 17db, Max = }
+Error of Cutoff_Lowpass_3dB(V(out)) = 1.99523e+08  {Min = , Max = 1W}
+Error of max(db(V(out))) = 19.1894  {Min = , Max = 50mA}
+
+------------ Sensitivity Run 1.2 
+
+
+Param : R7.Value  (R_R7.Value) = 33
+Param : R3.Value  (R_R3.Value) = 5.05000000000000k
+Param : C3.Value  (C_C3.Value) = 15p
+Param : R1.Value  (R_R1.Value) = 300
+
+Specs : I(Q1:C) = 22.89719189963700m
+Specs : W(Q1) = 833.37468006172901m
+Specs : Cutoff_Lowpass_3dB(V(out)) = 199.22285371717911meg
+Specs : max(db(V(out))) = 19.29462181618420
+Error of I(Q1:C) = -1.815e+08  {Min = 181.50000000000000meg, Max = }
+Error of W(Q1) = -16.1666  {Min = 17db, Max = }
+Error of Cutoff_Lowpass_3dB(V(out)) = 1.99223e+08  {Min = , Max = 1W}
+Error of max(db(V(out))) = 19.2446  {Min = , Max = 50mA}
+
+------------ Sensitivity Run 1.3 
+
+
+Param : R7.Value  (R_R7.Value) = 33
+Param : R3.Value  (R_R3.Value) = 5k
+Param : C3.Value  (C_C3.Value) = 15.15000000000000p
+Param : R1.Value  (R_R1.Value) = 300
+
+Specs : I(Q1:C) = 23.17684968308831m
+Specs : W(Q1) = 841.61873527982300m
+Specs : Cutoff_Lowpass_3dB(V(out)) = 199.11572483296922meg
+Specs : max(db(V(out))) = 19.31125246633967
+Error of I(Q1:C) = -1.815e+08  {Min = 181.50000000000000meg, Max = }
+Error of W(Q1) = -16.1584  {Min = 17db, Max = }
+Error of Cutoff_Lowpass_3dB(V(out)) = 1.99116e+08  {Min = , Max = 1W}
+Error of max(db(V(out))) = 19.2613  {Min = , Max = 50mA}
+
+------------ Sensitivity Run 1.4 
+
+
+Param : R7.Value  (R_R7.Value) = 33
+Param : R3.Value  (R_R3.Value) = 5k
+Param : C3.Value  (C_C3.Value) = 15p
+Param : R1.Value  (R_R1.Value) = 303
+
+Specs : I(Q1:C) = 23.17675502197066m
+Specs : W(Q1) = 840.00605197442405m
+Specs : Cutoff_Lowpass_3dB(V(out)) = 198.35684625597617meg
+Specs : max(db(V(out))) = 19.31004880851071
+Error of I(Q1:C) = -1.815e+08  {Min = 181.50000000000000meg, Max = }
+Error of W(Q1) = -16.16  {Min = 17db, Max = }
+Error of Cutoff_Lowpass_3dB(V(out)) = 1.98357e+08  {Min = , Max = 1W}
+Error of max(db(V(out))) = 19.26  {Min = , Max = 50mA}
+
+Jacobian:
+-2.65e-12 -3.42e-12  0.00e+00 -3.70e-15 
+-8.33e-04 -1.08e-03  0.00e+00 -3.51e-04 
+ 9.62e+06 -3.11e+05 -8.97e+07 -3.26e+07 
+-3.88e+01 -1.02e+00  2.12e+02  9.73e+00 
+
+gtest =  8.8338e-01
+Aset: 0 0 0 0 
+Hessian:
+ 9.25e+13 -2.99e+12 -8.63e+14 -3.14e+14 
+-2.99e+12  9.68e+10  2.79e+13  1.01e+13 
+-8.63e+14  2.79e+13  8.05e+15  2.92e+15 
+-3.14e+14  1.01e+13  2.92e+15  1.06e+15 
+
+direction:     -0.2313    0.007481       2.158      0.7838 
+max radius:     0.01877
+mu*D:   -0.004342   0.0001404      0.0405     0.01471 
+expected df: -9.1984e+14
+lineMin: fold =  2.4503e+16
+
+------------ Trial Run 1.1 
+
+
+Param : R7.Value  (R_R7.Value) = 32.95657932630281
+Param : R3.Value  (R_R3.Value) = 5.00014041219252k
+Param : C3.Value  (C_C3.Value) = 19.05000000000000p
+Param : R1.Value  (R_R1.Value) = 301.47119673105590
+
+Specs : I(Q1:C) = 23.19493865119416m
+Specs : W(Q1) = 841.35962465852219m
+Specs : Cutoff_Lowpass_3dB(V(out)) = 195.60092174788952meg
+Specs : max(db(V(out))) = 19.64649529237355
+Error of I(Q1:C) = -1.815e+08  {Min = 181.50000000000000meg, Max = }
+Error of W(Q1) = -16.1586  {Min = 17db, Max = }
+Error of Cutoff_Lowpass_3dB(V(out)) = 1.95601e+08  {Min = , Max = 1W}
+Error of max(db(V(out))) = 19.5965  {Min = , Max = 50mA}
+ 1.00e+00:  f =  2.3617e+16
+
+************ Optimization Run 2 ************
+
+x:       3.296           5      0.1905       3.015 
+F:     -0.6111     -0.6056   2.173e+08         436 
+LSQ mode = 2
+
+------------ Sensitivity Run 2.1 
+
+
+Param : R7.Value  (R_R7.Value) = 33.28614511956584
+Param : R3.Value  (R_R3.Value) = 5.00014041219252k
+Param : C3.Value  (C_C3.Value) = 19.05000000000000p
+Param : R1.Value  (R_R1.Value) = 301.47119673105590
+
+Specs : I(Q1:C) = 23.05202946537648m
+Specs : W(Q1) = 837.16399738449570m
+Specs : Cutoff_Lowpass_3dB(V(out)) = 195.85345335479232meg
+Specs : max(db(V(out))) = 19.59165275667907
+Error of I(Q1:C) = -1.815e+08  {Min = 181.50000000000000meg, Max = }
+Error of W(Q1) = -16.1628  {Min = 17db, Max = }
+Error of Cutoff_Lowpass_3dB(V(out)) = 1.95853e+08  {Min = , Max = 1W}
+Error of max(db(V(out))) = 19.5417  {Min = , Max = 50mA}
+
+------------ Sensitivity Run 2.2 
+
+
+Param : R7.Value  (R_R7.Value) = 32.95657932630281
+Param : R3.Value  (R_R3.Value) = 5.05014181631444k
+Param : C3.Value  (C_C3.Value) = 19.05000000000000p
+Param : R1.Value  (R_R1.Value) = 301.47119673105590
+
+Specs : I(Q1:C) = 22.91505978334325m
+Specs : W(Q1) = 833.13103102685579m
+Specs : Cutoff_Lowpass_3dB(V(out)) = 195.58958734786282meg
+Specs : max(db(V(out))) = 19.64415416173577
+Error of I(Q1:C) = -1.815e+08  {Min = 181.50000000000000meg, Max = }
+Error of W(Q1) = -16.1669  {Min = 17db, Max = }
+Error of Cutoff_Lowpass_3dB(V(out)) = 1.9559e+08  {Min = , Max = 1W}
+Error of max(db(V(out))) = 19.5942  {Min = , Max = 50mA}
+
+------------ Sensitivity Run 2.3 
+
+
+Param : R7.Value  (R_R7.Value) = 32.95657932630281
+Param : R3.Value  (R_R3.Value) = 5.00014041219252k
+Param : C3.Value  (C_C3.Value) = 19.24050000000000p
+Param : R1.Value  (R_R1.Value) = 301.47119673105590
+
+Specs : I(Q1:C) = 23.19493865119416m
+Specs : W(Q1) = 841.35962465852219m
+Specs : Cutoff_Lowpass_3dB(V(out)) = 195.46057459607752meg
+Specs : max(db(V(out))) = 19.65990857249599
+Error of I(Q1:C) = -1.815e+08  {Min = 181.50000000000000meg, Max = }
+Error of W(Q1) = -16.1586  {Min = 17db, Max = }
+Error of Cutoff_Lowpass_3dB(V(out)) = 1.95461e+08  {Min = , Max = 1W}
+Error of max(db(V(out))) = 19.6099  {Min = , Max = 50mA}
+
+------------ Sensitivity Run 2.4 
+
+
+Param : R7.Value  (R_R7.Value) = 32.95657932630281
+Param : R3.Value  (R_R3.Value) = 5.00014041219252k
+Param : C3.Value  (C_C3.Value) = 19.05000000000000p
+Param : R1.Value  (R_R1.Value) = 304.48590869836647
+
+Specs : I(Q1:C) = 23.19484329456191m
+Specs : W(Q1) = 839.73650760163775m
+Specs : Cutoff_Lowpass_3dB(V(out)) = 194.70177061762880meg
+Specs : max(db(V(out))) = 19.66238909394594
+Error of I(Q1:C) = -1.815e+08  {Min = 181.50000000000000meg, Max = }
+Error of W(Q1) = -16.1603  {Min = 17db, Max = }
+Error of Cutoff_Lowpass_3dB(V(out)) = 1.94702e+08  {Min = , Max = 1W}
+Error of max(db(V(out))) = 19.6124  {Min = , Max = 50mA}
+
+Jacobian:
+-2.65e-12 -3.43e-12  0.00e+00  0.00e+00 
+-8.32e-04 -1.08e-03  0.00e+00 -3.52e-04 
+ 8.51e+06 -2.52e+05 -8.19e+07 -3.31e+07 
+-3.70e+01 -1.04e+00  1.56e+02  1.17e+01 
+
+gtest =  9.1937e-01
+Aset: 0 0 0 0 
+Hessian:
+ 9.13e+14 -4.62e+13 -6.78e+15 -4.21e+13 
+-4.62e+13  2.34e+12  3.43e+14  2.13e+12 
+-6.78e+15  3.43e+14  5.03e+16  3.13e+14 
+-4.21e+13  2.13e+12  3.13e+14  1.95e+12 
+
+direction:    -0.04671    0.002363      0.3467    0.002156 
+max radius:     0.01168
+mu*D:  -0.0005456   2.761e-05     0.00405   2.518e-05 
+expected df: -7.3245e+13
+lineMin: fold =  2.3617e+16
+
+------------ Trial Run 2.1 
+
+
+Param : R7.Value  (R_R7.Value) = 32.95112305272338
+Param : R3.Value  (R_R3.Value) = 5.00016802050576k
+Param : C3.Value  (C_C3.Value) = 19.45500000000000p
+Param : R1.Value  (R_R1.Value) = 301.47371490002348
+
+Specs : I(Q1:C) = 23.19716330515206m
+Specs : W(Q1) = 841.42348674855930m
+Specs : Cutoff_Lowpass_3dB(V(out)) = 195.29918282962802meg
+Specs : max(db(V(out))) = 19.67568494598952
+Error of I(Q1:C) = -1.815e+08  {Min = 181.50000000000000meg, Max = }
+Error of W(Q1) = -16.1586  {Min = 17db, Max = }
+Error of Cutoff_Lowpass_3dB(V(out)) = 1.95299e+08  {Min = , Max = 1W}
+Error of max(db(V(out))) = 19.6257  {Min = , Max = 50mA}
+ 1.00e+00:  f =  2.3544e+16
+added U constraint 2
+
+************ Optimization Run 3 ************
+
+x:       3.295           5      0.1946       3.015 
+F:     -0.6111     -0.6056    2.17e+08       436.6 
+LSQ mode = 2
+
+------------ Sensitivity Run 3.1 
+
+
+Param : R7.Value  (R_R7.Value) = 33.28063428325062
+Param : R3.Value  (R_R3.Value) = 5.00016802050576k
+Param : C3.Value  (C_C3.Value) = 19.45500000000000p
+Param : R1.Value  (R_R1.Value) = 301.47371490002348
+
+Specs : I(Q1:C) = 23.05425021421619m
+Specs : W(Q1) = 837.22795236060358m
+Specs : Cutoff_Lowpass_3dB(V(out)) = 195.54804381495723meg
+Specs : max(db(V(out))) = 19.62111717670941
+Error of I(Q1:C) = -1.815e+08  {Min = 181.50000000000000meg, Max = }
+Error of W(Q1) = -16.1628  {Min = 17db, Max = }
+Error of Cutoff_Lowpass_3dB(V(out)) = 1.95548e+08  {Min = , Max = 1W}
+Error of max(db(V(out))) = 19.5711  {Min = , Max = 50mA}
+
+------------ Sensitivity Run 3.2 
+
+
+Param : R7.Value  (R_R7.Value) = 32.95112305272338
+Param : R3.Value  (R_R3.Value) = 5.05016970071082k
+Param : C3.Value  (C_C3.Value) = 19.45500000000000p
+Param : R1.Value  (R_R1.Value) = 301.47371490002348
+
+Specs : I(Q1:C) = 22.91725677571302m
+Specs : W(Q1) = 833.19448428850387m
+Specs : Cutoff_Lowpass_3dB(V(out)) = 195.28812332962704meg
+Specs : max(db(V(out))) = 19.67333455478638
+Error of I(Q1:C) = -1.815e+08  {Min = 181.50000000000000meg, Max = }
+Error of W(Q1) = -16.1668  {Min = 17db, Max = }
+Error of Cutoff_Lowpass_3dB(V(out)) = 1.95288e+08  {Min = , Max = 1W}
+Error of max(db(V(out))) = 19.6233  {Min = , Max = 50mA}
+
+------------ Sensitivity Run 3.3 
+
+
+Param : R7.Value  (R_R7.Value) = 32.95112305272338
+Param : R3.Value  (R_R3.Value) = 5.00016802050576k
+Param : C3.Value  (C_C3.Value) = 19.26045000000000p
+Param : R1.Value  (R_R1.Value) = 301.47371490002348
+
+Specs : I(Q1:C) = 23.19716330515206m
+Specs : W(Q1) = 841.42348674855930m
+Specs : Cutoff_Lowpass_3dB(V(out)) = 195.44102083757386meg
+Specs : max(db(V(out))) = 19.66222345978428
+Error of I(Q1:C) = -1.815e+08  {Min = 181.50000000000000meg, Max = }
+Error of W(Q1) = -16.1586  {Min = 17db, Max = }
+Error of Cutoff_Lowpass_3dB(V(out)) = 1.95441e+08  {Min = , Max = 1W}
+Error of max(db(V(out))) = 19.6122  {Min = , Max = 50mA}
+
+------------ Sensitivity Run 3.4 
+
+
+Param : R7.Value  (R_R7.Value) = 32.95112305272338
+Param : R3.Value  (R_R3.Value) = 5.00016802050576k
+Param : C3.Value  (C_C3.Value) = 19.45500000000000p
+Param : R1.Value  (R_R1.Value) = 304.48845204902369
+
+Specs : I(Q1:C) = 23.19706792701906m
+Specs : W(Q1) = 839.80004484799838m
+Specs : Cutoff_Lowpass_3dB(V(out)) = 194.39396293129795meg
+Specs : max(db(V(out))) = 19.69157781785290
+Error of I(Q1:C) = -1.815e+08  {Min = 181.50000000000000meg, Max = }
+Error of W(Q1) = -16.1602  {Min = 17db, Max = }
+Error of Cutoff_Lowpass_3dB(V(out)) = 1.94394e+08  {Min = , Max = 1W}
+Error of max(db(V(out))) = 19.6416  {Min = , Max = 50mA}
+
+Jacobian:
+-2.66e-12 -3.43e-12 -0.00e+00 -3.68e-15 
+-8.32e-04 -1.08e-03 -0.00e+00 -3.52e-04 
+ 8.39e+06 -2.46e+05 -8.10e+07 -3.34e+07 
+-3.68e+01 -1.04e+00  1.54e+02  1.17e+01 
+
+gtest =  9.2701e-01
+Aset: 0 0 1 0 
+Hessian:
+ 9.88e+14 -4.74e+13 -7.14e+15  1.25e+15 
+-4.74e+13  2.27e+12  3.42e+14 -6.02e+13 
+-7.14e+15  3.42e+14  5.16e+16 -9.07e+15 
+ 1.25e+15 -6.02e+13 -9.07e+15  1.59e+15 
+
+direction:       1.091     -0.0523           0       1.386 
+max radius:       0.575
+mu*D:       0.627    -0.03007           0      0.7967 
+expected df: -4.6247e+15
+lineMin: fold =  2.3544e+16
+
+------------ Trial Run 3.1 
+
+
+Param : R7.Value  (R_R7.Value) = 39.22151773168539
+Param : R3.Value  (R_R3.Value) = 4.97009616822939k
+Param : C3.Value  (C_C3.Value) = 19.45500000000000p
+Param : R1.Value  (R_R1.Value) = 381.14737149000234
+
+Specs : I(Q1:C) = 20.89350919649609m
+Specs : W(Q1) = 737.55243067171841m
+Specs : Cutoff_Lowpass_3dB(V(out)) = 177.33452291747676meg
+Specs : max(db(V(out))) = 19.20752939525813
+Error of I(Q1:C) = -1.815e+08  {Min = 181.50000000000000meg, Max = }
+Error of W(Q1) = -16.2624  {Min = 17db, Max = }
+Error of Cutoff_Lowpass_3dB(V(out)) = 1.77335e+08  {Min = , Max = 1W}
+Error of max(db(V(out))) = 19.1575  {Min = , Max = 50mA}
+ 1.00e+00:  f =  1.9412e+16
+
+************ Optimization Run 4 ************
+
+x:       3.922        4.97      0.1946       3.811 
+F:     -0.6111     -0.6063    1.97e+08       426.2 
+LSQ mode = 1
+
+------------ Sensitivity Run 4.1 
+
+
+Param : R7.Value  (R_R7.Value) = 39.61373290900224
+Param : R3.Value  (R_R3.Value) = 4.97009616822939k
+Param : C3.Value  (C_C3.Value) = 19.45500000000000p
+Param : R1.Value  (R_R1.Value) = 381.14737149000234
+
+Specs : I(Q1:C) = 20.75578317251335m
+Specs : W(Q1) = 733.77529048391943m
+Specs : Cutoff_Lowpass_3dB(V(out)) = 177.58278951743890meg
+Specs : max(db(V(out))) = 19.15169307344205
+Error of I(Q1:C) = -1.815e+08  {Min = 181.50000000000000meg, Max = }
+Error of W(Q1) = -16.2662  {Min = 17db, Max = }
+Error of Cutoff_Lowpass_3dB(V(out)) = 1.77583e+08  {Min = , Max = 1W}
+Error of max(db(V(out))) = 19.1017  {Min = , Max = 50mA}
+
+------------ Sensitivity Run 4.2 
+
+
+Param : R7.Value  (R_R7.Value) = 39.22151773168539
+Param : R3.Value  (R_R3.Value) = 5.01979712991168k
+Param : C3.Value  (C_C3.Value) = 19.45500000000000p
+Param : R1.Value  (R_R1.Value) = 381.14737149000234
+
+Specs : I(Q1:C) = 20.64235948467557m
+Specs : W(Q1) = 730.65369095005735m
+Specs : Cutoff_Lowpass_3dB(V(out)) = 177.30911184048929meg
+Specs : max(db(V(out))) = 19.20621425689025
+Error of I(Q1:C) = -1.815e+08  {Min = 181.50000000000000meg, Max = }
+Error of W(Q1) = -16.2693  {Min = 17db, Max = }
+Error of Cutoff_Lowpass_3dB(V(out)) = 1.77309e+08  {Min = , Max = 1W}
+Error of max(db(V(out))) = 19.1562  {Min = , Max = 50mA}
+
+------------ Sensitivity Run 4.3 
+
+
+Param : R7.Value  (R_R7.Value) = 39.22151773168539
+Param : R3.Value  (R_R3.Value) = 4.97009616822939k
+Param : C3.Value  (C_C3.Value) = 19.26045000000000p
+Param : R1.Value  (R_R1.Value) = 381.14737149000234
+
+Specs : I(Q1:C) = 20.89350919649609m
+Specs : W(Q1) = 737.55243067171841m
+Specs : Cutoff_Lowpass_3dB(V(out)) = 177.50244635939421meg
+Specs : max(db(V(out))) = 19.19072952988973
+Error of I(Q1:C) = -1.815e+08  {Min = 181.50000000000000meg, Max = }
+Error of W(Q1) = -16.2624  {Min = 17db, Max = }
+Error of Cutoff_Lowpass_3dB(V(out)) = 1.77502e+08  {Min = , Max = 1W}
+Error of max(db(V(out))) = 19.1407  {Min = , Max = 50mA}
+
+------------ Sensitivity Run 4.4 
+
+
+Param : R7.Value  (R_R7.Value) = 39.22151773168539
+Param : R3.Value  (R_R3.Value) = 4.97009616822939k
+Param : C3.Value  (C_C3.Value) = 19.45500000000000p
+Param : R1.Value  (R_R1.Value) = 384.95884520490239
+
+Specs : I(Q1:C) = 20.89341048474391m
+Specs : W(Q1) = 735.88752269170425m
+Specs : Cutoff_Lowpass_3dB(V(out)) = 176.46401961284647meg
+Specs : max(db(V(out))) = 19.22754607325463
+Error of I(Q1:C) = -1.815e+08  {Min = 181.50000000000000meg, Max = }
+Error of W(Q1) = -16.2641  {Min = 17db, Max = }
+Error of Cutoff_Lowpass_3dB(V(out)) = 1.76464e+08  {Min = , Max = 1W}
+Error of max(db(V(out))) = 19.1775  {Min = , Max = 50mA}
+Updated 
+Jacobian:
+-2.66e-12 -3.43e-12 -0.00e+00 -3.68e-15 
+-8.32e-04 -1.08e-03 -0.00e+00 -3.52e-04 
+ 9.22e+06 -2.85e+05 -8.10e+07 -3.23e+07 
+-3.48e+01 -1.14e+00  1.54e+02  1.43e+01 
+
+gtest =  1.2502e+00
+Aset: 0 0 1 0 
+Hessian:
+ 8.49e+13 -2.63e+12 -7.46e+14 -2.98e+14 
+-2.63e+12  8.14e+10  2.31e+13  9.22e+12 
+-7.46e+14  2.31e+13  6.56e+15  2.62e+15 
+-2.98e+14  9.22e+12  2.62e+15  1.04e+15 
+
+direction:      -1.608     0.04977           0       5.638 
+max radius:     0.01413
+mu*D:    -0.02272   0.0007033           0     0.07967 
+expected df: -5.4862e+14
+lineMin: fold =  1.9412e+16
+
+------------ Trial Run 4.1 
+
+
+Param : R7.Value  (R_R7.Value) = 38.99432415557457
+Param : R3.Value  (R_R3.Value) = 4.97079944751109k
+Param : C3.Value  (C_C3.Value) = 19.45500000000000p
+Param : R1.Value  (R_R1.Value) = 389.11473714900023
+
+Specs : I(Q1:C) = 20.97030550222983m
+Specs : W(Q1) = 736.15207307114179m
+Specs : Cutoff_Lowpass_3dB(V(out)) = 175.40294192804353meg
+Specs : max(db(V(out))) = 19.28129364216478
+Error of I(Q1:C) = -1.815e+08  {Min = 181.50000000000000meg, Max = }
+Error of W(Q1) = -16.2638  {Min = 17db, Max = }
+Error of Cutoff_Lowpass_3dB(V(out)) = 1.75403e+08  {Min = , Max = 1W}
+Error of max(db(V(out))) = 19.2313  {Min = , Max = 50mA}
+ 1.00e+00:  f =  1.8991e+16
+added U constraint 3
+
+************ Optimization Run 5 ************
+
+x:       3.899       4.971      0.1946       3.891 
+F:     -0.6111     -0.6063   1.949e+08       427.9 
+LSQ mode = 1
+
+------------ Sensitivity Run 5.1 
+
+
+Param : R7.Value  (R_R7.Value) = 39.38426739713032
+Param : R3.Value  (R_R3.Value) = 4.97079944751109k
+Param : C3.Value  (C_C3.Value) = 19.45500000000000p
+Param : R1.Value  (R_R1.Value) = 389.11473714900023
+
+Specs : I(Q1:C) = 20.83236761623077m
+Specs : W(Q1) = 732.42305748242313m
+Specs : Cutoff_Lowpass_3dB(V(out)) = 175.64500605844444meg
+Specs : max(db(V(out))) = 19.22555259390123
+Error of I(Q1:C) = -1.815e+08  {Min = 181.50000000000000meg, Max = }
+Error of W(Q1) = -16.2676  {Min = 17db, Max = }
+Error of Cutoff_Lowpass_3dB(V(out)) = 1.75645e+08  {Min = , Max = 1W}
+Error of max(db(V(out))) = 19.1756  {Min = , Max = 50mA}
+
+------------ Sensitivity Run 5.2 
+
+
+Param : R7.Value  (R_R7.Value) = 38.99432415557457
+Param : R3.Value  (R_R3.Value) = 5.02050744198620k
+Param : C3.Value  (C_C3.Value) = 19.45500000000000p
+Param : R1.Value  (R_R1.Value) = 389.11473714900023
+
+Specs : I(Q1:C) = 20.71821113634612m
+Specs : W(Q1) = 729.32566936032470m
+Specs : Cutoff_Lowpass_3dB(V(out)) = 175.37942736510917meg
+Specs : max(db(V(out))) = 19.28021128953944
+Error of I(Q1:C) = -1.815e+08  {Min = 181.50000000000000meg, Max = }
+Error of W(Q1) = -16.2707  {Min = 17db, Max = }
+Error of Cutoff_Lowpass_3dB(V(out)) = 1.75379e+08  {Min = , Max = 1W}
+Error of max(db(V(out))) = 19.2302  {Min = , Max = 50mA}
+
+------------ Sensitivity Run 5.3 
+
+
+Param : R7.Value  (R_R7.Value) = 38.99432415557457
+Param : R3.Value  (R_R3.Value) = 4.97079944751109k
+Param : C3.Value  (C_C3.Value) = 19.26045000000000p
+Param : R1.Value  (R_R1.Value) = 389.11473714900023
+
+Specs : I(Q1:C) = 20.97030550222983m
+Specs : W(Q1) = 736.15207307114179m
+Specs : Cutoff_Lowpass_3dB(V(out)) = 175.56478043797074meg
+Specs : max(db(V(out))) = 19.26458080864134
+Error of I(Q1:C) = -1.815e+08  {Min = 181.50000000000000meg, Max = }
+Error of W(Q1) = -16.2638  {Min = 17db, Max = }
+Error of Cutoff_Lowpass_3dB(V(out)) = 1.75565e+08  {Min = , Max = 1W}
+Error of max(db(V(out))) = 19.2146  {Min = , Max = 50mA}
+
+------------ Sensitivity Run 5.4 
+
+
+Param : R7.Value  (R_R7.Value) = 38.99432415557457
+Param : R3.Value  (R_R3.Value) = 4.97079944751109k
+Param : C3.Value  (C_C3.Value) = 19.45500000000000p
+Param : R1.Value  (R_R1.Value) = 385.22358977751026
+
+Specs : I(Q1:C) = 20.97040728722604m
+Specs : W(Q1) = 737.86430075108512m
+Specs : Cutoff_Lowpass_3dB(V(out)) = 176.26102777303166meg
+Specs : max(db(V(out))) = 19.26147710605519
+Error of I(Q1:C) = -1.815e+08  {Min = 181.50000000000000meg, Max = }
+Error of W(Q1) = -16.2621  {Min = 17db, Max = }
+Error of Cutoff_Lowpass_3dB(V(out)) = 1.76261e+08  {Min = , Max = 1W}
+Error of max(db(V(out))) = 19.2115  {Min = , Max = 50mA}
+Updated 
+Jacobian:
+-2.66e-12 -3.43e-12 -0.00e+00 -3.68e-15 
+-8.32e-04 -1.08e-03 -0.00e+00 -3.52e-04 
+ 7.10e+06 -2.20e+05 -8.10e+07 -2.49e+07 
+-3.48e+01 -1.14e+00  1.54e+02  1.43e+01 
+
+gtest =  9.9469e-01
+Aset: 0 0 1 1 
+Hessian:
+ 5.05e+13 -1.56e+12 -5.75e+14 -1.77e+14 
+-1.56e+12  4.83e+10  1.78e+13  5.48e+12 
+-5.75e+14  1.78e+13  6.56e+15  2.02e+15 
+-1.77e+14  5.48e+12  2.02e+15  6.21e+14 
+
+direction:      -27.41      0.8485           0           0 
+max radius:     0.04923
+mu*D:      -1.349     0.04177           0           0 
+expected df: -1.8700e+15
+lineMin: fold =  1.8991e+16
+
+------------ Trial Run 5.1 
+
+
+Param : R7.Value  (R_R7.Value) = 25.49943241555745
+Param : R3.Value  (R_R3.Value) = 5.01257297795850k
+Param : C3.Value  (C_C3.Value) = 19.45500000000000p
+Param : R1.Value  (R_R1.Value) = 389.11473714900023
+
+Specs : I(Q1:C) = 26.87181683956996m
+Specs : W(Q1) = 881.86333973855153m
+Specs : Cutoff_Lowpass_3dB(V(out)) = 164.72641682054780meg
+Specs : max(db(V(out))) = 21.64836861868698
+Error of I(Q1:C) = -1.815e+08  {Min = 181.50000000000000meg, Max = }
+Error of W(Q1) = -16.1181  {Min = 17db, Max = }
+Error of Cutoff_Lowpass_3dB(V(out)) = 1.64726e+08  {Min = , Max = 1W}
+Error of max(db(V(out))) = 21.5984  {Min = , Max = 50mA}
+ 1.00e+00:  f =  1.6750e+16
+
+************ Optimization Run 6 ************
+
+x:        2.55       5.013      0.1946       3.891 
+F:     -0.6111     -0.6053    1.83e+08       480.5 
+LSQ mode = 1
+
+------------ Sensitivity Run 6.1 
+
+
+Param : R7.Value  (R_R7.Value) = 25.75442673971303
+Param : R3.Value  (R_R3.Value) = 5.01257297795850k
+Param : C3.Value  (C_C3.Value) = 19.45500000000000p
+Param : R1.Value  (R_R1.Value) = 389.11473714900023
+
+Specs : I(Q1:C) = 26.72445089477435m
+Specs : W(Q1) = 878.55387907556189m
+Specs : Cutoff_Lowpass_3dB(V(out)) = 164.97822555871568meg
+Specs : max(db(V(out))) = 21.59388289395644
+Error of I(Q1:C) = -1.815e+08  {Min = 181.50000000000000meg, Max = }
+Error of W(Q1) = -16.1214  {Min = 17db, Max = }
+Error of Cutoff_Lowpass_3dB(V(out)) = 1.64978e+08  {Min = , Max = 1W}
+Error of max(db(V(out))) = 21.5439  {Min = , Max = 50mA}
+
+------------ Sensitivity Run 6.2 
+
+
+Param : R7.Value  (R_R7.Value) = 25.49943241555745
+Param : R3.Value  (R_R3.Value) = 5.06269870773809k
+Param : C3.Value  (C_C3.Value) = 19.45500000000000p
+Param : R1.Value  (R_R1.Value) = 389.11473714900023
+
+Specs : I(Q1:C) = 26.54785223823538m
+Specs : W(Q1) = 874.56576884155447m
+Specs : Cutoff_Lowpass_3dB(V(out)) = 164.74548866132957meg
+Specs : max(db(V(out))) = 21.65020823563832
+Error of I(Q1:C) = -1.815e+08  {Min = 181.50000000000000meg, Max = }
+Error of W(Q1) = -16.1254  {Min = 17db, Max = }
+Error of Cutoff_Lowpass_3dB(V(out)) = 1.64745e+08  {Min = , Max = 1W}
+Error of max(db(V(out))) = 21.6002  {Min = , Max = 50mA}
+
+------------ Sensitivity Run 6.3 
+
+
+Param : R7.Value  (R_R7.Value) = 25.49943241555745
+Param : R3.Value  (R_R3.Value) = 5.01257297795850k
+Param : C3.Value  (C_C3.Value) = 19.26045000000000p
+Param : R1.Value  (R_R1.Value) = 389.11473714900023
+
+Specs : I(Q1:C) = 26.87181683956996m
+Specs : W(Q1) = 881.86333973855153m
+Specs : Cutoff_Lowpass_3dB(V(out)) = 164.82084501135122meg
+Specs : max(db(V(out))) = 21.63736097042925
+Error of I(Q1:C) = -1.815e+08  {Min = 181.50000000000000meg, Max = }
+Error of W(Q1) = -16.1181  {Min = 17db, Max = }
+Error of Cutoff_Lowpass_3dB(V(out)) = 1.64821e+08  {Min = , Max = 1W}
+Error of max(db(V(out))) = 21.5874  {Min = , Max = 50mA}
+
+------------ Sensitivity Run 6.4 
+
+
+Param : R7.Value  (R_R7.Value) = 25.49943241555745
+Param : R3.Value  (R_R3.Value) = 5.01257297795850k
+Param : C3.Value  (C_C3.Value) = 19.45500000000000p
+Param : R1.Value  (R_R1.Value) = 385.22358977751026
+
+Specs : I(Q1:C) = 26.87199694990970m
+Specs : W(Q1) = 884.67436871708071m
+Specs : Cutoff_Lowpass_3dB(V(out)) = 165.48929374833460meg
+Specs : max(db(V(out))) = 21.63093260950619
+Error of I(Q1:C) = -1.815e+08  {Min = 181.50000000000000meg, Max = }
+Error of W(Q1) = -16.1153  {Min = 17db, Max = }
+Error of Cutoff_Lowpass_3dB(V(out)) = 1.65489e+08  {Min = , Max = 1W}
+Error of max(db(V(out))) = 21.5809  {Min = , Max = 50mA}
+Updated 
+Jacobian:
+-2.66e-12 -3.43e-12 -0.00e+00 -3.68e-15 
+-8.32e-04 -1.08e-03 -0.00e+00 -3.52e-04 
+ 8.78e+06 -2.72e+05 -8.10e+07 -2.49e+07 
+-3.90e+01 -1.01e+00  1.54e+02  1.43e+01 
+
+gtest =  1.0592e+00
+Aset: 0 0 1 1 
+Hessian:
+ 7.71e+13 -2.39e+12 -7.11e+14 -2.19e+14 
+-2.39e+12  7.39e+10  2.20e+13  6.77e+12 
+-7.11e+14  2.20e+13  6.56e+15  2.02e+15 
+-2.19e+14  6.77e+12  2.02e+15  6.21e+14 
+
+direction:      -20.82      0.6445           0           0 
+max radius:    0.006481
+mu*D:     -0.1349    0.004177           0           0 
+expected df: -2.1712e+14
+lineMin: fold =  1.6750e+16
+
+------------ Trial Run 6.1 
+
+
+Param : R7.Value  (R_R7.Value) = 24.14994324155575
+Param : R3.Value  (R_R3.Value) = 5.01675033100326k
+Param : C3.Value  (C_C3.Value) = 19.45500000000000p
+Param : R1.Value  (R_R1.Value) = 389.11473714900023
+
+Specs : I(Q1:C) = 27.65035053526476m
+Specs : W(Q1) = 899.06743164737145m
+Specs : Cutoff_Lowpass_3dB(V(out)) = 163.36361225094956meg
+Specs : max(db(V(out))) = 21.94482053123359
+Error of I(Q1:C) = -1.815e+08  {Min = 181.50000000000000meg, Max = }
+Error of W(Q1) = -16.1009  {Min = 17db, Max = }
+Error of Cutoff_Lowpass_3dB(V(out)) = 1.63364e+08  {Min = , Max = 1W}
+Error of max(db(V(out))) = 21.8948  {Min = , Max = 50mA}
+ 1.00e+00:  f =  1.6474e+16
+added L constraint 0
+
+************ Optimization Run 7 ************
+
+x:       2.415       5.017      0.1946       3.891 
+F:     -0.6111     -0.6052   1.815e+08       487.1 
+LSQ mode = 1
+
+------------ Sensitivity Run 7.1 
+
+
+Param : R7.Value  (R_R7.Value) = 24.39144267397131
+Param : R3.Value  (R_R3.Value) = 5.01675033100326k
+Param : C3.Value  (C_C3.Value) = 19.45500000000000p
+Param : R1.Value  (R_R1.Value) = 389.11473714900023
+
+Specs : I(Q1:C) = 27.50278538844012m
+Specs : W(Q1) = 895.84266629733793m
+Specs : Cutoff_Lowpass_3dB(V(out)) = 163.61183815517839meg
+Specs : max(db(V(out))) = 21.89079712785149
+Error of I(Q1:C) = -1.815e+08  {Min = 181.50000000000000meg, Max = }
+Error of W(Q1) = -16.1042  {Min = 17db, Max = }
+Error of Cutoff_Lowpass_3dB(V(out)) = 1.63612e+08  {Min = , Max = 1W}
+Error of max(db(V(out))) = 21.8408  {Min = , Max = 50mA}
+
+------------ Sensitivity Run 7.2 
+
+
+Param : R7.Value  (R_R7.Value) = 24.14994324155575
+Param : R3.Value  (R_R3.Value) = 5.06691783431329k
+Param : C3.Value  (C_C3.Value) = 19.45500000000000p
+Param : R1.Value  (R_R1.Value) = 389.11473714900023
+
+Specs : I(Q1:C) = 27.31706555027859m
+Specs : W(Q1) = 891.76014503391730m
+Specs : Cutoff_Lowpass_3dB(V(out)) = 163.38650447831102meg
+Specs : max(db(V(out))) = 21.94704040665060
+Error of I(Q1:C) = -1.815e+08  {Min = 181.50000000000000meg, Max = }
+Error of W(Q1) = -16.1082  {Min = 17db, Max = }
+Error of Cutoff_Lowpass_3dB(V(out)) = 1.63387e+08  {Min = , Max = 1W}
+Error of max(db(V(out))) = 21.897  {Min = , Max = 50mA}
+
+------------ Sensitivity Run 7.3 
+
+
+Param : R7.Value  (R_R7.Value) = 24.14994324155575
+Param : R3.Value  (R_R3.Value) = 5.01675033100326k
+Param : C3.Value  (C_C3.Value) = 19.26045000000000p
+Param : R1.Value  (R_R1.Value) = 389.11473714900023
+
+Specs : I(Q1:C) = 27.65035053526476m
+Specs : W(Q1) = 899.06743164737145m
+Specs : Cutoff_Lowpass_3dB(V(out)) = 163.45045870710265meg
+Specs : max(db(V(out))) = 21.93444372637913
+Error of I(Q1:C) = -1.815e+08  {Min = 181.50000000000000meg, Max = }
+Error of W(Q1) = -16.1009  {Min = 17db, Max = }
+Error of Cutoff_Lowpass_3dB(V(out)) = 1.6345e+08  {Min = , Max = 1W}
+Error of max(db(V(out))) = 21.8844  {Min = , Max = 50mA}
+
+------------ Sensitivity Run 7.4 
+
+
+Param : R7.Value  (R_R7.Value) = 24.14994324155575
+Param : R3.Value  (R_R3.Value) = 5.01675033100326k
+Param : C3.Value  (C_C3.Value) = 19.45500000000000p
+Param : R1.Value  (R_R1.Value) = 385.22358977751026
+
+Specs : I(Q1:C) = 27.65054323156773m
+Specs : W(Q1) = 902.04362540795125m
+Specs : Cutoff_Lowpass_3dB(V(out)) = 164.10590877841167meg
+Specs : max(db(V(out))) = 21.92772097397906
+Error of I(Q1:C) = -1.815e+08  {Min = 181.50000000000000meg, Max = }
+Error of W(Q1) = -16.098  {Min = 17db, Max = }
+Error of Cutoff_Lowpass_3dB(V(out)) = 1.64106e+08  {Min = , Max = 1W}
+Error of max(db(V(out))) = 21.8777  {Min = , Max = 50mA}
+Updated 
+Jacobian:
+-2.66e-12 -3.43e-12 -0.00e+00 -3.68e-15 
+-8.32e-04 -1.08e-03 -0.00e+00 -3.52e-04 
+ 8.78e+06 -2.72e+05 -8.10e+07 -2.49e+07 
+-4.88e+01 -7.06e-01  1.54e+02  1.43e+01 
+
+gtest =  1.0680e+00
+Aset: -1 0 1 1 
+Hessian:
+ 7.71e+13 -2.39e+12 -7.11e+14 -2.19e+14 
+-2.39e+12  7.39e+10  2.20e+13  6.77e+12 
+-7.11e+14  2.20e+13  6.56e+15  2.02e+15 
+-2.19e+14  6.77e+12  2.02e+15  6.21e+14 
+
+direction:           0       667.7           0           0 
+max radius:    0.008065
+mu*D:           0       5.385           0           0 
+expected df: -2.6572e+14
+lineMin: fold =  1.6474e+16
+
+------------ Trial Run 7.1 
+
+
+Param : R7.Value  (R_R7.Value) = 24.14994324155575
+Param : R3.Value  (R_R3.Value) = 10.40167503310033k
+Param : C3.Value  (C_C3.Value) = 19.45500000000000p
+Param : R1.Value  (R_R1.Value) = 389.11473714900023
+
+Specs : I(Q1:C) = 7.83612420950530m
+Specs : W(Q1) = 314.85950954910982m
+Specs : Cutoff_Lowpass_3dB(V(out)) = 158.30597407918594meg
+Specs : max(db(V(out))) = 20.98222539498057
+Error of I(Q1:C) = -1.815e+08  {Min = 181.50000000000000meg, Max = }
+Error of W(Q1) = -16.6851  {Min = 17db, Max = }
+Error of Cutoff_Lowpass_3dB(V(out)) = 1.58306e+08  {Min = , Max = 1W}
+Error of max(db(V(out))) = 20.9322  {Min = , Max = 50mA}
+ 1.00e+00:  f =  1.5470e+16
+
+************ Optimization Run 8 ************
+
+x:       2.415        10.4      0.1946       3.891 
+F:     -0.6111     -0.6091   1.759e+08       465.7 
+LSQ mode = 1
+
+------------ Sensitivity Run 8.1 
+
+
+Param : R7.Value  (R_R7.Value) = 24.39144267397131
+Param : R3.Value  (R_R3.Value) = 10.40167503310033k
+Param : C3.Value  (C_C3.Value) = 19.45500000000000p
+Param : R1.Value  (R_R1.Value) = 389.11473714900023
+
+Specs : I(Q1:C) = 7.79462898309066m
+Specs : W(Q1) = 313.31691803663279m
+Specs : Cutoff_Lowpass_3dB(V(out)) = 158.44055698706822meg
+Specs : max(db(V(out))) = 20.92195866414399
+Error of I(Q1:C) = -1.815e+08  {Min = 181.50000000000000meg, Max = }
+Error of W(Q1) = -16.6867  {Min = 17db, Max = }
+Error of Cutoff_Lowpass_3dB(V(out)) = 1.58441e+08  {Min = , Max = 1W}
+Error of max(db(V(out))) = 20.872  {Min = , Max = 50mA}
+
+------------ Sensitivity Run 8.2 
+
+
+Param : R7.Value  (R_R7.Value) = 24.14994324155575
+Param : R3.Value  (R_R3.Value) = 10.50569178343133k
+Param : C3.Value  (C_C3.Value) = 19.45500000000000p
+Param : R1.Value  (R_R1.Value) = 389.11473714900023
+
+Specs : I(Q1:C) = 7.63138637236509m
+Specs : W(Q1) = 307.23534018754998m
+Specs : Cutoff_Lowpass_3dB(V(out)) = 158.04561064293094meg
+Specs : max(db(V(out))) = 20.93170051735103
+Error of I(Q1:C) = -1.815e+08  {Min = 181.50000000000000meg, Max = }
+Error of W(Q1) = -16.6928  {Min = 17db, Max = }
+Error of Cutoff_Lowpass_3dB(V(out)) = 1.58046e+08  {Min = , Max = 1W}
+Error of max(db(V(out))) = 20.8817  {Min = , Max = 50mA}
+
+------------ Sensitivity Run 8.3 
+
+
+Param : R7.Value  (R_R7.Value) = 24.14994324155575
+Param : R3.Value  (R_R3.Value) = 10.40167503310033k
+Param : C3.Value  (C_C3.Value) = 19.26045000000000p
+Param : R1.Value  (R_R1.Value) = 389.11473714900023
+
+Specs : I(Q1:C) = 7.83612420950530m
+Specs : W(Q1) = 314.85950954910982m
+Specs : Cutoff_Lowpass_3dB(V(out)) = 158.37447355370116meg
+Specs : max(db(V(out))) = 20.97266960204548
+Error of I(Q1:C) = -1.815e+08  {Min = 181.50000000000000meg, Max = }
+Error of W(Q1) = -16.6851  {Min = 17db, Max = }
+Error of Cutoff_Lowpass_3dB(V(out)) = 1.58374e+08  {Min = , Max = 1W}
+Error of max(db(V(out))) = 20.9227  {Min = , Max = 50mA}
+
+------------ Sensitivity Run 8.4 
+
+
+Param : R7.Value  (R_R7.Value) = 24.14994324155575
+Param : R3.Value  (R_R3.Value) = 10.40167503310033k
+Param : C3.Value  (C_C3.Value) = 19.45500000000000p
+Param : R1.Value  (R_R1.Value) = 385.22358977751026
+
+Specs : I(Q1:C) = 7.83613723604733m
+Specs : W(Q1) = 315.09882015515291m
+Specs : Cutoff_Lowpass_3dB(V(out)) = 158.97236408944102meg
+Specs : max(db(V(out))) = 20.95797232261281
+Error of I(Q1:C) = -1.815e+08  {Min = 181.50000000000000meg, Max = }
+Error of W(Q1) = -16.6849  {Min = 17db, Max = }
+Error of Cutoff_Lowpass_3dB(V(out)) = 1.58972e+08  {Min = , Max = 1W}
+Error of max(db(V(out))) = 20.908  {Min = , Max = 50mA}
+Updated 
+Jacobian:
+-2.66e-12 -3.43e-12 -0.00e+00 -3.68e-15 
+-8.32e-04 -7.09e-04  0.00e+00 -3.52e-04 
+ 8.78e+06 -1.04e+06 -8.10e+07 -2.49e+07 
+-4.88e+01 -3.97e+00  1.54e+02  1.43e+01 
+
+gtest =  1.1021e+00
+Aset: -1 0 1 1 
+Hessian:
+ 7.71e+13 -9.16e+12 -7.11e+14 -2.19e+14 
+-9.16e+12  1.09e+12  8.45e+13  2.60e+13 
+-7.11e+14  8.45e+13  6.56e+15  2.02e+15 
+-2.19e+14  2.60e+13  2.02e+15  6.21e+14 
+
+direction:           0       168.6           0           0 
+max radius:    0.003195
+mu*D:           0      0.5385           0           0 
+expected df: -9.8846e+13
+lineMin: fold =  1.5470e+16
+
+------------ Trial Run 8.1 
+
+
+Param : R7.Value  (R_R7.Value) = 24.14994324155575
+Param : R3.Value  (R_R3.Value) = 10.94016750331003k
+Param : C3.Value  (C_C3.Value) = 19.45500000000000p
+Param : R1.Value  (R_R1.Value) = 389.11473714900023
+
+Specs : I(Q1:C) = 6.81646919678187m
+Specs : W(Q1) = 276.56726453138219m
+Specs : Cutoff_Lowpass_3dB(V(out)) = 156.87694572403944meg
+Specs : max(db(V(out))) = 20.69725672701568
+Error of I(Q1:C) = -1.815e+08  {Min = 181.50000000000000meg, Max = }
+Error of W(Q1) = -16.7234  {Min = 17db, Max = }
+Error of Cutoff_Lowpass_3dB(V(out)) = 1.56877e+08  {Min = , Max = 1W}
+Error of max(db(V(out))) = 20.6473  {Min = , Max = 50mA}
+ 1.00e+00:  f =  1.5192e+16
+added U constraint 1
+
+************ Optimization Run 9 ************
+
+x:       2.415       10.94      0.1946       3.891 
+F:     -0.6111     -0.6093   1.743e+08       459.3 
+LSQ mode = 1
+
+------------ Sensitivity Run 9.1 
+
+
+Param : R7.Value  (R_R7.Value) = 24.39144267397131
+Param : R3.Value  (R_R3.Value) = 10.94016750331003k
+Param : C3.Value  (C_C3.Value) = 19.45500000000000p
+Param : R1.Value  (R_R1.Value) = 389.11473714900023
+
+Specs : I(Q1:C) = 6.78067643650912m
+Specs : W(Q1) = 275.20848861300084m
+Specs : Cutoff_Lowpass_3dB(V(out)) = 156.99376916506415meg
+Specs : max(db(V(out))) = 20.63615381345443
+Error of I(Q1:C) = -1.815e+08  {Min = 181.50000000000000meg, Max = }
+Error of W(Q1) = -16.7248  {Min = 17db, Max = }
+Error of Cutoff_Lowpass_3dB(V(out)) = 1.56994e+08  {Min = , Max = 1W}
+Error of max(db(V(out))) = 20.5862  {Min = , Max = 50mA}
+
+------------ Sensitivity Run 9.2 
+
+
+Param : R7.Value  (R_R7.Value) = 24.14994324155575
+Param : R3.Value  (R_R3.Value) = 10.83076582827693k
+Param : C3.Value  (C_C3.Value) = 19.45500000000000p
+Param : R1.Value  (R_R1.Value) = 389.11473714900023
+
+Specs : I(Q1:C) = 7.01572872592388m
+Specs : W(Q1) = 284.11354661474655m
+Specs : Cutoff_Lowpass_3dB(V(out)) = 157.18378994915818meg
+Specs : max(db(V(out))) = 20.76007866412733
+Error of I(Q1:C) = -1.815e+08  {Min = 181.50000000000000meg, Max = }
+Error of W(Q1) = -16.7159  {Min = 17db, Max = }
+Error of Cutoff_Lowpass_3dB(V(out)) = 1.57184e+08  {Min = , Max = 1W}
+Error of max(db(V(out))) = 20.7101  {Min = , Max = 50mA}
+
+------------ Sensitivity Run 9.3 
+
+
+Param : R7.Value  (R_R7.Value) = 24.14994324155575
+Param : R3.Value  (R_R3.Value) = 10.94016750331003k
+Param : C3.Value  (C_C3.Value) = 19.26045000000000p
+Param : R1.Value  (R_R1.Value) = 389.11473714900023
+
+Specs : I(Q1:C) = 6.81646919678187m
+Specs : W(Q1) = 276.56726453138219m
+Specs : Cutoff_Lowpass_3dB(V(out)) = 156.94067689062945meg
+Specs : max(db(V(out))) = 20.68786834586602
+Error of I(Q1:C) = -1.815e+08  {Min = 181.50000000000000meg, Max = }
+Error of W(Q1) = -16.7234  {Min = 17db, Max = }
+Error of Cutoff_Lowpass_3dB(V(out)) = 1.56941e+08  {Min = , Max = 1W}
+Error of max(db(V(out))) = 20.6379  {Min = , Max = 50mA}
+
+------------ Sensitivity Run 9.4 
+
+
+Param : R7.Value  (R_R7.Value) = 24.14994324155575
+Param : R3.Value  (R_R3.Value) = 10.94016750331003k
+Param : C3.Value  (C_C3.Value) = 19.45500000000000p
+Param : R1.Value  (R_R1.Value) = 385.22358977751026
+
+Specs : I(Q1:C) = 6.81647902578068m
+Specs : W(Q1) = 276.74835211424715m
+Specs : Cutoff_Lowpass_3dB(V(out)) = 157.52962835790439meg
+Specs : max(db(V(out))) = 20.67268903382039
+Error of I(Q1:C) = -1.815e+08  {Min = 181.50000000000000meg, Max = }
+Error of W(Q1) = -16.7233  {Min = 17db, Max = }
+Error of Cutoff_Lowpass_3dB(V(out)) = 1.5753e+08  {Min = , Max = 1W}
+Error of max(db(V(out))) = 20.6227  {Min = , Max = 50mA}
+Updated 
+Jacobian:
+-2.66e-12 -3.43e-12 -0.00e+00 -3.68e-15 
+-8.32e-04 -7.09e-04  0.00e+00 -3.52e-04 
+ 8.78e+06 -2.95e+06 -8.10e+07 -2.49e+07 
+-4.88e+01 -1.18e+01  1.54e+02  1.43e+01 
+
+gtest =  1.1122e+00
+Aset: -1 1 1 1 
+** All parameters limited **
+Optimization stopped. Progress is no longer being achieved.
+Analysis complete
+
+******* Analysis stopped at:Thu Apr 10 12:19:08 2025
+
+Analysis time: 00:00:21
+
+
+*****************************************
+
+******* Analysis Started On:Thu Apr 10 12:21:06 2025
+
+Advance Analyses Project File Name : c:/cadence/pspice sim/mc_cascode-PSpiceFiles/SCHEMATIC1/SCHEMATIC1.$ap
+
+
+Processing analysis specifications
+** Engine Name: Modified LSQ Engine
+** Modified LSQ Engine Options:
+
+method: Unconstrained Least Squares
+Delta: 1%
+Threshold: 0
+Cutback: 0.25
+Max. Iterations: 50
+One Spec: least squares
+Recalculate: auto
+
+** Optimization Problem Successfully created
+** No. of Parameters =  4 No. Of Specifications = 4
+
+Listing Profiles:
+ - opt_dc.sim
+ - opt_ac.sim
+
+
+
+************ Optimization Run 9 (Nominal) ************
+
+Param : R7.Value  (R_R7.Value) = 24.14994324155575
+Param : R3.Value  (R_R3.Value) = 10.94016750331003k
+Param : C3.Value  (C_C3.Value) = 19.45500000000000p
+Param : R1.Value  (R_R1.Value) = 389.11473714900023
+
+Specs : I(Q1:C) = 6.81646919678187m
+Specs : W(Q1) = 276.56726453138219m
+Specs : Cutoff_Lowpass_3dB(V(out)) = 156.87694572403944meg
+Specs : max(db(V(out))) = 20.69725672701568
+Error of I(Q1:C) = 0  {Min = , Max = 50mA}
+Error of W(Q1) = 0  {Min = , Max = 1W}
+Error of Cutoff_Lowpass_3dB(V(out)) = -2.46231e+07  {Min = 181.50000000000000meg, Max = }
+Error of max(db(V(out))) = 0  {Min = 17dB, Max = }
+added L constraint 0
+added U constraint 1
+added U constraint 2
+added U constraint 3
+
+************ Optimization Run 10 ************
+
+x:       2.415       10.94      0.1946       3.891 
+F:     -0.4596     -0.3038     -0.5151     -0.4758 
+LSQ mode = 1
+
+------------ Sensitivity Run 10.1 
+
+
+Param : R7.Value  (R_R7.Value) = 24.39144267397131
+Param : R3.Value  (R_R3.Value) = 10.94016750331003k
+Param : C3.Value  (C_C3.Value) = 19.45500000000000p
+Param : R1.Value  (R_R1.Value) = 389.11473714900023
+
+Specs : I(Q1:C) = 6.78067643650912m
+Specs : W(Q1) = 275.20848861300084m
+Specs : Cutoff_Lowpass_3dB(V(out)) = 156.99376916506415meg
+Specs : max(db(V(out))) = 20.63615381345443
+Error of I(Q1:C) = 0  {Min = , Max = 50mA}
+Error of W(Q1) = 0  {Min = , Max = 1W}
+Error of Cutoff_Lowpass_3dB(V(out)) = -2.45062e+07  {Min = 181.50000000000000meg, Max = }
+Error of max(db(V(out))) = 0  {Min = 17dB, Max = }
+
+------------ Sensitivity Run 10.2 
+
+
+Param : R7.Value  (R_R7.Value) = 24.14994324155575
+Param : R3.Value  (R_R3.Value) = 10.83076582827693k
+Param : C3.Value  (C_C3.Value) = 19.45500000000000p
+Param : R1.Value  (R_R1.Value) = 389.11473714900023
+
+Specs : I(Q1:C) = 7.01572872592388m
+Specs : W(Q1) = 284.11354661474655m
+Specs : Cutoff_Lowpass_3dB(V(out)) = 157.18378994915818meg
+Specs : max(db(V(out))) = 20.76007866412733
+Error of I(Q1:C) = 0  {Min = , Max = 50mA}
+Error of W(Q1) = 0  {Min = , Max = 1W}
+Error of Cutoff_Lowpass_3dB(V(out)) = -2.43162e+07  {Min = 181.50000000000000meg, Max = }
+Error of max(db(V(out))) = 0  {Min = 17dB, Max = }
+
+------------ Sensitivity Run 10.3 
+
+
+Param : R7.Value  (R_R7.Value) = 24.14994324155575
+Param : R3.Value  (R_R3.Value) = 10.94016750331003k
+Param : C3.Value  (C_C3.Value) = 19.26045000000000p
+Param : R1.Value  (R_R1.Value) = 389.11473714900023
+
+Specs : I(Q1:C) = 6.81646919678187m
+Specs : W(Q1) = 276.56726453138219m
+Specs : Cutoff_Lowpass_3dB(V(out)) = 156.94067689062945meg
+Specs : max(db(V(out))) = 20.68786834586602
+Error of I(Q1:C) = 0  {Min = , Max = 50mA}
+Error of W(Q1) = 0  {Min = , Max = 1W}
+Error of Cutoff_Lowpass_3dB(V(out)) = -2.45593e+07  {Min = 181.50000000000000meg, Max = }
+Error of max(db(V(out))) = 0  {Min = 17dB, Max = }
+
+------------ Sensitivity Run 10.4 
+
+
+Param : R7.Value  (R_R7.Value) = 24.14994324155575
+Param : R3.Value  (R_R3.Value) = 10.94016750331003k
+Param : C3.Value  (C_C3.Value) = 19.45500000000000p
+Param : R1.Value  (R_R1.Value) = 385.22358977751026
+
+Specs : I(Q1:C) = 6.81647902578068m
+Specs : W(Q1) = 276.74835211424715m
+Specs : Cutoff_Lowpass_3dB(V(out)) = 157.52962835790439meg
+Specs : max(db(V(out))) = 20.67268903382039
+Error of I(Q1:C) = 0  {Min = , Max = 50mA}
+Error of W(Q1) = 0  {Min = , Max = 1W}
+Error of Cutoff_Lowpass_3dB(V(out)) = -2.39704e+07  {Min = 181.50000000000000meg, Max = }
+Error of max(db(V(out))) = 0  {Min = 17dB, Max = }
+
+Jacobian:
+-3.29e-02 -4.05e-02 -0.00e+00 -5.61e-06 
+-6.25e-02 -7.66e-02 -0.00e+00 -5.17e-03 
+ 2.96e-03 -1.72e-03 -2.01e-02 -1.03e-02 
+-1.65e-02 -3.75e-03  3.15e-02  4.13e-03 
+
+gtest =  2.4374e-01
+dropped constraint 1
+dropped constraint 3
+Aset: -1 0 1 0 
+Hessian:
+ 5.28e-03  6.18e-03 -5.81e-04  2.25e-04 
+ 6.18e-03  7.53e-03 -8.39e-05  3.99e-04 
+-5.81e-04 -8.39e-05  1.40e-03  3.36e-04 
+ 2.25e-04  3.99e-04  3.36e-04  1.49e-04 
+
+direction:           0      -4.868           0      -19.83 
+max radius:     0.08131
+mu*D:           0     -0.3959           0      -1.612 
+expected df: -2.5536e-02
+lineMin: fold =  3.9764e-01
+
+------------ Trial Run 10.1 
+
+
+Param : R7.Value  (R_R7.Value) = 24.14994324155575
+Param : R3.Value  (R_R3.Value) = 10.54431101987755k
+Param : C3.Value  (C_C3.Value) = 19.45500000000000p
+Param : R1.Value  (R_R1.Value) = 227.91147371489998
+
+Specs : I(Q1:C) = 7.55684250339079m
+Specs : W(Q1) = 313.65278495568202m
+Specs : Cutoff_Lowpass_3dB(V(out)) = 203.33907756518093meg
+Specs : max(db(V(out))) = 19.70001559489696
+Error of I(Q1:C) = 0  {Min = , Max = 50mA}
+Error of W(Q1) = 0  {Min = , Max = 1W}
+Error of Cutoff_Lowpass_3dB(V(out)) = 0  {Min = 181.50000000000000meg, Max = }
+Error of max(db(V(out))) = 0  {Min = 17dB, Max = }
+ 1.00e+00:  f =  3.6742e-01
+Optimization complete
+Analysis complete
+
+******* Analysis stopped at:Thu Apr 10 12:21:09 2025
+
+Analysis time: 00:00:03
+
+
+*****************************************
+
+******* Analysis Started On:Thu Apr 10 12:21:19 2025
+
+Advance Analyses Project File Name : c:/cadence/pspice sim/mc_cascode-PSpiceFiles/SCHEMATIC1/SCHEMATIC1.$ap
+
+
+Processing analysis specifications
+Could not find discrete value of some parameters (no table specified)
+** Engine Name: Discrete Engine
+
+** Discrete Tables :
+ERROR(ORPSPAA-4014): Discrete Engine: No table for var[0]
+ERROR(ORPSPAA-4014): Discrete Engine: No table for var[1]
+ERROR(ORPSPAA-4014): Discrete Engine: No table for var[2]
+ERROR(ORPSPAA-4014): Discrete Engine: No table for var[3]
+
+Listing Profiles:
+ - opt_dc.sim
+ - opt_ac.sim
+
+
+
+************ Optimization Run 11 ************
+
+Param : R7.Value  (R_R7.Value) = 24.14994324155575
+Param : R3.Value  (R_R3.Value) = 10.54431101987755k
+Param : C3.Value  (C_C3.Value) = 19.45500000000000p
+Param : R1.Value  (R_R1.Value) = 227.91147371489998
+
+Specs : I(Q1:C) = 7.55684250339079m
+Specs : W(Q1) = 313.65278495568202m
+Specs : Cutoff_Lowpass_3dB(V(out)) = 203.33907756518093meg
+Specs : max(db(V(out))) = 19.70001559489696
+Error of I(Q1:C) = 0  {Min = , Max = 50mA}
+Error of W(Q1) = 0  {Min = , Max = 1W}
+Error of Cutoff_Lowpass_3dB(V(out)) = 0  {Min = 181.50000000000000meg, Max = }
+Error of max(db(V(out))) = 0  {Min = 17dB, Max = }
+Optimization complete
+Analysis complete
+
+******* Analysis stopped at:Thu Apr 10 12:21:20 2025
+
+Analysis time: 00:00:01
+
+
+*****************************************
+
+******* Analysis Started On:Thu Apr 10 12:21:33 2025
+
+Advance Analyses Project File Name : c:/cadence/pspice sim/mc_cascode-PSpiceFiles/SCHEMATIC1/SCHEMATIC1.$ap
+
+
+Processing analysis specifications
+** Engine Name: Random
+** Random Engine Options:
+
+NumSteps 10
+NumRuns 10
+RandomSeed 0
+ReplayBest 0
+
+
+** Optimization Problem Successfully created
+No. of Parameters = 4 No. of Specifications = 4
+
+Listing Profiles:
+ - opt_dc.sim
+ - opt_ac.sim
+
+
+
+************ Optimization Run 12 (Nominal) ************
+
+Param : R7.Value  (R_R7.Value) = 24.14994324155575
+Param : R3.Value  (R_R3.Value) = 10.54431101987755k
+Param : C3.Value  (C_C3.Value) = 19.45500000000000p
+Param : R1.Value  (R_R1.Value) = 227.91147371489998
+
+Specs : I(Q1:C) = 7.55684250339079m
+Specs : W(Q1) = 313.65278495568202m
+Specs : Cutoff_Lowpass_3dB(V(out)) = 203.33907756518093meg
+Specs : max(db(V(out))) = 19.70001559489696
+Error of I(Q1:C) = 0  {Min = , Max = 50mA}
+Error of W(Q1) = 0  {Min = , Max = 1W}
+Error of Cutoff_Lowpass_3dB(V(out)) = 0  {Min = 181.50000000000000meg, Max = }
+Error of max(db(V(out))) = 0  {Min = 17dB, Max = }
+Engine: SumOfSquares = 0
+SelectNewMontecarloParams : 1518
+
+************ Optimization Run 13 ************
+
+
+Param : R7.Value  (R_R7.Value) = 26
+Param : R3.Value  (R_R3.Value) = 6.35555555555556k
+Param : C3.Value  (C_C3.Value) = 11.50000000000000p
+Param : R1.Value  (R_R1.Value) = 370
+
+Specs : I(Q1:C) = 19.39333860168013m
+Specs : W(Q1) = 699.82192441812640m
+Specs : Cutoff_Lowpass_3dB(V(out)) = 172.49108373755777meg
+Specs : max(db(V(out))) = 20.83388494532994
+Error of I(Q1:C) = 0  {Min = , Max = 50mA}
+Error of W(Q1) = 0  {Min = , Max = 1W}
+Error of Cutoff_Lowpass_3dB(V(out)) = -9.00892e+06  {Min = 181.50000000000000meg, Max = }
+Error of max(db(V(out))) = 0  {Min = 17dB, Max = }
+Engine: SumOfSquares = 8.11606e+13
+SelectNewMontecarloParams : 5438
+
+************ Optimization Run 14 ************
+
+
+Param : R7.Value  (R_R7.Value) = 34
+Param : R3.Value  (R_R3.Value) = 5.19444444444444k
+Param : C3.Value  (C_C3.Value) = 13.50000000000000p
+Param : R1.Value  (R_R1.Value) = 370
+
+Specs : I(Q1:C) = 21.70237652459085m
+Specs : W(Q1) = 764.68940746728708m
+Specs : Cutoff_Lowpass_3dB(V(out)) = 180.47676975273691meg
+Specs : max(db(V(out))) = 19.40244552686860
+Error of I(Q1:C) = 0  {Min = , Max = 50mA}
+Error of W(Q1) = 0  {Min = , Max = 1W}
+Error of Cutoff_Lowpass_3dB(V(out)) = -1.02323e+06  {Min = 181.50000000000000meg, Max = }
+Error of max(db(V(out))) = 0  {Min = 17dB, Max = }
+Engine: SumOfSquares = 1.047e+12
+SelectNewMontecarloParams : 8718
+
+************ Optimization Run 15 ************
+
+
+Param : R7.Value  (R_R7.Value) = 40
+Param : R3.Value  (R_R3.Value) = 8.67777777777778k
+Param : C3.Value  (C_C3.Value) = 11.50000000000000p
+Param : R1.Value  (R_R1.Value) = 370
+
+Specs : I(Q1:C) = 8.77710269767451m
+Specs : W(Q1) = 350.98024952064458m
+Specs : Cutoff_Lowpass_3dB(V(out)) = 178.98200009661761meg
+Specs : max(db(V(out))) = 17.56259234093119
+Error of I(Q1:C) = 0  {Min = , Max = 50mA}
+Error of W(Q1) = 0  {Min = , Max = 1W}
+Error of Cutoff_Lowpass_3dB(V(out)) = -2.518e+06  {Min = 181.50000000000000meg, Max = }
+Error of max(db(V(out))) = 0  {Min = 17dB, Max = }
+Engine: SumOfSquares = 6.34032e+12
+SelectNewMontecarloParams : 7531
+
+************ Optimization Run 16 ************
+
+
+Param : R7.Value  (R_R7.Value) = 38
+Param : R3.Value  (R_R3.Value) = 6.35555555555556k
+Param : C3.Value  (C_C3.Value) = 13.50000000000000p
+Param : R1.Value  (R_R1.Value) = 230
+
+Specs : I(Q1:C) = 15.39745123321959m
+Specs : W(Q1) = 611.42696195541578m
+Specs : Cutoff_Lowpass_3dB(V(out)) = 217.18928051987214meg
+Specs : max(db(V(out))) = 18.36867129267779
+Error of I(Q1:C) = 0  {Min = , Max = 50mA}
+Error of W(Q1) = 0  {Min = , Max = 1W}
+Error of Cutoff_Lowpass_3dB(V(out)) = 0  {Min = 181.50000000000000meg, Max = }
+Error of max(db(V(out))) = 0  {Min = 17dB, Max = }
+Engine: SumOfSquares = 0
+SelectNewMontecarloParams : 1311
+
+************ Optimization Run 17 ************
+
+
+Param : R7.Value  (R_R7.Value) = 26
+Param : R3.Value  (R_R3.Value) = 4.03333333333333k
+Param : C3.Value  (C_C3.Value) = 11.50000000000000p
+Param : R1.Value  (R_R1.Value) = 230
+
+Specs : I(Q1:C) = 34.00912128517347m
+Specs : W(Q1) = 1.20582657587035
+Specs : Cutoff_Lowpass_3dB(V(out)) = 211.71066386375998meg
+Specs : max(db(V(out))) = 20.40472748342703
+Error of I(Q1:C) = 0  {Min = , Max = 50mA}
+Error of W(Q1) = 0.205827  {Min = , Max = 1W}
+Error of Cutoff_Lowpass_3dB(V(out)) = 0  {Min = 181.50000000000000meg, Max = }
+Error of max(db(V(out))) = 0  {Min = 17dB, Max = }
+Engine: SumOfSquares = 0.0423646
+SelectNewMontecarloParams : 9411
+
+************ Optimization Run 18 ************
+
+
+Param : R7.Value  (R_R7.Value) = 42
+Param : R3.Value  (R_R3.Value) = 5.19444444444444k
+Param : C3.Value  (C_C3.Value) = 11.50000000000000p
+Param : R1.Value  (R_R1.Value) = 230
+
+Specs : I(Q1:C) = 18.90319497717053m
+Specs : W(Q1) = 735.52257079755384m
+Specs : Cutoff_Lowpass_3dB(V(out)) = 221.22002568375123meg
+Specs : max(db(V(out))) = 17.76162257833729
+Error of I(Q1:C) = 0  {Min = , Max = 50mA}
+Error of W(Q1) = 0  {Min = , Max = 1W}
+Error of Cutoff_Lowpass_3dB(V(out)) = 0  {Min = 181.50000000000000meg, Max = }
+Error of max(db(V(out))) = 0  {Min = 17dB, Max = }
+Engine: SumOfSquares = 0
+SelectNewMontecarloParams : 1355
+
+************ Optimization Run 19 ************
+
+
+Param : R7.Value  (R_R7.Value) = 26
+Param : R3.Value  (R_R3.Value) = 4.03333333333333k
+Param : C3.Value  (C_C3.Value) = 15.50000000000000p
+Param : R1.Value  (R_R1.Value) = 310
+
+Specs : I(Q1:C) = 34.00322536008839m
+Specs : W(Q1) = 1.11325397990134
+Specs : Cutoff_Lowpass_3dB(V(out)) = 187.63464736229895meg
+Specs : max(db(V(out))) = 20.77049745169447
+Error of I(Q1:C) = 0  {Min = , Max = 50mA}
+Error of W(Q1) = 0.113254  {Min = , Max = 1W}
+Error of Cutoff_Lowpass_3dB(V(out)) = 0  {Min = 181.50000000000000meg, Max = }
+Error of max(db(V(out))) = 0  {Min = 17dB, Max = }
+Engine: SumOfSquares = 0.0128265
+SelectNewMontecarloParams : 6616
+
+************ Optimization Run 20 ************
+
+
+Param : R7.Value  (R_R7.Value) = 36
+Param : R3.Value  (R_R3.Value) = 7.51666666666667k
+Param : C3.Value  (C_C3.Value) = 11.50000000000000p
+Param : R1.Value  (R_R1.Value) = 330
+
+Specs : I(Q1:C) = 12.24473601504326m
+Specs : W(Q1) = 480.05015431542813m
+Specs : Cutoff_Lowpass_3dB(V(out)) = 191.36832722787298meg
+Specs : max(db(V(out))) = 18.26837573500527
+Error of I(Q1:C) = 0  {Min = , Max = 50mA}
+Error of W(Q1) = 0  {Min = , Max = 1W}
+Error of Cutoff_Lowpass_3dB(V(out)) = 0  {Min = 181.50000000000000meg, Max = }
+Error of max(db(V(out))) = 0  {Min = 17dB, Max = }
+Engine: SumOfSquares = 0
+SelectNewMontecarloParams : 4316
+
+************ Optimization Run 21 ************
+
+
+Param : R7.Value  (R_R7.Value) = 32
+Param : R3.Value  (R_R3.Value) = 4.03333333333333k
+Param : C3.Value  (C_C3.Value) = 11.50000000000000p
+Param : R1.Value  (R_R1.Value) = 330
+
+Specs : I(Q1:C) = 30.13126822434064m
+Specs : W(Q1) = 1.00437273329904
+Specs : Cutoff_Lowpass_3dB(V(out)) = 190.69118597487719meg
+Specs : max(db(V(out))) = 19.29777463556052
+Error of I(Q1:C) = 0  {Min = , Max = 50mA}
+Error of W(Q1) = 0.00437273  {Min = , Max = 1W}
+Error of Cutoff_Lowpass_3dB(V(out)) = 0  {Min = 181.50000000000000meg, Max = }
+Error of max(db(V(out))) = 0  {Min = 17dB, Max = }
+Engine: SumOfSquares = 1.91208e-05
+SelectNewMontecarloParams : 7853
+
+************ Optimization Run 22 ************
+
+
+Param : R7.Value  (R_R7.Value) = 38
+Param : R3.Value  (R_R3.Value) = 9.83888888888889k
+Param : C3.Value  (C_C3.Value) = 15.50000000000000p
+Param : R1.Value  (R_R1.Value) = 270
+
+Specs : I(Q1:C) = 6.90075651822963m
+Specs : W(Q1) = 285.43176593345692m
+Specs : Cutoff_Lowpass_3dB(V(out)) = 201.23452015552937meg
+Specs : max(db(V(out))) = 17.17019367047659
+Error of I(Q1:C) = 0  {Min = , Max = 50mA}
+Error of W(Q1) = 0  {Min = , Max = 1W}
+Error of Cutoff_Lowpass_3dB(V(out)) = 0  {Min = 181.50000000000000meg, Max = }
+Error of max(db(V(out))) = 0  {Min = 17dB, Max = }
+Engine: SumOfSquares = 0
+
+************ Optimization Run 23 (Best Fit Run) ************
+
+
+Param : R7.Value  (R_R7.Value) = 24.14994324155575
+Param : R3.Value  (R_R3.Value) = 10.54431101987755k
+Param : C3.Value  (C_C3.Value) = 19.45500000000000p
+Param : R1.Value  (R_R1.Value) = 227.91147371489998
+
+Specs : I(Q1:C) = 7.55684250339079m
+Specs : W(Q1) = 313.65278495568202m
+Specs : Cutoff_Lowpass_3dB(V(out)) = 203.33907756518093meg
+Specs : max(db(V(out))) = 19.70001559489696
+Error of I(Q1:C) = 0  {Min = , Max = 50mA}
+Error of W(Q1) = 0  {Min = , Max = 1W}
+Error of Cutoff_Lowpass_3dB(V(out)) = 0  {Min = 181.50000000000000meg, Max = }
+Error of max(db(V(out))) = 0  {Min = 17dB, Max = }
+Engine: SumOfSquares = 0
+Analysis complete
+
+******* Analysis stopped at:Thu Apr 10 12:21:38 2025
+
+Analysis time: 00:00:05
+
+
+*****************************************
+
+******* Analysis Started On:Thu Apr 10 12:23:18 2025
+
+Advance Analyses Project File Name : c:/cadence/pspice sim/mc_cascode-PSpiceFiles/SCHEMATIC1/SCHEMATIC1.$ap
+
+
+Processing analysis specifications
+Engine: Destroying Previous Problem
+** Engine Name: Random
+** Random Engine Options:
+
+NumSteps 10
+NumRuns 10
+RandomSeed 0
+ReplayBest 0
+
+
+** Optimization Problem Successfully created
+No. of Parameters = 4 No. of Specifications = 4
+
+Listing Profiles:
+ - opt_dc.sim
+ - opt_ac.sim
+
+
+
+************ Optimization Run 24 (Nominal) ************
+
+Param : R7.Value  (R_R7.Value) = 24.14994324155575
+Param : R3.Value  (R_R3.Value) = 10.54431101987755k
+Param : C3.Value  (C_C3.Value) = 19.45500000000000p
+Param : R1.Value  (R_R1.Value) = 227.91147371489998
+
+Specs : I(Q1:C) = 7.55684250339079m
+Specs : W(Q1) = 313.65278495568202m
+Specs : Cutoff_Lowpass_3dB(V(out)) = 203.33907756518093meg
+Specs : max(db(V(out))) = 19.70001559489696
+Error of I(Q1:C) = 0  {Min = , Max = 50mA}
+Error of W(Q1) = 0  {Min = , Max = 1W}
+Error of Cutoff_Lowpass_3dB(V(out)) = 0  {Min = 181.50000000000000meg, Max = }
+Error of max(db(V(out))) = 0  {Min = 17dB, Max = }
+Engine: SumOfSquares = 0
+SelectNewMontecarloParams : 1518
+
+************ Optimization Run 25 ************
+
+
+Param : R7.Value  (R_R7.Value) = 26
+Param : R3.Value  (R_R3.Value) = 6.35555555555556k
+Param : C3.Value  (C_C3.Value) = 11.50000000000000p
+Param : R1.Value  (R_R1.Value) = 370
+
+Specs : I(Q1:C) = 19.39333860168013m
+Specs : W(Q1) = 699.82192441812640m
+Specs : Cutoff_Lowpass_3dB(V(out)) = 172.49108373755777meg
+Specs : max(db(V(out))) = 20.83388494532994
+Error of I(Q1:C) = 0  {Min = , Max = 50mA}
+Error of W(Q1) = 0  {Min = , Max = 1W}
+Error of Cutoff_Lowpass_3dB(V(out)) = -9.00892e+06  {Min = 181.50000000000000meg, Max = }
+Error of max(db(V(out))) = 0  {Min = 17dB, Max = }
+Engine: SumOfSquares = 8.11606e+13
+SelectNewMontecarloParams : 5438
+
+************ Optimization Run 26 ************
+
+
+Param : R7.Value  (R_R7.Value) = 34
+Param : R3.Value  (R_R3.Value) = 5.19444444444444k
+Param : C3.Value  (C_C3.Value) = 13.50000000000000p
+Param : R1.Value  (R_R1.Value) = 370
+
+Specs : I(Q1:C) = 21.70237652459085m
+Specs : W(Q1) = 764.68940746728708m
+Specs : Cutoff_Lowpass_3dB(V(out)) = 180.47676975273691meg
+Specs : max(db(V(out))) = 19.40244552686860
+Error of I(Q1:C) = 0  {Min = , Max = 50mA}
+Error of W(Q1) = 0  {Min = , Max = 1W}
+Error of Cutoff_Lowpass_3dB(V(out)) = -1.02323e+06  {Min = 181.50000000000000meg, Max = }
+Error of max(db(V(out))) = 0  {Min = 17dB, Max = }
+Engine: SumOfSquares = 1.047e+12
+SelectNewMontecarloParams : 8718
+
+************ Optimization Run 27 ************
+
+
+Param : R7.Value  (R_R7.Value) = 40
+Param : R3.Value  (R_R3.Value) = 8.67777777777778k
+Param : C3.Value  (C_C3.Value) = 11.50000000000000p
+Param : R1.Value  (R_R1.Value) = 370
+
+Specs : I(Q1:C) = 8.77710269767451m
+Specs : W(Q1) = 350.98024952064458m
+Specs : Cutoff_Lowpass_3dB(V(out)) = 178.98200009661761meg
+Specs : max(db(V(out))) = 17.56259234093119
+Error of I(Q1:C) = 0  {Min = , Max = 50mA}
+Error of W(Q1) = 0  {Min = , Max = 1W}
+Error of Cutoff_Lowpass_3dB(V(out)) = -2.518e+06  {Min = 181.50000000000000meg, Max = }
+Error of max(db(V(out))) = 0  {Min = 17dB, Max = }
+Engine: SumOfSquares = 6.34032e+12
+SelectNewMontecarloParams : 7531
+
+************ Optimization Run 28 ************
+
+
+Param : R7.Value  (R_R7.Value) = 38
+Param : R3.Value  (R_R3.Value) = 6.35555555555556k
+Param : C3.Value  (C_C3.Value) = 13.50000000000000p
+Param : R1.Value  (R_R1.Value) = 230
+
+Specs : I(Q1:C) = 15.39745123321959m
+Specs : W(Q1) = 611.42696195541578m
+Specs : Cutoff_Lowpass_3dB(V(out)) = 217.18928051987214meg
+Specs : max(db(V(out))) = 18.36867129267779
+Error of I(Q1:C) = 0  {Min = , Max = 50mA}
+Error of W(Q1) = 0  {Min = , Max = 1W}
+Error of Cutoff_Lowpass_3dB(V(out)) = 0  {Min = 181.50000000000000meg, Max = }
+Error of max(db(V(out))) = 0  {Min = 17dB, Max = }
+Engine: SumOfSquares = 0
+SelectNewMontecarloParams : 1311
+
+************ Optimization Run 29 ************
+
+
+Param : R7.Value  (R_R7.Value) = 26
+Param : R3.Value  (R_R3.Value) = 4.03333333333333k
+Param : C3.Value  (C_C3.Value) = 11.50000000000000p
+Param : R1.Value  (R_R1.Value) = 230
+
+Specs : I(Q1:C) = 34.00912128517347m
+Specs : W(Q1) = 1.20582657587035
+Specs : Cutoff_Lowpass_3dB(V(out)) = 211.71066386375998meg
+Specs : max(db(V(out))) = 20.40472748342703
+Error of I(Q1:C) = 0  {Min = , Max = 50mA}
+Error of W(Q1) = 0.205827  {Min = , Max = 1W}
+Error of Cutoff_Lowpass_3dB(V(out)) = 0  {Min = 181.50000000000000meg, Max = }
+Error of max(db(V(out))) = 0  {Min = 17dB, Max = }
+Engine: SumOfSquares = 0.0423646
+SelectNewMontecarloParams : 9411
+
+************ Optimization Run 30 ************
+
+
+Param : R7.Value  (R_R7.Value) = 42
+Param : R3.Value  (R_R3.Value) = 5.19444444444444k
+Param : C3.Value  (C_C3.Value) = 11.50000000000000p
+Param : R1.Value  (R_R1.Value) = 230
+
+Specs : I(Q1:C) = 18.90319497717053m
+Specs : W(Q1) = 735.52257079755384m
+Specs : Cutoff_Lowpass_3dB(V(out)) = 221.22002568375123meg
+Specs : max(db(V(out))) = 17.76162257833729
+Error of I(Q1:C) = 0  {Min = , Max = 50mA}
+Error of W(Q1) = 0  {Min = , Max = 1W}
+Error of Cutoff_Lowpass_3dB(V(out)) = 0  {Min = 181.50000000000000meg, Max = }
+Error of max(db(V(out))) = 0  {Min = 17dB, Max = }
+Engine: SumOfSquares = 0
+SelectNewMontecarloParams : 1355
+
+************ Optimization Run 31 ************
+
+
+Param : R7.Value  (R_R7.Value) = 26
+Param : R3.Value  (R_R3.Value) = 4.03333333333333k
+Param : C3.Value  (C_C3.Value) = 15.50000000000000p
+Param : R1.Value  (R_R1.Value) = 310
+
+Specs : I(Q1:C) = 34.00322536008839m
+Specs : W(Q1) = 1.11325397990134
+Specs : Cutoff_Lowpass_3dB(V(out)) = 187.63464736229895meg
+Specs : max(db(V(out))) = 20.77049745169447
+Error of I(Q1:C) = 0  {Min = , Max = 50mA}
+Error of W(Q1) = 0.113254  {Min = , Max = 1W}
+Error of Cutoff_Lowpass_3dB(V(out)) = 0  {Min = 181.50000000000000meg, Max = }
+Error of max(db(V(out))) = 0  {Min = 17dB, Max = }
+Engine: SumOfSquares = 0.0128265
+SelectNewMontecarloParams : 6616
+
+************ Optimization Run 32 ************
+
+
+Param : R7.Value  (R_R7.Value) = 36
+Param : R3.Value  (R_R3.Value) = 7.51666666666667k
+Param : C3.Value  (C_C3.Value) = 11.50000000000000p
+Param : R1.Value  (R_R1.Value) = 330
+
+Specs : I(Q1:C) = 12.24473601504326m
+Specs : W(Q1) = 480.05015431542813m
+Specs : Cutoff_Lowpass_3dB(V(out)) = 191.36832722787298meg
+Specs : max(db(V(out))) = 18.26837573500527
+Error of I(Q1:C) = 0  {Min = , Max = 50mA}
+Error of W(Q1) = 0  {Min = , Max = 1W}
+Error of Cutoff_Lowpass_3dB(V(out)) = 0  {Min = 181.50000000000000meg, Max = }
+Error of max(db(V(out))) = 0  {Min = 17dB, Max = }
+Engine: SumOfSquares = 0
+SelectNewMontecarloParams : 4316
+
+************ Optimization Run 33 ************
+
+
+Param : R7.Value  (R_R7.Value) = 32
+Param : R3.Value  (R_R3.Value) = 4.03333333333333k
+Param : C3.Value  (C_C3.Value) = 11.50000000000000p
+Param : R1.Value  (R_R1.Value) = 330
+
+Specs : I(Q1:C) = 30.13126822434064m
+Specs : W(Q1) = 1.00437273329904
+Specs : Cutoff_Lowpass_3dB(V(out)) = 190.69118597487719meg
+Specs : max(db(V(out))) = 19.29777463556052
+Error of I(Q1:C) = 0  {Min = , Max = 50mA}
+Error of W(Q1) = 0.00437273  {Min = , Max = 1W}
+Error of Cutoff_Lowpass_3dB(V(out)) = 0  {Min = 181.50000000000000meg, Max = }
+Error of max(db(V(out))) = 0  {Min = 17dB, Max = }
+Engine: SumOfSquares = 1.91208e-05
+SelectNewMontecarloParams : 7853
+
+************ Optimization Run 34 ************
+
+
+Param : R7.Value  (R_R7.Value) = 38
+Param : R3.Value  (R_R3.Value) = 9.83888888888889k
+Param : C3.Value  (C_C3.Value) = 15.50000000000000p
+Param : R1.Value  (R_R1.Value) = 270
+
+Specs : I(Q1:C) = 6.90075651822963m
+Specs : W(Q1) = 285.43176593345692m
+Specs : Cutoff_Lowpass_3dB(V(out)) = 201.23452015552937meg
+Specs : max(db(V(out))) = 17.17019367047659
+Error of I(Q1:C) = 0  {Min = , Max = 50mA}
+Error of W(Q1) = 0  {Min = , Max = 1W}
+Error of Cutoff_Lowpass_3dB(V(out)) = 0  {Min = 181.50000000000000meg, Max = }
+Error of max(db(V(out))) = 0  {Min = 17dB, Max = }
+Engine: SumOfSquares = 0
+
+************ Optimization Run 35 (Best Fit Run) ************
+
+
+Param : R7.Value  (R_R7.Value) = 24.14994324155575
+Param : R3.Value  (R_R3.Value) = 10.54431101987755k
+Param : C3.Value  (C_C3.Value) = 19.45500000000000p
+Param : R1.Value  (R_R1.Value) = 227.91147371489998
+
+Specs : I(Q1:C) = 7.55684250339079m
+Specs : W(Q1) = 313.65278495568202m
+Specs : Cutoff_Lowpass_3dB(V(out)) = 203.33907756518093meg
+Specs : max(db(V(out))) = 19.70001559489696
+Error of I(Q1:C) = 0  {Min = , Max = 50mA}
+Error of W(Q1) = 0  {Min = , Max = 1W}
+Error of Cutoff_Lowpass_3dB(V(out)) = 0  {Min = 181.50000000000000meg, Max = }
+Error of max(db(V(out))) = 0  {Min = 17dB, Max = }
+Engine: SumOfSquares = 0
+Analysis complete
+
+******* Analysis stopped at:Thu Apr 10 12:23:23 2025
+
+Analysis time: 00:00:05
+
+
+*****************************************
+
+******* Analysis Started On:Thu Apr 10 12:23:26 2025
+
+Advance Analyses Project File Name : c:/cadence/pspice sim/mc_cascode-PSpiceFiles/SCHEMATIC1/SCHEMATIC1.$ap
+
+
+Processing analysis specifications
+Engine: Destroying Previous Problem
+** Engine Name: Modified LSQ Engine
+** Modified LSQ Engine Options:
+
+method: Unconstrained Least Squares
+Delta: 1%
+Threshold: 0
+Cutback: 0.25
+Max. Iterations: 50
+One Spec: least squares
+Recalculate: auto
+
+** Optimization Problem Successfully created
+** No. of Parameters =  4 No. Of Specifications = 4
+
+Listing Profiles:
+ - opt_dc.sim
+ - opt_ac.sim
+
+
+
+************ Optimization Run 36 (Nominal) ************
+
+Param : R7.Value  (R_R7.Value) = 24.14994324155575
+Param : R3.Value  (R_R3.Value) = 10.54431101987755k
+Param : C3.Value  (C_C3.Value) = 19.45500000000000p
+Param : R1.Value  (R_R1.Value) = 227.91147371489998
+
+Specs : I(Q1:C) = 7.55684250339079m
+Specs : W(Q1) = 313.65278495568202m
+Specs : Cutoff_Lowpass_3dB(V(out)) = 203.33907756518093meg
+Specs : max(db(V(out))) = 19.70001559489696
+Error of I(Q1:C) = 0  {Min = , Max = 50mA}
+Error of W(Q1) = 0  {Min = , Max = 1W}
+Error of Cutoff_Lowpass_3dB(V(out)) = 0  {Min = 181.50000000000000meg, Max = }
+Error of max(db(V(out))) = 0  {Min = 17dB, Max = }
+Optimization complete
+Analysis complete
+
+******* Analysis stopped at:Thu Apr 10 12:23:26 2025
+
+Analysis time: 00:00:00
+
+
+*****************************************
+
+******* Analysis Started On:Thu Apr 10 12:23:35 2025
+
+Advance Analyses Project File Name : c:/cadence/pspice sim/mc_cascode-PSpiceFiles/SCHEMATIC1/SCHEMATIC1.$ap
+
+
+Processing analysis specifications
+Could not find discrete value of some parameters (no table specified)
+** Engine Name: Discrete Engine
+
+** Discrete Tables :
+ERROR(ORPSPAA-4014): Discrete Engine: No table for var[0]
+ERROR(ORPSPAA-4014): Discrete Engine: No table for var[1]
+ERROR(ORPSPAA-4014): Discrete Engine: No table for var[2]
+ERROR(ORPSPAA-4014): Discrete Engine: No table for var[3]
+
+Listing Profiles:
+ - opt_dc.sim
+ - opt_ac.sim
+
+
+
+************ Optimization Run 37 ************
+
+Param : R7.Value  (R_R7.Value) = 24.14994324155575
+Param : R3.Value  (R_R3.Value) = 10.54431101987755k
+Param : C3.Value  (C_C3.Value) = 19.45500000000000p
+Param : R1.Value  (R_R1.Value) = 227.91147371489998
+
+Specs : I(Q1:C) = 7.55684250339079m
+Specs : W(Q1) = 313.65278495568202m
+Specs : Cutoff_Lowpass_3dB(V(out)) = 203.33907756518093meg
+Specs : max(db(V(out))) = 19.70001559489696
+Error of I(Q1:C) = 0  {Min = , Max = 50mA}
+Error of W(Q1) = 0  {Min = , Max = 1W}
+Error of Cutoff_Lowpass_3dB(V(out)) = 0  {Min = 181.50000000000000meg, Max = }
+Error of max(db(V(out))) = 0  {Min = 17dB, Max = }
+Optimization complete
+Analysis complete
+
+******* Analysis stopped at:Thu Apr 10 12:23:36 2025
+
+Analysis time: 00:00:01
+
+
+*****************************************
+
+******* Analysis Started On:Thu Apr 10 12:25:26 2025
+
+Advance Analyses Project File Name : c:/cadence/pspice sim/mc_cascode-PSpiceFiles/SCHEMATIC1/SCHEMATIC1.$ap
+
+
+Processing analysis specifications
+Could not find discrete value of some parameters (no table specified)
+** Engine Name: Discrete Engine
+
+** Discrete Tables :
+ERROR(ORPSPAA-4014): Discrete Engine: No table for var[0]
+ERROR(ORPSPAA-4014): Discrete Engine: No table for var[1]
+ERROR(ORPSPAA-4014): Discrete Engine: No table for var[2]
+ERROR(ORPSPAA-4014): Discrete Engine: No table for var[3]
+
+Listing Profiles:
+ - opt_dc.sim
+ - opt_ac.sim
+
+
+
+************ Optimization Run 38 ************
+
+Param : R7.Value  (R_R7.Value) = 24.14994324155575
+Param : R3.Value  (R_R3.Value) = 10.54431101987755k
+Param : C3.Value  (C_C3.Value) = 19.45500000000000p
+Param : R1.Value  (R_R1.Value) = 227.91147371489998
+
+Specs : I(Q1:C) = 7.55684250339079m
+Specs : W(Q1) = 313.65278495568202m
+Specs : Cutoff_Lowpass_3dB(V(out)) = 203.33907756518093meg
+Specs : max(db(V(out))) = 19.70001559489696
+Error of I(Q1:C) = 0  {Min = , Max = 50mA}
+Error of W(Q1) = 0  {Min = , Max = 1W}
+Error of Cutoff_Lowpass_3dB(V(out)) = 0  {Min = 181.50000000000000meg, Max = }
+Error of max(db(V(out))) = 0  {Min = 17dB, Max = }
+Optimization complete
+Analysis complete
+
+******* Analysis stopped at:Thu Apr 10 12:25:26 2025
+
+Analysis time: 00:00:00
+
+
+*****************************************
+
+******* Analysis Started On:Thu Apr 10 12:25:40 2025
+
+Advance Analyses Project File Name : c:/cadence/pspice sim/mc_cascode-PSpiceFiles/SCHEMATIC1/SCHEMATIC1.$ap
+
+
+Processing analysis specifications
+** Engine Name: Discrete Engine
+
+** Discrete Tables :
+INFO(ORPSPAA-4015): Discrete Engine: Tweaking var[0]...
+ERROR(ORPSPAA-4016): Discrete Engine: Applying range restrictions to var[0]...
+INFO(ORPSPAA-4017): Discrete Engine: Setting var[0] to table element #73: %g {24.1499}
+INFO(ORPSPAA-4015): Discrete Engine: Tweaking var[1]...
+ERROR(ORPSPAA-4016): Discrete Engine: Applying range restrictions to var[1]...
+INFO(ORPSPAA-4017): Discrete Engine: Setting var[1] to table element #580: %g {10544.3}
+INFO(ORPSPAA-4015): Discrete Engine: Tweaking var[2]...
+ERROR(ORPSPAA-4016): Discrete Engine: Applying range restrictions to var[2]...
+INFO(ORPSPAA-4017): Discrete Engine: Setting var[2] to table element #15: %g {1.9455e-11}
+INFO(ORPSPAA-4015): Discrete Engine: Tweaking var[3]...
+ERROR(ORPSPAA-4016): Discrete Engine: Applying range restrictions to var[3]...
+INFO(ORPSPAA-4017): Discrete Engine: Setting var[3] to table element #261: %g {227.911}
+
+Listing Profiles:
+ - opt_dc.sim
+ - opt_ac.sim
+
+
+
+************ Optimization Run 39 ************
+
+Param : R7.Value  (R_R7.Value) = 24
+Param : R3.Value  (R_R3.Value) = 10.50000000000000k
+Param : C3.Value  (C_C3.Value) = 18p
+Param : R1.Value  (R_R1.Value) = 229
+
+Specs : I(Q1:C) = 7.66831186424482m
+Specs : W(Q1) = 318.02369607247596m
+Specs : Cutoff_Lowpass_3dB(V(out)) = 203.57109260922280meg
+Specs : max(db(V(out))) = 19.70352325440250
+Error of I(Q1:C) = 0  {Min = , Max = 50mA}
+Error of W(Q1) = 0  {Min = , Max = 1W}
+Error of Cutoff_Lowpass_3dB(V(out)) = 0  {Min = 181.50000000000000meg, Max = }
+Error of max(db(V(out))) = 0  {Min = 17dB, Max = }
+Optimization complete
+Analysis complete
+
+******* Analysis stopped at:Thu Apr 10 12:25:41 2025
+
+Analysis time: 00:00:01
+
+
+End of advanced analysis session

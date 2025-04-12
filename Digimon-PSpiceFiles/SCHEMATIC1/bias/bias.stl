@@ -1,0 +1,18 @@
+* C:\Cadence\Pspice sim\Digimon-PSpiceFiles\SCHEMATIC1\bias\bias.stl written on Mon Mar 31 20:35:09 2025
+* by Stimulus Editor -- Serial Number: 0 -- Version 24.1.0
+;!Stimulus Get
+;! Digi Digital
+;!Ok
+;!Plot Axis_Settings
+;!Xrange 0s 40ms
+;!AutoUniverse
+;!XminRes 1ns
+;!YminRes 1n
+;!Ok
+.STIMULUS Digi STIM (1, 1) ;! CLOCK 100 0.5 0 0
++   +0s 0
++   +5ms 1
++   Repeat Forever
++      +5ms 0
++      +5ms 1
++   EndRepeat

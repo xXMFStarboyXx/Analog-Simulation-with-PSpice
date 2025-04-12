@@ -1,0 +1,3 @@
+ lib="C:\Cadence\Pspice sim\pp_cascode-pspicefiles\pp_cascode.lib", offset=2387, size=321
+ lib=E:\Cadence\tools\PSpice\Library\bjn.lib, offset=73030, size=1368
+ lib=E:\Cadence\tools\PSpice\Library\bjn.lib, offset=127181, size=1313

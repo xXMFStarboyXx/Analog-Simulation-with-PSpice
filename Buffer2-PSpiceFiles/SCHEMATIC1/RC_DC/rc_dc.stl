@@ -1,0 +1,13 @@
+* C:\Cadence\Pspice sim\buffer-PSpiceFiles\SCHEMATIC1\RC_DC\rc_dc.stl written on Fri Jan 10 16:11:02 2025
+* by Stimulus Editor -- Serial Number: 0 -- Version 24.1.0
+;!Stimulus Get
+;! MYPULSE Analog
+;!Ok
+;!Plot Axis_Settings
+;!Xrange 0s 6.0000001s
+;!Yrange 0 1
+;!AutoUniverse
+;!XminRes 1ns
+;!YminRes 1n
+;!Ok
+.STIMULUS MYPULSE PULSE( 0 1 100n 10n 1u 1 2 )

@@ -1,0 +1,103 @@
+(ExpressProject "pp_cascode"
+  (ProjectVersion "19981106")
+  (SoftwareVersion "24.1 S001 (4250575)  [11/4/2024]-[04/10/25]")
+  (ProjectType "Analog or A/D Mixed Mode")
+  (Folder "Design Resources"
+    (Folder "Library")
+    (NoModify)
+    (BuildFileAddedOrDeleted "x")
+    (CompileFileAddedOrDeleted "x")
+    (PSPICE_Regenerate_Netlist_Flag "FALSE")
+    (File "pp_cascode.dsn"
+      (Type "Schematic Design"))
+    (DOCKED "TRUE")
+    (DOCKING_POSITION "59420"))
+  (Folder "Layout")
+  (Folder "Outputs"
+    (File ".\pp_cascode-pspicefiles\schematic1\schematic1.net"
+      (Type "Report")))
+  (Folder "PSpice Resources"
+    (Folder "Model Libraries"
+      (Sort User)
+      (File ".\pp_cascode-pspicefiles\pp_cascode.lib"
+        (Type "PSpiceLibrary")
+        (DisplayName ".\pp_cascode-pspicefiles\pp_cascode.lib")))
+    (Folder "Stimulus Files"
+      (Sort User))
+    (Folder "Include Files"
+      (Sort User))
+    (Folder "Simulation Profiles"
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\pp_cascode-pspicefiles\schematic1\dc.sim"
+        (DisplayName "SCHEMATIC1-DC")
+        (Type "PSpice Profile"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\pp_cascode-pspicefiles\schematic1\pp_dc.sim"
+        (DisplayName "SCHEMATIC1-pp_dc")
+        (Type "PSpice Profile"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\pp_cascode-pspicefiles\schematic1\pp_ac.sim"
+        (DisplayName "SCHEMATIC1-pp_ac")
+        (Type "PSpice Profile"))
+      (ActiveProfile ".\pp_cascode-pspicefiles\schematic1\pp_ac.sim")))
+  (DefaultLibraryBrowseDirectory "library\PSpice")
+  (MPSSessionName "ROG")
+  (PartMRUSelector
+    (2N5179
+      (FullPartName "2N5179.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_17.4\TOOLS\CAPTURE\LIBRARY\PSPICE\ADVANLS\BJN.OLB")
+      (DeviceIndex "0"))
+    (2N3724
+      (FullPartName "2N3724.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_17.4\TOOLS\CAPTURE\LIBRARY\PSPICE\ADVANLS\BJN.OLB")
+      (DeviceIndex "0"))
+    (Q2N5179
+      (FullPartName "Q2N5179.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\PSPICE\BIPOLAR.OLB")
+      (DeviceIndex "0"))
+    (Q2N3724
+      (FullPartName "Q2N3724.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\PSPICE\BIPOLAR.OLB")
+      (DeviceIndex "0"))
+    (R
+      (FullPartName "R.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (C
+      (FullPartName "C.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (L
+      (FullPartName "L.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (INDUCTOR
+      (FullPartName "INDUCTOR.Normal")
+      (LibraryName "E:\CADENCE921\CAPTURE\LIBRARY\PSPICE\ADVANLS\ELEMENT.OLB")
+      (DeviceIndex "0"))
+    (VARIABLES
+      (FullPartName "VARIABLES.Normal")
+      (LibraryName "E:\CADENCE921\CAPTURE\LIBRARY\PSPICE\SPECIAL.OLB")
+      (DeviceIndex "0")))
+  (Folder "Logs")
+  (GlobalState
+    (FileView
+      (Path "Design Resources")
+      (Path "Design Resources" "C:\Cadence\Pspice sim\pp_cascode.dsn")
+      (Path "Design Resources" "C:\Cadence\Pspice sim\pp_cascode.dsn"
+         "SCHEMATIC1")
+      (Path "Outputs")
+      (Select "Design Resources"))
+    (HierarchyView)
+    (Doc
+      (Type "COrCapturePMDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -1 -1 0 153 0 795"))
+      (Tab 0))))

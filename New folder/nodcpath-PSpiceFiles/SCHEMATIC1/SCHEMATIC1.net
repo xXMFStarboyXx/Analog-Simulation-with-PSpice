@@ -1,0 +1,5 @@
+* source NODCPATH
+V_V1         IN 0 5V
+R_R2         OUT 0  1k TC=0,0 
+C_C1         IN IN  1n  TC=0,0 
+C_C2         IN OUT  1n  TC=0,0 

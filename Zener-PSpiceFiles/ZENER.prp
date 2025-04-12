@@ -1,0 +1,23 @@
+("D1N750"
+    ("Creator"	"Device property file created by Property Controller")
+    ("device_info"
+        ("SYMBOL_NAME"	"zener")
+        ("MODEL_TYPE"	"434")
+    )
+    ("model_params"
+        ("level_0"
+        )
+    )
+    ("device_pre_smoke"
+        ("TERM_AN"	"1")
+        ("NODE_AN"	"1")
+        ("NODE_CAT"	"2")
+        ("DERATE_TYPE"	"DIODE")
+    )
+    ("device_max_ops"
+        ("IF"	"200m")
+        ("IRMX"	"96.72m")
+        ("PDM"	"0.5")
+        ("TJ"	"200")
+    )
+)

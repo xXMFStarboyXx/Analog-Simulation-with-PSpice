@@ -1,0 +1,5 @@
+* source GOALS
+R_R1         N00120 OUT  1k  
+C_C1         0 OUT  {CVAL} IC=0 
+V_V1         N00120 0 5Vdc
+.PARAM  cval=1n

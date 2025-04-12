@@ -1,0 +1,7 @@
+.ALIASES
+E_E1            E1(OUT+=N00245 OUT-=0 ) CN @W_EVALUE.SCHEMATIC1(sch_1):INS46@ABM.EVALUE.Normal(chips)
+R_R1            R1(1=0 2=N00245 ) CN @W_EVALUE.SCHEMATIC1(sch_1):INS98@FILTSUB.R.Normal(chips)
+V_V1            V1(+=IN -=0 ) CN @W_EVALUE.SCHEMATIC1(sch_1):INS172@SOURCSTM.VSTIM.Normal(chips)
+R_R2            R2(1=0 2=IN ) CN @W_EVALUE.SCHEMATIC1(sch_1):INS423@FILTSUB.R.Normal(chips)
+_    _(IN=IN)
+.ENDALIASES

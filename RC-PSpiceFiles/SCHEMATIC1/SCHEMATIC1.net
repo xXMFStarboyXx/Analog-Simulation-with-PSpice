@@ -1,0 +1,5 @@
+* source RC
+V_V1         IN 0 10
+R_R1         IN OUT  1k TC=0,0 
+R_R2         0 OUT  1k TC=0,0 
+C_CAP1         OUT 0  1n  TC=0,0 

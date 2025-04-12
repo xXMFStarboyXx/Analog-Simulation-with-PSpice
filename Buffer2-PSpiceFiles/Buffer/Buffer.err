@@ -1,0 +1,8 @@
+STATUS: PSpice Schematics to Capture translator (24.1.0.d001)
+STATUS:  
+STATUS: Translator started at Wednesday, February 26, 2025 16:35:44
+STATUS: E:\Cadence\tools\bin\sch2cap -f "C:\Cadence\Pspice sim\Buffer2-PSpiceFiles\Buffer\Buffer.LIB" -o "C:\Cadence\Pspice sim\Buffer2-PSpiceFiles\Buffer\BUFFER.olb" -i C:\Users\ROG\AppData\Roaming\SPB_Data\.\cdssetup\OrCAD_PSpice/24.1.0/PSpice.ini
+INFO(ORSCH-1029): Using existing library 'E:\Cadence\tools\Capture\Library\PSpice\modeled.etc'.
+INFO(ORSCH-1029): Using existing library 'C:\Cadence\Pspice sim\Buffer2-PSpiceFiles\Buffer\BUFFER.olb'.
+STATUS: Translator stopped at Wednesday, February 26, 2025 16:35:44
+STATUS: 0 Error messages, 0 Warning messages

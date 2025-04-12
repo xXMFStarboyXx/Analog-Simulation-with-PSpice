@@ -1,0 +1,106 @@
+
+**** 03/31/25 15:31:39 **** PSpice 24.1.0 (22 October 2024) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-bias"  [ C:\Cadence\Pspice sim\w_evalue-pspicefiles\schematic1\bias.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "bias.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+.INC "C:\Cadence\Pspice sim\w_evalue-pspicefiles\schematic1\bias\bias_profile.inc" 
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\ROG\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\24.1.0\PSpice.ini file:
+
+**** INCLUDING bias_profile.inc ****
+.STMLIB ".\bias.stl" 
+
+**** RESUMING bias.cir ****
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 0.5 0 0.001 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source W_EVALUE
+E_E1         N00245 0 VALUE { ABS(V(IN))*GAIN }
+R_R1         0 N00245  1k  
+V_V1         IN 0   STIMULUS=sin10
+R_R2         0 IN  1k  
+.PARAM  gain=1
+
+**** RESUMING bias.cir ****
+.END
+* C:\Cadence\Pspice sim\W_evalue-PSpiceFiles\SCHEMATIC1\bias\bias.stl written on Mon Mar 31 15:19:53 2025
+* by Stimulus Editor -- Serial Number: 2 -- Version 24.1.0
+;!Stimulus Get
+;! sin10 Analog
+;!Ok
+;!Plot Axis_Settings
+;!Xrange 0s 300ms
+;!Yrange -1 1
+;!AutoUniverse
+;!XminRes 1ns
+;!YminRes 1n
+;!Ok
+.STIMULUS sin10 SIN( 0 1V 10 0 0 0 )
+
+**** 03/31/25 15:31:39 **** PSpice 24.1.0 (22 October 2024) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-bias"  [ C:\Cadence\Pspice sim\w_evalue-pspicefiles\schematic1\bias.sim ] 
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(   IN)    0.0000  (N00245)    0.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1         0.000E+00
+
+    TOTAL POWER DISSIPATION   0.00E+00  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 03/31/25 15:31:39 **** PSpice 24.1.0 (22 October 2024) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-bias"  [ C:\Cadence\Pspice sim\w_evalue-pspicefiles\schematic1\bias.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =        0.00
+

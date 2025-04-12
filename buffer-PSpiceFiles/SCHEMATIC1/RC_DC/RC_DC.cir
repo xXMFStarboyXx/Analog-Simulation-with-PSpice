@@ -1,0 +1,21 @@
+** Profile: "SCHEMATIC1-RC_DC"  [ c:\cadence\pspice sim\buffer-pspicefiles\schematic1\rc_dc.sim ] 
+
+** Creating circuit file "RC_DC.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+.INC "c:\cadence\pspice sim\buffer-pspicefiles\schematic1\RC_DC\RC_DC_profile.inc" 
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\ROG\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\24.1.0\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 5u 0 0.01ns 
+.STEP LIN PARAM CVAL 100p 700p 25p 
+.OPTIONS ADVCONV
+.PROBE64 V(*) I(*) W(*) D(*) NOISE(*) 
+.INC "..\SCHEMATIC1.net" 
+
+
+.END

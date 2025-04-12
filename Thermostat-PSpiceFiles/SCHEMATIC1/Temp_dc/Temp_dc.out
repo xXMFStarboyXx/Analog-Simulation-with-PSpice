@@ -1,0 +1,136 @@
+
+**** 02/26/25 22:46:34 **** PSpice 24.1.0 (22 October 2024) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-Temp_dc"  [ C:\Cadence\Pspice sim\Thermostat-PSpiceFiles\SCHEMATIC1\Temp_dc.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "Temp_dc.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\ROG\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\24.1.0\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.DC LIN TEMP 0 100 1 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source THERMOSTAT
+D_D1         +15V 0 D1N4148_1 
+R_R1         +15V +15V  1k  
+X_R2         0 N00984 N00722 POT PARAMS: SET=0.5 VALUE=1K
+X_D2         0 N00722 D1N821
+X_U1         N00984 N00971 +15V -15V V1 AD741
+V_V2         +15V 0 15V
+V_V3         -15V 0 -15V
+X_R3         +15V N00971 V1 POT PARAMS: SET=0.5 VALUE=1K
+R_R4         N00722 +15V  1k  
+
+**** RESUMING Temp_dc.cir ****
+.END
+
+**** 02/26/25 22:46:34 **** PSpice 24.1.0 (22 October 2024) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-Temp_dc"  [ C:\Cadence\Pspice sim\Thermostat-PSpiceFiles\SCHEMATIC1\Temp_dc.sim ] 
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               D1N4148_1       X_D2.DFOR       X_D2.DLEAK      X_D2.DBLOCK     
+          IS    2.682000E-09   10.000000E-15  448.600000E-15    1.000000E-12 
+           N    1.836         500              14.13            3.007        
+         ISR    1.565000E-09                                                 
+         IKF     .04417                                                      
+          BV  100               1.000000E+03                                 
+         IBV  100.000000E-06    1.000000E-03                                 
+          RS     .5664        100               1                            
+          TT   11.540000E-09                                                 
+         CJO    4.000000E-12   24.590000E-12                                 
+          VJ     .5             1.258                                        
+           M     .3333           .1137                                       
+          EG                                    5.64             .1          
+         XTI                                    5.606          -3.86         
+
+
+               X_U1.dx         X_U1.dy         
+          IS  800.000000E-18  800.000000E-18 
+          RS                    1.000000E-03 
+         CJO                   10.000000E-12 
+
+
+**** 02/26/25 22:46:34 **** PSpice 24.1.0 (22 October 2024) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-Temp_dc"  [ C:\Cadence\Pspice sim\Thermostat-PSpiceFiles\SCHEMATIC1\Temp_dc.sim ] 
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U1.qx         
+               NPN             
+       LEVEL    1            
+          IS  800.000000E-18 
+          BF   93.75         
+          NF    1            
+          BR    1            
+          NR    1            
+         ISS    0            
+          RE    0            
+          RC    0            
+         CJE    0            
+         VJE     .75         
+         CJC    0            
+         VJC     .75         
+         MJC     .33         
+        XCJC    1            
+         CJS    0            
+         VJS     .75         
+          KF    0            
+          AF    1            
+          CN    2.42         
+           D     .87         
+
+
+
+          JOB CONCLUDED
+
+**** 02/26/25 22:46:34 **** PSpice 24.1.0 (22 October 2024) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-Temp_dc"  [ C:\Cadence\Pspice sim\Thermostat-PSpiceFiles\SCHEMATIC1\Temp_dc.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .03
+

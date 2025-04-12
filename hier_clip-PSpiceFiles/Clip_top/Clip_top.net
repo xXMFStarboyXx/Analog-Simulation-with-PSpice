@@ -1,0 +1,12 @@
+* source HIER_CLIP
+C_U1_C1         N00171 N00164  0.47u  
+D_U1_D2         0 N00171 D1N3940 
+D_U1_D1         N00171 U1_VCC D1N3940 
+R_U1_R4         0 N00164  1k  
+R_U1_R3         0 N00171  1k  
+R_U1_R2         N00171 U1_VCC  1k  
+V_U1_V1         U1_VCC 0 5Vdc
+R_U1_R1         N00150 N00171  1k  
+V_V1         N00150 0 DC 0Vdc AC 1Vac 
+R_R1         0 N00164  10G  
+R_R2         0 N00171  10G  

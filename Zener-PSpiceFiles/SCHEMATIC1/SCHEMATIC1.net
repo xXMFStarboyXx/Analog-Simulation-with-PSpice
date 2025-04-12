@@ -1,0 +1,4 @@
+* source ZENER
+V_V1         N00145 0 10V
+R_R2         N00145 N00152  10 TC=0,0 
+D_D1         0 N00152 D1N750 

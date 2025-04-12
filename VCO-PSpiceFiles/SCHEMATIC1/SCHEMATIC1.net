@@ -1,0 +1,10 @@
+* source VCO
+E_E1         OUT 0 VALUE { sin(twopi*(fc*time+v(INT))) }
+R_R1         0 OUT  1k  
+C_C1         0 INT  1u  
+R_R2         0 INT  1g  
+G_G1         0 INT VALUE { K1*v(CTRL)*1u }
+V_V1         CTRL 0   PWL    
++ 0 0 5u 0 5.01u 1  
+.IC         V(INT )=0
+.PARAM  twopi=6.283 fc=1meg k1=1meg

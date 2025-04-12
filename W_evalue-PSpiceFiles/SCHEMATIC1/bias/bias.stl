@@ -1,0 +1,13 @@
+* C:\Cadence\Pspice sim\W_evalue-PSpiceFiles\SCHEMATIC1\bias\bias.stl written on Mon Mar 31 15:19:53 2025
+* by Stimulus Editor -- Serial Number: 2 -- Version 24.1.0
+;!Stimulus Get
+;! sin10 Analog
+;!Ok
+;!Plot Axis_Settings
+;!Xrange 0s 300ms
+;!Yrange -1 1
+;!AutoUniverse
+;!XminRes 1ns
+;!YminRes 1n
+;!Ok
+.STIMULUS sin10 SIN( 0 1V 10 0 0 0 )

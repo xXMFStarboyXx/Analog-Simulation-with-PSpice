@@ -1,0 +1,13 @@
+* source BUFFER
+R_R1         IN N00185  1k TC=0,0 
+R_R2         0 N00185  1k TC=0,0 
+V_V1         IN 0   STIMULUS=MYPULSE
+X_U1         0 N01221 VDD VCC N01196 LF411
+V_V2         VDD 0 16V
+V_V3         VCC 0 -16V
+R_R3         N01221 N00185  1k TC=0,0 
+R_R4         N01196 N01221  1k TC=0,0 
+R_R5         N01202 N01196  1k TC=0,0 
+C_C1         0 N00185  1n  TC=0,0 
+C_C2         0 N01202  {CVAL}  TC=0,0 
+.PARAM  cval=1n

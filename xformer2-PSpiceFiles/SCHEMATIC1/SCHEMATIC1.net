@@ -1,0 +1,11 @@
+* source XFORMER2
+L_L1         N00212 N00332  10uH  
+L_L2         0 N00212  10uH  
+L_L3         N00256 0  10uH  
+R_R1         N00256 N00263  1k  
+R_R2         N00332 0  1k  
+R_R3         N00212 0  1k  
+Kn_K1         L_L3 L_L1 
++ L_L2    0.99
+V_V1         N00263 0  
++SIN 0 100 60 0 0 0

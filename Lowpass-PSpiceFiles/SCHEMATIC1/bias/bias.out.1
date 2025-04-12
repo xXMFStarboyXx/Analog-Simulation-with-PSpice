@@ -1,0 +1,42 @@
+
+**** 03/31/25 15:48:12 **** PSpice 24.1.0 (22 October 2024) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-bias"  [ C:\Cadence\Pspice sim\lowpass-pspicefiles\schematic1\bias.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "bias.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\ROG\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\24.1.0\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source LOWPASS
+E_E1         OUT 0 FREQ { V(N00170, 0) } =    ( (0,0,0) (0,-5760) (6KHz, -60,
+-----------------------------------------------------------$
+ERROR(ORPSIM-16050): Frequency values must be monotonic increasing
++  -6912) ) 
+V_V1         N00170 0 DC 0Vdc AC 1Vac 
+R_R1         0 OUT  1k  
+
+**** RESUMING bias.cir ****
+.END
+

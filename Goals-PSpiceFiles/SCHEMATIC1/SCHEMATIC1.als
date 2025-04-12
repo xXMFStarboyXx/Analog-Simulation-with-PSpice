@@ -1,0 +1,6 @@
+.ALIASES
+R_R1            R1(1=N00120 2=OUT ) CN @GOALS.SCHEMATIC1(sch_1):INS40@FILTSUB.R.Normal(chips)
+C_C1            C1(1=0 2=OUT ) CN @GOALS.SCHEMATIC1(sch_1):INS65@GOALS.C_2.Normal(chips)
+V_V1            V1(+=N00120 -=0 ) CN @GOALS.SCHEMATIC1(sch_1):INS90@SOURCE.VDC.Normal(chips)
+_    _(OUT=OUT)
+.ENDALIASES

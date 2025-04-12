@@ -1,0 +1,203 @@
+* PSpice Model Editor - Version 17.2.0
+*$
+*b Device model created by analog_uprev for 2n5179 on Fri Feb  2 18:03:16 IST 2001
+* created using Model Editor release 24.1.0 on 04/05/25 at 23:49
+*DEVICE=awbmy2n5179,NPN
+.subckt awbmy2n5179 C B E 
++ params:
++ IC_VBE=0 
++ IC_VCE=0 
++ AREA=1.0
++ IS=4.479E-15
++ BF=83
++ NF=1.07
++ VAF=24
++ IKF=100E-3
++ ISE=347.1E-12
++ NE=3.66
++ BR=1.0
++ NR=1.07
++ VAR=500
++ ISC=0
++ NC=1.0
++ RB=36
++ RBM=36
++ RE=0.5
++ RC=1.0
++ CJE=0.91E-12
++ VJE=0.661
++ MJE=0.294
++ TF=112E-12
++ XTF=0.12
++ ITF=0
++ PTF=0
++ CJC=0.835E-12
++ VJC=1.0
++ MJC=0.28
++ XCJC=0.5
++ TR=1E-9
++ CJS=0
++ VJS=0.7
++ MJS=0.5
++ XTB=2.3
++ EG=1.11
++ XTI=3.0
++ KF=0
++ AF=1
++ FC=0.5
+Q_awbmy2n5179 C B E model4 {area} ic= {UIC(ic_vbe)}, {UIC(ic_vce)}
+.model model4 npn
++ is={IS}
++ bf={BF}
++ nf={NF}
++ vaf={VAF}
++ ikf={IKF}
++ ise={ISE}
++ ne={NE}
++ br={BR}
++ nr={NR}
++ var={VAR}
++ isc={ISC}
++ nc={NC}
++ rb={RB}
++ rbm={RBM}
++ re={RE}
++ rc={RC}
++ cje={CJE}
++ vje={VJE}
++ mje={MJE}
++ tf={TF}
++ xtf={XTF}
++ itf={ITF}
++ ptf={PTF}
++ cjc={CJC}
++ vjc={VJC}
++ mjc={MJC}
++ xcjc={XCJC}
++ tr={TR}
++ cjs={CJS}
++ vjs={VJS}
++ mjs={MJS}
++ xtb={XTB}
++ eg={EG}
++ xti={XTI}
++ kf={KF}
++ af={AF}
++ fc={FC}
+.ends awbmy2n5179
+*
+*
+*$
+*b Device model created by analog_uprev for 2n3724 on Fri Feb  2 18:03:16 IST 2001
+* created using Model Editor release 24.1.0 on 04/05/25 at 23:44
+*DEVICE=awbmy2n3724,NPN
+.subckt awbmy2n3724 C B E 
++ params:
++ IC_VBE=0 
++ IC_VCE=0 
++ AREA=1.0
++ IS=10.0E-15
++ BF=138
++ NF=1
++ VAF=65
++ IKF=371E-3
++ ISE=29.40E-12
++ NE=2.1335
++ BR=1
++ NR=1
++ VAR=50
++ IKR=80E-3
++ ISC=0
++ NC=2
++ RB=1.0
++ RBM=1
++ RE=0.01
++ RC=0.42
++ CJE=63.34E-12
++ VJE=0.55
++ MJE=0.3546
++ TF=438.1E-12
++ XTF=5
++ VTF=10
++ ITF=7
++ PTF=0.0
++ CJC=12.46E-12
++ VJC=0.55
++ MJC=0.2977
++ XCJC=0.5
++ TR=77.3E-9
++ CJS=0
++ VJS=0.7
++ MJS=0.5
++ XTB=1.5815
++ EG=1.11
++ XTI=3.0
++ KF=0
++ AF=1
++ FC=0.5
+Q_awbmy2n3724 C B E model4 {area} ic= {UIC(ic_vbe)}, {UIC(ic_vce)}
+.model model4 npn
++ is={IS}
++ bf={BF}
++ nf={NF}
++ vaf={VAF}
++ ikf={IKF}
++ ise={ISE}
++ ne={NE}
++ br={BR}
++ nr={NR}
++ var={VAR}
++ ikr={IKR}
++ isc={ISC}
++ nc={NC}
++ rb={RB}
++ rbm={RBM}
++ re={RE}
++ rc={RC}
++ cje={CJE}
++ vje={VJE}
++ mje={MJE}
++ tf={TF}
++ xtf={XTF}
++ vtf={VTF}
++ itf={ITF}
++ ptf={PTF}
++ cjc={CJC}
++ vjc={VJC}
++ mjc={MJC}
++ xcjc={XCJC}
++ tr={TR}
++ cjs={CJS}
++ vjs={VJS}
++ mjs={MJS}
++ xtb={XTB}
++ eg={EG}
++ xti={XTI}
++ kf={KF}
++ af={AF}
++ fc={FC}
+.ends awbmy2n3724
+*
+*
+*$
+.model D1N755	D(Is=2.077f Rs=2.467 Ikf=0 N=1 Xti=3 Eg=1.11 Cjo=104p M=.5061
++		Vj=.75 Fc=.5 Isr=1.645n Nr=2 Bv=7.5 DEV/UNIFORM 10%/10% Ibv=2.5701 Nbv=.39227
++		Ibvl=4.0222e-5 Nbvl=.25042 Tbv1=533.33u)
+*		Motorola	pid=1N755	case=DO-35
+*		89-9-18 gjg
+*		Vz = 7.5 @ 20mA, Zz = 12.5 @ 1mA, Zz = 5.3 @ 5mA, Zz = 2.3 @ 20mA
+*$
+.model Q2N3724	NPN(Is=1.608p Xti=3 Eg=1.11 Vaf=100 Bf=169 Ne=1.29 Ise=1.608p
++		Ikf=.9625 Xtb=1.5 Br=19.18m Nc=2 Isc=0 Ikr=0 Rc=.6 Cjc=9.293p
++		Mjc=.256 Vjc=.75 Fc=.5 Cje=52.8p Mje=.4351 Vje=.75 Tr=3.85u
++		Tf=300.5p Itf=.45 Vtf=6 Xtf=1.5 Rb=10)
+*		National	pid=25		case=TO39
+*		88-09-07 bam	creation
+*$
+.model Q2N5179	NPN(Is=4.479E-15 Xti=3 Eg=1.11 Vaf=24 Bf=83 Ne=3.66
++		Ise=347.1E-12 Ikf=100E-3 Xtb=2.3 Br=1.0 Nc=1 Isc=0 Ikr=100Meg Rc=1
++		Cjc=.835E-12 Mjc=.28 Vjc=1.0 Fc=.5 Cje=.91E-12 Mje=.294 Vje=.661
++		Tr=1E-9 Tf=112E-12 Itf=0 Vtf=100Meg Xtf=.12 Rb=36)
+*		National	pid=42		case=TO72
+*		88-09-07 bam	creation
+*$

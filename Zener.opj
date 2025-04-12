@@ -1,0 +1,352 @@
+(ExpressProject "Zener"
+  (ProjectVersion "19981106")
+  (SoftwareVersion "24.1 S001 (4250575)  [11/4/2024]-[02/24/25]")
+  (ProjectType "Analog or A/D Mixed Mode")
+  (Folder "Design Resources"
+    (Folder "Library"
+      (File "E:\Cadence\tools\capture\library\pspice\7400.olb"
+        (DisplayName "E:\Cadence\tools\capture\library\pspice\7400.olb")
+        (Type "Schematic Library"))
+      (File "E:\Cadence\tools\capture\library\pspice\74ac.olb"
+        (DisplayName "E:\Cadence\tools\capture\library\pspice\74ac.olb")
+        (Type "Schematic Library"))
+      (File "E:\Cadence\tools\capture\library\pspice\74act.olb"
+        (DisplayName "E:\Cadence\tools\capture\library\pspice\74act.olb")
+        (Type "Schematic Library"))
+      (File "E:\Cadence\tools\capture\library\pspice\74als.olb"
+        (DisplayName "E:\Cadence\tools\capture\library\pspice\74als.olb")
+        (Type "Schematic Library"))
+      (File "E:\Cadence\tools\capture\library\pspice\74as.olb"
+        (DisplayName "E:\Cadence\tools\capture\library\pspice\74as.olb")
+        (Type "Schematic Library"))
+      (File "E:\Cadence\tools\capture\library\pspice\74f.olb"
+        (DisplayName "E:\Cadence\tools\capture\library\pspice\74f.olb")
+        (Type "Schematic Library"))
+      (File "E:\Cadence\tools\capture\library\pspice\74h.olb"
+        (DisplayName "E:\Cadence\tools\capture\library\pspice\74h.olb")
+        (Type "Schematic Library"))
+      (File "E:\Cadence\tools\capture\library\pspice\74hc.olb"
+        (DisplayName "E:\Cadence\tools\capture\library\pspice\74hc.olb")
+        (Type "Schematic Library"))
+      (File "E:\Cadence\tools\capture\library\pspice\74hct.olb"
+        (DisplayName "E:\Cadence\tools\capture\library\pspice\74hct.olb")
+        (Type "Schematic Library"))
+      (File "E:\Cadence\tools\capture\library\pspice\74l.olb"
+        (DisplayName "E:\Cadence\tools\capture\library\pspice\74l.olb")
+        (Type "Schematic Library"))
+      (File "E:\Cadence\tools\capture\library\pspice\74ls.olb"
+        (DisplayName "E:\Cadence\tools\capture\library\pspice\74ls.olb")
+        (Type "Schematic Library"))
+      (File "E:\Cadence\tools\capture\library\pspice\74s.olb"
+        (DisplayName "E:\Cadence\tools\capture\library\pspice\74s.olb")
+        (Type "Schematic Library"))
+      (File "E:\Cadence\tools\capture\library\pspice\abm.olb"
+        (DisplayName "E:\Cadence\tools\capture\library\pspice\abm.olb")
+        (Type "Schematic Library"))
+      (File "E:\Cadence\tools\capture\library\pspice\adv_lin.olb"
+        (DisplayName "E:\Cadence\tools\capture\library\pspice\adv_lin.olb")
+        (Type "Schematic Library"))
+      (File "E:\Cadence\tools\capture\library\pspice\analog.olb"
+        (DisplayName "E:\Cadence\tools\capture\library\pspice\analog.olb")
+        (Type "Schematic Library"))
+      (File "E:\Cadence\tools\capture\library\pspice\analog_p.olb"
+        (DisplayName "E:\Cadence\tools\capture\library\pspice\analog_p.olb")
+        (Type "Schematic Library"))
+      (File "E:\Cadence\tools\capture\library\pspice\ana_swit.olb"
+        (DisplayName "E:\Cadence\tools\capture\library\pspice\ana_swit.olb")
+        (Type "Schematic Library"))
+      (File "E:\Cadence\tools\capture\library\pspice\anlg_dev.olb"
+        (DisplayName "E:\Cadence\tools\capture\library\pspice\anlg_dev.olb")
+        (Type "Schematic Library"))
+      (File "E:\Cadence\tools\capture\library\pspice\anl_misc.olb"
+        (DisplayName "E:\Cadence\tools\capture\library\pspice\anl_misc.olb")
+        (Type "Schematic Library"))
+      (File "E:\Cadence\tools\capture\library\pspice\apex.olb"
+        (DisplayName "E:\Cadence\tools\capture\library\pspice\apex.olb")
+        (Type "Schematic Library"))
+      (File "E:\Cadence\tools\capture\library\pspice\apex_pwm.olb"
+        (DisplayName "E:\Cadence\tools\capture\library\pspice\apex_pwm.olb")
+        (Type "Schematic Library"))
+      (File "E:\Cadence\tools\capture\library\pspice\bipolar.olb"
+        (DisplayName "E:\Cadence\tools\capture\library\pspice\bipolar.olb")
+        (Type "Schematic Library"))
+      (File "E:\Cadence\tools\capture\library\pspice\breakout.olb"
+        (DisplayName "E:\Cadence\tools\capture\library\pspice\breakout.olb")
+        (Type "Schematic Library"))
+      (File "E:\Cadence\tools\capture\library\pspice\burr_brn.olb"
+        (DisplayName "E:\Cadence\tools\capture\library\pspice\burr_brn.olb")
+        (Type "Schematic Library"))
+      (File "E:\Cadence\tools\capture\library\pspice\cd4000.olb"
+        (DisplayName "E:\Cadence\tools\capture\library\pspice\cd4000.olb")
+        (Type "Schematic Library"))
+      (File "E:\Cadence\tools\capture\library\pspice\cel.olb"
+        (DisplayName "E:\Cadence\tools\capture\library\pspice\cel.olb")
+        (Type "Schematic Library"))
+      (File "E:\Cadence\tools\capture\library\pspice\comlinr.olb"
+        (DisplayName "E:\Cadence\tools\capture\library\pspice\comlinr.olb")
+        (Type "Schematic Library"))
+      (File "E:\Cadence\tools\capture\library\pspice\darlngtn.olb"
+        (DisplayName "E:\Cadence\tools\capture\library\pspice\darlngtn.olb")
+        (Type "Schematic Library"))
+      (File "E:\Cadence\tools\capture\library\pspice\dataconv.olb"
+        (DisplayName "E:\Cadence\tools\capture\library\pspice\dataconv.olb")
+        (Type "Schematic Library"))
+      (File "E:\Cadence\tools\capture\library\pspice\dig_ecl.olb"
+        (DisplayName "E:\Cadence\tools\capture\library\pspice\dig_ecl.olb")
+        (Type "Schematic Library"))
+      (File "E:\Cadence\tools\capture\library\pspice\dig_gal.olb"
+        (DisplayName "E:\Cadence\tools\capture\library\pspice\dig_gal.olb")
+        (Type "Schematic Library"))
+      (File "E:\Cadence\tools\capture\library\pspice\dig_misc.olb"
+        (DisplayName "E:\Cadence\tools\capture\library\pspice\dig_misc.olb")
+        (Type "Schematic Library"))
+      (File "E:\Cadence\tools\capture\library\pspice\dig_pal.olb"
+        (DisplayName "E:\Cadence\tools\capture\library\pspice\dig_pal.olb")
+        (Type "Schematic Library"))
+      (File "E:\Cadence\tools\capture\library\pspice\dig_prim.olb"
+        (DisplayName "E:\Cadence\tools\capture\library\pspice\dig_prim.olb")
+        (Type "Schematic Library"))
+      (File "E:\Cadence\tools\capture\library\pspice\diode.olb"
+        (DisplayName "E:\Cadence\tools\capture\library\pspice\diode.olb")
+        (Type "Schematic Library"))
+      (File "E:\Cadence\tools\capture\library\pspice\ebipolar.olb"
+        (DisplayName "E:\Cadence\tools\capture\library\pspice\ebipolar.olb")
+        (Type "Schematic Library"))
+      (File "E:\Cadence\tools\capture\library\pspice\ediode.olb"
+        (DisplayName "E:\Cadence\tools\capture\library\pspice\ediode.olb")
+        (Type "Schematic Library"))
+      (File "E:\Cadence\tools\capture\library\pspice\elantec.olb"
+        (DisplayName "E:\Cadence\tools\capture\library\pspice\elantec.olb")
+        (Type "Schematic Library"))
+      (File "E:\Cadence\tools\capture\library\pspice\epcos.olb"
+        (DisplayName "E:\Cadence\tools\capture\library\pspice\epcos.olb")
+        (Type "Schematic Library"))
+      (File "E:\Cadence\tools\capture\library\pspice\epwrbjt.olb"
+        (DisplayName "E:\Cadence\tools\capture\library\pspice\epwrbjt.olb")
+        (Type "Schematic Library"))
+      (File "E:\Cadence\tools\capture\library\pspice\fairchild.olb"
+        (DisplayName "E:\Cadence\tools\capture\library\pspice\fairchild.olb")
+        (Type "Schematic Library"))
+      (File "E:\Cadence\tools\capture\library\pspice\filtsub.olb"
+        (DisplayName "E:\Cadence\tools\capture\library\pspice\filtsub.olb")
+        (Type "Schematic Library"))
+      (File "E:\Cadence\tools\capture\library\pspice\fwbell.olb"
+        (DisplayName "E:\Cadence\tools\capture\library\pspice\fwbell.olb")
+        (Type "Schematic Library"))
+      (File "E:\Cadence\tools\capture\library\pspice\harris.olb"
+        (DisplayName "E:\Cadence\tools\capture\library\pspice\harris.olb")
+        (Type "Schematic Library"))
+      (File "E:\Cadence\tools\capture\library\pspice\igbt.olb"
+        (DisplayName "E:\Cadence\tools\capture\library\pspice\igbt.olb")
+        (Type "Schematic Library"))
+      (File "E:\Cadence\tools\capture\library\pspice\infineon.olb"
+        (DisplayName "E:\Cadence\tools\capture\library\pspice\infineon.olb")
+        (Type "Schematic Library"))
+      (File "E:\Cadence\tools\capture\library\pspice\ixys.olb"
+        (DisplayName "E:\Cadence\tools\capture\library\pspice\ixys.olb")
+        (Type "Schematic Library"))
+      (File "E:\Cadence\tools\capture\library\pspice\jbipolar.olb"
+        (DisplayName "E:\Cadence\tools\capture\library\pspice\jbipolar.olb")
+        (Type "Schematic Library"))
+      (File "E:\Cadence\tools\capture\library\pspice\jdiode.olb"
+        (DisplayName "E:\Cadence\tools\capture\library\pspice\jdiode.olb")
+        (Type "Schematic Library"))
+      (File "E:\Cadence\tools\capture\library\pspice\jfet.olb"
+        (DisplayName "E:\Cadence\tools\capture\library\pspice\jfet.olb")
+        (Type "Schematic Library"))
+      (File "E:\Cadence\tools\capture\library\pspice\jjfet.olb"
+        (DisplayName "E:\Cadence\tools\capture\library\pspice\jjfet.olb")
+        (Type "Schematic Library"))
+      (File "E:\Cadence\tools\capture\library\pspice\jopamp.olb"
+        (DisplayName "E:\Cadence\tools\capture\library\pspice\jopamp.olb")
+        (Type "Schematic Library"))
+      (File "E:\Cadence\tools\capture\library\pspice\jpwrbjt.olb"
+        (DisplayName "E:\Cadence\tools\capture\library\pspice\jpwrbjt.olb")
+        (Type "Schematic Library"))
+      (File "E:\Cadence\tools\capture\library\pspice\jpwrmos.olb"
+        (DisplayName "E:\Cadence\tools\capture\library\pspice\jpwrmos.olb")
+        (Type "Schematic Library"))
+      (File "E:\Cadence\tools\capture\library\pspice\linedriv.olb"
+        (DisplayName "E:\Cadence\tools\capture\library\pspice\linedriv.olb")
+        (Type "Schematic Library"))
+      (File "E:\Cadence\tools\capture\library\pspice\lin_tech.olb"
+        (DisplayName "E:\Cadence\tools\capture\library\pspice\lin_tech.olb")
+        (Type "Schematic Library"))
+      (File "E:\Cadence\tools\capture\library\pspice\magnetic.olb"
+        (DisplayName "E:\Cadence\tools\capture\library\pspice\magnetic.olb")
+        (Type "Schematic Library"))
+      (File "E:\Cadence\tools\capture\library\pspice\maxim.olb"
+        (DisplayName "E:\Cadence\tools\capture\library\pspice\maxim.olb")
+        (Type "Schematic Library"))
+      (File "E:\Cadence\tools\capture\library\pspice\mix_misc.olb"
+        (DisplayName "E:\Cadence\tools\capture\library\pspice\mix_misc.olb")
+        (Type "Schematic Library"))
+      (File "E:\Cadence\tools\capture\library\pspice\motorsen.olb"
+        (DisplayName "E:\Cadence\tools\capture\library\pspice\motorsen.olb")
+        (Type "Schematic Library"))
+      (File "E:\Cadence\tools\capture\library\pspice\motor_rf.olb"
+        (DisplayName "E:\Cadence\tools\capture\library\pspice\motor_rf.olb")
+        (Type "Schematic Library"))
+      (File "E:\Cadence\tools\capture\library\pspice\nat_semi.olb"
+        (DisplayName "E:\Cadence\tools\capture\library\pspice\nat_semi.olb")
+        (Type "Schematic Library"))
+      (File "E:\Cadence\tools\capture\library\pspice\on_amp.olb"
+        (DisplayName "E:\Cadence\tools\capture\library\pspice\on_amp.olb")
+        (Type "Schematic Library"))
+      (File "E:\Cadence\tools\capture\library\pspice\on_bjt.olb"
+        (DisplayName "E:\Cadence\tools\capture\library\pspice\on_bjt.olb")
+        (Type "Schematic Library"))
+      (File "E:\Cadence\tools\capture\library\pspice\on_diode.olb"
+        (DisplayName "E:\Cadence\tools\capture\library\pspice\on_diode.olb")
+        (Type "Schematic Library"))
+      (File "E:\Cadence\tools\capture\library\pspice\on_mos.olb"
+        (DisplayName "E:\Cadence\tools\capture\library\pspice\on_mos.olb")
+        (Type "Schematic Library"))
+      (File "E:\Cadence\tools\capture\library\pspice\on_pwm.olb"
+        (DisplayName "E:\Cadence\tools\capture\library\pspice\on_pwm.olb")
+        (Type "Schematic Library"))
+      (File "E:\Cadence\tools\capture\library\pspice\opamp.olb"
+        (DisplayName "E:\Cadence\tools\capture\library\pspice\opamp.olb")
+        (Type "Schematic Library"))
+      (File "E:\Cadence\tools\capture\library\pspice\opto.olb"
+        (DisplayName "E:\Cadence\tools\capture\library\pspice\opto.olb")
+        (Type "Schematic Library"))
+      (File "E:\Cadence\tools\capture\library\pspice\phil_bjt.olb"
+        (DisplayName "E:\Cadence\tools\capture\library\pspice\phil_bjt.olb")
+        (Type "Schematic Library"))
+      (File "E:\Cadence\tools\capture\library\pspice\phil_diode.olb"
+        (DisplayName "E:\Cadence\tools\capture\library\pspice\phil_diode.olb")
+        (Type "Schematic Library"))
+      (File "E:\Cadence\tools\capture\library\pspice\phil_fet.olb"
+        (DisplayName "E:\Cadence\tools\capture\library\pspice\phil_fet.olb")
+        (Type "Schematic Library"))
+      (File "E:\Cadence\tools\capture\library\pspice\phil_rf.olb"
+        (DisplayName "E:\Cadence\tools\capture\library\pspice\phil_rf.olb")
+        (Type "Schematic Library"))
+      (File "E:\Cadence\tools\capture\library\pspice\polyfet.olb"
+        (DisplayName "E:\Cadence\tools\capture\library\pspice\polyfet.olb")
+        (Type "Schematic Library"))
+      (File "E:\Cadence\tools\capture\library\pspice\pwrbjt.olb"
+        (DisplayName "E:\Cadence\tools\capture\library\pspice\pwrbjt.olb")
+        (Type "Schematic Library"))
+      (File "E:\Cadence\tools\capture\library\pspice\pwrmos.olb"
+        (DisplayName "E:\Cadence\tools\capture\library\pspice\pwrmos.olb")
+        (Type "Schematic Library"))
+      (File "E:\Cadence\tools\capture\library\pspice\source.olb"
+        (DisplayName "E:\Cadence\tools\capture\library\pspice\source.olb")
+        (Type "Schematic Library"))
+      (File "E:\Cadence\tools\capture\library\pspice\sourcstm.olb"
+        (DisplayName "E:\Cadence\tools\capture\library\pspice\sourcstm.olb")
+        (Type "Schematic Library"))
+      (File "E:\Cadence\tools\capture\library\pspice\special.olb"
+        (DisplayName "E:\Cadence\tools\capture\library\pspice\special.olb")
+        (Type "Schematic Library"))
+      (File "E:\Cadence\tools\capture\library\pspice\swit_rav.olb"
+        (DisplayName "E:\Cadence\tools\capture\library\pspice\swit_rav.olb")
+        (Type "Schematic Library"))
+      (File "E:\Cadence\tools\capture\library\pspice\swit_reg.olb"
+        (DisplayName "E:\Cadence\tools\capture\library\pspice\swit_reg.olb")
+        (Type "Schematic Library"))
+      (File "E:\Cadence\tools\capture\library\pspice\tex_inst.olb"
+        (DisplayName "E:\Cadence\tools\capture\library\pspice\tex_inst.olb")
+        (Type "Schematic Library"))
+      (File "E:\Cadence\tools\capture\library\pspice\thyristr.olb"
+        (DisplayName "E:\Cadence\tools\capture\library\pspice\thyristr.olb")
+        (Type "Schematic Library"))
+      (File "E:\Cadence\tools\capture\library\pspice\tline.olb"
+        (DisplayName "E:\Cadence\tools\capture\library\pspice\tline.olb")
+        (Type "Schematic Library"))
+      (File "E:\Cadence\tools\capture\library\pspice\xtal.olb"
+        (DisplayName "E:\Cadence\tools\capture\library\pspice\xtal.olb")
+        (Type "Schematic Library"))
+      (File "E:\Cadence\tools\capture\library\pspice\zetex.olb"
+        (DisplayName "E:\Cadence\tools\capture\library\pspice\zetex.olb")
+        (Type "Schematic Library")))
+    (NoModify)
+    (File "zener.dsn"
+      (Type "Schematic Design"))
+    (BuildFileAddedOrDeleted "x")
+    (CompileFileAddedOrDeleted "x")
+    (ANNOTATE_Scope "0")
+    (ANNOTATE_Mode "1")
+    (ANNOTATE_Action "1")
+    (ANNOTATE_Reset_References_to_1 "FALSE")
+    (ANNOTATE_No_Page_Number_Change "TRUE")
+    (ANNOTATE_Property_Combine "{Value}{Source Package}")
+    (PSPICE_Regenerate_Netlist_Flag "FALSE")
+    (DOCKED "TRUE")
+    (DOCKING_POSITION "59420"))
+  (Folder "Layout")
+  (Folder "Outputs"
+    (File ".\zener-pspicefiles\schematic1\schematic1.net"
+      (Type "Report")))
+  (Folder "PSpice Resources"
+    (Folder "Model Libraries"
+      (Sort User)
+      (File ".\zener-pspicefiles\zener.lib"
+        (Type "PSpiceLibrary")
+        (DisplayName ".\zener-pspicefiles\zener.lib")))
+    (Folder "Stimulus Files"
+      (Sort User))
+    (Folder "Include Files"
+      (Sort User))
+    (Folder "Simulation Profiles"
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\zener-pspicefiles\schematic1\bias.sim"
+        (DisplayName "SCHEMATIC1-bias")
+        (Type "PSpice Profile"))
+      (ActiveProfile ".\zener-pspicefiles\schematic1\zener.sim")
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\zener-pspicefiles\schematic1\zener.sim"
+        (DisplayName "SCHEMATIC1-Zener")
+        (Type "PSpice Profile"))))
+  (DefaultLibraryBrowseDirectory "library\PSpice")
+  (PartMRUSelector
+    (0
+      (LibraryName "E:\CADENCE\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (D1N750
+      (FullPartName "D1N750.Normal")
+      (LibraryName "E:\CADENCE\TOOLS\CAPTURE\LIBRARY\PSPICE\DIODE.OLB")
+      (DeviceIndex "0"))
+    (R
+      (FullPartName "R.Normal")
+      (LibraryName "E:\CADENCE\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (Resistor
+      (FullPartName "Resistor.Normal")
+      (LibraryName "E:\CADENCE\TOOLS\CAPTURE\LIBRARY\PSPICE\PWLCOMPS.OLB")
+      (DeviceIndex "0"))
+    (VDC
+      (FullPartName "VDC.Normal")
+      (LibraryName "E:\CADENCE\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (C
+      (FullPartName "C.Normal")
+      (LibraryName "..\..\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (L
+      (FullPartName "L.Normal")
+      (LibraryName "..\..\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (VSTIM
+      (FullPartName "VSTIM.Normal")
+      (LibraryName "..\..\LIBRARY\PSPICE\SOURCSTM.OLB")
+      (DeviceIndex "0")))
+  (LastUsedLibraryBrowseDirectory "LIBRARY\PSPICE")
+  (MPSSessionName "ROG")
+  (Folder "Logs")
+  (GlobalState
+    (FileView
+      (Path "Design Resources")
+      (Path "Design Resources" "C:\Cadence\Pspice sim\zener.dsn")
+      (Path "Design Resources" "C:\Cadence\Pspice sim\zener.dsn" "SCHEMATIC1")
+      (Path "Outputs")
+      (Select "Design Resources" "C:\Cadence\Pspice sim\zener.dsn" "SCHEMATIC1"
+         "PAGE1"))
+    (HierarchyView)
+    (Doc
+      (Type "COrCapturePMDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -1 -1 0 200 0 796"))
+      (Tab 0))))

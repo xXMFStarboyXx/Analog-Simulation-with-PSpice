@@ -1,0 +1,171 @@
+
+**** 02/26/25 17:09:05 **** PSpice 24.1.0 (22 October 2024) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-bias"  [ C:\Cadence\Pspice sim\buffer3-PSpiceFiles\SCHEMATIC1\bias.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "bias.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+.INC "C:\Cadence\Pspice sim\buffer3-PSpiceFiles\SCHEMATIC1\bias\bias_profile.inc" 
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\ROG\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\24.1.0\PSpice.ini file:
+
+**** INCLUDING bias_profile.inc ****
+.LIB    ".\Buffer.lib" 
+.STMLIB ".\bias.stl" 
+
+**** RESUMING bias.cir ****
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 5us 0 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source BUFFER3
+X_U1         N00546 N00539 VDD VSS BUFFER 
+R_R1         N00501 N00539  1k  
+C_C1         0 N00501  1n  TC=0,0 
+V_V2         VSS 0 -15Vdc
+V_V3         VDD 0 15Vdc
+V_V4         N00546 0   STIMULUS=Mypulse
+
+**** RESUMING bias.cir ****
+.END
+* C:\Cadence\Pspice sim\buffer3-PSpiceFiles\SCHEMATIC1\bias\bias.stl written on Wed Feb 26 17:04:55 2025
+* by Stimulus Editor -- Serial Number: 0 -- Version 24.1.0
+;!Stimulus Get
+;! Mypulse Analog
+;!Ok
+;!Plot Axis_Settings
+;!Xrange 0s 6.0000001s
+;!Yrange 0 1
+;!AutoUniverse
+;!XminRes 1ns
+;!YminRes 1n
+;!Ok
+.STIMULUS Mypulse PULSE( 0 1 100n 10n 1u 1 2 )
+
+**** 02/26/25 17:09:05 **** PSpice 24.1.0 (22 October 2024) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-bias"  [ C:\Cadence\Pspice sim\buffer3-PSpiceFiles\SCHEMATIC1\bias.sim ] 
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U1.X_U1.dx    X_U1.X_U1.dy    
+          IS  800.000000E-18  800.000000E-18 
+          RS    1.000000E-03    1.000000E-03 
+         CJO                   10.000000E-12 
+
+
+**** 02/26/25 17:09:05 **** PSpice 24.1.0 (22 October 2024) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-bias"  [ C:\Cadence\Pspice sim\buffer3-PSpiceFiles\SCHEMATIC1\bias.sim ] 
+
+
+ ****     Junction FET MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U1.X_U1.jx    
+               NJF             
+         VTO   -1            
+        BETA  743.300000E-06 
+          IS   12.500000E-12 
+
+
+**** 02/26/25 17:09:05 **** PSpice 24.1.0 (22 October 2024) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-bias"  [ C:\Cadence\Pspice sim\buffer3-PSpiceFiles\SCHEMATIC1\bias.sim ] 
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(  VDD)   15.0000  (  VSS)  -15.0000  (N00501)-5.002E-06 (N00539)-5.002E-06     
+
+(N00546)    0.0000 (X_U1.N00174)-1.654E-06               (X_U1.N00185)-1.654E-06
+
+(X_U1.N01221)-3.308E-06               (X_U1.X_U1.6)-321.9E-09                   
+
+(X_U1.X_U1.7)-5.087E-06               (X_U1.X_U1.8)-5.087E-06                   
+
+(X_U1.X_U1.9)    0.0000               (X_U1.X_U1.10)     .6613                  
+
+(X_U1.X_U1.11)   14.6610              (X_U1.X_U1.12)   14.6610                  
+
+(X_U1.X_U1.53)   13.5000              (X_U1.X_U1.54)  -13.5000                  
+
+(X_U1.X_U1.90)-1.694E-06              (X_U1.X_U1.91)   25.0000                  
+
+(X_U1.X_U1.92)  -25.0000              (X_U1.X_U1.99)    0.0000              
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V2         2.170E-03
+    V_V3        -2.171E-03
+    V_V4        -1.654E-09
+    X_U1.X_U1.vb  -3.219E-12
+    X_U1.X_U1.vc   1.350E-11
+    X_U1.X_U1.ve   1.535E-11
+    X_U1.X_U1.vlim  -1.694E-09
+    X_U1.X_U1.vlp  -2.500E-11
+    X_U1.X_U1.vln  -2.842E-11
+
+    TOTAL POWER DISSIPATION   6.51E-02  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 02/26/25 17:09:05 **** PSpice 24.1.0 (22 October 2024) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-bias"  [ C:\Cadence\Pspice sim\buffer3-PSpiceFiles\SCHEMATIC1\bias.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .03
+

@@ -1,0 +1,20 @@
+
+**** 02/11/25 21:27:05 **** PSpice 24.1.0 (22 October 2024) *** ID# 0 ********
+
+ *Capacitor
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+C1 1 0 1pF
+C2 1 2 2pF
+V1 2 0 3volts
+.END
+
+ERROR(ORPSIM-15142): Node 1 is floating
+

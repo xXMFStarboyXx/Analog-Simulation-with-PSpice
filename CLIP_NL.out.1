@@ -1,0 +1,36 @@
+
+**** 01/10/25 15:49:08 **** PSpice 24.1.0 (22 October 2024) *** ID# 0 ********
+
+ ***** Pspice Netlist    (Cadence Design System Inc.)
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+***** Design : clipper
+*******************************************************
+
+R_R4        0 out       1k
+D_D2        0 mid D1N3940
+D_D1        mid vcc D1N3940
+R_R3        0 mid   1k
+C_C1        mid out     0.47U
+V_V2        in 0 DC 0Vdc AC     1Vac
+R_R2        mid  vcc    3.3k
+V_V1        vcc 0 5VDC
+R_R1        in mid  1k
+      
+.Probe v(mid) v(out)
+---------$
+ERROR(ORPSIM-16306): Must be a two terminal device
+.LIB D1N3940.lib
+
+ERROR(ORPSIM-16276): Simulation cannot be completed because library D1N3940.lib 
+is not available.
+.AC DEC 11 10 100meg
+.END
+

@@ -1,0 +1,7 @@
+* source BUFFER3
+X_U1         N00546 N00539 VDD VSS BUFFER 
+R_R1         N00501 N00539  1k  
+C_C1         0 N00501  1n  TC=0,0 
+V_V2         VSS 0 -15Vdc
+V_V3         VDD 0 15Vdc
+V_V4         N00546 0   STIMULUS=Mypulse

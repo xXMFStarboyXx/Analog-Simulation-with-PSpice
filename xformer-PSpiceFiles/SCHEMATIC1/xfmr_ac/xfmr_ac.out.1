@@ -1,0 +1,138 @@
+
+**** 01/14/25 21:17:20 **** PSpice 24.1.0 (22 October 2024) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-xfmr_ac"  [ C:\Cadence\Pspice sim\xformer-PSpiceFiles\SCHEMATIC1\xfmr_ac.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "xfmr_ac.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\ROG\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\24.1.0\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.AC LIN 1 1K 1K
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source XFORMER
+R_R1         N00282 N00886  20  
+R_R2         N00230 N00901  20  
+R_R3         N00180 N00239  40  
+L_L1         N00230 0  25MH  TC=0,0 
+L_L2         N00275 0  25MH  TC=0,0 
+C_C1         0 N00180  5.3UF  TC=0,0 
+V_V1         N00282 0 DC 0Vdc AC 20Vac 
+Kn_K1         L_L1 L_L2     0.8
+V_X1         N00886 N00275 0V
+          
+.PRINT        AC   
++ IR(V_X1) 
++ II(V_X1)  
+V_X2         N00901 N00239 0V
+          
+.PRINT        AC   
++ IR(V_X2) 
++ II(V_X2)  
+
+**** RESUMING xfmr_ac.cir ****
+.END
+
+**** 01/14/25 21:17:20 **** PSpice 24.1.0 (22 October 2024) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-xfmr_ac"  [ C:\Cadence\Pspice sim\xformer-PSpiceFiles\SCHEMATIC1\xfmr_ac.sim ] 
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00180)    0.0000 (N00230)    0.0000 (N00239)    0.0000 (N00275)    0.0000     
+
+(N00282)    0.0000 (N00886)    0.0000 (N00901)    0.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1         0.000E+00
+    V_X1         0.000E+00
+    V_X2         0.000E+00
+
+    TOTAL POWER DISSIPATION   0.00E+00  WATTS
+
+
+**** 01/14/25 21:17:20 **** PSpice 24.1.0 (22 October 2024) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-xfmr_ac"  [ C:\Cadence\Pspice sim\xformer-PSpiceFiles\SCHEMATIC1\xfmr_ac.sim ] 
+
+
+ ****     AC ANALYSIS                      TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+  FREQ        IR(V_X1)    II(V_X1)    
+
+
+   1.000E+03   1.767E-01  -1.441E-01
+
+**** 01/14/25 21:17:20 **** PSpice 24.1.0 (22 October 2024) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-xfmr_ac"  [ C:\Cadence\Pspice sim\xformer-PSpiceFiles\SCHEMATIC1\xfmr_ac.sim ] 
+
+
+ ****     AC ANALYSIS                      TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+  FREQ        IR(V_X2)    II(V_X2)    
+
+
+   1.000E+03   1.979E-01  -4.904E-02
+
+
+          JOB CONCLUDED
+
+**** 01/14/25 21:17:20 **** PSpice 24.1.0 (22 October 2024) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-xfmr_ac"  [ C:\Cadence\Pspice sim\xformer-PSpiceFiles\SCHEMATIC1\xfmr_ac.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .02
+

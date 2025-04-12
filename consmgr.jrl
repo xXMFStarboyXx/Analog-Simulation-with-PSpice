@@ -1,0 +1,7 @@
+\t (22:57:05) cds_root Unknown Unknown (unrelease) [unrelease] Windows SPB 64-bit Edition
+\t (22:57:05)     Journal start - Fri Jan 10 20:38:00 2025
+\t (22:57:05)         Host=ROG-STRIX-G17 User=ROG Pid=6672 CPUs=16
+\t (22:57:05) CmdLine= cds_root.exe 
+\t (22:57:05) 
+\t (22:57:05) skill setRedsGlobalTypes()
+\t (22:57:05) skill acns_setGlobalTypes()

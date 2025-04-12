@@ -1,0 +1,11 @@
+* source XFORMER_NONLIN
+V_V1         N00667 0  
++SIN 0 100 60 0 0 0
+R_R1         N00677 N00667  0.125  
+L_L2         0 CT  10uH  
+L_L1         CT N00633  10uH  
+R_R2         N00633 0  0.125  
+L_L3         N00677 0  10uH  
+R_R3         CT 0  0.125  
+Kn_K1         L_L3 L_L1 
++ L_L2    0.99 Kbreak

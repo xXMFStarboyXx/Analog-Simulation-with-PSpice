@@ -1,0 +1,105 @@
+
+**** 01/10/25 15:51:15 **** PSpice 24.1.0 (22 October 2024) *** ID# 0 ********
+
+ ***** Pspice Netlist    (Cadence Design System Inc.)
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+***** Design : clipper
+*******************************************************
+
+R_R4        0 out       1k
+D_D2        0 mid D1N3940
+D_D1        mid vcc D1N3940
+R_R3        0 mid   1k
+C_C1        mid out     0.47U
+V_V2        in 0 DC 0Vdc AC     1Vac
+R_R2        mid  vcc    3.3k
+V_V1        vcc 0 5VDC
+R_R1        in mid  1k
+      
+.Probe v([mid]) v([out])
+.LIB
+.AC DEC 11 10 100meg
+.END
+
+**** 01/10/25 15:51:15 **** PSpice 24.1.0 (22 October 2024) *** ID# 0 ********
+
+ ***** Pspice Netlist    (Cadence Design System Inc.)
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               D1N3940         
+          IS  400.000000E-12 
+           N    1.48         
+          BV  600            
+         IBV  100.000000E-06 
+          RS     .105        
+          TT  800.000000E-09 
+         CJO   19.500000E-12 
+          VJ     .4          
+           M     .38         
+          FC     .9          
+          EG    1.36         
+         XTI   -8            
+
+
+**** 01/10/25 15:51:15 **** PSpice 24.1.0 (22 October 2024) *** ID# 0 ********
+
+ ***** Pspice Netlist    (Cadence Design System Inc.)
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(   in)    0.0000  (  mid)     .6579  (  out)    0.0000  (  vcc)    5.0000  
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V2         6.579E-04
+    V_V1        -1.316E-03
+
+    TOTAL POWER DISSIPATION   6.58E-03  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 01/10/25 15:51:15 **** PSpice 24.1.0 (22 October 2024) *** ID# 0 ********
+
+ ***** Pspice Netlist    (Cadence Design System Inc.)
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .02
+

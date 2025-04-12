@@ -1,0 +1,5 @@
+* source DIVIDER
+V_V1         N00137 0 10Vdc
+R_R1         0 N00130  100G  
+R_HB1_R1         N00130 N00137  1k  
+R_HB1_R2         0 N00130  1k  

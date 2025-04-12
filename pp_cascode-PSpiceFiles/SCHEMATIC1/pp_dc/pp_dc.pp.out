@@ -1,0 +1,625 @@
+**** Analysis Setup ****
+
+**** 04/10/25 19:46:38 **** PSpice 24.1.0 (22 October 2024) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-pp_dc"  [ C:\Cadence\Pspice sim\pp_cascode-PSpiceFiles\SCHEMATIC1\pp_dc.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "pp_dc.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "../../../pp_cascode-pspicefiles/pp_cascode.lib" 
+* From [PSPICE NETLIST] section of C:\Users\ROG\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\24.1.0\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.DC V_V3 LIST 0 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source PP_CASCODE
+V_V1         N01866 0 12Vdc
+V_V2         N01936 0 50
+V_V3         N26542 0  AC 1
++SIN 0 1 5 0 0 0
+D_D1         0 N22961 D1N755 
+R_R2         N01866 N22961 R_R2 390 TC=0,0 
+.model        R_R2 RES R=1     DEV/GAUSS 10%/10% TC1=0 TC2=0
+C_C1         0 N22961 C_C1 3300u  TC=0,0 
+.model        C_C1 CAP C=1     DEV 10%/10% TC1=0 TC2=0 VC1=0 VC2=0
+R_R3         N01430 N22961 R_R3 1.1K TC=0,0 
+.model        R_R3 RES R=1     DEV/GAUSS 10%/10% TC1=0 TC2=0
+R_R1         OUT N39220 R_R1 300 TC=0,0 
+.model        R_R1 RES R=1     DEV/GAUSS 10%/10% TC1=0 TC2=0
+L_L1         N39220 N01936 L_L1 .22u  
+.model        l_L1 IND L=1     DEV 0/0% TC1=0 TC2=0 IL1=0 IL2=0
+R_R4         N26542 N43174 R_R4 75 TC=0,0 
+.model        R_R4 RES R=1     DEV 0%/0% TC1=0 TC2=0
+C_C2         N43174 N01430 C_C2 330u  TC=0,0 
+.model        C_C2 CAP C=1     DEV 20/20% TC1=0 TC2=0 VC1=0 VC2=0
+C_C3         0 N26201 C_C3 15p  TC=0,0 
+.model        C_C3 CAP C=1     DEV 10%/10% TC1=0 TC2=0 VC1=0 VC2=0
+R_R5         N01228 N26201 R_R5 68 TC=0,0 
+.model        R_R5 RES R=1     DEV/GAUSS 10%/10% TC1=0 TC2=0
+R_R6         0 N01430 R_R6 1.8K TC=0,0 
+.model        R_R6 RES R=1     DEV/GAUSS 10%/10% TC1=0 TC2=0
+R_R7         0 N01228 R_R7 33 TC=0,0 
+.model        R_R7 RES R=1     DEV/GAUSS 10%/10% TC1=0 TC2=0
+X_Q1         OUT N22961 N21518 awb2n3724 PARAMS:                               
++              
+X_Q2         N21518 N01430 N01228 awb2n5179 PARAMS:                            
++                 
+
+**** RESUMING pp_dc.cir ****
+.END
+
+**** 04/10/25 19:46:38 **** PSpice 24.1.0 (22 October 2024) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-pp_dc"  [ C:\Cadence\Pspice sim\pp_cascode-PSpiceFiles\SCHEMATIC1\pp_dc.sim ] 
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               D1N755          
+          IS    2.077000E-15 
+         ISR    1.645000E-09 
+          BV    7.5          
+         IBV    2.5701       
+         NBV     .39227      
+        IBVL   40.222000E-06 
+        NBVL     .25042      
+          RS    2.467        
+         CJO  104.000000E-12 
+          VJ     .75         
+           M     .5061       
+        TBV1  533.330000E-06 
+
+
+**** 04/10/25 19:46:38 **** PSpice 24.1.0 (22 October 2024) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-pp_dc"  [ C:\Cadence\Pspice sim\pp_cascode-PSpiceFiles\SCHEMATIC1\pp_dc.sim ] 
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_Q1.model4     X_Q2.model4     
+               NPN             NPN             
+       LEVEL    1               1            
+          IS   10.000000E-15    4.479000E-15 
+          EG    1.11            1.11         
+          BF  138              83            
+          NF    1               1.07         
+         VAF   65              24            
+         IKF     .371            .1          
+         ISE   29.400000E-12  347.100000E-12 
+          NE    2.1335          3.66         
+          BR    1               1            
+          NR    1               1.07         
+         VAR   50             500            
+         IKR     .08                         
+          NC                    1            
+         ISS    0               0            
+          RB    1              36            
+         RBM    1              36            
+          RE     .01             .5          
+          RC     .42            1            
+         CJE   63.340000E-12  910.000000E-15 
+         VJE     .55             .661        
+         MJE     .3546           .294        
+         CJC   12.460000E-12  835.000000E-15 
+         VJC     .55            1            
+         MJC     .2977           .28         
+        XCJC     .5              .5          
+         CJS    0               0            
+         VJS     .7              .7          
+         MJS     .5              .5          
+          TF  438.100000E-12  112.000000E-12 
+         XTF    5                .12         
+         VTF   10                            
+         ITF    7                            
+          TR   77.300000E-09    1.000000E-09 
+         XTB    1.5815          2.3          
+          KF    0               0            
+          AF    1               1            
+          CN    2.42            2.42         
+           D     .87             .87         
+
+
+**** 04/10/25 19:46:38 **** PSpice 24.1.0 (22 October 2024) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-pp_dc"  [ C:\Cadence\Pspice sim\pp_cascode-PSpiceFiles\SCHEMATIC1\pp_dc.sim ] 
+
+
+ ****     Resistor MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               R_R2            R_R3            R_R1            R_R4            
+           R    1               1               1               1            
+
+
+               R_R5            R_R6            R_R7            
+           R    1               1               1            
+
+
+**** 04/10/25 19:46:38 **** PSpice 24.1.0 (22 October 2024) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-pp_dc"  [ C:\Cadence\Pspice sim\pp_cascode-PSpiceFiles\SCHEMATIC1\pp_dc.sim ] 
+
+
+ ****     Capacitor MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               C_C1            C_C2            C_C3            
+           C    1               1               1            
+
+
+**** 04/10/25 19:46:38 **** PSpice 24.1.0 (22 October 2024) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-pp_dc"  [ C:\Cadence\Pspice sim\pp_cascode-PSpiceFiles\SCHEMATIC1\pp_dc.sim ] 
+
+
+ ****     Inductor MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               L_L1            
+           L    1            
+
+**** Param: R_R7.Value = 3.30000000000000
+**** Param: R_R3.Value = 110
+
+**** Command: doALL
+**** Param: R_R7.Value = 3.30000000000000
+**** Param: R_R3.Value = 1.21000000000000k
+
+**** Command: doALL
+**** Param: R_R7.Value = 3.30000000000000
+**** Param: R_R3.Value = 2.31000000000000k
+
+**** Command: doALL
+**** Param: R_R7.Value = 3.30000000000000
+**** Param: R_R3.Value = 3.41000000000000k
+
+**** Command: doALL
+**** Param: R_R7.Value = 3.30000000000000
+**** Param: R_R3.Value = 4.51000000000000k
+
+**** Command: doALL
+**** Param: R_R7.Value = 3.30000000000000
+**** Param: R_R3.Value = 5.61000000000000k
+
+**** Command: doALL
+**** Param: R_R7.Value = 3.30000000000000
+**** Param: R_R3.Value = 6.71000000000000k
+
+**** Command: doALL
+**** Param: R_R7.Value = 3.30000000000000
+**** Param: R_R3.Value = 7.81000000000000k
+
+**** Command: doALL
+**** Param: R_R7.Value = 3.30000000000000
+**** Param: R_R3.Value = 8.91000000000000k
+
+**** Command: doALL
+**** Param: R_R7.Value = 3.30000000000000
+**** Param: R_R3.Value = 10.01000000000000k
+
+**** Command: doALL
+**** Param: R_R7.Value = 36.30000000000000
+**** Param: R_R3.Value = 110
+
+**** Command: doALL
+**** Param: R_R7.Value = 36.30000000000000
+**** Param: R_R3.Value = 1.21000000000000k
+
+**** Command: doALL
+**** Param: R_R7.Value = 36.30000000000000
+**** Param: R_R3.Value = 2.31000000000000k
+
+**** Command: doALL
+**** Param: R_R7.Value = 36.30000000000000
+**** Param: R_R3.Value = 3.41000000000000k
+
+**** Command: doALL
+**** Param: R_R7.Value = 36.30000000000000
+**** Param: R_R3.Value = 4.51000000000000k
+
+**** Command: doALL
+**** Param: R_R7.Value = 36.30000000000000
+**** Param: R_R3.Value = 5.61000000000000k
+
+**** Command: doALL
+**** Param: R_R7.Value = 36.30000000000000
+**** Param: R_R3.Value = 6.71000000000000k
+
+**** Command: doALL
+**** Param: R_R7.Value = 36.30000000000000
+**** Param: R_R3.Value = 7.81000000000000k
+
+**** Command: doALL
+**** Param: R_R7.Value = 36.30000000000000
+**** Param: R_R3.Value = 8.91000000000000k
+
+**** Command: doALL
+**** Param: R_R7.Value = 36.30000000000000
+**** Param: R_R3.Value = 10.01000000000000k
+
+**** Command: doALL
+**** Param: R_R7.Value = 69.30000000000000
+**** Param: R_R3.Value = 110
+
+**** Command: doALL
+**** Param: R_R7.Value = 69.30000000000000
+**** Param: R_R3.Value = 1.21000000000000k
+
+**** Command: doALL
+**** Param: R_R7.Value = 69.30000000000000
+**** Param: R_R3.Value = 2.31000000000000k
+
+**** Command: doALL
+**** Param: R_R7.Value = 69.30000000000000
+**** Param: R_R3.Value = 3.41000000000000k
+
+**** Command: doALL
+**** Param: R_R7.Value = 69.30000000000000
+**** Param: R_R3.Value = 4.51000000000000k
+
+**** Command: doALL
+**** Param: R_R7.Value = 69.30000000000000
+**** Param: R_R3.Value = 5.61000000000000k
+
+**** Command: doALL
+**** Param: R_R7.Value = 69.30000000000000
+**** Param: R_R3.Value = 6.71000000000000k
+
+**** Command: doALL
+**** Param: R_R7.Value = 69.30000000000000
+**** Param: R_R3.Value = 7.81000000000000k
+
+**** Command: doALL
+**** Param: R_R7.Value = 69.30000000000000
+**** Param: R_R3.Value = 8.91000000000000k
+
+**** Command: doALL
+**** Param: R_R7.Value = 69.30000000000000
+**** Param: R_R3.Value = 10.01000000000000k
+
+**** Command: doALL
+**** Param: R_R7.Value = 102.30000000000000
+**** Param: R_R3.Value = 110
+
+**** Command: doALL
+**** Param: R_R7.Value = 102.30000000000000
+**** Param: R_R3.Value = 1.21000000000000k
+
+**** Command: doALL
+**** Param: R_R7.Value = 102.30000000000000
+**** Param: R_R3.Value = 2.31000000000000k
+
+**** Command: doALL
+**** Param: R_R7.Value = 102.30000000000000
+**** Param: R_R3.Value = 3.41000000000000k
+
+**** Command: doALL
+**** Param: R_R7.Value = 102.30000000000000
+**** Param: R_R3.Value = 4.51000000000000k
+
+**** Command: doALL
+**** Param: R_R7.Value = 102.30000000000000
+**** Param: R_R3.Value = 5.61000000000000k
+
+**** Command: doALL
+**** Param: R_R7.Value = 102.30000000000000
+**** Param: R_R3.Value = 6.71000000000000k
+
+**** Command: doALL
+**** Param: R_R7.Value = 102.30000000000000
+**** Param: R_R3.Value = 7.81000000000000k
+
+**** Command: doALL
+**** Param: R_R7.Value = 102.30000000000000
+**** Param: R_R3.Value = 8.91000000000000k
+
+**** Command: doALL
+**** Param: R_R7.Value = 102.30000000000000
+**** Param: R_R3.Value = 10.01000000000000k
+
+**** Command: doALL
+**** Param: R_R7.Value = 135.30000000000001
+**** Param: R_R3.Value = 110
+
+**** Command: doALL
+**** Param: R_R7.Value = 135.30000000000001
+**** Param: R_R3.Value = 1.21000000000000k
+
+**** Command: doALL
+**** Param: R_R7.Value = 135.30000000000001
+**** Param: R_R3.Value = 2.31000000000000k
+
+**** Command: doALL
+**** Param: R_R7.Value = 135.30000000000001
+**** Param: R_R3.Value = 3.41000000000000k
+
+**** Command: doALL
+**** Param: R_R7.Value = 135.30000000000001
+**** Param: R_R3.Value = 4.51000000000000k
+
+**** Command: doALL
+**** Param: R_R7.Value = 135.30000000000001
+**** Param: R_R3.Value = 5.61000000000000k
+
+**** Command: doALL
+**** Param: R_R7.Value = 135.30000000000001
+**** Param: R_R3.Value = 6.71000000000000k
+
+**** Command: doALL
+**** Param: R_R7.Value = 135.30000000000001
+**** Param: R_R3.Value = 7.81000000000000k
+
+**** Command: doALL
+**** Param: R_R7.Value = 135.30000000000001
+**** Param: R_R3.Value = 8.91000000000000k
+
+**** Command: doALL
+**** Param: R_R7.Value = 135.30000000000001
+**** Param: R_R3.Value = 10.01000000000000k
+
+**** Command: doALL
+**** Param: R_R7.Value = 168.30000000000001
+**** Param: R_R3.Value = 110
+
+**** Command: doALL
+**** Param: R_R7.Value = 168.30000000000001
+**** Param: R_R3.Value = 1.21000000000000k
+
+**** Command: doALL
+**** Param: R_R7.Value = 168.30000000000001
+**** Param: R_R3.Value = 2.31000000000000k
+
+**** Command: doALL
+**** Param: R_R7.Value = 168.30000000000001
+**** Param: R_R3.Value = 3.41000000000000k
+
+**** Command: doALL
+**** Param: R_R7.Value = 168.30000000000001
+**** Param: R_R3.Value = 4.51000000000000k
+
+**** Command: doALL
+**** Param: R_R7.Value = 168.30000000000001
+**** Param: R_R3.Value = 5.61000000000000k
+
+**** Command: doALL
+**** Param: R_R7.Value = 168.30000000000001
+**** Param: R_R3.Value = 6.71000000000000k
+
+**** Command: doALL
+**** Param: R_R7.Value = 168.30000000000001
+**** Param: R_R3.Value = 7.81000000000000k
+
+**** Command: doALL
+**** Param: R_R7.Value = 168.30000000000001
+**** Param: R_R3.Value = 8.91000000000000k
+
+**** Command: doALL
+**** Param: R_R7.Value = 168.30000000000001
+**** Param: R_R3.Value = 10.01000000000000k
+
+**** Command: doALL
+**** Param: R_R7.Value = 201.30000000000001
+**** Param: R_R3.Value = 110
+
+**** Command: doALL
+**** Param: R_R7.Value = 201.30000000000001
+**** Param: R_R3.Value = 1.21000000000000k
+
+**** Command: doALL
+**** Param: R_R7.Value = 201.30000000000001
+**** Param: R_R3.Value = 2.31000000000000k
+
+**** Command: doALL
+**** Param: R_R7.Value = 201.30000000000001
+**** Param: R_R3.Value = 3.41000000000000k
+
+**** Command: doALL
+**** Param: R_R7.Value = 201.30000000000001
+**** Param: R_R3.Value = 4.51000000000000k
+
+**** Command: doALL
+**** Param: R_R7.Value = 201.30000000000001
+**** Param: R_R3.Value = 5.61000000000000k
+
+**** Command: doALL
+**** Param: R_R7.Value = 201.30000000000001
+**** Param: R_R3.Value = 6.71000000000000k
+
+**** Command: doALL
+**** Param: R_R7.Value = 201.30000000000001
+**** Param: R_R3.Value = 7.81000000000000k
+
+**** Command: doALL
+**** Param: R_R7.Value = 201.30000000000001
+**** Param: R_R3.Value = 8.91000000000000k
+
+**** Command: doALL
+**** Param: R_R7.Value = 201.30000000000001
+**** Param: R_R3.Value = 10.01000000000000k
+
+**** Command: doALL
+**** Param: R_R7.Value = 234.30000000000001
+**** Param: R_R3.Value = 110
+
+**** Command: doALL
+**** Param: R_R7.Value = 234.30000000000001
+**** Param: R_R3.Value = 1.21000000000000k
+
+**** Command: doALL
+**** Param: R_R7.Value = 234.30000000000001
+**** Param: R_R3.Value = 2.31000000000000k
+
+**** Command: doALL
+**** Param: R_R7.Value = 234.30000000000001
+**** Param: R_R3.Value = 3.41000000000000k
+
+**** Command: doALL
+**** Param: R_R7.Value = 234.30000000000001
+**** Param: R_R3.Value = 4.51000000000000k
+
+**** Command: doALL
+**** Param: R_R7.Value = 234.30000000000001
+**** Param: R_R3.Value = 5.61000000000000k
+
+**** Command: doALL
+**** Param: R_R7.Value = 234.30000000000001
+**** Param: R_R3.Value = 6.71000000000000k
+
+**** Command: doALL
+**** Param: R_R7.Value = 234.30000000000001
+**** Param: R_R3.Value = 7.81000000000000k
+
+**** Command: doALL
+**** Param: R_R7.Value = 234.30000000000001
+**** Param: R_R3.Value = 8.91000000000000k
+
+**** Command: doALL
+**** Param: R_R7.Value = 234.30000000000001
+**** Param: R_R3.Value = 10.01000000000000k
+
+**** Command: doALL
+**** Param: R_R7.Value = 267.30000000000001
+**** Param: R_R3.Value = 110
+
+**** Command: doALL
+**** Param: R_R7.Value = 267.30000000000001
+**** Param: R_R3.Value = 1.21000000000000k
+
+**** Command: doALL
+**** Param: R_R7.Value = 267.30000000000001
+**** Param: R_R3.Value = 2.31000000000000k
+
+**** Command: doALL
+**** Param: R_R7.Value = 267.30000000000001
+**** Param: R_R3.Value = 3.41000000000000k
+
+**** Command: doALL
+**** Param: R_R7.Value = 267.30000000000001
+**** Param: R_R3.Value = 4.51000000000000k
+
+**** Command: doALL
+**** Param: R_R7.Value = 267.30000000000001
+**** Param: R_R3.Value = 5.61000000000000k
+
+**** Command: doALL
+**** Param: R_R7.Value = 267.30000000000001
+**** Param: R_R3.Value = 6.71000000000000k
+
+**** Command: doALL
+**** Param: R_R7.Value = 267.30000000000001
+**** Param: R_R3.Value = 7.81000000000000k
+
+**** Command: doALL
+**** Param: R_R7.Value = 267.30000000000001
+**** Param: R_R3.Value = 8.91000000000000k
+
+**** Command: doALL
+**** Param: R_R7.Value = 267.30000000000001
+**** Param: R_R3.Value = 10.01000000000000k
+
+**** Command: doALL
+**** Param: R_R7.Value = 300.30000000000001
+**** Param: R_R3.Value = 110
+
+**** Command: doALL
+**** Param: R_R7.Value = 300.30000000000001
+**** Param: R_R3.Value = 1.21000000000000k
+
+**** Command: doALL
+**** Param: R_R7.Value = 300.30000000000001
+**** Param: R_R3.Value = 2.31000000000000k
+
+**** Command: doALL
+**** Param: R_R7.Value = 300.30000000000001
+**** Param: R_R3.Value = 3.41000000000000k
+
+**** Command: doALL
+**** Param: R_R7.Value = 300.30000000000001
+**** Param: R_R3.Value = 4.51000000000000k
+
+**** Command: doALL
+**** Param: R_R7.Value = 300.30000000000001
+**** Param: R_R3.Value = 5.61000000000000k
+
+**** Command: doALL
+**** Param: R_R7.Value = 300.30000000000001
+**** Param: R_R3.Value = 6.71000000000000k
+
+**** Command: doALL
+**** Param: R_R7.Value = 300.30000000000001
+**** Param: R_R3.Value = 7.81000000000000k
+
+**** Command: doALL
+**** Param: R_R7.Value = 300.30000000000001
+**** Param: R_R3.Value = 8.91000000000000k
+
+**** Command: doALL
+**** Param: R_R7.Value = 300.30000000000001
+**** Param: R_R3.Value = 10.01000000000000k
+
+**** Command: doALL
+
+**** Command: FINISH
+
+**** 04/10/25 19:46:38 **** PSpice 24.1.0 (22 October 2024) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-pp_dc"  [ C:\Cadence\Pspice sim\pp_cascode-PSpiceFiles\SCHEMATIC1\pp_dc.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =        3.14
+

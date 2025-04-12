@@ -1,0 +1,3225 @@
+**** Analysis Setup ****
+
+**** 04/09/25 14:43:40 **** PSpice 24.1.0 (22 October 2024) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-DC"  [ C:\Cadence\Pspice sim\mc_cascode-PSpiceFiles\SCHEMATIC1\DC.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "DC.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "../../../mc_cascode-pspicefiles/mc_cascode.lib" 
+* From [PSPICE NETLIST] section of C:\Users\ROG\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\24.1.0\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.DC V_V3 LIST 0 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source MC_CASCODE
+V_V1         N01866 0 12Vdc
+V_V2         N01936 0 50
+V_V3         N26542 0  AC 1
++SIN 0 1 5 0 0 0
+D_D1         0 N22961 D1N755 
+R_R2         N01866 N22961 R_R2 390 TC=0,0 
+.model        R_R2 RES R=1     DEV/GAUSS 10%/10% TC1=0 TC2=0
+C_C1         0 N22961 C_C1 3300u  TC=0,0 
+.model        C_C1 CAP C=1     DEV 10%/10% TC1=0 TC2=0 VC1=0 VC2=0
+R_R3         N01430 N22961 R_R3 1.1K TC=0,0 
+.model        R_R3 RES R=1     DEV/GAUSS 20%/20% TC1=0 TC2=0
+R_R1         OUT N39220 R_R1 300 TC=0,0 
+.model        R_R1 RES R=1     DEV/GAUSS 10%/10% TC1=0 TC2=0
+L_L1         N39220 N01936 L_L1 .22u  
+.model        l_L1 IND L=1     DEV 0/0% TC1=0 TC2=0 IL1=0 IL2=0
+R_R4         N26542 N43174 R_R4 75 TC=0,0 
+.model        R_R4 RES R=1     DEV 0%/0% TC1=0 TC2=0
+C_C2         N43174 N01430 C_C2 330u  TC=0,0 
+.model        C_C2 CAP C=1     DEV 20/20% TC1=0 TC2=0 VC1=0 VC2=0
+C_C3         0 N26201 C_C3 15p  TC=0,0 
+.model        C_C3 CAP C=1     DEV 10%/10% TC1=0 TC2=0 VC1=0 VC2=0
+R_R5         N01228 N26201 R_R5 68 TC=0,0 
+.model        R_R5 RES R=1     DEV/GAUSS 10%/10% TC1=0 TC2=0
+R_R6         0 N01430 R_R6 1.8K TC=0,0 
+.model        R_R6 RES R=1     DEV/GAUSS 10%/10% TC1=0 TC2=0
+R_R7         0 N01228 R_R7 33 TC=0,0 
+.model        R_R7 RES R=1     DEV/GAUSS 10%/10% TC1=0 TC2=0
+X_Q1         OUT N22961 N21518 awb2n3724 PARAMS:                               
++              
+X_Q2         N21518 N01430 N01228 awb2n5179 PARAMS:                            
++                 
+
+**** RESUMING DC.cir ****
+.END
+
+**** 04/09/25 14:43:40 **** PSpice 24.1.0 (22 October 2024) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-DC"  [ C:\Cadence\Pspice sim\mc_cascode-PSpiceFiles\SCHEMATIC1\DC.sim ] 
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               D1N755          
+          IS    2.077000E-15 
+         ISR    1.645000E-09 
+          BV    7.5          
+         IBV    2.5701       
+         NBV     .39227      
+        IBVL   40.222000E-06 
+        NBVL     .25042      
+          RS    2.467        
+         CJO  104.000000E-12 
+          VJ     .75         
+           M     .5061       
+        TBV1  533.330000E-06 
+
+
+**** 04/09/25 14:43:40 **** PSpice 24.1.0 (22 October 2024) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-DC"  [ C:\Cadence\Pspice sim\mc_cascode-PSpiceFiles\SCHEMATIC1\DC.sim ] 
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_Q1.model4     X_Q2.model4     
+               NPN             NPN             
+       LEVEL    1               1            
+          IS   10.000000E-15    4.479000E-15 
+          EG    1.11            1.11         
+          BF  138              83            
+          NF    1               1.07         
+         VAF   65              24            
+         IKF     .371            .1          
+         ISE   29.400000E-12  347.100000E-12 
+          NE    2.1335          3.66         
+          BR    1               1            
+          NR    1               1.07         
+         VAR   50             500            
+         IKR     .08                         
+          NC                    1            
+         ISS    0               0            
+          RB    1              36            
+         RBM    1              36            
+          RE     .01             .5          
+          RC     .42            1            
+         CJE   63.340000E-12  910.000000E-15 
+         VJE     .55             .661        
+         MJE     .3546           .294        
+         CJC   12.460000E-12  835.000000E-15 
+         VJC     .55            1            
+         MJC     .2977           .28         
+        XCJC     .5              .5          
+         CJS    0               0            
+         VJS     .7              .7          
+         MJS     .5              .5          
+          TF  438.100000E-12  112.000000E-12 
+         XTF    5                .12         
+         VTF   10                            
+         ITF    7                            
+          TR   77.300000E-09    1.000000E-09 
+         XTB    1.5815          2.3          
+          KF    0               0            
+          AF    1               1            
+          CN    2.42            2.42         
+           D     .87             .87         
+
+
+**** 04/09/25 14:43:40 **** PSpice 24.1.0 (22 October 2024) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-DC"  [ C:\Cadence\Pspice sim\mc_cascode-PSpiceFiles\SCHEMATIC1\DC.sim ] 
+
+
+ ****     Resistor MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               R_R2            R_R3            R_R1            R_R4            
+           R    1               1               1               1            
+
+
+               R_R5            R_R6            R_R7            
+           R    1               1               1            
+
+
+**** 04/09/25 14:43:40 **** PSpice 24.1.0 (22 October 2024) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-DC"  [ C:\Cadence\Pspice sim\mc_cascode-PSpiceFiles\SCHEMATIC1\DC.sim ] 
+
+
+ ****     Capacitor MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               C_C1            C_C2            C_C3            
+           C    1               1               1            
+
+
+**** 04/09/25 14:43:40 **** PSpice 24.1.0 (22 October 2024) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-DC"  [ C:\Cadence\Pspice sim\mc_cascode-PSpiceFiles\SCHEMATIC1\DC.sim ] 
+
+
+ ****     Inductor MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               L_L1            
+           L    1            
+
+**** Param: R_R2.Value = 390
+**** Param: C_C1.Value = 3300u
+**** Param: R_R3.Value = 1.1K
+**** Param: R_R1.Value = 300
+**** Param: C_C2.Value = 330u
+**** Param: C_C3.Value = 15p
+**** Param: R_R5.Value = 68
+**** Param: R_R6.Value = 1.8K
+**** Param: R_R7.Value = 33
+**** Param: D1N755(model).bv = 7.5
+
+**** Command: doALL
+**** Param: R_R2.Value = 352.29805545172417
+**** Param: C_C1.Value = 3.34196630756554m
+**** Param: R_R3.Value = 1.02290613418165k
+**** Param: R_R1.Value = 307.24479089554870
+**** Param: C_C2.Value = 3.40070232581561
+**** Param: C_C3.Value = 14.93961912900174p
+**** Param: R_R5.Value = 66.69832018451820
+**** Param: R_R6.Value = 1.86761099127667k
+**** Param: R_R7.Value = 33.85632804271241
+**** Param: D1N755(model).bv = 7.86990722373119
+
+**** Command: doALL
+**** Param: R_R2.Value = 375.28525706066443
+**** Param: C_C1.Value = 3.53690267647328m
+**** Param: R_R3.Value = 1.12955711940584k
+**** Param: R_R1.Value = 298.60649273959444
+**** Param: C_C2.Value = 304.12732322153386u
+**** Param: C_C3.Value = 13.54495376445814p
+**** Param: R_R5.Value = 64.46282751164672
+**** Param: R_R6.Value = 1.76802428761955k
+**** Param: R_R7.Value = 31.63111304833346
+**** Param: D1N755(model).bv = 6.99884792626728
+
+**** Command: doALL
+**** Param: R_R2.Value = 418.96541565032788
+**** Param: C_C1.Value = 3.26415692617573m
+**** Param: R_R3.Value = 999.44664123963742
+**** Param: R_R1.Value = 272.33479425137733
+**** Param: C_C2.Value = 265.17630542924286u
+**** Param: C_C3.Value = 14.63364055299539p
+**** Param: R_R5.Value = 67.78991169222526
+**** Param: R_R6.Value = 1.80054295979432k
+**** Param: R_R7.Value = 33.09654322089671
+**** Param: D1N755(model).bv = 7.66074861903745
+
+**** Command: doALL
+**** Param: R_R2.Value = 374.85535150081131
+**** Param: C_C1.Value = 3.40760979033784m
+**** Param: R_R3.Value = 1.07793608151929k
+**** Param: R_R1.Value = 294.31075437198598
+**** Param: C_C2.Value = 271.52916043580433u
+**** Param: C_C3.Value = 15.32305368205817p
+**** Param: R_R5.Value = 69.45055700407737
+**** Param: R_R6.Value = 1.84224497431745k
+**** Param: R_R7.Value = 32.86468875551125
+**** Param: D1N755(model).bv = 7.20292519913327
+
+**** Command: doALL
+**** Param: R_R2.Value = 403.18246438116768
+**** Param: C_C1.Value = 3.44960631122776m
+**** Param: R_R3.Value = 1.21761661126378k
+**** Param: R_R1.Value = 313.19375930221003
+**** Param: C_C2.Value = 1.57447471877193
+**** Param: C_C3.Value = 13.92701498458815p
+**** Param: R_R5.Value = 67.38391065242044
+**** Param: R_R6.Value = 1.74478255047880k
+**** Param: R_R7.Value = 34.04846625359271
+**** Param: D1N755(model).bv = 7.06440168462172
+
+**** Command: doALL
+**** Param: R_R2.Value = 398.16107230925530
+**** Param: C_C1.Value = 3.52681142612995m
+**** Param: R_R3.Value = 1.29391520167876k
+**** Param: R_R1.Value = 329.26989211779920
+**** Param: C_C2.Value = 4.46030497482223
+**** Param: C_C3.Value = 14.67731254005554p
+**** Param: R_R5.Value = 66.13166110360763
+**** Param: R_R6.Value = 1.75625786481215k
+**** Param: R_R7.Value = 33.94071407336239
+**** Param: D1N755(model).bv = 6.78561510055849
+
+**** Command: doALL
+**** Param: R_R2.Value = 383.50512864870410
+**** Param: C_C1.Value = 3.03113162633137m
+**** Param: R_R3.Value = 1.12225033372561k
+**** Param: R_R1.Value = 281.19908796945265
+**** Param: C_C2.Value = 265.16019165623953u
+**** Param: C_C3.Value = 16.25637073885311p
+**** Param: R_R5.Value = 66.19983917101958
+**** Param: R_R6.Value = 1.75179075987624k
+**** Param: R_R7.Value = 33.05731029980652
+**** Param: D1N755(model).bv = 7.78677480391858
+
+**** Command: doALL
+**** Param: R_R2.Value = 400.97154226019376
+**** Param: C_C1.Value = 3.44948545793023m
+**** Param: R_R3.Value = 1.08438277981671k
+**** Param: R_R1.Value = 289.86532060805627
+**** Param: C_C2.Value = 9.74977303720206
+**** Param: C_C3.Value = 14.90537736136967p
+**** Param: R_R5.Value = 67.35987105116511
+**** Param: R_R6.Value = 1.89219511015241k
+**** Param: R_R7.Value = 33.56174174344247
+**** Param: D1N755(model).bv = 6.91241950743126
+
+**** Command: doALL
+**** Param: R_R2.Value = 391.05007128560482
+**** Param: C_C1.Value = 3.22425519577624m
+**** Param: R_R3.Value = 1.13515005883934k
+**** Param: R_R1.Value = 301.06306751430509
+**** Param: C_C2.Value = 2.89653654927214
+**** Param: C_C3.Value = 14.58401745658742p
+**** Param: R_R5.Value = 65.21964754202503
+**** Param: R_R6.Value = 1.74287536108144k
+**** Param: R_R7.Value = 32.59645105429281
+**** Param: D1N755(model).bv = 7.95432142094180
+
+**** Command: doALL
+**** Param: R_R2.Value = 388.30793049534981
+**** Param: C_C1.Value = 3.62339335306864m
+**** Param: R_R3.Value = 1.13918329434786k
+**** Param: R_R1.Value = 294.11919137762050
+**** Param: C_C2.Value = 286.30549027985472u
+**** Param: C_C3.Value = 15.47192297128208p
+**** Param: R_R5.Value = 67.55788613706081
+**** Param: R_R6.Value = 1.69176879412404k
+**** Param: R_R7.Value = 33.40799489521991
+**** Param: D1N755(model).bv = 7.50720999786370
+
+**** Command: doALL
+**** Param: R_R2.Value = 373.83224292038568
+**** Param: C_C1.Value = 3.59672505874813m
+**** Param: R_R3.Value = 1.00697373671900k
+**** Param: R_R1.Value = 311.86088647106442
+**** Param: C_C2.Value = 7.71601956572161
+**** Param: C_C3.Value = 14.40914639728996p
+**** Param: R_R5.Value = 67.17663586826343
+**** Param: R_R6.Value = 1.69603810934421k
+**** Param: R_R7.Value = 34.92949086348469
+**** Param: D1N755(model).bv = 7.77478102969451
+
+**** Command: doALL
+**** Param: R_R2.Value = 374.14550743686777
+**** Param: C_C1.Value = 3.54898800622578m
+**** Param: R_R3.Value = 1.15671150276934k
+**** Param: R_R1.Value = 300.37016730602409
+**** Param: C_C2.Value = 289.25833918271434u
+**** Param: C_C3.Value = 14.03367717520676p
+**** Param: R_R5.Value = 69.70781934419554
+**** Param: R_R6.Value = 1.78572804819982k
+**** Param: R_R7.Value = 31.66918160864245
+**** Param: D1N755(model).bv = 7.50588244270150
+
+**** Command: doALL
+**** Param: R_R2.Value = 396.10186948702091
+**** Param: C_C1.Value = 3.23769005401776m
+**** Param: R_R3.Value = 1.04260144922129k
+**** Param: R_R1.Value = 300.02764520759939
+**** Param: C_C2.Value = 7.28998117343669
+**** Param: C_C3.Value = 15.76755577257607p
+**** Param: R_R5.Value = 68.99100481122399
+**** Param: R_R6.Value = 1.78573276184712k
+**** Param: R_R7.Value = 31.51888129275582
+**** Param: D1N755(model).bv = 7.30171361430708
+
+**** Command: doALL
+**** Param: R_R2.Value = 400.80268901945112
+**** Param: C_C1.Value = 2.99316354869228m
+**** Param: R_R3.Value = 1.09043770931272k
+**** Param: R_R1.Value = 302.60855161665523
+**** Param: C_C2.Value = 320.26123844111453u
+**** Param: C_C3.Value = 13.81403546250801p
+**** Param: R_R5.Value = 71.48706655040714
+**** Param: R_R6.Value = 1.87748017410639k
+**** Param: R_R7.Value = 32.94868522973960
+**** Param: D1N755(model).bv = 7.26898251289407
+
+**** Command: doALL
+**** Param: R_R2.Value = 386.78927410769523
+**** Param: C_C1.Value = 3.21748741111484m
+**** Param: R_R3.Value = 1.16493678429889k
+**** Param: R_R1.Value = 293.28166014644097
+**** Param: C_C2.Value = 324.20508438367870u
+**** Param: C_C3.Value = 14.31566820276498p
+**** Param: R_R5.Value = 72.71548295481713
+**** Param: R_R6.Value = 1.75634874586064k
+**** Param: R_R7.Value = 33.54254294711039
+**** Param: D1N755(model).bv = 7.60091708120975
+
+**** Command: doALL
+**** Param: R_R2.Value = 376.44623057729666
+**** Param: C_C1.Value = 3.47246772667623m
+**** Param: R_R3.Value = 1.16248606712422k
+**** Param: R_R1.Value = 295.62354051721479
+**** Param: C_C2.Value = 36.34184118167566m
+**** Param: C_C3.Value = 16.17049165318766p
+**** Param: R_R5.Value = 62.86957698559977
+**** Param: R_R6.Value = 1.95016970347591k
+**** Param: R_R7.Value = 33.01392940468035
+**** Param: D1N755(model).bv = 6.82576219977416
+
+**** Command: doALL
+**** Param: R_R2.Value = 388.78384766788565
+**** Param: C_C1.Value = 3.09808435316019m
+**** Param: R_R3.Value = 1.16365685508621k
+**** Param: R_R1.Value = 301.52449762918366
+**** Param: C_C2.Value = 6.30484368755150
+**** Param: C_C3.Value = 14.09355449079867p
+**** Param: R_R5.Value = 69.95868186190570
+**** Param: R_R6.Value = 1.71928861306003k
+**** Param: R_R7.Value = 31.42281253360159
+**** Param: D1N755(model).bv = 7.86468855861080
+
+**** Command: doALL
+**** Param: R_R2.Value = 381.15959570606577
+**** Param: C_C1.Value = 3.59110538041322m
+**** Param: R_R3.Value = 1.04408355361864k
+**** Param: R_R1.Value = 293.84922120416581
+**** Param: C_C2.Value = 282.51472518082221u
+**** Param: C_C3.Value = 15.69925534836879p
+**** Param: R_R5.Value = 69.88293242196144
+**** Param: R_R6.Value = 1.82373376782051k
+**** Param: R_R7.Value = 33.09222241460925
+**** Param: D1N755(model).bv = 7.87082277901547
+
+**** Command: doALL
+**** Param: R_R2.Value = 378.73931745122195
+**** Param: C_C1.Value = 3.06535325174718m
+**** Param: R_R3.Value = 889.46549503883944
+**** Param: R_R1.Value = 281.69781005990387
+**** Param: C_C2.Value = 12.24984933347575
+**** Param: C_C3.Value = 16.05787835322123p
+**** Param: R_R5.Value = 65.73958344779699
+**** Param: R_R6.Value = 1.71630122870712k
+**** Param: R_R7.Value = 32.95905516482952
+**** Param: D1N755(model).bv = 6.77137821588794
+
+**** Command: doALL
+**** Param: R_R2.Value = 371.70244220080207
+**** Param: C_C1.Value = 3.26997802667318m
+**** Param: R_R3.Value = 1.13934700501426k
+**** Param: R_R1.Value = 303.30172514360635
+**** Param: C_C2.Value = 1.73805392956328
+**** Param: C_C3.Value = 13.72165593432417p
+**** Param: R_R5.Value = 67.23593355135989
+**** Param: R_R6.Value = 1.73855429614833k
+**** Param: R_R7.Value = 33.39634154317262
+**** Param: D1N755(model).bv = 7.18552964873196
+
+**** Command: doALL
+**** Param: R_R2.Value = 385.61683290137353
+**** Param: C_C1.Value = 3.12340311899167m
+**** Param: R_R3.Value = 1.10192529296233k
+**** Param: R_R1.Value = 299.09670785293611
+**** Param: C_C2.Value = 5.14758180822169
+**** Param: C_C3.Value = 13.98057496871853p
+**** Param: R_R5.Value = 67.62929265634513
+**** Param: R_R6.Value = 1.90158148258335k
+**** Param: R_R7.Value = 33.39483464420098
+**** Param: D1N755(model).bv = 8.13720358897671
+
+**** Command: doALL
+**** Param: R_R2.Value = 376.15006708222944
+**** Param: C_C1.Value = 3.19172551652577m
+**** Param: R_R3.Value = 1.01830030836649k
+**** Param: R_R1.Value = 325.29129053756424
+**** Param: C_C2.Value = 324.38233588671528u
+**** Param: C_C3.Value = 16.49404889065218p
+**** Param: R_R5.Value = 64.55746027486938
+**** Param: R_R6.Value = 1.80888133032799k
+**** Param: R_R7.Value = 31.30593411273018
+**** Param: D1N755(model).bv = 7.40659047212134
+
+**** Command: doALL
+**** Param: R_R2.Value = 407.68816500315421
+**** Param: C_C1.Value = 3.00196569719535m
+**** Param: R_R3.Value = 1.18199850988109k
+**** Param: R_R1.Value = 292.49743174649660
+**** Param: C_C2.Value = 294.00384533219392u
+**** Param: C_C3.Value = 15.80719931638539p
+**** Param: R_R5.Value = 67.08421695677075
+**** Param: R_R6.Value = 1.73855998925100k
+**** Param: R_R7.Value = 33.17201451626222
+**** Param: D1N755(model).bv = 7.65621662038026
+
+**** Command: doALL
+**** Param: R_R2.Value = 386.11624383333458
+**** Param: C_C1.Value = 3.27779320657979m
+**** Param: R_R3.Value = 1.10569303604500k
+**** Param: R_R1.Value = 301.76286164833283
+**** Param: C_C2.Value = 14.19204727652822
+**** Param: C_C3.Value = 15.98637348551897p
+**** Param: R_R5.Value = 68.33320201879989
+**** Param: R_R6.Value = 1.82605165242051k
+**** Param: R_R7.Value = 32.99457219251250
+**** Param: D1N755(model).bv = 7.31270027771844
+
+**** Command: doALL
+**** Param: R_R2.Value = 375.84013516698644
+**** Param: C_C1.Value = 3.45701864680929m
+**** Param: R_R3.Value = 1.09763329205012k
+**** Param: R_R1.Value = 311.85891184464793
+**** Param: C_C2.Value = 296.05835139011810u
+**** Param: C_C3.Value = 14.06682027649770p
+**** Param: R_R5.Value = 68.21621029655817
+**** Param: R_R6.Value = 1.82202960207441k
+**** Param: R_R7.Value = 33.04797735822559
+**** Param: D1N755(model).bv = 7.27694784386730
+
+**** Command: doALL
+**** Param: R_R2.Value = 387.55013534350496
+**** Param: C_C1.Value = 3.02305459761345m
+**** Param: R_R3.Value = 1.13654904089764k
+**** Param: R_R1.Value = 301.14241322976585
+**** Param: C_C2.Value = 4.81554042512284
+**** Param: C_C3.Value = 15.57336649678030p
+**** Param: R_R5.Value = 69.61041167543992
+**** Param: R_R6.Value = 1.72578718547642k
+**** Param: R_R7.Value = 33.02369442689002
+**** Param: D1N755(model).bv = 8.05159916989654
+
+**** Command: doALL
+**** Param: R_R2.Value = 405.96079243843297
+**** Param: C_C1.Value = 3.37570451979125m
+**** Param: R_R3.Value = 1.13336412429682k
+**** Param: R_R1.Value = 279.61499344014214
+**** Param: C_C2.Value = 6.71135023377178
+**** Param: C_C3.Value = 16.42959379863887p
+**** Param: R_R5.Value = 66.46485686884246
+**** Param: R_R6.Value = 1.80023657534848k
+**** Param: R_R7.Value = 32.22550336757067
+**** Param: D1N755(model).bv = 7.01088747825556
+
+**** Command: doALL
+**** Param: R_R2.Value = 371.23839374644035
+**** Param: C_C1.Value = 3.54356975005341m
+**** Param: R_R3.Value = 1.16631593283038k
+**** Param: R_R1.Value = 305.10268418006211
+**** Param: C_C2.Value = 284.44434949797051u
+**** Param: C_C3.Value = 14.48074282052065p
+**** Param: R_R5.Value = 64.27592780428195
+**** Param: R_R6.Value = 1.69992623570543k
+**** Param: R_R7.Value = 33.21450906726226
+**** Param: D1N755(model).bv = 7.98000274666585
+
+**** Command: doALL
+**** Param: R_R2.Value = 389.24444561812965
+**** Param: C_C1.Value = 3.26584887234107m
+**** Param: R_R3.Value = 1.07004334097642k
+**** Param: R_R1.Value = 292.75241168758924
+**** Param: C_C2.Value = 325.45390179143652u
+**** Param: C_C3.Value = 15.00361644337291p
+**** Param: R_R5.Value = 65.23010678283720
+**** Param: R_R6.Value = 1.76076984157246k
+**** Param: R_R7.Value = 33.53818973166300
+**** Param: D1N755(model).bv = 7.22082430494095
+
+**** Command: doALL
+**** Param: R_R2.Value = 400.34186038325771
+**** Param: C_C1.Value = 3.60298928800317m
+**** Param: R_R3.Value = 1.17350933344429k
+**** Param: R_R1.Value = 304.46523380412765
+**** Param: C_C2.Value = 303.60765404217659u
+**** Param: C_C3.Value = 16.33199560533464p
+**** Param: R_R5.Value = 64.98809157182228
+**** Param: R_R6.Value = 1.69314107401624k
+**** Param: R_R7.Value = 33.70997431047149
+**** Param: D1N755(model).bv = 7.53687398907437
+
+**** Command: doALL
+**** Param: R_R2.Value = 391.40445596129143
+**** Param: C_C1.Value = 3.60103549302652m
+**** Param: R_R3.Value = 974.37974920847364
+**** Param: R_R1.Value = 310.12547431846093
+**** Param: C_C2.Value = 6.15469262092959
+**** Param: C_C3.Value = 14.46636860255745p
+**** Param: R_R5.Value = 64.67054642692048
+**** Param: R_R6.Value = 1.79032856796946k
+**** Param: R_R7.Value = 31.95949923385181
+**** Param: D1N755(model).bv = 7.18543809320353
+
+**** Command: doALL
+**** Param: R_R2.Value = 406.66928839667742
+**** Param: C_C1.Value = 3.33376842555010m
+**** Param: R_R3.Value = 1.11908919454956k
+**** Param: R_R1.Value = 285.97714272467925
+**** Param: C_C2.Value = 329.01504562517169u
+**** Param: C_C3.Value = 14.63739432966094p
+**** Param: R_R5.Value = 67.58655558744678
+**** Param: R_R6.Value = 1.84040018511387k
+**** Param: R_R7.Value = 32.83461594045502
+**** Param: D1N755(model).bv = 7.32354960783715
+
+**** Command: doALL
+**** Param: R_R2.Value = 394.37060143321310
+**** Param: C_C1.Value = 3.32121982482376m
+**** Param: R_R3.Value = 1.10728885383384k
+**** Param: R_R1.Value = 295.55990627859779
+**** Param: C_C2.Value = 264.77748954741054u
+**** Param: C_C3.Value = 15.62363048188726p
+**** Param: R_R5.Value = 64.60572298411294
+**** Param: R_R6.Value = 1.80855609145471k
+**** Param: R_R7.Value = 34.05337760987393
+**** Param: D1N755(model).bv = 7.48725089266640
+
+**** Command: doALL
+**** Param: R_R2.Value = 396.76408589750247
+**** Param: C_C1.Value = 3.29795556505020m
+**** Param: R_R3.Value = 1.06427048066329k
+**** Param: R_R1.Value = 306.46750347533896
+**** Param: C_C2.Value = 2.11282122592853
+**** Param: C_C3.Value = 14.57129123813593p
+**** Param: R_R5.Value = 71.63128236309970
+**** Param: R_R6.Value = 1.80988125654673k
+**** Param: R_R7.Value = 31.76632693476430
+**** Param: D1N755(model).bv = 7.31137272255623
+
+**** Command: doALL
+**** Param: R_R2.Value = 372.96576659820107
+**** Param: C_C1.Value = 3.46056367687002m
+**** Param: R_R3.Value = 1.21455816446209k
+**** Param: R_R1.Value = 301.14084202747949
+**** Param: C_C2.Value = 267.67394024475851u
+**** Param: C_C3.Value = 14.48953215124973p
+**** Param: R_R5.Value = 63.73125970574032
+**** Param: R_R6.Value = 1.81138267588574k
+**** Param: R_R7.Value = 31.55864178907855
+**** Param: D1N755(model).bv = 8.02060762352367
+
+**** Command: doALL
+**** Param: R_R2.Value = 402.51056919404596
+**** Param: C_C1.Value = 3.36394146549882m
+**** Param: R_R3.Value = 1.13200164440426k
+**** Param: R_R1.Value = 309.16485091359499
+**** Param: C_C2.Value = 265.93768120365002u
+**** Param: C_C3.Value = 13.87940610980560p
+**** Param: R_R5.Value = 68.89598798152177
+**** Param: R_R6.Value = 1.80764165172406k
+**** Param: R_R7.Value = 31.92693468652980
+**** Param: D1N755(model).bv = 6.84892574846644
+
+**** Command: doALL
+**** Param: R_R2.Value = 375.00198595533487
+**** Param: C_C1.Value = 3.38190832239753m
+**** Param: R_R3.Value = 1.05589398036394k
+**** Param: R_R1.Value = 293.35561237217280
+**** Param: C_C2.Value = 312.51857051301613u
+**** Param: C_C3.Value = 15.48300119022187p
+**** Param: R_R5.Value = 69.59431120494297
+**** Param: R_R6.Value = 1.84309735216729k
+**** Param: R_R7.Value = 32.88352747092461
+**** Param: D1N755(model).bv = 7.66665395062105
+
+**** Command: doALL
+**** Param: R_R2.Value = 398.96180012033557
+**** Param: C_C1.Value = 3.56439680166021m
+**** Param: R_R3.Value = 1.00797009903820k
+**** Param: R_R1.Value = 301.62678410483392
+**** Param: C_C2.Value = 317.11905270546583u
+**** Param: C_C3.Value = 14.26110110782190p
+**** Param: R_R5.Value = 65.07670458425872
+**** Param: R_R6.Value = 1.85531382325223k
+**** Param: R_R7.Value = 31.04581161398744
+**** Param: D1N755(model).bv = 7.39171269875179
+
+**** Command: doALL
+**** Param: R_R2.Value = 390.19015227428463
+**** Param: C_C1.Value = 3.16950865199744m
+**** Param: R_R3.Value = 1.09629672263853k
+**** Param: R_R1.Value = 290.49345960360330
+**** Param: C_C2.Value = 305.09817804498431u
+**** Param: C_C3.Value = 13.83188879055147p
+**** Param: R_R5.Value = 69.63686244839919
+**** Param: R_R6.Value = 1.72215721366514k
+**** Param: R_R7.Value = 32.15499089133302
+**** Param: D1N755(model).bv = 7.93216498306223
+
+**** Command: doALL
+**** Param: R_R2.Value = 404.58743976574897
+**** Param: C_C1.Value = 3.49115970336009m
+**** Param: R_R3.Value = 1.13729318029036k
+**** Param: R_R1.Value = 301.22411574865617
+**** Param: C_C2.Value = 311.66856898709068u
+**** Param: C_C3.Value = 16.06996368297372p
+**** Param: R_R5.Value = 65.86583116253141
+**** Param: R_R6.Value = 1.85754625792551k
+**** Param: R_R7.Value = 31.96753599713321
+**** Param: D1N755(model).bv = 7.12432477797784
+
+**** Command: doALL
+**** Param: R_R2.Value = 389.15457284735038
+**** Param: C_C1.Value = 3.61998931852168m
+**** Param: R_R3.Value = 960.28635000697477
+**** Param: R_R1.Value = 283.71221886960734
+**** Param: C_C2.Value = 987.29859645374779m
+**** Param: C_C3.Value = 14.78040406506546p
+**** Param: R_R5.Value = 64.51345603997085
+**** Param: R_R6.Value = 1.74916054643870k
+**** Param: R_R7.Value = 34.20803954872883
+**** Param: D1N755(model).bv = 7.09914700766015
+
+**** Command: doALL
+**** Param: R_R2.Value = 373.78058760117852
+**** Param: C_C1.Value = 3.05256294442579m
+**** Param: R_R3.Value = 1.19986869004232k
+**** Param: R_R1.Value = 283.62245691037407
+**** Param: C_C2.Value = 270.21588793603320u
+**** Param: C_C3.Value = 13.67615283669545p
+**** Param: R_R5.Value = 66.60642934660085
+**** Param: R_R6.Value = 1.87488551499509k
+**** Param: R_R7.Value = 32.52126837977862
+**** Param: D1N755(model).bv = 7.39917447431867
+
+**** Command: doALL
+**** Param: R_R2.Value = 409.58777097951548
+**** Param: C_C1.Value = 3.52254127628407m
+**** Param: R_R3.Value = 1.09368695564090k
+**** Param: R_R1.Value = 308.63853752698537
+**** Param: C_C2.Value = 7.74165511368145
+**** Param: C_C3.Value = 14.69306009094516p
+**** Param: R_R5.Value = 66.08197929423173
+**** Param: R_R6.Value = 1.63340601193212k
+**** Param: R_R7.Value = 32.88084857102638
+**** Param: D1N755(model).bv = 8.18220313119907
+
+**** Command: doALL
+**** Param: R_R2.Value = 384.34532654085916
+**** Param: C_C1.Value = 3.12912350840785m
+**** Param: R_R3.Value = 1.10337708387492k
+**** Param: R_R1.Value = 291.41289568620914
+**** Param: C_C2.Value = 7.36078411542100
+**** Param: C_C3.Value = 16.33584093752861p
+**** Param: R_R5.Value = 67.22881070654350
+**** Param: R_R6.Value = 1.86538361267884k
+**** Param: R_R7.Value = 30.03920368972515
+**** Param: D1N755(model).bv = 8.16146580401013
+
+**** Command: doALL
+**** Param: R_R2.Value = 391.13381636746738
+**** Param: C_C1.Value = 3.48886349070711m
+**** Param: R_R3.Value = 1.10170061103538k
+**** Param: R_R1.Value = 287.35049001348807
+**** Param: C_C2.Value = 293.34720908230838u
+**** Param: C_C3.Value = 14.64902188177130p
+**** Param: R_R5.Value = 61.70230921408415
+**** Param: R_R6.Value = 1.77687110491379k
+**** Param: R_R7.Value = 31.21454391330617
+**** Param: D1N755(model).bv = 7.73989837336344
+
+**** Command: doALL
+**** Param: R_R2.Value = 401.97938504087637
+**** Param: C_C1.Value = 3.01280220954009m
+**** Param: R_R3.Value = 1.15369401250582k
+**** Param: R_R1.Value = 302.58115345353468
+**** Param: C_C2.Value = 7.65986550828578
+**** Param: C_C3.Value = 15.90809350871303p
+**** Param: R_R5.Value = 67.78100821260260
+**** Param: R_R6.Value = 1.81971719710703k
+**** Param: R_R7.Value = 31.61010484282961
+**** Param: D1N755(model).bv = 7.78425702688681
+
+**** Command: doALL
+**** Param: R_R2.Value = 395.92378340053682
+**** Param: C_C1.Value = 3.48330423902097m
+**** Param: R_R3.Value = 937.96629324347668
+**** Param: R_R1.Value = 309.81699243633500
+**** Param: C_C2.Value = 5.78114606494339
+**** Param: C_C3.Value = 15.61969359416486p
+**** Param: R_R5.Value = 64.37056056750463
+**** Param: R_R6.Value = 1.79757810107998k
+**** Param: R_R7.Value = 34.67651416216379
+**** Param: D1N755(model).bv = 6.83816797387616
+
+**** Command: doALL
+**** Param: R_R2.Value = 379.63854301931855
+**** Param: C_C1.Value = 3.06581652272103m
+**** Param: R_R3.Value = 1.25023797628500k
+**** Param: R_R1.Value = 301.34666952699155
+**** Param: C_C2.Value = 302.57637256996372u
+**** Param: C_C3.Value = 16.26744895779290p
+**** Param: R_R5.Value = 66.81242638984415
+**** Param: R_R6.Value = 1.82131724983327k
+**** Param: R_R7.Value = 31.93058776074862
+**** Param: D1N755(model).bv = 6.98387859736930
+
+**** Command: doALL
+**** Param: R_R2.Value = 378.24714872465057
+**** Param: C_C1.Value = 3.31414990691855m
+**** Param: R_R3.Value = 1.18563313890508k
+**** Param: R_R1.Value = 285.42187106988746
+**** Param: C_C2.Value = 16.10616819086276
+**** Param: C_C3.Value = 14.82517471846675p
+**** Param: R_R5.Value = 64.28775689968478
+**** Param: R_R6.Value = 1.83815356063823k
+**** Param: R_R7.Value = 31.74419077191796
+**** Param: D1N755(model).bv = 8.21159245582446
+
+**** Command: doALL
+**** Param: R_R2.Value = 397.99749694092918
+**** Param: C_C1.Value = 3.54445600756859m
+**** Param: R_R3.Value = 1.02688279272547k
+**** Param: R_R1.Value = 297.14133494941359
+**** Param: C_C2.Value = 264.49549851985233u
+**** Param: C_C3.Value = 15.75189977721488p
+**** Param: R_R5.Value = 64.81391506320281
+**** Param: R_R6.Value = 1.77483009563074k
+**** Param: R_R7.Value = 32.24255692902256
+**** Param: D1N755(model).bv = 8.23892178106021
+
+**** Command: doALL
+**** Param: R_R2.Value = 362.65025884904031
+**** Param: C_C1.Value = 3.13637470625935m
+**** Param: R_R3.Value = 1.02166538110491k
+**** Param: R_R1.Value = 291.18137617727643
+**** Param: C_C2.Value = 284.26306955168309u
+**** Param: C_C3.Value = 15.36095767082736p
+**** Param: R_R5.Value = 70.39888205403841
+**** Param: R_R6.Value = 1.88616751426588k
+**** Param: R_R7.Value = 31.85199447826951
+**** Param: D1N755(model).bv = 7.91948454237495
+
+**** Command: doALL
+**** Param: R_R2.Value = 392.71319521883782
+**** Param: C_C1.Value = 3.40346049378948m
+**** Param: R_R3.Value = 1.18889127249232k
+**** Param: R_R1.Value = 297.11148184981545
+**** Param: C_C2.Value = 16.85204056245613
+**** Param: C_C3.Value = 15.49252296517838p
+**** Param: R_R5.Value = 65.21209364588290
+**** Param: R_R6.Value = 1.81086759041908k
+**** Param: R_R7.Value = 33.00528779210542
+**** Param: D1N755(model).bv = 7.38306070131535
+
+**** Command: doALL
+**** Param: R_R2.Value = 409.18014719708805
+**** Param: C_C1.Value = 3.32677907650990m
+**** Param: R_R3.Value = 1.10205779768848k
+**** Param: R_R1.Value = 299.19647919811945
+**** Param: C_C2.Value = 297.69792779320665u
+**** Param: C_C3.Value = 14.69086275826289p
+**** Param: R_R5.Value = 66.69811822663267
+**** Param: R_R6.Value = 1.67212009485343k
+**** Param: R_R7.Value = 33.74759055677329
+**** Param: D1N755(model).bv = 7.04476302377392
+
+**** Command: doALL
+**** Param: R_R2.Value = 367.46253505332936
+**** Param: C_C1.Value = 3.22701467940306m
+**** Param: R_R3.Value = 1.10435646663341k
+**** Param: R_R1.Value = 282.73019655287618
+**** Param: C_C2.Value = 290.09222693563646u
+**** Param: C_C3.Value = 13.96766563921018p
+**** Param: R_R5.Value = 68.46478960184913
+**** Param: R_R6.Value = 1.78249448614861k
+**** Param: R_R7.Value = 33.10371575933392
+**** Param: D1N755(model).bv = 7.79602191228980
+
+**** Command: doALL
+**** Param: R_R2.Value = 385.77104772903431
+**** Param: C_C1.Value = 3.42174962614826m
+**** Param: R_R3.Value = 1.06769280218701k
+**** Param: R_R1.Value = 308.35576246836990
+**** Param: C_C2.Value = 3.68879705526902
+**** Param: C_C3.Value = 14.09877315591907p
+**** Param: R_R5.Value = 71.48982666165483
+**** Param: R_R6.Value = 1.86085026124196k
+**** Param: R_R7.Value = 32.50130062001674
+**** Param: D1N755(model).bv = 8.23118533890805
+
+**** Command: doALL
+**** Param: R_R2.Value = 375.89678938805241
+**** Param: C_C1.Value = 3.56117404705954m
+**** Param: R_R3.Value = 1.10128005255674k
+**** Param: R_R1.Value = 296.76659998866887
+**** Param: C_C2.Value = 5.09386923154393
+**** Param: C_C3.Value = 15.62555314798425p
+**** Param: R_R5.Value = 63.58293488529360
+**** Param: R_R6.Value = 1.75415339748789k
+**** Param: R_R7.Value = 32.07274453463511
+**** Param: D1N755(model).bv = 7.36145359660634
+
+**** Command: doALL
+**** Param: R_R2.Value = 404.59514080877335
+**** Param: C_C1.Value = 3.43872951445051m
+**** Param: R_R3.Value = 1.13355015914500k
+**** Param: R_R1.Value = 311.27442242536040
+**** Param: C_C2.Value = 315.95080416272469u
+**** Param: C_C3.Value = 14.69223609118931p
+**** Param: R_R5.Value = 70.67011673861049
+**** Param: R_R6.Value = 1.75824121004684k
+**** Param: R_R7.Value = 32.48973556110109
+**** Param: D1N755(model).bv = 7.60586107974487
+
+**** Command: doALL
+**** Param: R_R2.Value = 382.65842021360845
+**** Param: C_C1.Value = 3.45423902096622m
+**** Param: R_R3.Value = 1.13767269138065k
+**** Param: R_R1.Value = 304.83885294082648
+**** Param: C_C2.Value = 9.57764864375744
+**** Param: C_C3.Value = 13.91795098727378p
+**** Param: R_R5.Value = 65.66624363395638
+**** Param: R_R6.Value = 1.75173382884946k
+**** Param: R_R7.Value = 33.34440375861701
+**** Param: D1N755(model).bv = 8.11669515060884
+
+**** Command: doALL
+**** Param: R_R2.Value = 383.20049893812933
+**** Param: C_C1.Value = 3.31165227210303m
+**** Param: R_R3.Value = 994.57862056680074
+**** Param: R_R1.Value = 312.01095807871934
+**** Param: C_C2.Value = 290.80526139103364u
+**** Param: C_C3.Value = 15.05388042847987p
+**** Param: R_R5.Value = 68.53600047203992
+**** Param: R_R6.Value = 1.78005281684464k
+**** Param: R_R7.Value = 33.36811230243736
+**** Param: D1N755(model).bv = 6.88563951536607
+
+**** Command: doALL
+**** Param: R_R2.Value = 368.66034677776400
+**** Param: C_C1.Value = 3.02001312295907m
+**** Param: R_R3.Value = 934.46908155683525
+**** Param: R_R1.Value = 294.39718046711840
+**** Param: C_C2.Value = 304.55433820612200u
+**** Param: C_C3.Value = 15.59186071352275p
+**** Param: R_R5.Value = 65.13510201212667
+**** Param: R_R6.Value = 1.77330758755123k
+**** Param: R_R7.Value = 31.06502988562585
+**** Param: D1N755(model).bv = 7.76361125522629
+
+**** Command: doALL
+**** Param: R_R2.Value = 395.80124218416023
+**** Param: C_C1.Value = 3.10114597003082m
+**** Param: R_R3.Value = 1.12594056187392k
+**** Param: R_R1.Value = 301.23668536694697
+**** Param: C_C2.Value = 6.19619779381695
+**** Param: C_C3.Value = 15.13197729422895p
+**** Param: R_R5.Value = 64.56976253408834
+**** Param: R_R6.Value = 1.79655524839156k
+**** Param: R_R7.Value = 30.85642428256895
+**** Param: D1N755(model).bv = 8.21186712240974
+
+**** Command: doALL
+**** Param: R_R2.Value = 386.53190896484409
+**** Param: C_C1.Value = 3.61018005920591m
+**** Param: R_R3.Value = 1.13340877266038k
+**** Param: R_R1.Value = 299.05507099234779
+**** Param: C_C2.Value = 7.19720490462966
+**** Param: C_C3.Value = 15.57840205084384p
+**** Param: R_R5.Value = 66.84272007267404
+**** Param: R_R6.Value = 1.77225827529037k
+**** Param: R_R7.Value = 30.86026793689663
+**** Param: D1N755(model).bv = 7.96466719565416
+
+**** Command: doALL
+**** Param: R_R2.Value = 375.03697826834616
+**** Param: C_C1.Value = 3.01014343699454m
+**** Param: R_R3.Value = 1.04937965056795k
+**** Param: R_R1.Value = 306.43807614480886
+**** Param: C_C2.Value = 292.04602191228980u
+**** Param: C_C3.Value = 14.46572771385846p
+**** Param: R_R5.Value = 67.51568328152369
+**** Param: R_R6.Value = 1.64206374511680k
+**** Param: R_R7.Value = 32.63810398431102
+**** Param: D1N755(model).bv = 7.51178777428510
+
+**** Command: doALL
+**** Param: R_R2.Value = 391.28088090146991
+**** Param: C_C1.Value = 3.47063478499710m
+**** Param: R_R3.Value = 1.06855120973510k
+**** Param: R_R1.Value = 294.24303908095447
+**** Param: C_C2.Value = 13.70619260567034
+**** Param: C_C3.Value = 16.32696005127110p
+**** Param: R_R5.Value = 68.32465467836214
+**** Param: R_R6.Value = 1.96099610210680k
+**** Param: R_R7.Value = 30.90045159577694
+**** Param: D1N755(model).bv = 7.59427930539872
+
+**** Command: doALL
+**** Param: R_R2.Value = 402.46659699593590
+**** Param: C_C1.Value = 3.22526230658895m
+**** Param: R_R3.Value = 1.04849103587160k
+**** Param: R_R1.Value = 292.31715016167192
+**** Param: C_C2.Value = 267.52488784447769u
+**** Param: C_C3.Value = 15.33770256660665p
+**** Param: R_R5.Value = 66.96894375113195
+**** Param: R_R6.Value = 1.65441569325115k
+**** Param: R_R7.Value = 30.56902164769797
+**** Param: D1N755(model).bv = 7.43355357524339
+
+**** Command: doALL
+**** Param: R_R2.Value = 402.14296161784586
+**** Param: C_C1.Value = 3.58826532792138m
+**** Param: R_R3.Value = 1.06870676009616k
+**** Param: R_R1.Value = 304.53646175124101
+**** Param: C_C2.Value = 4.46396719595935
+**** Param: C_C3.Value = 15.92512283700064p
+**** Param: R_R5.Value = 70.29296076692290
+**** Param: R_R6.Value = 1.80230584875961k
+**** Param: R_R7.Value = 33.07744525710611
+**** Param: D1N755(model).bv = 6.86851863155004
+
+**** Command: doALL
+**** Param: R_R2.Value = 398.74545850416240
+**** Param: C_C1.Value = 3.27505386516922m
+**** Param: R_R3.Value = 1.10433342233321k
+**** Param: R_R1.Value = 300.56028278267263
+**** Param: C_C2.Value = 2.76835880947295
+**** Param: C_C3.Value = 15.94819483016449p
+**** Param: R_R5.Value = 68.65751436972009
+**** Param: R_R6.Value = 1.76436766190385k
+**** Param: R_R7.Value = 30.13966261908325
+**** Param: D1N755(model).bv = 7.15096743675039
+
+**** Command: doALL
+**** Param: R_R2.Value = 382.20321307955572
+**** Param: C_C1.Value = 3.12318155461287m
+**** Param: R_R3.Value = 1.14393090367339k
+**** Param: R_R1.Value = 294.88366137373964
+**** Param: C_C2.Value = 14.79509302377392
+**** Param: C_C3.Value = 13.85056611835078p
+**** Param: R_R5.Value = 69.01584581245334
+**** Param: R_R6.Value = 1.80953603969141k
+**** Param: R_R7.Value = 34.22519905228832
+**** Param: D1N755(model).bv = 7.02452925199133
+
+**** Command: doALL
+**** Param: R_R2.Value = 388.92580579445752
+**** Param: C_C1.Value = 3.56532334360790m
+**** Param: R_R3.Value = 1.14614099766975k
+**** Param: R_R1.Value = 317.30076935659429
+**** Param: C_C2.Value = 290.05194250312815u
+**** Param: C_C3.Value = 16.20464186529130p
+**** Param: R_R5.Value = 69.55682010935722
+**** Param: R_R6.Value = 1.89473400660159k
+**** Param: R_R7.Value = 33.98298150317650
+**** Param: D1N755(model).bv = 8.08552049317911
+
+**** Command: doALL
+**** Param: R_R2.Value = 392.05783115699319
+**** Param: C_C1.Value = 3.09240424817652m
+**** Param: R_R3.Value = 1.10929946902628k
+**** Param: R_R1.Value = 291.71937438041113
+**** Param: C_C2.Value = 297.08560441908014u
+**** Param: C_C3.Value = 15.69660023804438p
+**** Param: R_R5.Value = 69.48666805933482
+**** Param: R_R6.Value = 1.73128597752105k
+**** Param: R_R7.Value = 33.45450784347764
+**** Param: D1N755(model).bv = 7.47141178624836
+
+**** Command: doALL
+**** Param: R_R2.Value = 368.83131199779200
+**** Param: C_C1.Value = 3.50231849116489m
+**** Param: R_R3.Value = 1.16765539363435k
+**** Param: R_R1.Value = 286.60321827408922
+**** Param: C_C2.Value = 304.58656575212865u
+**** Param: C_C3.Value = 15.21996215704825p
+**** Param: R_R5.Value = 67.44748204240673
+**** Param: R_R6.Value = 1.83415347315720k
+**** Param: R_R7.Value = 31.83696526333767
+**** Param: D1N755(model).bv = 7.84166234321116
+
+**** Command: doALL
+**** Param: R_R2.Value = 422.78370308428163
+**** Param: C_C1.Value = 2.98013153477584m
+**** Param: R_R3.Value = 1.11576062215444k
+**** Param: R_R1.Value = 303.46611412232988
+**** Param: C_C2.Value = 286.98629718924525u
+**** Param: C_C3.Value = 13.71634571367534p
+**** Param: R_R5.Value = 66.19338698798374
+**** Param: R_R6.Value = 1.81810070548291k
+**** Param: R_R7.Value = 33.93476091423364
+**** Param: D1N755(model).bv = 7.58498641926328
+
+**** Command: doALL
+**** Param: R_R2.Value = 383.32906889202212
+**** Param: C_C1.Value = 3.48447248756371m
+**** Param: R_R3.Value = 1.03187184837288k
+**** Param: R_R1.Value = 301.86788794029513
+**** Param: C_C2.Value = 294.57991271706294u
+**** Param: C_C3.Value = 14.11378826258126p
+**** Param: R_R5.Value = 72.14743932198755
+**** Param: R_R6.Value = 1.75344175965306k
+**** Param: R_R7.Value = 30.41750407258800
+**** Param: D1N755(model).bv = 7.90382854701376
+
+**** Command: doALL
+**** Param: R_R2.Value = 374.06885760836684
+**** Param: C_C1.Value = 3.00099887081515m
+**** Param: R_R3.Value = 907.16771744591051
+**** Param: R_R1.Value = 294.20739945409576
+**** Param: C_C2.Value = 5.75551051698355
+**** Param: C_C3.Value = 14.52972502822962p
+**** Param: R_R5.Value = 67.10665391794238
+**** Param: R_R6.Value = 1.77665427713776k
+**** Param: R_R7.Value = 31.27792003149970
+**** Param: D1N755(model).bv = 7.56777397991882
+
+**** Command: doALL
+**** Param: R_R2.Value = 394.80276179283533
+**** Param: C_C1.Value = 3.19307504501480m
+**** Param: R_R3.Value = 1.11793055667360k
+**** Param: R_R1.Value = 310.15253413268249
+**** Param: C_C2.Value = 1.41944069063387
+**** Param: C_C3.Value = 15.21007415997803p
+**** Param: R_R5.Value = 63.68589823152604
+**** Param: R_R6.Value = 1.78426210388797k
+**** Param: R_R7.Value = 32.07201391979135
+**** Param: D1N755(model).bv = 7.39020203253273
+
+**** Command: doALL
+**** Param: R_R2.Value = 402.45428478046500
+**** Param: C_C1.Value = 3.29114749595630m
+**** Param: R_R3.Value = 983.57199520903487
+**** Param: R_R1.Value = 299.95222749785455
+**** Param: C_C2.Value = 8.37644011078219
+**** Param: C_C3.Value = 15.83539841914121p
+**** Param: R_R5.Value = 70.18040997963729
+**** Param: R_R6.Value = 1.85407989572373k
+**** Param: R_R7.Value = 32.18433959854887
+**** Param: D1N755(model).bv = 8.04656361583300
+
+**** Command: doALL
+**** Param: R_R2.Value = 392.68826289039816
+**** Param: C_C1.Value = 3.46292031617176m
+**** Param: R_R3.Value = 1.15897370323826k
+**** Param: R_R1.Value = 305.81096958385638
+**** Param: C_C2.Value = 14.87688262916959
+**** Param: C_C3.Value = 16.22496719260231p
+**** Param: R_R5.Value = 70.79723002312942
+**** Param: R_R6.Value = 1.79293991193067k
+**** Param: R_R7.Value = 32.63896815298359
+**** Param: D1N755(model).bv = 6.91145817438276
+
+**** Command: doALL
+**** Param: R_R2.Value = 382.67579453170208
+**** Param: C_C1.Value = 3.51321543015839m
+**** Param: R_R3.Value = 1.07358067140950k
+**** Param: R_R1.Value = 288.50151921070955
+**** Param: C_C2.Value = 264.11279641102328u
+**** Param: C_C3.Value = 15.47238074892423p
+**** Param: R_R5.Value = 69.37695485323420
+**** Param: R_R6.Value = 1.69188315078172k
+**** Param: R_R7.Value = 31.27149057023369
+**** Param: D1N755(model).bv = 7.32849360637227
+
+**** Command: doALL
+**** Param: R_R2.Value = 394.20438591028153
+**** Param: C_C1.Value = 3.50302346873379m
+**** Param: R_R3.Value = 1.01082759097250k
+**** Param: R_R1.Value = 287.36843478939124
+**** Param: C_C2.Value = 270.39716788232067u
+**** Param: C_C3.Value = 14.53842280343028p
+**** Param: R_R5.Value = 62.49760062844177
+**** Param: R_R6.Value = 1.91756405820256k
+**** Param: R_R7.Value = 33.23640933231665
+**** Param: D1N755(model).bv = 6.83047730948820
+
+**** Command: doALL
+**** Param: R_R2.Value = 406.17898865745758
+**** Param: C_C1.Value = 3.39073061311686m
+**** Param: R_R3.Value = 1.07433537871688k
+**** Param: R_R1.Value = 276.18555768722734
+**** Param: C_C2.Value = 296.02209540086062u
+**** Param: C_C3.Value = 14.67584765160069p
+**** Param: R_R5.Value = 68.53041124676331
+**** Param: R_R6.Value = 1.83811094174574k
+**** Param: R_R7.Value = 30.41626764835490
+**** Param: D1N755(model).bv = 7.98906674398022
+
+**** Command: doALL
+**** Param: R_R2.Value = 373.33735163636868
+**** Param: C_C1.Value = 3.38861568041017m
+**** Param: R_R3.Value = 1.09674032541737k
+**** Param: R_R1.Value = 320.94160836322544
+**** Param: C_C2.Value = 325.17191076387832u
+**** Param: C_C3.Value = 14.14436780907621p
+**** Param: R_R5.Value = 66.37013862052765
+**** Param: R_R6.Value = 1.83816573746466k
+**** Param: R_R7.Value = 32.34340816312597
+**** Param: D1N755(model).bv = 7.47090823084201
+
+**** Command: doALL
+**** Param: R_R2.Value = 391.35032804252660
+**** Param: C_C1.Value = 3.03765770439772m
+**** Param: R_R3.Value = 1.25541730126612k
+**** Param: R_R1.Value = 305.48523947695384
+**** Param: C_C2.Value = 283.91662343211163u
+**** Param: C_C3.Value = 14.86921292764061p
+**** Param: R_R5.Value = 68.92124299943826
+**** Param: R_R6.Value = 1.96801073157933k
+**** Param: R_R7.Value = 33.67537182871020
+**** Param: D1N755(model).bv = 7.71247749259926
+
+**** Command: doALL
+**** Param: R_R2.Value = 391.79152164453421
+**** Param: C_C1.Value = 3.59442884609516m
+**** Param: R_R3.Value = 1.12465467475146k
+**** Param: R_R1.Value = 292.49078979337150
+**** Param: C_C2.Value = 2.68656920407727
+**** Param: C_C3.Value = 14.37115085299234p
+**** Param: R_R5.Value = 67.88660348092733
+**** Param: R_R6.Value = 1.82451735528576k
+**** Param: R_R7.Value = 32.02567206398694
+**** Param: D1N755(model).bv = 7.57001709036531
+
+**** Command: doALL
+**** Param: R_R2.Value = 387.48885792854043
+**** Param: C_C1.Value = 3.59835657826472m
+**** Param: R_R3.Value = 1.12062958016501k
+**** Param: R_R1.Value = 305.79574855082353
+**** Param: C_C2.Value = 4.93517298226875
+**** Param: C_C3.Value = 14.83726004821925p
+**** Param: R_R5.Value = 69.56694040509817
+**** Param: R_R6.Value = 1.83085964160890k
+**** Param: R_R7.Value = 35.46252861765121
+**** Param: D1N755(model).bv = 7.05693990905484
+
+**** Command: doALL
+**** Param: R_R2.Value = 392.08751250037392
+**** Param: C_C1.Value = 3.57047975096896m
+**** Param: R_R3.Value = 1.10446016598431k
+**** Param: R_R1.Value = 312.71984896224717
+**** Param: C_C2.Value = 221.89437879573777m
+**** Param: C_C3.Value = 14.96818445387128p
+**** Param: R_R5.Value = 67.31179184865447
+**** Param: R_R6.Value = 1.86504002768237k
+**** Param: R_R7.Value = 34.59413701838120
+**** Param: D1N755(model).bv = 7.02439191869869
+
+**** Command: doALL
+**** Param: R_R2.Value = 378.70847981171244
+**** Param: C_C1.Value = 3.10398602252266m
+**** Param: R_R3.Value = 1.13404873253812k
+**** Param: R_R1.Value = 314.56521648087789
+**** Param: C_C2.Value = 5.00353444349498
+**** Param: C_C3.Value = 13.62405774101993p
+**** Param: R_R5.Value = 68.44450278417851
+**** Param: R_R6.Value = 1.67034083217133k
+**** Param: R_R7.Value = 32.96795602578170
+**** Param: D1N755(model).bv = 7.56672109134190
+
+**** Command: doALL
+**** Param: R_R2.Value = 385.93956062018680
+**** Param: C_C1.Value = 3.01050599688711m
+**** Param: R_R3.Value = 1.28944987041730k
+**** Param: R_R1.Value = 286.73395878424134
+**** Param: C_C2.Value = 4.03670806329539
+**** Param: C_C3.Value = 13.65106662190619p
+**** Param: R_R5.Value = 65.42185953106029
+**** Param: R_R6.Value = 1.81515814276376k
+**** Param: R_R7.Value = 32.31096719277784
+**** Param: D1N755(model).bv = 7.22393719290750
+
+**** Command: doALL
+**** Param: R_R2.Value = 393.02544295120231
+**** Param: C_C1.Value = 3.24095309305094m
+**** Param: R_R3.Value = 1.07354034353811k
+**** Param: R_R1.Value = 290.37105789601179
+**** Param: C_C2.Value = 7.14105084719382
+**** Param: C_C3.Value = 13.99934385204627p
+**** Param: R_R5.Value = 67.59082929433661
+**** Param: R_R6.Value = 1.79072922799038k
+**** Param: R_R7.Value = 33.77493767945560
+**** Param: D1N755(model).bv = 7.40260780663472
+
+**** Command: doALL
+**** Param: R_R2.Value = 353.97587043216981
+**** Param: C_C1.Value = 3.19406201361126m
+**** Param: R_R3.Value = 1.06336879810377k
+**** Param: R_R1.Value = 286.76856656634038
+**** Param: C_C2.Value = 13.09338093539232
+**** Param: C_C3.Value = 15.69989623706778p
+**** Param: R_R5.Value = 70.48347504972179
+**** Param: R_R6.Value = 1.81212242629000k
+**** Param: R_R7.Value = 33.24615394566655
+**** Param: D1N755(model).bv = 7.52172154911954
+
+**** Command: doALL
+**** Param: R_R2.Value = 396.18629548357626
+**** Param: C_C1.Value = 3.45653523361919m
+**** Param: R_R3.Value = 1.21848726400294k
+**** Param: R_R1.Value = 297.37858853043019
+**** Param: C_C2.Value = 311.95056001464889u
+**** Param: C_C3.Value = 13.83655812250130p
+**** Param: R_R5.Value = 70.68175387029180
+**** Param: R_R6.Value = 1.84627855128364k
+**** Param: R_R7.Value = 32.68036183240004
+**** Param: D1N755(model).bv = 6.91301461836604
+
+**** Command: doALL
+**** Param: R_R2.Value = 402.80606236534555
+**** Param: C_C1.Value = 3.47250801110874m
+**** Param: R_R3.Value = 946.28671003703789
+**** Param: R_R1.Value = 296.11297422904698
+**** Param: C_C2.Value = 17.44532038666952
+**** Param: C_C3.Value = 13.70325327311014p
+**** Param: R_R5.Value = 65.34632056963908
+**** Param: R_R6.Value = 1.74029638556800k
+**** Param: R_R7.Value = 31.47539634181289
+**** Param: D1N755(model).bv = 7.63666951506088
+
+**** Command: doALL
+**** Param: R_R2.Value = 372.10950224848784
+**** Param: C_C1.Value = 3.37806115909299m
+**** Param: R_R3.Value = 1.10234585144098k
+**** Param: R_R1.Value = 303.42593014975301
+**** Param: C_C2.Value = 9.26269762596515
+**** Param: C_C3.Value = 16.24694051942503p
+**** Param: R_R5.Value = 68.63702054370589
+**** Param: R_R6.Value = 1.75647170257330k
+**** Param: R_R7.Value = 33.79737348214599
+**** Param: D1N755(model).bv = 7.31727805413984
+
+**** Command: doALL
+**** Param: R_R2.Value = 425.10413159605639
+**** Param: C_C1.Value = 3.47985992004151m
+**** Param: R_R3.Value = 1.02546331245759k
+**** Param: R_R1.Value = 288.53228168368651
+**** Param: C_C2.Value = 315.24985503708001u
+**** Param: C_C3.Value = 14.04365672780541p
+**** Param: R_R5.Value = 68.07767215362959
+**** Param: R_R6.Value = 1.73737582389384k
+**** Param: R_R7.Value = 34.81079560385817
+**** Param: D1N755(model).bv = 7.03537858211005
+
+**** Command: doALL
+**** Param: R_R2.Value = 383.72751992030243
+**** Param: C_C1.Value = 3.17063661610767m
+**** Param: R_R3.Value = 1.00031921098288k
+**** Param: R_R1.Value = 289.64139190269509
+**** Param: C_C2.Value = 270.10309152500992u
+**** Param: C_C3.Value = 15.81351664784692p
+**** Param: R_R5.Value = 69.28265209746637
+**** Param: R_R6.Value = 1.86218972204593k
+**** Param: R_R7.Value = 29.85537699403378
+**** Param: D1N755(model).bv = 7.42293313394574
+
+**** Command: doALL
+**** Param: R_R2.Value = 385.27163679707326
+**** Param: C_C1.Value = 3.49901516769921m
+**** Param: R_R3.Value = 1.07992943059070k
+**** Param: R_R1.Value = 298.12570162826717
+**** Param: C_C2.Value = 9.97561000732444
+**** Param: C_C3.Value = 14.21550645466475p
+**** Param: R_R5.Value = 67.95177695176520
+**** Param: R_R6.Value = 1.70692006022353k
+**** Param: R_R7.Value = 34.42503124563932
+**** Param: D1N755(model).bv = 8.09073915829951
+
+**** Command: doALL
+**** Param: R_R2.Value = 402.09019498011378
+**** Param: C_C1.Value = 3.00935789056062m
+**** Param: R_R3.Value = 1.08550619909106k
+**** Param: R_R1.Value = 301.68249370317909
+**** Param: C_C2.Value = 9.88893744041261
+**** Param: C_C3.Value = 15.76819666127506p
+**** Param: R_R5.Value = 66.05789114423131
+**** Param: R_R6.Value = 1.87302541691074k
+**** Param: R_R7.Value = 33.73564711952019
+**** Param: D1N755(model).bv = 7.04943235572375
+
+**** Command: doALL
+**** Param: R_R2.Value = 389.50385111560627
+**** Param: C_C1.Value = 3.00381878109073m
+**** Param: R_R3.Value = 1.09141133099616k
+**** Param: R_R1.Value = 306.63392010316454
+**** Param: C_C2.Value = 8.16647276558733
+**** Param: C_C3.Value = 13.57214575640126p
+**** Param: R_R5.Value = 69.06184564493682
+**** Param: R_R6.Value = 1.79779021338863k
+**** Param: R_R7.Value = 34.36942576575035
+**** Param: D1N755(model).bv = 8.06331827753533
+
+**** Command: doALL
+**** Param: R_R2.Value = 398.90771471629222
+**** Param: C_C1.Value = 3.17158330027161m
+**** Param: R_R3.Value = 1.06739322371385k
+**** Param: R_R1.Value = 297.79181827749881
+**** Param: C_C2.Value = 270.94100772118287u
+**** Param: C_C3.Value = 15.45590075380719p
+**** Param: R_R5.Value = 61.35456520200643
+**** Param: R_R6.Value = 1.83545639358481k
+**** Param: R_R7.Value = 33.60471579337182
+**** Param: D1N755(model).bv = 7.07959990234077
+
+**** Command: doALL
+**** Param: R_R2.Value = 374.22882246784707
+**** Param: C_C1.Value = 3.00796807763909m
+**** Param: R_R3.Value = 1.12080371071284k
+**** Param: R_R1.Value = 278.13227453839698
+**** Param: C_C2.Value = 309.65434736167487u
+**** Param: C_C3.Value = 15.59360026856288p
+**** Param: R_R5.Value = 69.56234027067048
+**** Param: R_R6.Value = 1.77970400694407k
+**** Param: R_R7.Value = 35.25178367014361
+**** Param: D1N755(model).bv = 7.70332193975646
+
+**** Command: doALL
+**** Param: R_R2.Value = 380.44724866422746
+**** Param: C_C1.Value = 3.28480269783624m
+**** Param: R_R3.Value = 1.17383675719637k
+**** Param: R_R1.Value = 283.56609474992524
+**** Param: C_C2.Value = 277.33011871700188u
+**** Param: C_C3.Value = 13.92967009491256p
+**** Param: R_R5.Value = 65.13829789126370
+**** Param: R_R6.Value = 1.87616507291299k
+**** Param: R_R7.Value = 32.23481422008751
+**** Param: D1N755(model).bv = 7.31073183385723
+
+**** Command: doALL
+**** Param: R_R2.Value = 399.63852724897515
+**** Param: C_C1.Value = 3.00077730643635m
+**** Param: R_R3.Value = 1.15446047608032k
+**** Param: R_R1.Value = 290.94226586477208
+**** Param: C_C2.Value = 15.91573269173254
+**** Param: C_C3.Value = 14.26952421643727p
+**** Param: R_R5.Value = 66.15381359869731
+**** Param: R_R6.Value = 1.73968722358138k
+**** Param: R_R7.Value = 31.96732725003499
+**** Param: D1N755(model).bv = 8.01923429059725
+
+**** Command: doALL
+**** Param: R_R2.Value = 403.11738552796481
+**** Param: C_C1.Value = 3.55587664418470m
+**** Param: R_R3.Value = 1.16422240520344k
+**** Param: R_R1.Value = 301.07092352573682
+**** Param: C_C2.Value = 269.39811395611440u
+**** Param: C_C3.Value = 14.02058473464156p
+**** Param: R_R5.Value = 65.52616140471497
+**** Param: R_R6.Value = 1.76652742329149k
+**** Param: R_R7.Value = 32.66472037942639
+**** Param: D1N755(model).bv = 7.02759636219367
+
+**** Command: doALL
+**** Param: R_R2.Value = 404.52326440721231
+**** Param: C_C1.Value = 3.38120334482864m
+**** Param: R_R3.Value = 1.09597410243573k
+**** Param: R_R1.Value = 312.28543115061450
+**** Param: C_C2.Value = 904.28825067903779m
+**** Param: C_C3.Value = 15.69193090609455p
+**** Param: R_R5.Value = 74.45196677260950
+**** Param: R_R6.Value = 1.90803170107041k
+**** Param: R_R7.Value = 34.07376717988988
+**** Param: D1N755(model).bv = 8.01030762657552
+
+**** Command: doALL
+**** Param: R_R2.Value = 373.78725280365688
+**** Param: C_C1.Value = 3.21710470900601m
+**** Param: R_R3.Value = 1.04369389236863k
+**** Param: R_R1.Value = 288.54894468988238
+**** Param: C_C2.Value = 18.95049327402570
+**** Param: C_C3.Value = 15.72544022949919p
+**** Param: R_R5.Value = 68.95498535944145
+**** Param: R_R6.Value = 1.66727224870511k
+**** Param: R_R7.Value = 33.22787023814408
+**** Param: D1N755(model).bv = 7.96906186101871
+
+**** Command: doALL
+**** Param: R_R2.Value = 396.27072148013173
+**** Param: C_C1.Value = 3.50999267555773m
+**** Param: R_R3.Value = 1.00175693400999k
+**** Param: R_R1.Value = 304.28166611121964
+**** Param: C_C2.Value = 313.50956755272074u
+**** Param: C_C3.Value = 15.44949186681722p
+**** Param: R_R5.Value = 70.83975031196498
+**** Param: R_R6.Value = 1.86517035302586k
+**** Param: R_R7.Value = 30.58651343300262
+**** Param: D1N755(model).bv = 7.91023743400372
+
+**** Command: doALL
+**** Param: R_R2.Value = 386.02432771088775
+**** Param: C_C1.Value = 2.97499526963103m
+**** Param: R_R3.Value = 1.03098119408715k
+**** Param: R_R1.Value = 296.15932509421248
+**** Param: C_C2.Value = 284.66994232001707u
+**** Param: C_C3.Value = 16.25710318308054p
+**** Param: R_R5.Value = 67.61504696671236
+**** Param: R_R6.Value = 1.74618874684043k
+**** Param: R_R7.Value = 33.59846502247300
+**** Param: D1N755(model).bv = 8.10978270821253
+
+**** Command: doALL
+**** Param: R_R2.Value = 377.15302927485408
+**** Param: C_C1.Value = 2.99118961149937m
+**** Param: R_R3.Value = 1.14396811064302k
+**** Param: R_R1.Value = 290.57695844289054
+**** Param: C_C2.Value = 2.26419303292947
+**** Param: C_C3.Value = 15.91917172765282p
+**** Param: R_R5.Value = 70.05773882183281
+**** Param: R_R6.Value = 1.76227205184456k
+**** Param: R_R7.Value = 32.91861241797884
+**** Param: D1N755(model).bv = 8.23768578142644
+
+**** Command: doALL
+**** Param: R_R2.Value = 402.80078570157229
+**** Param: C_C1.Value = 3.39693441572314m
+**** Param: R_R3.Value = 1.03077940522554k
+**** Param: R_R1.Value = 307.37975072177312
+**** Param: C_C2.Value = 312.97781304361092u
+**** Param: C_C3.Value = 14.60068056276132p
+**** Param: R_R5.Value = 63.11637707313714
+**** Param: R_R6.Value = 1.79901575117199k
+**** Param: R_R7.Value = 32.51919437496443
+**** Param: D1N755(model).bv = 6.92967772453993
+
+**** Command: doALL
+**** Param: R_R2.Value = 381.57194618882096
+**** Param: C_C1.Value = 3.56334940641499m
+**** Param: R_R3.Value = 1.02479532174329k
+**** Param: R_R1.Value = 314.47084503012923
+**** Param: C_C2.Value = 280.50856044190800u
+**** Param: C_C3.Value = 16.04799035615101p
+**** Param: R_R5.Value = 70.52465259259411
+**** Param: R_R6.Value = 1.78114166937208k
+**** Param: R_R7.Value = 31.94248634534704
+**** Param: D1N755(model).bv = 7.70213171788690
+
+**** Command: doALL
+**** Param: R_R2.Value = 389.74589482781874
+**** Param: C_C1.Value = 3.38186803796503m
+**** Param: R_R3.Value = 1.07281444185315k
+**** Param: R_R1.Value = 275.34254116465934
+**** Param: C_C2.Value = 14.56559383251442
+**** Param: C_C3.Value = 13.91886654255806p
+**** Param: R_R5.Value = 66.14004894155421
+**** Param: R_R6.Value = 1.75532767055114k
+**** Param: R_R7.Value = 33.34842215587470
+**** Param: D1N755(model).bv = 7.59217352824488
+
+**** Command: doALL
+**** Param: R_R2.Value = 411.23013864657793
+**** Param: C_C1.Value = 3.37076967680898m
+**** Param: R_R3.Value = 1.14812784984831k
+**** Param: R_R1.Value = 296.26852459011087
+**** Param: C_C2.Value = 12.73570400433363
+**** Param: C_C3.Value = 15.71839045381024p
+**** Param: R_R5.Value = 65.06944122258361
+**** Param: R_R6.Value = 1.79210088990975k
+**** Param: R_R7.Value = 30.36062855786541
+**** Param: D1N755(model).bv = 6.76048310800501
+
+**** Command: doALL
+**** Param: R_R2.Value = 396.80629889578017
+**** Param: C_C1.Value = 3.19035584582049m
+**** Param: R_R3.Value = 1.18556073593647k
+**** Param: R_R1.Value = 297.28667240798336
+**** Param: C_C2.Value = 10.71659941740166
+**** Param: C_C3.Value = 13.65152439954833p
+**** Param: R_R5.Value = 68.37411994736203
+**** Param: R_R6.Value = 1.66055285353544k
+**** Param: R_R7.Value = 33.35093365416075
+**** Param: D1N755(model).bv = 8.20362712485122
+
+**** Command: doALL
+**** Param: R_R2.Value = 387.75030823238916
+**** Param: C_C1.Value = 3.43621173741874m
+**** Param: R_R3.Value = 1.03949111745784k
+**** Param: R_R1.Value = 307.76315253691740
+**** Param: C_C2.Value = 5.86537715109714
+**** Param: C_C3.Value = 15.29165013580737p
+**** Param: R_R5.Value = 66.11337991833945
+**** Param: R_R6.Value = 1.85239948126057k
+**** Param: R_R7.Value = 32.69531195043562
+**** Param: D1N755(model).bv = 7.87224188970611
+
+**** Command: doALL
+**** Param: R_R2.Value = 382.58428978974240
+**** Param: C_C1.Value = 2.97956755272073m
+**** Param: R_R3.Value = 1.08279847058365k
+**** Param: R_R1.Value = 301.51627818024753
+**** Param: C_C2.Value = 317.31241798150580u
+**** Param: C_C3.Value = 14.65085299233985p
+**** Param: R_R5.Value = 62.87594644377029
+**** Param: R_R6.Value = 1.75476255947451k
+**** Param: R_R7.Value = 33.08263022465108
+**** Param: D1N755(model).bv = 8.07581560716575
+
+**** Command: doALL
+**** Param: R_R2.Value = 385.46568194446098
+**** Param: C_C1.Value = 3.58482100894192m
+**** Param: R_R3.Value = 1.06488467023282k
+**** Param: R_R1.Value = 299.11084867351326
+**** Param: C_C2.Value = 265.32938627277451u
+**** Param: C_C3.Value = 16.42272713400678p
+**** Param: R_R5.Value = 70.19022367226165
+**** Param: R_R6.Value = 1.77988312554166k
+**** Param: R_R7.Value = 33.40759305549414
+**** Param: D1N755(model).bv = 7.24943540757469
+
+**** Command: doALL
+**** Param: R_R2.Value = 391.16036968610672
+**** Param: C_C1.Value = 3.29904324472793m
+**** Param: R_R3.Value = 1.09848017008246k
+**** Param: R_R1.Value = 279.02190587944409
+**** Param: C_C2.Value = 313.92449720755639u
+**** Param: C_C3.Value = 14.19911801507614p
+**** Param: R_R5.Value = 71.21588562032017
+**** Param: R_R6.Value = 1.85646657133807k
+**** Param: R_R7.Value = 34.88241888067459
+**** Param: D1N755(model).bv = 7.66322061830500
+
+**** Command: doALL
+**** Param: R_R2.Value = 390.54555823145733
+**** Param: C_C1.Value = 3.02045625171667m
+**** Param: R_R3.Value = 1.06967462900945k
+**** Param: R_R1.Value = 292.94397468195478
+**** Param: C_C2.Value = 329.81267738883633u
+**** Param: C_C3.Value = 13.74015015106662p
+**** Param: R_R5.Value = 70.28652053113817
+**** Param: R_R6.Value = 1.75748208599475k
+**** Param: R_R7.Value = 33.69736114776496
+**** Param: D1N755(model).bv = 8.14933469649342
+
+**** Command: doALL
+**** Param: R_R2.Value = 390.69466532843211
+**** Param: C_C1.Value = 3.11270760216071m
+**** Param: R_R3.Value = 1.04253882509182k
+**** Param: R_R1.Value = 299.82103210694419
+**** Param: C_C2.Value = 14.97698334025086
+**** Param: C_C3.Value = 14.25020599993896p
+**** Param: R_R5.Value = 66.37478365189490
+**** Param: R_R6.Value = 1.82718832844138k
+**** Param: R_R7.Value = 34.06974879747798
+**** Param: D1N755(model).bv = 7.09662923062838
+
+**** Command: doALL
+**** Param: R_R2.Value = 376.19172459771909
+**** Param: C_C1.Value = 3.26488204596088m
+**** Param: R_R3.Value = 1.17997122676013k
+**** Param: R_R1.Value = 300.17141021680061
+**** Param: C_C2.Value = 267.79882198553423u
+**** Param: C_C3.Value = 16.48571733756523p
+**** Param: R_R5.Value = 63.80974225636506
+**** Param: R_R6.Value = 1.80795746338361k
+**** Param: R_R7.Value = 32.06157656488044
+**** Param: D1N755(model).bv = 7.00475325785089
+
+**** Command: doALL
+**** Param: R_R2.Value = 371.91139969194745
+**** Param: C_C1.Value = 3.12277871028779m
+**** Param: R_R3.Value = 1.08626090639844k
+**** Param: R_R1.Value = 316.42829157307847
+**** Param: C_C2.Value = 270.50593585009312u
+**** Param: C_C3.Value = 13.73886837366863p
+**** Param: R_R5.Value = 66.61470961990769
+**** Param: R_R6.Value = 1.75306601487627k
+**** Param: R_R7.Value = 32.85241766565484
+**** Param: D1N755(model).bv = 7.48583178197577
+
+**** Command: doALL
+**** Param: R_R2.Value = 384.79980070184621
+**** Param: C_C1.Value = 3.58030915250099m
+**** Param: R_R3.Value = 1.10630371000030k
+**** Param: R_R1.Value = 292.55995770255225
+**** Param: C_C2.Value = 326.79940183721430u
+**** Param: C_C3.Value = 14.70496230964080p
+**** Param: R_R5.Value = 71.53191835818232
+**** Param: R_R6.Value = 1.79701718186375k
+**** Param: R_R7.Value = 33.91526431808700
+**** Param: D1N755(model).bv = 7.94164098025453
+
+**** Command: doALL
+**** Param: R_R2.Value = 399.11218392669997
+**** Param: C_C1.Value = 3.36128269295328m
+**** Param: R_R3.Value = 1.17244768673299k
+**** Param: R_R1.Value = 293.31640878262823
+**** Param: C_C2.Value = 17.56739442457350
+**** Param: C_C3.Value = 14.30376598406934p
+**** Param: R_R5.Value = 71.35113107145769
+**** Param: R_R6.Value = 1.82566807813682k
+**** Param: R_R7.Value = 31.54017148759530
+**** Param: D1N755(model).bv = 7.91234321115757
+
+**** Command: doALL
+**** Param: R_R2.Value = 386.82808313717271
+**** Param: C_C1.Value = 3.08609973448897m
+**** Param: R_R3.Value = 932.94415833601226
+**** Param: R_R1.Value = 279.39151117089358
+**** Param: C_C2.Value = 324.03186132389294u
+**** Param: C_C3.Value = 16.08690145573290p
+**** Param: R_R5.Value = 65.07263710172064
+**** Param: R_R6.Value = 1.64982968336838k
+**** Param: R_R7.Value = 31.91054803931968
+**** Param: D1N755(model).bv = 7.97780541398358
+
+**** Command: doALL
+**** Param: R_R2.Value = 398.91958712205786
+**** Param: C_C1.Value = 3.48457319864498m
+**** Param: R_R3.Value = 1.11814487119400k
+**** Param: R_R1.Value = 292.75241168758924
+**** Param: C_C2.Value = 11.25738740531632
+**** Param: C_C3.Value = 16.26451918088321p
+**** Param: R_R5.Value = 69.95837518401119
+**** Param: R_R6.Value = 1.74614320201900k
+**** Param: R_R7.Value = 32.80488853811838
+**** Param: D1N755(model).bv = 6.78451643421735
+
+**** Command: doALL
+**** Param: R_R2.Value = 368.19759423632564
+**** Param: C_C1.Value = 2.99038392284921m
+**** Param: R_R3.Value = 1.05915441222773k
+**** Param: R_R1.Value = 304.17481327504936
+**** Param: C_C2.Value = 318.09393597216712u
+**** Param: C_C3.Value = 14.04127628406629p
+**** Param: R_R5.Value = 66.35176045294419
+**** Param: R_R6.Value = 1.73410074379844k
+**** Param: R_R7.Value = 33.56341605707608
+**** Param: D1N755(model).bv = 6.95210882900479
+
+**** Command: doALL
+**** Param: R_R2.Value = 365.83136439443308
+**** Param: C_C1.Value = 3.31690939054537m
+**** Param: R_R3.Value = 1.05972286427612k
+**** Param: R_R1.Value = 307.17781835020423
+**** Param: C_C2.Value = 284.96401867732783u
+**** Param: C_C3.Value = 16.19960631122776p
+**** Param: R_R5.Value = 65.03167174187298
+**** Param: R_R6.Value = 1.66587978225826k
+**** Param: R_R7.Value = 31.78874508694627
+**** Param: D1N755(model).bv = 7.97711874752037
+
+**** Command: doALL
+**** Param: R_R2.Value = 378.59746430947831
+**** Param: C_C1.Value = 3.34665944395276m
+**** Param: R_R3.Value = 1.05716156309254k
+**** Param: R_R1.Value = 299.28603772844150
+**** Param: C_C2.Value = 6.59660063814203
+**** Param: C_C3.Value = 16.11226233710746p
+**** Param: R_R5.Value = 71.10686122603583
+**** Param: R_R6.Value = 1.88987539900820k
+**** Param: R_R7.Value = 31.38722087302189
+**** Param: D1N755(model).bv = 6.97985015411847
+
+**** Command: doALL
+**** Param: R_R2.Value = 389.67542640527591
+**** Param: C_C1.Value = 3.49816919461653m
+**** Param: R_R3.Value = 1.18224467997434k
+**** Param: R_R1.Value = 282.89537839175176
+**** Param: C_C2.Value = 14.89275225409711
+**** Param: C_C3.Value = 15.96723838007752p
+**** Param: R_R5.Value = 66.94975775200635
+**** Param: R_R6.Value = 1.79708317235977k
+**** Param: R_R7.Value = 33.31647589767609
+**** Param: D1N755(model).bv = 7.42641224402600
+
+**** Command: doALL
+**** Param: R_R2.Value = 379.89757919119819
+**** Param: C_C1.Value = 3.59664448988311m
+**** Param: R_R3.Value = 1.25095236593757k
+**** Param: R_R1.Value = 304.56183013962902
+**** Param: C_C2.Value = 3.79255998748741
+**** Param: C_C3.Value = 14.31713309121982p
+**** Param: R_R5.Value = 65.03312441420800
+**** Param: R_R6.Value = 1.73780849969742k
+**** Param: R_R7.Value = 33.09300015974100
+**** Param: D1N755(model).bv = 7.48102511673330
+
+**** Command: doALL
+**** Param: R_R2.Value = 382.72560091023718
+**** Param: C_C1.Value = 3.12175145725883m
+**** Param: R_R3.Value = 1.08315566030165k
+**** Param: R_R1.Value = 303.47068048285001
+**** Param: C_C2.Value = 17.92629209601123
+**** Param: C_C3.Value = 15.51339762565996p
+**** Param: R_R5.Value = 72.69156172554175
+**** Param: R_R6.Value = 1.74519245387166k
+**** Param: R_R7.Value = 32.84680061748114
+**** Param: D1N755(model).bv = 7.10372478408155
+
+**** Command: doALL
+**** Param: R_R2.Value = 404.82360508516382
+**** Param: C_C1.Value = 3.28967711416974m
+**** Param: R_R3.Value = 1.05278382892673k
+**** Param: R_R1.Value = 299.22318963698740
+**** Param: C_C2.Value = 2.83183730918302
+**** Param: C_C3.Value = 14.50958281197546p
+**** Param: R_R5.Value = 66.68418313253092
+**** Param: R_R6.Value = 1.73085530289937k
+**** Param: R_R7.Value = 32.17522476397976
+**** Param: D1N755(model).bv = 7.07891323587756
+
+**** Command: doALL
+**** Param: R_R2.Value = 406.90802073043375
+**** Param: C_C1.Value = 3.45818689535203m
+**** Param: R_R3.Value = 1.15270430711351k
+**** Param: R_R1.Value = 302.23319678190308
+**** Param: C_C2.Value = 7.46820926877651
+**** Param: C_C3.Value = 14.31026642658773p
+**** Param: R_R5.Value = 69.32658338125090
+**** Param: R_R6.Value = 1.69232151796951k
+**** Param: R_R7.Value = 33.48042650578972
+**** Param: D1N755(model).bv = 8.03859828485977
+
+**** Command: doALL
+**** Param: R_R2.Value = 382.20321307955572
+**** Param: C_C1.Value = 2.99928678243355m
+**** Param: R_R3.Value = 1.08426179620255k
+**** Param: R_R1.Value = 276.13497669587326
+**** Param: C_C2.Value = 13.52796451033052
+**** Param: C_C3.Value = 15.35555589465011p
+**** Param: R_R5.Value = 67.84190801322158
+**** Param: R_R6.Value = 1.80561951438152k
+**** Param: R_R7.Value = 33.00286814058443
+**** Param: D1N755(model).bv = 7.91605121005890
+
+**** Command: doALL
+**** Param: R_R2.Value = 392.49830229276199
+**** Param: C_C1.Value = 3.42984679708243m
+**** Param: R_R3.Value = 1.14122967767783k
+**** Param: R_R1.Value = 309.78722664069124
+**** Param: C_C2.Value = 284.85525070955532u
+**** Param: C_C3.Value = 14.77051606799524p
+**** Param: R_R5.Value = 69.47424769638002
+**** Param: R_R6.Value = 1.65751799405420k
+**** Param: R_R7.Value = 32.63386955781539
+**** Param: D1N755(model).bv = 6.81321909237953
+
+**** Command: doALL
+**** Param: R_R2.Value = 387.94639596027577
+**** Param: C_C1.Value = 3.14771477401044m
+**** Param: R_R3.Value = 971.32812062104176
+**** Param: R_R1.Value = 291.09313308575696
+**** Param: C_C2.Value = 19.28253465712455
+**** Param: C_C3.Value = 15.01936399426252p
+**** Param: R_R5.Value = 68.27924693228658
+**** Param: R_R6.Value = 1.69643835764610k
+**** Param: R_R7.Value = 32.42357950374462
+**** Param: D1N755(model).bv = 8.18330179754021
+
+**** Command: doALL
+**** Param: R_R2.Value = 402.26608377255405
+**** Param: C_C1.Value = 3.19273262733848m
+**** Param: R_R3.Value = 1.03400802701131k
+**** Param: R_R1.Value = 292.48225013935348
+**** Param: C_C2.Value = 270.72750022888880u
+**** Param: C_C3.Value = 16.47811822870571p
+**** Param: R_R5.Value = 65.41866365192324
+**** Param: R_R6.Value = 1.69512325608274k
+**** Param: R_R7.Value = 31.93570206465496
+**** Param: D1N755(model).bv = 7.20136875515000
+
+**** Command: doALL
+**** Param: R_R2.Value = 398.47239317155339
+**** Param: C_C1.Value = 3.39874721518601m
+**** Param: R_R3.Value = 981.68908155256042
+**** Param: R_R1.Value = 291.65010829782062
+**** Param: C_C2.Value = 282.01519821771905u
+**** Param: C_C3.Value = 14.15260780663472p
+**** Param: R_R5.Value = 67.97029618938032
+**** Param: R_R6.Value = 1.73313172589967k
+**** Param: R_R7.Value = 33.18587798680124
+**** Param: D1N755(model).bv = 6.91035950804163
+
+**** Command: doALL
+**** Param: R_R2.Value = 386.18671286054382
+**** Param: C_C1.Value = 3.47083620715964m
+**** Param: R_R3.Value = 1.05435850644011k
+**** Param: R_R1.Value = 281.32297434860931
+**** Param: C_C2.Value = 301.29129917294841u
+**** Param: C_C3.Value = 15.58288827173681p
+**** Param: R_R5.Value = 70.27118663641261
+**** Param: R_R6.Value = 1.79998675418495k
+**** Param: R_R7.Value = 34.07897619412754
+**** Param: D1N755(model).bv = 6.87181463057344
+
+**** Command: doALL
+**** Param: R_R2.Value = 398.84175690648340
+**** Param: C_C1.Value = 3.62977843562120m
+**** Param: R_R3.Value = 1.11298792804664k
+**** Param: R_R1.Value = 301.31760228469403
+**** Param: C_C2.Value = 3.79133924710837
+**** Param: C_C3.Value = 15.27938169499802p
+**** Param: R_R5.Value = 65.62451951699133
+**** Param: R_R6.Value = 1.91829468398359k
+**** Param: R_R7.Value = 31.97463339847262
+**** Param: D1N755(model).bv = 6.81344798120060
+
+**** Command: doALL
+**** Param: R_R2.Value = 378.18670695121199
+**** Param: C_C1.Value = 3.13838892788476m
+**** Param: R_R3.Value = 1.06963430113806k
+**** Param: R_R1.Value = 306.78613043349281
+**** Param: C_C2.Value = 299.96594134342479u
+**** Param: C_C3.Value = 16.20015564439833p
+**** Param: R_R5.Value = 66.89118996520189
+**** Param: R_R6.Value = 1.82727356622636k
+**** Param: R_R7.Value = 31.88904708820322
+**** Param: D1N755(model).bv = 6.82942442091128
+
+**** Command: doALL
+**** Param: R_R2.Value = 391.23492323459413
+**** Param: C_C1.Value = 3.20362956633198m
+**** Param: R_R3.Value = 1.06023251094020k
+**** Param: R_R1.Value = 302.76198133013060
+**** Param: C_C2.Value = 19.04204880245369
+**** Param: C_C3.Value = 14.17091891232032p
+**** Param: R_R5.Value = 70.55150751185867
+**** Param: R_R6.Value = 1.76496106169105k
+**** Param: R_R7.Value = 34.73812958678166
+**** Param: D1N755(model).bv = 7.74768059327983
+
+**** Command: doALL
+**** Param: R_R2.Value = 376.67566261524718
+**** Param: C_C1.Value = 3.15635578478347m
+**** Param: R_R3.Value = 1.05899106393796k
+**** Param: R_R1.Value = 299.08178143121580
+**** Param: C_C2.Value = 302.41120639667957u
+**** Param: C_C3.Value = 14.15993224890896p
+**** Param: R_R5.Value = 64.59010857818120
+**** Param: R_R6.Value = 1.71265647566477k
+**** Param: R_R7.Value = 33.43953931369276
+**** Param: D1N755(model).bv = 8.01570940275277
+
+**** Command: doALL
+**** Param: R_R2.Value = 393.73660793860250
+**** Param: C_C1.Value = 3.51063722647786m
+**** Param: R_R3.Value = 899.53283881469474
+**** Param: R_R1.Value = 298.03535672158864
+**** Param: C_C2.Value = 4.18563838953826
+**** Param: C_C3.Value = 16.30599383526109p
+**** Param: R_R5.Value = 66.30349251830188
+**** Param: R_R6.Value = 1.80589290357935k
+**** Param: R_R7.Value = 33.57078303706397
+**** Param: D1N755(model).bv = 8.06075472273934
+
+**** Command: doALL
+**** Param: R_R2.Value = 406.01726675394519
+**** Param: C_C1.Value = 3.51786828211310m
+**** Param: R_R3.Value = 1.10721972093324k
+**** Param: R_R1.Value = 292.93150081255425
+**** Param: C_C2.Value = 11.36969552018799
+**** Param: C_C3.Value = 13.95036164433729p
+**** Param: R_R5.Value = 67.85383867591594
+**** Param: R_R6.Value = 1.82033091596093k
+**** Param: R_R7.Value = 32.51003418703512
+**** Param: D1N755(model).bv = 8.23979155858028
+
+**** Command: doALL
+**** Param: R_R2.Value = 370.64951354412165
+**** Param: C_C1.Value = 3.24165807061983m
+**** Param: R_R3.Value = 933.97451186359535
+**** Param: R_R1.Value = 303.34008257197513
+**** Param: C_C2.Value = 298.17328409680471u
+**** Param: C_C3.Value = 14.00703451643422p
+**** Param: R_R5.Value = 65.86690652637071
+**** Param: R_R6.Value = 1.73583882352164k
+**** Param: R_R7.Value = 34.04831742461449
+**** Param: D1N755(model).bv = 7.89494766075625
+
+**** Command: doALL
+**** Param: R_R2.Value = 364.30402764147954
+**** Param: C_C1.Value = 3.28893185216834m
+**** Param: R_R3.Value = 962.08005535989275
+**** Param: R_R1.Value = 316.62234831831120
+**** Param: C_C2.Value = 275.21921445356605u
+**** Param: C_C3.Value = 15.19643238624226p
+**** Param: R_R5.Value = 71.81859646794386
+**** Param: R_R6.Value = 1.80096247080478k
+**** Param: R_R7.Value = 34.12853624387436
+**** Param: D1N755(model).bv = 7.36305581835383
+
+**** Command: doALL
+**** Param: R_R2.Value = 384.49443491727288
+**** Param: C_C1.Value = 3.24290688802759m
+**** Param: R_R3.Value = 1.11815156852277k
+**** Param: R_R1.Value = 307.80780123038295
+**** Param: C_C2.Value = 17.80788027924436
+**** Param: C_C3.Value = 14.34936063722648p
+**** Param: R_R5.Value = 61.56361500737035
+**** Param: R_R6.Value = 1.80750495712514k
+**** Param: R_R7.Value = 30.85409047306828
+**** Param: D1N755(model).bv = 7.73408459730827
+
+**** Command: doALL
+**** Param: R_R2.Value = 385.12354971090895
+**** Param: C_C1.Value = 3.59996795556505m
+**** Param: R_R3.Value = 1.10685101213004k
+**** Param: R_R1.Value = 289.72583959242877
+**** Param: C_C2.Value = 318.69820245979190u
+**** Param: C_C3.Value = 14.52166814172796p
+**** Param: R_R5.Value = 68.32358626080743
+**** Param: R_R6.Value = 1.84340177282795k
+**** Param: R_R7.Value = 29.96285490341299
+**** Param: D1N755(model).bv = 6.90788750877407
+
+**** Command: doALL
+**** Param: R_R2.Value = 384.20234590594191
+**** Param: C_C1.Value = 3.15273018585772m
+**** Param: R_R3.Value = 1.05071257261246k
+**** Param: R_R1.Value = 307.84703796100428
+**** Param: C_C2.Value = 14.14077618060854
+**** Param: C_C3.Value = 14.43459883419294p
+**** Param: R_R5.Value = 65.64860766699177
+**** Param: R_R6.Value = 1.79953896153334k
+**** Param: R_R7.Value = 32.72080492627664
+**** Param: D1N755(model).bv = 8.24267555772576
+
+**** Command: doALL
+**** Param: R_R2.Value = 385.50142710319028
+**** Param: C_C1.Value = 3.21319711905271m
+**** Param: R_R3.Value = 1.07189266193573k
+**** Param: R_R1.Value = 295.26678736247072
+**** Param: C_C2.Value = 3.21759126895963
+**** Param: C_C3.Value = 16.13322855311747p
+**** Param: R_R5.Value = 66.61309395682343
+**** Param: R_R6.Value = 1.77308133248059k
+**** Param: R_R7.Value = 34.71100540529227
+**** Param: D1N755(model).bv = 7.51371044038209
+
+**** Command: doALL
+**** Param: R_R2.Value = 385.01120778347388
+**** Param: C_C1.Value = 3.37147465437788m
+**** Param: R_R3.Value = 1.14532988573169k
+**** Param: R_R1.Value = 283.86460545156143
+**** Param: C_C2.Value = 283.95690786461989u
+**** Param: C_C3.Value = 14.12376781517991p
+**** Param: R_R5.Value = 64.39989672410364
+**** Param: R_R6.Value = 1.75975945815102k
+**** Param: R_R7.Value = 32.72858244432983
+**** Param: D1N755(model).bv = 7.69370860927152
+
+**** Command: doALL
+**** Param: R_R2.Value = 381.86962617215823
+**** Param: C_C1.Value = 3.02234962004456m
+**** Param: R_R3.Value = 1.10884434409733k
+**** Param: R_R1.Value = 287.36715301968388
+**** Param: C_C2.Value = 301.05362102114935u
+**** Param: C_C3.Value = 15.97492904446547p
+**** Param: R_R5.Value = 67.24964502763144
+**** Param: R_R6.Value = 1.94955602135111k
+**** Param: R_R7.Value = 31.93852015048090
+**** Param: D1N755(model).bv = 6.91100039674062
+
+**** Command: doALL
+**** Param: R_R2.Value = 388.37124994748979
+**** Param: C_C1.Value = 3.14463301492355m
+**** Param: R_R3.Value = 903.01541503244232
+**** Param: R_R1.Value = 300.22090308882065
+**** Param: C_C2.Value = 10.82280383037812
+**** Param: C_C3.Value = 13.82255012665181p
+**** Param: R_R5.Value = 72.07646604413640
+**** Param: R_R6.Value = 1.76889567649625k
+**** Param: R_R7.Value = 34.29666078230188
+**** Param: D1N755(model).bv = 7.53257087923826
+
+**** Command: doALL
+**** Param: R_R2.Value = 377.52431445454823
+**** Param: C_C1.Value = 3.16973021637623m
+**** Param: R_R3.Value = 1.08316142142613k
+**** Param: R_R1.Value = 293.09900705879016
+**** Param: C_C2.Value = 318.70223090304273u
+**** Param: C_C3.Value = 15.79419843134861p
+**** Param: R_R5.Value = 69.95316165980449
+**** Param: R_R6.Value = 1.77234381039483k
+**** Param: R_R7.Value = 32.60301873620440
+**** Param: D1N755(model).bv = 7.83626056703391
+
+**** Command: doALL
+**** Param: R_R2.Value = 396.22718932565789
+**** Param: C_C1.Value = 3.03032593768120m
+**** Param: R_R3.Value = 980.70935412154915
+**** Param: R_R1.Value = 305.39391327875694
+**** Param: C_C2.Value = 13.87953773949400
+**** Param: C_C3.Value = 15.41341898861660p
+**** Param: R_R5.Value = 66.76011929749120
+**** Param: R_R6.Value = 1.78569033902138k
+**** Param: R_R7.Value = 31.30593411273018
+**** Param: D1N755(model).bv = 7.37294381542405
+
+**** Command: doALL
+**** Param: R_R2.Value = 376.06341945001100
+**** Param: C_C1.Value = 3.19645893734550m
+**** Param: R_R3.Value = 1.19090407501955k
+**** Param: R_R1.Value = 290.61016820851614
+**** Param: C_C2.Value = 304.96121097445604u
+**** Param: C_C3.Value = 13.96281319620350p
+**** Param: R_R5.Value = 66.64035827137033
+**** Param: R_R6.Value = 1.73414688750791k
+**** Param: R_R7.Value = 32.11407646008228
+**** Param: D1N755(model).bv = 7.05890835291604
+
+**** Command: doALL
+**** Param: R_R2.Value = 375.19527682720678
+**** Param: C_C1.Value = 3.19128238776818m
+**** Param: R_R3.Value = 969.16169727271210
+**** Param: R_R1.Value = 298.30717704950831
+**** Param: C_C2.Value = 18.54764894894254
+**** Param: C_C3.Value = 15.92777794732505p
+**** Param: R_R5.Value = 67.29273823877062
+**** Param: R_R6.Value = 1.87422204051915k
+**** Param: R_R7.Value = 31.77873446553168
+**** Param: D1N755(model).bv = 7.47287667470321
+
+**** Command: doALL
+**** Param: R_R2.Value = 386.80152959068812
+**** Param: C_C1.Value = 3.43149845881527m
+**** Param: R_R3.Value = 1.03553883906491k
+**** Param: R_R1.Value = 314.12380163060169
+**** Param: C_C2.Value = 300.62257759331033u
+**** Param: C_C3.Value = 14.39861751152074p
+**** Param: R_R5.Value = 69.76056794205147
+**** Param: R_R6.Value = 1.84585641818179k
+**** Param: R_R7.Value = 33.17804211214874
+**** Param: D1N755(model).bv = 7.94260231330302
+
+**** Command: doALL
+**** Param: R_R2.Value = 355.02064329749408
+**** Param: C_C1.Value = 3.14223609118931m
+**** Param: R_R3.Value = 1.04486983435526k
+**** Param: R_R1.Value = 315.74638173541030
+**** Param: C_C2.Value = 14.37882055452132
+**** Param: C_C3.Value = 15.05232398449660p
+**** Param: R_R5.Value = 68.89329687305526
+**** Param: R_R6.Value = 1.74867093960833k
+**** Param: R_R7.Value = 34.41808056065320
+**** Param: D1N755(model).bv = 7.48688467055269
+
+**** Command: doALL
+**** Param: R_R2.Value = 369.90323679003109
+**** Param: C_C1.Value = 3.51514908291879m
+**** Param: R_R3.Value = 977.75750604189079
+**** Param: R_R1.Value = 292.26780993845671
+**** Param: C_C2.Value = 314.66975920896022u
+**** Param: C_C3.Value = 15.42980742820520p
+**** Param: R_R5.Value = 67.69321990352319
+**** Param: R_R6.Value = 1.77897339161180k
+**** Param: R_R7.Value = 31.60065820008627
+**** Param: D1N755(model).bv = 8.21246223334452
+
+**** Command: doALL
+**** Param: R_R2.Value = 368.04893058133763
+**** Param: C_C1.Value = 2.97342417676321m
+**** Param: R_R3.Value = 1.19157018233072k
+**** Param: R_R1.Value = 295.98413453604462
+**** Param: C_C2.Value = 10.21365438123722
+**** Param: C_C3.Value = 14.06297494430372p
+**** Param: R_R5.Value = 64.62275688149303
+**** Param: R_R6.Value = 1.77767713860293k
+**** Param: R_R7.Value = 33.33616604423875
+**** Param: D1N755(model).bv = 7.54113132114628
+
+**** Command: doALL
+**** Param: R_R2.Value = 400.19939046138114
+**** Param: C_C1.Value = 3.52254127628407m
+**** Param: R_R3.Value = 1.04075751652036k
+**** Param: R_R1.Value = 298.24511402665962
+**** Param: C_C2.Value = 14.81828709097568
+**** Param: C_C3.Value = 13.94697408978546p
+**** Param: R_R5.Value = 72.13797621827406
+**** Param: R_R6.Value = 1.79547583242084k
+**** Param: R_R7.Value = 31.93758078853892
+**** Param: D1N755(model).bv = 6.85011597033601
+
+**** Command: doALL
+**** Param: R_R2.Value = 376.79531265654401
+**** Param: C_C1.Value = 3.10050141911069m
+**** Param: R_R3.Value = 1.02278393880288k
+**** Param: R_R1.Value = 289.68409017278515
+**** Param: C_C2.Value = 18.27176162327952
+**** Param: C_C3.Value = 15.28048036133915p
+**** Param: R_R5.Value = 69.11497719757675
+**** Param: R_R6.Value = 1.75575000012942k
+**** Param: R_R7.Value = 33.34239455998816
+**** Param: D1N755(model).bv = 7.92918942838832
+
+**** Command: doALL
+**** Param: R_R2.Value = 406.78223702770191
+**** Param: C_C1.Value = 3.58276650288400m
+**** Param: R_R3.Value = 1.16407357622522k
+**** Param: R_R1.Value = 291.53245084246134
+**** Param: C_C2.Value = 277.91827143162328u
+**** Param: C_C3.Value = 13.68567461165197p
+**** Param: R_R5.Value = 70.66877399264726
+**** Param: R_R6.Value = 1.72558722940207k
+**** Param: R_R7.Value = 34.21672790496148
+**** Param: D1N755(model).bv = 7.28912472914823
+
+**** Command: doALL
+**** Param: R_R2.Value = 410.95311277502526
+**** Param: C_C1.Value = 3.22183812982574m
+**** Param: R_R3.Value = 1.05385539370762k
+**** Param: R_R1.Value = 303.25423499419730
+**** Param: C_C2.Value = 15.50190170323801
+**** Param: C_C3.Value = 14.64032410657063p
+**** Param: R_R5.Value = 67.21581151475358
+**** Param: R_R6.Value = 1.81774452936235k
+**** Param: R_R7.Value = 32.09633295673375
+**** Param: D1N755(model).bv = 7.47425000762963
+
+**** Command: doALL
+**** Param: R_R2.Value = 388.66742157846699
+**** Param: C_C1.Value = 3.49935758537553m
+**** Param: R_R3.Value = 1.14956403887625k
+**** Param: R_R1.Value = 305.16965672540653
+**** Param: C_C2.Value = 328.24158452101199u
+**** Param: C_C3.Value = 15.98335215308084p
+**** Param: R_R5.Value = 67.94964011665576
+**** Param: R_R6.Value = 1.75288952869323k
+**** Param: R_R7.Value = 32.35830552715291
+**** Param: D1N755(model).bv = 6.83120975371563
+
+**** Command: doALL
+**** Param: R_R2.Value = 405.93512229501829
+**** Param: C_C1.Value = 3.47351512192144m
+**** Param: R_R3.Value = 1.06178105272721k
+**** Param: R_R1.Value = 292.26021913488518
+**** Param: C_C2.Value = 291.88488418225660u
+**** Param: C_C3.Value = 14.47369304483169p
+**** Param: R_R5.Value = 63.59517528309745
+**** Param: R_R6.Value = 1.86234396298699k
+**** Param: R_R7.Value = 32.03381320081744
+**** Param: D1N755(model).bv = 7.35573137607959
+
+**** Command: doALL
+**** Param: R_R2.Value = 373.68894106710133
+**** Param: C_C1.Value = 3.54767876216926m
+**** Param: R_R3.Value = 1.10763451833684k
+**** Param: R_R1.Value = 306.41067828534977
+**** Param: C_C2.Value = 289.98345896786401u
+**** Param: C_C3.Value = 14.85511337626270p
+**** Param: R_R5.Value = 69.28817225877961
+**** Param: R_R6.Value = 1.77925149680279k
+**** Param: R_R7.Value = 33.19964099740882
+**** Param: D1N755(model).bv = 7.95683919797357
+
+**** Command: doALL
+**** Param: R_R2.Value = 375.30358636747985
+**** Param: C_C1.Value = 3.18296365245521m
+**** Param: R_R3.Value = 1.22434649490326k
+**** Param: R_R1.Value = 303.99763848686945
+**** Param: C_C2.Value = 290.07611316263313u
+**** Param: C_C3.Value = 16.08864101077303p
+**** Param: R_R5.Value = 63.50993507959842
+**** Param: R_R6.Value = 1.83039692220470k
+**** Param: R_R7.Value = 30.64655280418343
+**** Param: D1N755(model).bv = 6.94624927518540
+
+**** Command: doALL
+**** Param: R_R2.Value = 368.91001027367793
+**** Param: C_C1.Value = 3.33477553636280m
+**** Param: R_R3.Value = 1.10024305904775k
+**** Param: R_R1.Value = 299.10770626894060
+**** Param: C_C2.Value = 292.89199499496448u
+**** Param: C_C3.Value = 13.73154393139439p
+**** Param: R_R5.Value = 66.39598922987584
+**** Param: R_R6.Value = 1.69234057741245k
+**** Param: R_R7.Value = 32.55713137969056
+**** Param: D1N755(model).bv = 6.95055238502152
+
+**** Command: doALL
+**** Param: R_R2.Value = 378.69737826148906
+**** Param: C_C1.Value = 3.51162419507431m
+**** Param: R_R3.Value = 1.08888221803859k
+**** Param: R_R1.Value = 291.83513413487748
+**** Param: C_C2.Value = 19.51813755027925
+**** Param: C_C3.Value = 16.24959562974945p
+**** Param: R_R5.Value = 64.93315234486339
+**** Param: R_R6.Value = 1.75394275268878k
+**** Param: R_R7.Value = 33.43170343904026
+**** Param: D1N755(model).bv = 7.45639667958617
+
+**** Command: doALL
+**** Param: R_R2.Value = 380.42639948251508
+**** Param: C_C1.Value = 3.19746604815821m
+**** Param: R_R3.Value = 1.09196439420096k
+**** Param: R_R1.Value = 307.32394026731941
+**** Param: C_C2.Value = 689.43794396801479m
+**** Param: C_C3.Value = 13.70197149571215p
+**** Param: R_R5.Value = 69.82865043463295
+**** Param: R_R6.Value = 1.79795047602184k
+**** Param: R_R7.Value = 31.37551006857308
+**** Param: D1N755(model).bv = 7.51435132908109
+
+**** Command: doALL
+**** Param: R_R2.Value = 409.65504869117837
+**** Param: C_C1.Value = 3.44724967192602m
+**** Param: R_R3.Value = 1.08230301387804k
+**** Param: R_R1.Value = 297.00463917756957
+**** Param: C_C2.Value = 16.75560207251198
+**** Param: C_C3.Value = 15.14653462324900p
+**** Param: R_R5.Value = 66.79748150631474
+**** Param: R_R6.Value = 1.86310884304702k
+**** Param: R_R7.Value = 33.27619146516777
+**** Param: D1N755(model).bv = 6.93379772331919
+
+**** Command: doALL
+**** Param: R_R2.Value = 387.98316240925448
+**** Param: C_C1.Value = 3.04420392468032m
+**** Param: R_R3.Value = 1.04265015687754k
+**** Param: R_R1.Value = 299.45415637308110
+**** Param: C_C2.Value = 11.65168654774621
+**** Param: C_C3.Value = 14.60754722739341p
+**** Param: R_R5.Value = 70.11907440073506
+**** Param: R_R6.Value = 1.83062219349359k
+**** Param: R_R7.Value = 32.70602764197557
+**** Param: D1N755(model).bv = 7.28949095126194
+
+**** Command: doALL
+**** Param: R_R2.Value = 385.79760127551896
+**** Param: C_C1.Value = 3.35671040986358m
+**** Param: R_R3.Value = 1.06404179305762k
+**** Param: R_R1.Value = 301.68249370317909
+**** Param: C_C2.Value = 2.30447746543779
+**** Param: C_C3.Value = 14.94776757103183p
+**** Param: R_R5.Value = 69.90347984089368
+**** Param: R_R6.Value = 1.73500823675126k
+**** Param: R_R7.Value = 30.12258460109237
+**** Param: D1N755(model).bv = 6.91388439588610
+
+**** Command: doALL
+**** Param: R_R2.Value = 363.02459165003160
+**** Param: C_C1.Value = 3.11637348551897m
+**** Param: R_R3.Value = 1.03721577408726k
+**** Param: R_R1.Value = 295.94878218125740
+**** Param: C_C2.Value = 8.30441642841883
+**** Param: C_C3.Value = 14.82819605090487p
+**** Param: R_R5.Value = 65.04358365502019
+**** Param: R_R6.Value = 1.79635256329662k
+**** Param: R_R7.Value = 34.02182586649157
+**** Param: D1N755(model).bv = 7.95995208594012
+
+**** Command: doALL
+**** Param: R_R2.Value = 377.34668965097364
+**** Param: C_C1.Value = 3.57972502822962m
+**** Param: R_R3.Value = 1.04998077227430k
+**** Param: R_R1.Value = 287.38381602587975
+**** Param: C_C2.Value = 4.27475243720817
+**** Param: C_C3.Value = 13.53085421308023p
+**** Param: R_R5.Value = 71.62783222404006
+**** Param: R_R6.Value = 1.79530142896705k
+**** Param: R_R7.Value = 32.48581520214663
+**** Param: D1N755(model).bv = 6.76858577227088
+
+**** Command: doALL
+**** Param: R_R2.Value = 378.10652908848732
+**** Param: C_C1.Value = 3.55456740012818m
+**** Param: R_R3.Value = 1.10467908683621k
+**** Param: R_R1.Value = 287.77731932604348
+**** Param: C_C2.Value = 266.18341624195079u
+**** Param: C_C3.Value = 15.10560930204169p
+**** Param: R_R5.Value = 70.85854875545017
+**** Param: R_R6.Value = 1.81381015313823k
+**** Param: R_R7.Value = 31.95052310862844
+**** Param: D1N755(model).bv = 7.35834070863979
+
+**** Command: doALL
+**** Param: R_R2.Value = 412.62668437122915
+**** Param: C_C1.Value = 3.03407238990448m
+**** Param: R_R3.Value = 1.06826891463539k
+**** Param: R_R1.Value = 298.41559093752255
+**** Param: C_C2.Value = 308.26050599688710u
+**** Param: C_C3.Value = 14.48522904141362p
+**** Param: R_R5.Value = 68.33694148024142
+**** Param: R_R6.Value = 1.74766326043420k
+**** Param: R_R7.Value = 32.17450874501640
+**** Param: D1N755(model).bv = 7.55028687398907
+
+**** Command: doALL
+**** Param: R_R2.Value = 404.87751238633462
+**** Param: C_C1.Value = 3.28552781762139m
+**** Param: R_R3.Value = 1.05314972909582k
+**** Param: R_R1.Value = 302.95559501618283
+**** Param: C_C2.Value = 324.76503799554433u
+**** Param: C_C3.Value = 15.24825281533250p
+**** Param: R_R5.Value = 67.09614772183821
+**** Param: R_R6.Value = 1.87783560686136k
+**** Param: R_R7.Value = 31.50593628282644
+**** Param: D1N755(model).bv = 7.74708548234504
+
+**** Command: doALL
+**** Param: R_R2.Value = 373.89722864454950
+**** Param: C_C1.Value = 3.13327280495621m
+**** Param: R_R3.Value = 995.68081392668830
+**** Param: R_R1.Value = 285.12127288082718
+**** Param: C_C2.Value = 7.58051738364818
+**** Param: C_C3.Value = 15.97932370983001p
+**** Param: R_R5.Value = 67.55111943448524
+**** Param: R_R6.Value = 1.78240492684981k
+**** Param: R_R7.Value = 33.25549671929068
+**** Param: D1N755(model).bv = 7.37775048066652
+
+**** Command: doALL
+**** Param: R_R2.Value = 392.49355327782115
+**** Param: C_C1.Value = 3.03548234504227m
+**** Param: R_R3.Value = 1.15960870687866k
+**** Param: R_R1.Value = 294.79278032524996
+**** Param: C_C2.Value = 15.11858922421949
+**** Param: C_C3.Value = 15.06010620441298p
+**** Param: R_R5.Value = 71.80795047626619
+**** Param: R_R6.Value = 1.77328401931471k
+**** Param: R_R7.Value = 33.49338583694576
+**** Param: D1N755(model).bv = 7.69590594195379
+
+**** Command: doALL
+**** Param: R_R2.Value = 383.43910623994833
+**** Param: C_C1.Value = 3.50685048982208m
+**** Param: R_R3.Value = 1.16675249783316k
+**** Param: R_R1.Value = 282.00276114705878
+**** Param: C_C2.Value = 9.74366933530686
+**** Param: C_C3.Value = 14.58713034455397p
+**** Param: R_R5.Value = 65.91594311744302
+**** Param: R_R6.Value = 1.84567782340793k
+**** Param: R_R7.Value = 33.70539785320629
+**** Param: D1N755(model).bv = 7.16090121158483
+
+**** Command: doALL
+**** Param: R_R2.Value = 389.85108682088998
+**** Param: C_C1.Value = 3.08531418805506m
+**** Param: R_R3.Value = 1.00163473863122k
+**** Param: R_R1.Value = 305.52785836944577
+**** Param: C_C2.Value = 318.62166203802610u
+**** Param: C_C3.Value = 14.33828241828669p
+**** Param: R_R5.Value = 65.40442746304001
+**** Param: R_R6.Value = 1.79637613133092k
+**** Param: R_R7.Value = 32.00792856063840
+**** Param: D1N755(model).bv = 7.22791985839412
+
+**** Command: doALL
+**** Param: R_R2.Value = 377.62176139539821
+**** Param: C_C1.Value = 3.40430646687216m
+**** Param: R_R3.Value = 1.12690497721576k
+**** Param: R_R1.Value = 302.82591037741196
+**** Param: C_C2.Value = 5.73353719016083
+**** Param: C_C3.Value = 13.66809595019379p
+**** Param: R_R5.Value = 66.56078686447047
+**** Param: R_R6.Value = 1.89403991980253k
+**** Param: R_R7.Value = 32.27323373784119
+**** Param: D1N755(model).bv = 7.21143986327708
+
+**** Command: doALL
+**** Param: R_R2.Value = 374.67705733451567
+**** Param: C_C1.Value = 3.21323740348521m
+**** Param: R_R3.Value = 1.04188475085074k
+**** Param: R_R1.Value = 316.60147382482546
+**** Param: C_C2.Value = 295.18015076143683u
+**** Param: C_C3.Value = 14.28243354594562p
+**** Param: R_R5.Value = 68.33355815798480
+**** Param: R_R6.Value = 1.83295405575422k
+**** Param: R_R7.Value = 33.04287880680638
+**** Param: D1N755(model).bv = 7.15650654622028
+
+**** Command: doALL
+**** Param: R_R2.Value = 395.30378286910064
+**** Param: C_C1.Value = 3.19301461836604m
+**** Param: R_R3.Value = 1.13035410152861k
+**** Param: R_R1.Value = 276.28109955978505
+**** Param: C_C2.Value = 8.02242540086062
+**** Param: C_C3.Value = 15.39208655049287p
+**** Param: R_R5.Value = 64.97995660674616
+**** Param: R_R6.Value = 1.82586534491129k
+**** Param: R_R7.Value = 32.46660544326979
+**** Param: D1N755(model).bv = 7.53591265602588
+
+**** Command: doALL
+**** Param: R_R2.Value = 402.50001586649955
+**** Param: C_C1.Value = 3.36067842646565m
+**** Param: R_R3.Value = 1.08631275651880k
+**** Param: R_R1.Value = 277.86581490967757
+**** Param: C_C2.Value = 6.87126722342601
+**** Param: C_C3.Value = 15.16045106357005p
+**** Param: R_R5.Value = 66.69367515315095
+**** Param: R_R6.Value = 1.80075978570984k
+**** Param: R_R7.Value = 33.63429533423228
+**** Param: D1N755(model).bv = 6.78396710104678
+
+**** Command: doALL
+**** Param: R_R2.Value = 351.66485767039529
+**** Param: C_C1.Value = 3.33098879970702m
+**** Param: R_R3.Value = 1.13833497544016k
+**** Param: R_R1.Value = 292.25547488265295
+**** Param: C_C2.Value = 11.76155318185980
+**** Param: C_C3.Value = 16.00569170201727p
+**** Param: R_R5.Value = 69.00383932852583
+**** Param: R_R6.Value = 1.75611352432338k
+**** Param: R_R7.Value = 32.91783467284709
+**** Param: D1N755(model).bv = 7.35838648640400
+
+**** Command: doALL
+**** Param: R_R2.Value = 370.63594487586545
+**** Param: C_C1.Value = 3.22699453718680m
+**** Param: R_R3.Value = 988.22570050633794
+**** Param: R_R1.Value = 302.76472114644264
+**** Param: C_C2.Value = 285.36283455916015u
+**** Param: C_C3.Value = 15.57281716360973p
+**** Param: R_R5.Value = 68.64405882738754
+**** Param: R_R6.Value = 1.82945930656988k
+**** Param: R_R7.Value = 34.18458098690067
+**** Param: D1N755(model).bv = 7.88487655262917
+
+**** Command: doALL
+**** Param: R_R2.Value = 390.06147080703244
+**** Param: C_C1.Value = 3.14485457930235m
+**** Param: R_R3.Value = 995.61958096224998
+**** Param: R_R1.Value = 291.78579391166232
+**** Param: C_C2.Value = 9.33838352946562
+**** Param: C_C3.Value = 16.43243202002014p
+**** Param: R_R5.Value = 67.53455882028712
+**** Param: R_R6.Value = 1.74097386478676k
+**** Param: R_R7.Value = 33.76935663401023
+**** Param: D1N755(model).bv = 7.66935483870968
+
+**** Command: doALL
+**** Param: R_R2.Value = 382.46730271457869
+**** Param: C_C1.Value = 3.28852900784326m
+**** Param: R_R3.Value = 1.30391754370441k
+**** Param: R_R1.Value = 294.93979378604212
+**** Param: C_C2.Value = 17.92018839411604
+**** Param: C_C3.Value = 14.16185491500595p
+**** Param: R_R5.Value = 68.36935875545974
+**** Param: R_R6.Value = 1.80124057360946k
+**** Param: R_R7.Value = 31.62293535760042
+**** Param: D1N755(model).bv = 8.14484847560045
+
+**** Command: doALL
+**** Param: R_R2.Value = 386.32765091496225
+**** Param: C_C1.Value = 3.39393322550127m
+**** Param: R_R3.Value = 956.11992988397378
+**** Param: R_R1.Value = 302.39210612800252
+**** Param: C_C2.Value = 9.69606046052431
+**** Param: C_C3.Value = 13.79993591113010p
+**** Param: R_R5.Value = 68.50826135400048
+**** Param: R_R6.Value = 1.73811592724207k
+**** Param: R_R7.Value = 31.98434013853976
+**** Param: D1N755(model).bv = 7.84820856349376
+
+**** Command: doALL
+**** Param: R_R2.Value = 422.47978431771566
+**** Param: C_C1.Value = 3.46771416364025m
+**** Param: R_R3.Value = 1.18137584435108k
+**** Param: R_R1.Value = 299.48479481766492
+**** Param: C_C2.Value = 15.67158461592456
+**** Param: C_C3.Value = 16.10658589434492p
+**** Param: R_R5.Value = 68.28173990658092
+**** Param: R_R6.Value = 1.82587082454391k
+**** Param: R_R7.Value = 33.51285178534102
+**** Param: D1N755(model).bv = 6.97788171025727
+
+**** Command: doALL
+**** Param: R_R2.Value = 397.14796035059038
+**** Param: C_C1.Value = 3.07083193456832m
+**** Param: R_R3.Value = 1.06924254467316k
+**** Param: R_R1.Value = 301.20526132121989
+**** Param: C_C2.Value = 8.67185928250984
+**** Param: C_C3.Value = 15.98994415112766p
+**** Param: R_R5.Value = 70.40872885776875
+**** Param: R_R6.Value = 1.69188315078172k
+**** Param: R_R7.Value = 32.51037985450414
+**** Param: D1N755(model).bv = 7.65543839838862
+
+**** Command: doALL
+**** Param: R_R2.Value = 387.33668568137847
+**** Param: C_C1.Value = 3.26790337839900m
+**** Param: R_R3.Value = 1.14168360270739k
+**** Param: R_R1.Value = 300.28610798370426
+**** Param: C_C2.Value = 308.31690420239880u
+**** Param: C_C3.Value = 15.24916837061678p
+**** Param: R_R5.Value = 66.76476432885845
+**** Param: R_R6.Value = 1.83169984263231k
+**** Param: R_R7.Value = 31.20857369927345
+**** Param: D1N755(model).bv = 6.89346751304666
+
+**** Command: doALL
+**** Param: R_R2.Value = 424.66084598355587
+**** Param: C_C1.Value = 2.99934720908231m
+**** Param: R_R3.Value = 1.06772160780943k
+**** Param: R_R1.Value = 285.54294534048114
+**** Param: C_C2.Value = 318.77474288155770u
+**** Param: C_C3.Value = 14.80173650318919p
+**** Param: R_R5.Value = 66.15639447191165
+**** Param: R_R6.Value = 1.78229179931450k
+**** Param: R_R7.Value = 31.95229745896329
+**** Param: D1N755(model).bv = 7.14199499496445
+
+**** Command: doALL
+**** Param: R_R2.Value = 392.56478850193463
+**** Param: C_C1.Value = 3.55944181646168m
+**** Param: R_R3.Value = 1.17533496891044k
+**** Param: R_R1.Value = 296.95357466509915
+**** Param: C_C2.Value = 318.34369945371873u
+**** Param: C_C3.Value = 14.19618823816645p
+**** Param: R_R5.Value = 71.89075263375921
+**** Param: R_R6.Value = 1.82962978213985k
+**** Param: R_R7.Value = 32.34076192083172
+**** Param: D1N755(model).bv = 7.83456678975799
+
+**** Command: doALL
+**** Param: R_R2.Value = 391.19509325663512
+**** Param: C_C1.Value = 3.38015594958342m
+**** Param: R_R3.Value = 1.18181026216271k
+**** Param: R_R1.Value = 303.19213249112391
+**** Param: C_C2.Value = 295.10361033967104u
+**** Param: C_C3.Value = 13.82639545884579p
+**** Param: R_R5.Value = 67.78991169222526
+**** Param: R_R6.Value = 1.82508175744604k
+**** Param: R_R7.Value = 33.00079415356645
+**** Param: D1N755(model).bv = 6.77265999328593
+
+**** Command: doALL
+**** Param: R_R2.Value = 388.10061035366573
+**** Param: C_C1.Value = 3.27257637256996m
+**** Param: R_R3.Value = 1.23395224098890k
+**** Param: R_R1.Value = 310.85975087789291
+**** Param: C_C2.Value = 8.09566982360302
+**** Param: C_C3.Value = 14.23747978148747p
+**** Param: R_R5.Value = 64.65114671045983
+**** Param: R_R6.Value = 1.75062936692979k
+**** Param: R_R7.Value = 32.71294099135618
+**** Param: D1N755(model).bv = 7.66015350810267
+
+**** Command: doALL
+**** Param: R_R2.Value = 364.57220636457777
+**** Param: C_C1.Value = 3.22487960448012m
+**** Param: R_R3.Value = 998.22198195087344
+**** Param: R_R1.Value = 327.53901790218697
+**** Param: C_C2.Value = 9.59718048982207
+**** Param: C_C3.Value = 13.62250129703665p
+**** Param: R_R5.Value = 61.71058946523124
+**** Param: R_R6.Value = 1.81875278176518k
+**** Param: R_R7.Value = 34.76994189840502
+**** Param: D1N755(model).bv = 7.80993835261086
+
+**** Command: doALL
+**** Param: R_R2.Value = 396.91710801625908
+**** Param: C_C1.Value = 3.06311746574297m
+**** Param: R_R3.Value = 1.12248474023231k
+**** Param: R_R1.Value = 301.16048205605887
+**** Param: C_C2.Value = 6.51969399426252
+**** Param: C_C3.Value = 16.42803735465560p
+**** Param: R_R5.Value = 64.08983135905329
+**** Param: R_R6.Value = 1.87205390071382k
+**** Param: R_R7.Value = 34.04400138424614
+**** Param: D1N755(model).bv = 7.69274727622303
+
+**** Command: doALL
+**** Param: R_R2.Value = 404.06376884009001
+**** Param: C_C1.Value = 3.34960020752586m
+**** Param: R_R3.Value = 1.01024481301222k
+**** Param: R_R1.Value = 311.44029104434742
+**** Param: C_C2.Value = 2.95635282784509
+**** Param: C_C3.Value = 14.28884243293558p
+**** Param: R_R5.Value = 65.44742656415670
+**** Param: R_R6.Value = 1.80890018475542k
+**** Param: R_R7.Value = 33.91228773852263
+**** Param: D1N755(model).bv = 7.75541703543199
+
+**** Command: doALL
+**** Param: R_R2.Value = 402.18341604010709
+**** Param: C_C1.Value = 3.26603015228736m
+**** Param: R_R3.Value = 1.25255974265585k
+**** Param: R_R1.Value = 302.52270403887741
+**** Param: C_C2.Value = 8.35080456282235
+**** Param: C_C3.Value = 13.67468794824061p
+**** Param: R_R5.Value = 69.69666419595927
+**** Param: R_R6.Value = 1.83113362020349k
+**** Param: R_R7.Value = 35.07128086048587
+**** Param: D1N755(model).bv = 8.00302896206549
+
+**** Command: doALL
+**** Param: R_R2.Value = 381.16191228181157
+**** Param: C_C1.Value = 3.04764824365978m
+**** Param: R_R3.Value = 1.02571380897545k
+**** Param: R_R1.Value = 292.54926581449467
+**** Param: C_C2.Value = 17.91164321146276
+**** Param: C_C3.Value = 16.02748191778313p
+**** Param: R_R5.Value = 66.01573688173053
+**** Param: R_R6.Value = 1.74116173717516k
+**** Param: R_R7.Value = 34.06766519178291
+**** Param: D1N755(model).bv = 7.39633625293741
+
+**** Command: doALL
+**** Param: R_R2.Value = 376.83971885743767
+**** Param: C_C1.Value = 3.58296792504654m
+**** Param: R_R3.Value = 1.13961489519563k
+**** Param: R_R1.Value = 295.41647379527728
+**** Param: C_C2.Value = 313.46525467696159u
+**** Param: C_C3.Value = 15.17390972624897p
+**** Param: R_R5.Value = 68.37246388061342
+**** Param: R_R6.Value = 1.88735476800111k
+**** Param: R_R7.Value = 33.53182733985528
+**** Param: D1N755(model).bv = 7.85406811731315
+
+**** Command: doALL
+**** Param: R_R2.Value = 383.99276784319829
+**** Param: C_C1.Value = 3.33312387462996m
+**** Param: R_R3.Value = 1.24720182026159k
+**** Param: R_R1.Value = 301.56102851334447
+**** Param: C_C2.Value = 307.25339518417923u
+**** Param: C_C3.Value = 14.79010895107883p
+**** Param: R_R5.Value = 68.34948595447628
+**** Param: R_R6.Value = 1.82151999624036k
+**** Param: R_R7.Value = 32.78043256468445
+**** Param: D1N755(model).bv = 7.75257881405072
+
+**** Command: doALL
+**** Param: R_R2.Value = 379.37087230837625
+**** Param: C_C1.Value = 3.03912808618427m
+**** Param: R_R3.Value = 968.97533827500638
+**** Param: R_R1.Value = 287.23897604894654
+**** Param: C_C2.Value = 323.92309335612049u
+**** Param: C_C3.Value = 14.04081850642415p
+**** Param: R_R5.Value = 68.47948719424316
+**** Param: R_R6.Value = 1.85573595635409k
+**** Param: R_R7.Value = 32.09288862961315
+**** Param: D1N755(model).bv = 7.97638630329295
+
+**** Command: doALL
+**** Param: R_R2.Value = 391.91509670435568
+**** Param: C_C1.Value = 3.57509231849117m
+**** Param: R_R3.Value = 991.01180038827579
+**** Param: R_R1.Value = 291.38348132236939
+**** Param: C_C2.Value = 329.62334055604725u
+**** Param: C_C3.Value = 15.60339671010468p
+**** Param: R_R5.Value = 68.87031894691810
+**** Param: R_R6.Value = 1.71383381857192k
+**** Param: R_R7.Value = 32.43798682290225
+**** Param: D1N755(model).bv = 7.47269356364635
+
+**** Command: doALL
+**** Param: R_R2.Value = 411.56156334112467
+**** Param: C_C1.Value = 3.03524063844722m
+**** Param: R_R3.Value = 1.07863893870631k
+**** Param: R_R1.Value = 284.51590152785866
+**** Param: C_C2.Value = 829.82308755760232m
+**** Param: C_C3.Value = 14.47790459913938p
+**** Param: R_R5.Value = 69.50483859032421
+**** Param: R_R6.Value = 1.84705787393323k
+**** Param: R_R7.Value = 33.53752000620956
+**** Param: D1N755(model).bv = 7.59592730491043
+
+**** Command: doALL
+**** Param: R_R2.Value = 364.95177110242071
+**** Param: C_C1.Value = 3.09365306558428m
+**** Param: R_R3.Value = 1.27036119448881k
+**** Param: R_R1.Value = 296.38400894908256
+**** Param: C_C2.Value = 5.73719941129795
+**** Param: C_C3.Value = 15.66428113650929p
+**** Param: R_R5.Value = 70.62446337586073
+**** Param: R_R6.Value = 1.85205852760137k
+**** Param: R_R7.Value = 34.37746249526555
+**** Param: D1N755(model).bv = 7.47447889645070
+
+**** Command: doALL
+**** Param: R_R2.Value = 387.05991602378862
+**** Param: C_C1.Value = 3.45015015106662m
+**** Param: R_R3.Value = 1.14068645592115k
+**** Param: R_R1.Value = 295.24005764232669
+**** Param: C_C2.Value = 9.78517450819422
+**** Param: C_C3.Value = 14.32198553422651p
+**** Param: R_R5.Value = 66.78172879124320
+**** Param: R_R6.Value = 1.66755589927762k
+**** Param: R_R7.Value = 33.85350029212626
+**** Param: D1N755(model).bv = 7.88684499649037
+
+**** Command: doALL
+**** Param: R_R2.Value = 385.54942774491252
+**** Param: C_C1.Value = 3.11802514725181m
+**** Param: R_R3.Value = 981.07675190817838
+**** Param: R_R1.Value = 291.74214679112583
+**** Param: C_C2.Value = 5.02794925107578
+**** Param: C_C3.Value = 15.80179754020814p
+**** Param: R_R5.Value = 66.53857149706188
+**** Param: R_R6.Value = 1.74839767067975k
+**** Param: R_R7.Value = 32.76582811411789
+**** Param: D1N755(model).bv = 7.87782677694021
+
+**** Command: doALL
+**** Param: R_R2.Value = 389.80819299847258
+**** Param: C_C1.Value = 3.19962126529740m
+**** Param: R_R3.Value = 1.12644286153113k
+**** Param: R_R1.Value = 317.62954262899297
+**** Param: C_C2.Value = 317.02237006744593u
+**** Param: C_C3.Value = 14.31804864650411p
+**** Param: R_R5.Value = 70.45035398262883
+**** Param: R_R6.Value = 1.80381420295450k
+**** Param: R_R7.Value = 33.11028338489086
+**** Param: D1N755(model).bv = 7.27104251228370
+
+**** Command: doALL
+**** Param: R_R2.Value = 399.10163067713052
+**** Param: C_C1.Value = 3.51764671773431m
+**** Param: R_R3.Value = 1.15465395232242k
+**** Param: R_R1.Value = 296.28659357144659
+**** Param: C_C2.Value = 274.72774437696467u
+**** Param: C_C3.Value = 15.39721366008484p
+**** Param: R_R5.Value = 72.68972163098211
+**** Param: R_R6.Value = 1.82026516036944k
+**** Param: R_R7.Value = 32.80635762486175
+**** Param: D1N755(model).bv = 7.02640614032411
+
+**** Command: doALL
+**** Param: R_R2.Value = 389.98691725854508
+**** Param: C_C1.Value = 3.12733085116123m
+**** Param: R_R3.Value = 1.16981837478446k
+**** Param: R_R1.Value = 292.46327313042457
+**** Param: C_C2.Value = 19.58283679036836
+**** Param: C_C3.Value = 15.95982238227485p
+**** Param: R_R5.Value = 67.03631582538051
+**** Param: R_R6.Value = 1.76053996597923k
+**** Param: R_R7.Value = 32.52144121351314
+**** Param: D1N755(model).bv = 7.73637348551897
+
+**** Command: doALL
+**** Param: R_R2.Value = 407.60505724168837
+**** Param: C_C1.Value = 3.56655201879940m
+**** Param: R_R3.Value = 1.04217003855164k
+**** Param: R_R1.Value = 305.74602650958298
+**** Param: C_C2.Value = 1.02880376934111
+**** Param: C_C3.Value = 16.35680715353862p
+**** Param: R_R5.Value = 70.86302457532760
+**** Param: R_R6.Value = 1.81196351694390k
+**** Param: R_R7.Value = 30.83045292535930
+**** Param: D1N755(model).bv = 7.14533677175207
+
+**** Command: doALL
+**** Param: R_R2.Value = 380.19115351932851
+**** Param: C_C1.Value = 3.49303292947172m
+**** Param: R_R3.Value = 1.03769589241316k
+**** Param: R_R1.Value = 292.40444440274496
+**** Param: C_C2.Value = 310.45197912533951u
+**** Param: C_C3.Value = 16.24318674275948p
+**** Param: R_R5.Value = 69.72069981576502
+**** Param: R_R6.Value = 1.74628552958597k
+**** Param: R_R7.Value = 32.27793816858654
+**** Param: D1N755(model).bv = 7.09475234229560
+
+**** Command: doALL
+**** Param: R_R2.Value = 411.59548439303876
+**** Param: C_C1.Value = 3.13202398754845m
+**** Param: R_R3.Value = 1.20129745351172k
+**** Param: R_R1.Value = 307.56967486523314
+**** Param: C_C2.Value = 277.64836573381757u
+**** Param: C_C3.Value = 15.23177282021546p
+**** Param: R_R5.Value = 65.85787347012055
+**** Param: R_R6.Value = 1.77003970851841k
+**** Param: R_R7.Value = 31.83485034332050
+**** Param: D1N755(model).bv = 7.93065431684316
+
+**** Command: doALL
+**** Param: R_R2.Value = 404.71322346848081
+**** Param: C_C1.Value = 3.17410107730338m
+**** Param: R_R3.Value = 960.56588850353330
+**** Param: R_R1.Value = 305.35941227054917
+**** Param: C_C2.Value = 8.77195999359111
+**** Param: C_C3.Value = 15.17546617023225p
+**** Param: R_R5.Value = 67.88482278500280
+**** Param: R_R6.Value = 1.76875133600747k
+**** Param: R_R7.Value = 31.41890893211865
+**** Param: D1N755(model).bv = 6.85332041383099
+
+**** Command: doALL
+**** Param: R_R2.Value = 397.87877288327320
+**** Param: C_C1.Value = 2.98798699911496m
+**** Param: R_R3.Value = 1.05143130508745k
+**** Param: R_R1.Value = 293.03218275843005
+**** Param: C_C2.Value = 283.13510544145026u
+**** Param: C_C3.Value = 15.07777642139958p
+**** Param: R_R5.Value = 66.54564002305553
+**** Param: R_R6.Value = 1.82989767232122k
+**** Param: R_R7.Value = 33.08729669544154
+**** Param: D1N755(model).bv = 7.61931974242378
+
+**** Command: doALL
+**** Param: R_R2.Value = 407.16472216458033
+**** Param: C_C1.Value = 3.40589770195624m
+**** Param: R_R3.Value = 1.12940308084429k
+**** Param: R_R1.Value = 300.35052727744466
+**** Param: C_C2.Value = 273.47489852595595u
+**** Param: C_C3.Value = 14.38424329355754p
+**** Param: R_R5.Value = 62.33326860764251
+**** Param: R_R6.Value = 1.83617482634396k
+**** Param: R_R7.Value = 35.96499119907564
+**** Param: D1N755(model).bv = 7.61931974242378
+
+**** Command: doALL
+**** Param: R_R2.Value = 380.82485051079544
+**** Param: C_C1.Value = 3.28357402264473m
+**** Param: R_R3.Value = 1.00493401385800k
+**** Param: R_R1.Value = 298.65991361733040
+**** Param: C_C2.Value = 288.71449934385208u
+**** Param: C_C3.Value = 15.14873195593127p
+**** Param: R_R5.Value = 66.87664899744352
+**** Param: R_R6.Value = 1.79123829985455k
+**** Param: R_R7.Value = 33.33415684560990
+**** Param: D1N755(model).bv = 7.83488723410749
+
+**** Command: doALL
+**** Param: R_R2.Value = 395.12925657002239
+**** Param: C_C1.Value = 3.37642963957640m
+**** Param: R_R3.Value = 1.00136214894012k
+**** Param: R_R1.Value = 316.14517722083235
+**** Param: C_C2.Value = 9.22607541459395
+**** Param: C_C3.Value = 13.66910306100650p
+**** Param: R_R5.Value = 65.86195985270990
+**** Param: R_R6.Value = 1.78936698391925k
+**** Param: R_R7.Value = 31.56808843182190
+**** Param: D1N755(model).bv = 8.21090578936125
+
+**** Command: doALL
+**** Param: R_R2.Value = 386.28577801473648
+**** Param: C_C1.Value = 3.48785637989441m
+**** Param: R_R3.Value = 1.10841226346858k
+**** Param: R_R1.Value = 306.11336077344185
+**** Param: C_C2.Value = 4.50425162846767
+**** Param: C_C3.Value = 16.01814325388348p
+**** Param: R_R5.Value = 66.29059987905693
+**** Param: R_R6.Value = 1.96464955495708k
+**** Param: R_R7.Value = 34.02599307788169
+**** Param: D1N755(model).bv = 7.25671407208472
+
+**** Command: doALL
+**** Param: R_R2.Value = 374.36712541927267
+**** Param: C_C1.Value = 3.04108188116092m
+**** Param: R_R3.Value = 1.22400206576075k
+**** Param: R_R1.Value = 319.70766259969872
+**** Param: C_C2.Value = 3.37628751823481
+**** Param: C_C3.Value = 13.84150212103641p
+**** Param: R_R5.Value = 64.02790934663379
+**** Param: R_R6.Value = 1.76215444107593k
+**** Param: R_R7.Value = 32.52023137737152
+**** Param: D1N755(model).bv = 7.39629047517319
+
+**** Command: doALL
+**** Param: R_R2.Value = 396.20608282651898
+**** Param: C_C1.Value = 3.50100924710837m
+**** Param: R_R3.Value = 1.10547987626816k
+**** Param: R_R1.Value = 310.23506656605832
+**** Param: C_C2.Value = 2.54740480086672
+**** Param: C_C3.Value = 16.22203741569261p
+**** Param: R_R5.Value = 65.70667731431425
+**** Param: R_R6.Value = 1.74364392994306k
+**** Param: R_R7.Value = 31.77802949219263
+**** Param: D1N755(model).bv = 7.40910824915311
+
+**** Command: doALL
+**** Param: R_R2.Value = 381.39936129575767
+**** Param: C_C1.Value = 3.11307016205329m
+**** Param: R_R3.Value = 1.16095808961451k
+**** Param: R_R1.Value = 306.41169302088531
+**** Param: C_C2.Value = 14.24575985320597
+**** Param: C_C3.Value = 14.69415875728629p
+**** Param: R_R5.Value = 67.27368462888677
+**** Param: R_R6.Value = 1.89195765940537k
+**** Param: R_R7.Value = 30.82714366868004
+**** Param: D1N755(model).bv = 7.93262276070437
+
+**** Command: doALL
+**** Param: R_R2.Value = 380.64879075411341
+**** Param: C_C1.Value = 3.31286080507828m
+**** Param: R_R3.Value = 1.02923467669873k
+**** Param: R_R1.Value = 302.77933350010693
+**** Param: C_C2.Value = 302.23798333689388u
+**** Param: C_C3.Value = 14.01738029114658p
+**** Param: R_R5.Value = 70.26075958799923
+**** Param: R_R6.Value = 1.78527553805854k
+**** Param: R_R7.Value = 33.95366219446742
+**** Param: D1N755(model).bv = 8.11765648365734
+
+**** Command: doALL
+**** Param: R_R2.Value = 390.58947333536088
+**** Param: C_C1.Value = 3.07514236884671m
+**** Param: R_R3.Value = 1.07703734609981k
+**** Param: R_R1.Value = 303.17843340956370
+**** Param: C_C2.Value = 12.71373067751091
+**** Param: C_C3.Value = 16.44616534928434p
+**** Param: R_R5.Value = 71.93097082454152
+**** Param: R_R6.Value = 1.79178036464334k
+**** Param: R_R7.Value = 31.25771315323510
+**** Param: D1N755(model).bv = 6.82608264412366
+
+**** Command: doALL
+**** Param: R_R2.Value = 390.30759964518944
+**** Param: C_C1.Value = 3.53925931577502m
+**** Param: R_R3.Value = 1.10471941436156k
+**** Param: R_R1.Value = 300.91851690396072
+**** Param: C_C2.Value = 3.22125349009675
+**** Param: C_C3.Value = 14.34899441511277p
+**** Param: R_R5.Value = 69.49057817359837
+**** Param: R_R6.Value = 1.77200166997698k
+**** Param: R_R7.Value = 34.14297265476156
+**** Param: D1N755(model).bv = 6.92931150242622
+
+**** Command: doALL
+**** Param: R_R2.Value = 413.10157909802734
+**** Param: C_C1.Value = 3.00810907315287m
+**** Param: R_R3.Value = 1.07175439494812k
+**** Param: R_R1.Value = 294.06929590001829
+**** Param: C_C2.Value = 311.33017975402083u
+**** Param: C_C3.Value = 13.50595110934782p
+**** Param: R_R5.Value = 66.47838804717315
+**** Param: R_R6.Value = 1.74034762349211k
+**** Param: R_R7.Value = 33.69858897776293
+**** Param: D1N755(model).bv = 7.48615222632527
+
+**** Command: doALL
+**** Param: R_R2.Value = 366.22367126176255
+**** Param: C_C1.Value = 3.55674275948363m
+**** Param: R_R3.Value = 1.06789444154394k
+**** Param: R_R1.Value = 300.02371720188358
+**** Param: C_C2.Value = 322.77095858638268u
+**** Param: C_C3.Value = 15.61969359416486p
+**** Param: R_R5.Value = 68.00519782950114
+**** Param: R_R6.Value = 1.80269236452205k
+**** Param: R_R7.Value = 33.10915997525612
+**** Param: D1N755(model).bv = 7.04329813531907
+
+**** Command: doALL
+**** Param: R_R2.Value = 383.48080460337303
+**** Param: C_C1.Value = 3.48217627491073m
+**** Param: R_R3.Value = 1.18731288777672k
+**** Param: R_R1.Value = 299.91294744069575
+**** Param: C_C2.Value = 12.48423148625141
+**** Param: C_C3.Value = 15.89664906765953p
+**** Param: R_R5.Value = 71.46222554917779
+**** Param: R_R6.Value = 1.83577299107189k
+**** Param: R_R7.Value = 31.85700440862675
+**** Param: D1N755(model).bv = 7.69499038666951
+
+**** Command: doALL
+**** Param: R_R2.Value = 388.20171722079243
+**** Param: C_C1.Value = 3.52658986175115m
+**** Param: R_R3.Value = 1.15783268107192k
+**** Param: R_R1.Value = 304.59937535444334
+**** Param: C_C2.Value = 7.62568477767266
+**** Param: C_C3.Value = 15.35619678334910p
+**** Param: R_R5.Value = 67.00141388578020
+**** Param: R_R6.Value = 1.86148346089475k
+**** Param: R_R7.Value = 35.28303821744347
+**** Param: D1N755(model).bv = 7.54932554094058
+
+**** Command: doALL
+**** Param: R_R2.Value = 378.75041900144538
+**** Param: C_C1.Value = 3.36603625598926m
+**** Param: R_R3.Value = 1.12303392119086k
+**** Param: R_R1.Value = 301.94460279703281
+**** Param: C_C2.Value = 18.02761354747154
+**** Param: C_C3.Value = 15.18672750022889p
+**** Param: R_R5.Value = 66.16757825584043
+**** Param: R_R6.Value = 1.79112045968307k
+**** Param: R_R7.Value = 31.87589602101549
+**** Param: D1N755(model).bv = 8.06395916623432
+
+**** Command: doALL
+**** Param: R_R2.Value = 375.05364127454203
+**** Param: C_C1.Value = 3.06835444196905m
+**** Param: R_R3.Value = 1.13210210433571k
+**** Param: R_R1.Value = 303.46246103391383
+**** Param: C_C2.Value = 2.27273821558275
+**** Param: C_C3.Value = 15.36645100253303p
+**** Param: R_R5.Value = 73.93301409218763
+**** Param: R_R6.Value = 1.97912387054136k
+**** Param: R_R7.Value = 33.08643253418405
+**** Param: D1N755(model).bv = 7.52089754936369
+
+**** Command: doALL
+**** Param: R_R2.Value = 388.57857008917387
+**** Param: C_C1.Value = 3.00015289773247m
+**** Param: R_R3.Value = 1.16027347631471k
+**** Param: R_R1.Value = 311.05523889312758
+**** Param: C_C2.Value = 2.04445976470229
+**** Param: C_C3.Value = 14.27098910489212p
+**** Param: R_R5.Value = 61.77476141162120
+**** Param: R_R6.Value = 1.88269708027061k
+**** Param: R_R7.Value = 33.83028297152414
+**** Param: D1N755(model).bv = 6.89973906674398
+
+**** Command: doALL
+**** Param: R_R2.Value = 372.92244278209188
+**** Param: C_C1.Value = 3.53396191290017m
+**** Param: R_R3.Value = 1.06459064331124k
+**** Param: R_R1.Value = 305.70137814602003
+**** Param: C_C2.Value = 272.61281167027801u
+**** Param: C_C3.Value = 14.47964415417951p
+**** Param: R_R5.Value = 62.39823708098174
+**** Param: R_R6.Value = 1.69899232300102k
+**** Param: R_R7.Value = 32.43102818575809
+**** Param: D1N755(model).bv = 6.75938444166387
+
+**** Command: doALL
+**** Param: R_R2.Value = 377.82528981616082
+**** Param: C_C1.Value = 3.34923764763329m
+**** Param: R_R3.Value = 1.13794058156202k
+**** Param: R_R1.Value = 294.38559758838932
+**** Param: C_C2.Value = 322.00152592547380u
+**** Param: C_C3.Value = 13.84424878688925p
+**** Param: R_R5.Value = 69.80626294833364
+**** Param: R_R6.Value = 1.77329344660932k
+**** Param: R_R7.Value = 32.27058749554693
+**** Param: D1N755(model).bv = 8.15144047364727
+
+**** Command: doALL
+**** Param: R_R2.Value = 390.98675183346495
+**** Param: C_C1.Value = 3.34249000518815m
+**** Param: R_R3.Value = 1.17330097287478k
+**** Param: R_R1.Value = 300.44008580776671
+**** Param: C_C2.Value = 295.20432142094182u
+**** Param: C_C3.Value = 14.46481215857417p
+**** Param: R_R5.Value = 65.90518947904998
+**** Param: R_R6.Value = 1.80915246540773k
+**** Param: R_R7.Value = 33.26202661483441
+**** Param: D1N755(model).bv = 7.73673970763268
+
+**** Command: doALL
+**** Param: R_R2.Value = 397.33000390566292
+**** Param: C_C1.Value = 3.29974822229682m
+**** Param: R_R3.Value = 1.08939495472868k
+**** Param: R_R1.Value = 288.74121014598842
+**** Param: C_C2.Value = 319.42332224494157u
+**** Param: C_C3.Value = 14.91297647022919p
+**** Param: R_R5.Value = 72.80012730456082
+**** Param: R_R6.Value = 1.86413959803644k
+**** Param: R_R7.Value = 30.40266698179080
+**** Param: D1N755(model).bv = 6.85991241187780
+
+**** Command: doALL
+**** Param: R_R2.Value = 369.81911104684269
+**** Param: C_C1.Value = 3.22699453718680m
+**** Param: R_R3.Value = 1.05079751372314k
+**** Param: R_R1.Value = 313.68238678032543
+**** Param: C_C2.Value = 13.29358235755486
+**** Param: C_C3.Value = 15.22051149021882p
+**** Param: R_R5.Value = 67.57124147109154
+**** Param: R_R6.Value = 1.77328401931471k
+**** Param: R_R7.Value = 34.40874057770310
+**** Param: D1N755(model).bv = 7.53293710135197
+
+**** Command: doALL
+**** Param: R_R2.Value = 371.59932032205501
+**** Param: C_C1.Value = 3.53823206274606m
+**** Param: R_R3.Value = 1.07173135045018k
+**** Param: R_R1.Value = 305.38579539447272
+**** Param: C_C2.Value = 19.82942634693442
+**** Param: C_C3.Value = 14.18648335215308p
+**** Param: R_R5.Value = 62.96343497656679
+**** Param: R_R6.Value = 1.78419611282570k
+**** Param: R_R7.Value = 31.48641827541176
+**** Param: D1N755(model).bv = 7.28317361980041
+
+**** Command: doALL
+**** Param: R_R2.Value = 382.15340670102069
+**** Param: C_C1.Value = 3.59301889095737m
+**** Param: R_R3.Value = 924.49525940983051
+**** Param: R_R1.Value = 314.67785337370708
+**** Param: C_C2.Value = 11.24884222266305
+**** Param: C_C3.Value = 15.82999664296396p
+**** Param: R_R5.Value = 69.39742545143747
+**** Param: R_R6.Value = 1.83189467185513k
+**** Param: R_R7.Value = 33.13154175182520
+**** Param: D1N755(model).bv = 6.81605731376080
+
+**** Command: doALL
+**** Param: R_R2.Value = 365.10043475740872
+**** Param: C_C1.Value = 3.33566179387799m
+**** Param: R_R3.Value = 1.12674424132546k
+**** Param: R_R1.Value = 287.05183767166994
+**** Param: C_C2.Value = 301.80693990905485u
+**** Param: C_C3.Value = 15.69431134983367p
+**** Param: R_R5.Value = 66.56462406429560
+**** Param: R_R6.Value = 1.76508936434774k
+**** Param: R_R7.Value = 32.83608501788822
+**** Param: D1N755(model).bv = 8.11719870601520
+
+**** Command: doALL
+**** Param: R_R2.Value = 409.38989535697789
+**** Param: C_C1.Value = 3.58047029023102m
+**** Param: R_R3.Value = 1.16960009228308k
+**** Param: R_R1.Value = 300.06535406247184
+**** Param: C_C2.Value = 17.58936775139622
+**** Param: C_C3.Value = 15.57528916287728p
+**** Param: R_R5.Value = 66.40952040820652
+**** Param: R_R6.Value = 1.93947410072945k
+**** Param: R_R7.Value = 32.59636463742556
+**** Param: D1N755(model).bv = 8.16045869319742
+
+**** Command: doALL
+**** Param: R_R2.Value = 391.23900836053861
+**** Param: C_C1.Value = 3.29408825952940m
+**** Param: R_R3.Value = 1.01438065660134k
+**** Param: R_R1.Value = 304.45244799467133
+**** Param: C_C2.Value = 270.46162297433398u
+**** Param: C_C3.Value = 14.47039704580828p
+**** Param: R_R5.Value = 67.62127945592670
+**** Param: R_R6.Value = 1.74184490949660k
+**** Param: R_R7.Value = 30.26666031614983
+**** Param: D1N755(model).bv = 6.98612170781579
+
+**** Command: doALL
+**** Param: R_R2.Value = 388.96665705390268
+**** Param: C_C1.Value = 3.16856196783349m
+**** Param: R_R3.Value = 1.16549241248424k
+**** Param: R_R1.Value = 299.44080115364710
+**** Param: C_C2.Value = 310.11358989226972u
+**** Param: C_C3.Value = 13.50366222113712p
+**** Param: R_R5.Value = 64.85224133230800
+**** Param: R_R6.Value = 1.75419324920664k
+**** Param: R_R7.Value = 32.94591991371563
+**** Param: D1N755(model).bv = 6.75119022186956
+
+**** Command: doALL
+
+**** Command: FINISH
+
+**** 04/09/25 14:43:40 **** PSpice 24.1.0 (22 October 2024) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-DC"  [ C:\Cadence\Pspice sim\mc_cascode-PSpiceFiles\SCHEMATIC1\DC.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =        7.80
+

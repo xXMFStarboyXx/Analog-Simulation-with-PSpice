@@ -1,0 +1,32 @@
+* source SMOKE_CASCODE
+V_V1         N01866 0 12Vdc
+V_V2         N01936 0 50
+V_VIN         N26542 0  AC 1
++SIN 0 1.5 1k 0 0 0
+D_D1         0 N22961 D1N755 
+R_R2         N01866 N22961 R_R2 390 TC=0,0 
+.model        R_R2 RES R=1     DEV/GAUSS 10%/10% TC1=0 TC2=0
+C_C1         0 N22961 C_C1 3300u  TC=0,0 
+.model        C_C1 CAP C=1     DEV 10%/10% TC1=0 TC2=0 VC1=0 VC2=0
+R_R3         N01430 N22961 R_R3 4.3K TC=0,0 
+.model        R_R3 RES R=1     DEV/GAUSS 10%/10% TC1=0 TC2=0
+R_R1         OUT N39220 R_R1 300 TC=0,0 
+.model        R_R1 RES R=1     DEV/GAUSS 10%/10% TC1=0 TC2=0
+L_L1         N39220 N01936 L_L1 .22u  
+.model        l_L1 IND L=1     DEV 0/0% TC1=0 TC2=0 IL1=0 IL2=0
+R_R4         N26542 N43174 R_R4 75 TC=0,0 
+.model        R_R4 RES R=1     DEV 0%/0% TC1=0 TC2=0
+C_C2         N43174 N01430 C_C2 330u  TC=0,0 
+.model        C_C2 CAP C=1     DEV 20/20% TC1=0 TC2=0 VC1=0 VC2=0
+C_C3         0 N26201 C_C3 15p  TC=0,0 
+.model        C_C3 CAP C=1     DEV 10%/10% TC1=0 TC2=0 VC1=0 VC2=0
+R_R5         N01228 N26201 R_R5 68 TC=0,0 
+.model        R_R5 RES R=1     DEV/GAUSS 10%/10% TC1=0 TC2=0
+R_R6         0 N01430 R_R6 1.8K TC=0,0 
+.model        R_R6 RES R=1     DEV/GAUSS 10%/10% TC1=0 TC2=0
+R_R7         0 N01228 R_R7 33 TC=0,0 
+.model        R_R7 RES R=1     DEV/GAUSS 10%/10% TC1=0 TC2=0
+X_Q1         OUT N22961 N21518 awb2n3724 PARAMS:                               
++              
+X_Q2         N21518 N01430 N01228 awb2n5179 PARAMS:                            
++                 

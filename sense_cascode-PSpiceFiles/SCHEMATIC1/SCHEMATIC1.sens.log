@@ -1,0 +1,791 @@
+Starting advanced analysis session
+*****************************************
+
+******* Analysis Started On:Sun Apr  6 18:35:49 2025
+
+Advance Analyses Project File Name : C:/Cadence/Pspice sim/sense_cascode-PSpiceFiles/SCHEMATIC1/SCHEMATIC1.$ap
+
+
+Processing analysis specifications
+
+Listing Profiles:
+ - ac.sim
+ - dc.sim
+
+
+Simulation Run: 0 (Nominal Run)
+Param : R2.VALUE  (R_R2.Value) = 390
+Param : C1.VALUE  (C_C1.Value) = 3300u
+Param : R3.VALUE  (R_R3.Value) = 1.1K
+Param : R1.VALUE  (R_R1.Value) = 300
+Param : L1.VALUE  (L_L1.Value) = .22u
+Param : C2.VALUE  (C_C2.Value) = 330u
+Param : C3.VALUE  (C_C3.Value) = 15p
+Param : R5.VALUE  (R_R5.Value) = 68
+Param : R6.VALUE  (R_R6.Value) = 1.8K
+Param : R7.VALUE  (R_R7.Value) = 33
+Param : D1N755(model).bv  (D1N755(model).bv) = 7.5
+
+Specs : cutoff_lowpass_3db(v(out)) = 186.78407476016019meg
+Specs : Max(V(out)) = 8.09502344398368
+Specs : max(db(v(out))) = 18.16436221701453
+Nominal run completed
+Sensitivity runs underway.....
+
+
+Simulation Run: 1
+Param : R2.VALUE  (R_R2.Value) = 405.60000000000002
+Param : C1.VALUE  (C_C1.Value) = 3300u
+Param : R3.VALUE  (R_R3.Value) = 1.1K
+Param : R1.VALUE  (R_R1.Value) = 300
+Param : L1.VALUE  (L_L1.Value) = .22u
+Param : C2.VALUE  (C_C2.Value) = 330u
+Param : C3.VALUE  (C_C3.Value) = 15p
+Param : R5.VALUE  (R_R5.Value) = 68
+Param : R6.VALUE  (R_R6.Value) = 1.8K
+Param : R7.VALUE  (R_R7.Value) = 33
+Param : D1N755(model).bv  (D1N755(model).bv) = 7.5
+
+Specs : cutoff_lowpass_3db(v(out)) = 186.79566906790865meg
+Specs : Max(V(out)) = 8.09548923221599
+Specs : max(db(v(out))) = 18.16486198935190
+Sensitivity run: 1 of 11 completed
+
+
+Simulation Run: 2
+Param : R2.VALUE  (R_R2.Value) = 390
+Param : C1.VALUE  (C_C1.Value) = 3.43200000000000m
+Param : R3.VALUE  (R_R3.Value) = 1.1K
+Param : R1.VALUE  (R_R1.Value) = 300
+Param : L1.VALUE  (L_L1.Value) = .22u
+Param : C2.VALUE  (C_C2.Value) = 330u
+Param : C3.VALUE  (C_C3.Value) = 15p
+Param : R5.VALUE  (R_R5.Value) = 68
+Param : R6.VALUE  (R_R6.Value) = 1.8K
+Param : R7.VALUE  (R_R7.Value) = 33
+Param : D1N755(model).bv  (D1N755(model).bv) = 7.5
+
+Specs : cutoff_lowpass_3db(v(out)) = 186.78407475179776meg
+Specs : Max(V(out)) = 8.09502344420594
+Specs : max(db(v(out))) = 18.16436221725302
+Sensitivity run: 2 of 11 completed
+
+
+Simulation Run: 3
+Param : R2.VALUE  (R_R2.Value) = 390
+Param : C1.VALUE  (C_C1.Value) = 3300u
+Param : R3.VALUE  (R_R3.Value) = 1.14400000000000k
+Param : R1.VALUE  (R_R1.Value) = 300
+Param : L1.VALUE  (L_L1.Value) = .22u
+Param : C2.VALUE  (C_C2.Value) = 330u
+Param : C3.VALUE  (C_C3.Value) = 15p
+Param : R5.VALUE  (R_R5.Value) = 68
+Param : R6.VALUE  (R_R6.Value) = 1.8K
+Param : R7.VALUE  (R_R7.Value) = 33
+Param : D1N755(model).bv  (D1N755(model).bv) = 7.5
+
+Specs : cutoff_lowpass_3db(v(out)) = 187.43294122358481meg
+Specs : Max(V(out)) = 8.15174980302366
+Specs : max(db(v(out))) = 18.22501683303485
+Sensitivity run: 3 of 11 completed
+
+
+Simulation Run: 4
+Param : R2.VALUE  (R_R2.Value) = 390
+Param : C1.VALUE  (C_C1.Value) = 3300u
+Param : R3.VALUE  (R_R3.Value) = 1.1K
+Param : R1.VALUE  (R_R1.Value) = 312
+Param : L1.VALUE  (L_L1.Value) = .22u
+Param : C2.VALUE  (C_C2.Value) = 330u
+Param : C3.VALUE  (C_C3.Value) = 15p
+Param : R5.VALUE  (R_R5.Value) = 68
+Param : R6.VALUE  (R_R6.Value) = 1.8K
+Param : R7.VALUE  (R_R7.Value) = 33
+Param : D1N755(model).bv  (D1N755(model).bv) = 7.5
+
+Specs : cutoff_lowpass_3db(v(out)) = 181.71498235407262meg
+Specs : Max(V(out)) = 8.12565820851025
+Specs : max(db(v(out))) = 18.19717101085434
+Sensitivity run: 4 of 11 completed
+
+
+Simulation Run: 5
+Param : R2.VALUE  (R_R2.Value) = 390
+Param : C1.VALUE  (C_C1.Value) = 3300u
+Param : R3.VALUE  (R_R3.Value) = 1.1K
+Param : R1.VALUE  (R_R1.Value) = 300
+Param : L1.VALUE  (L_L1.Value) = 228.79999999999998n
+Param : C2.VALUE  (C_C2.Value) = 330u
+Param : C3.VALUE  (C_C3.Value) = 15p
+Param : R5.VALUE  (R_R5.Value) = 68
+Param : R6.VALUE  (R_R6.Value) = 1.8K
+Param : R7.VALUE  (R_R7.Value) = 33
+Param : D1N755(model).bv  (D1N755(model).bv) = 7.5
+
+Specs : cutoff_lowpass_3db(v(out)) = 185.93970656387273meg
+Specs : Max(V(out)) = 8.22396106216110
+Specs : max(db(v(out))) = 18.30162090819763
+Sensitivity run: 5 of 11 completed
+
+
+Simulation Run: 6
+Param : R2.VALUE  (R_R2.Value) = 390
+Param : C1.VALUE  (C_C1.Value) = 3300u
+Param : R3.VALUE  (R_R3.Value) = 1.1K
+Param : R1.VALUE  (R_R1.Value) = 300
+Param : L1.VALUE  (L_L1.Value) = .22u
+Param : C2.VALUE  (C_C2.Value) = 8.00033000000000
+Param : C3.VALUE  (C_C3.Value) = 15p
+Param : R5.VALUE  (R_R5.Value) = 68
+Param : R6.VALUE  (R_R6.Value) = 1.8K
+Param : R7.VALUE  (R_R7.Value) = 33
+Param : D1N755(model).bv  (D1N755(model).bv) = 7.5
+
+Specs : cutoff_lowpass_3db(v(out)) = 186.78443668704944meg
+Specs : Max(V(out)) = 8.09498567470501
+Specs : max(db(v(out))) = 18.16432169081300
+Sensitivity run: 6 of 11 completed
+
+
+Simulation Run: 7
+Param : R2.VALUE  (R_R2.Value) = 390
+Param : C1.VALUE  (C_C1.Value) = 3300u
+Param : R3.VALUE  (R_R3.Value) = 1.1K
+Param : R1.VALUE  (R_R1.Value) = 300
+Param : L1.VALUE  (L_L1.Value) = .22u
+Param : C2.VALUE  (C_C2.Value) = 330u
+Param : C3.VALUE  (C_C3.Value) = 15.60000000000000p
+Param : R5.VALUE  (R_R5.Value) = 68
+Param : R6.VALUE  (R_R6.Value) = 1.8K
+Param : R7.VALUE  (R_R7.Value) = 33
+Param : D1N755(model).bv  (D1N755(model).bv) = 7.5
+
+Specs : cutoff_lowpass_3db(v(out)) = 186.37974773933254meg
+Specs : Max(V(out)) = 8.14816177642421
+Specs : max(db(v(out))) = 18.22119286093382
+Sensitivity run: 7 of 11 completed
+
+
+Simulation Run: 8
+Param : R2.VALUE  (R_R2.Value) = 390
+Param : C1.VALUE  (C_C1.Value) = 3300u
+Param : R3.VALUE  (R_R3.Value) = 1.1K
+Param : R1.VALUE  (R_R1.Value) = 300
+Param : L1.VALUE  (L_L1.Value) = .22u
+Param : C2.VALUE  (C_C2.Value) = 330u
+Param : C3.VALUE  (C_C3.Value) = 15p
+Param : R5.VALUE  (R_R5.Value) = 70.72000000000000
+Param : R6.VALUE  (R_R6.Value) = 1.8K
+Param : R7.VALUE  (R_R7.Value) = 33
+Param : D1N755(model).bv  (D1N755(model).bv) = 7.5
+
+Specs : cutoff_lowpass_3db(v(out)) = 186.09305158463226meg
+Specs : Max(V(out)) = 8.09517844480513
+Specs : max(db(v(out))) = 18.16452852995347
+Sensitivity run: 8 of 11 completed
+
+
+Simulation Run: 9
+Param : R2.VALUE  (R_R2.Value) = 390
+Param : C1.VALUE  (C_C1.Value) = 3300u
+Param : R3.VALUE  (R_R3.Value) = 1.1K
+Param : R1.VALUE  (R_R1.Value) = 300
+Param : L1.VALUE  (L_L1.Value) = .22u
+Param : C2.VALUE  (C_C2.Value) = 330u
+Param : C3.VALUE  (C_C3.Value) = 15p
+Param : R5.VALUE  (R_R5.Value) = 68
+Param : R6.VALUE  (R_R6.Value) = 1.87200000000000k
+Param : R7.VALUE  (R_R7.Value) = 33
+Param : D1N755(model).bv  (D1N755(model).bv) = 7.5
+
+Specs : cutoff_lowpass_3db(v(out)) = 186.34870624518845meg
+Specs : Max(V(out)) = 8.08321415964392
+Specs : max(db(v(out))) = 18.15168170616894
+Sensitivity run: 9 of 11 completed
+
+
+Simulation Run: 10
+Param : R2.VALUE  (R_R2.Value) = 390
+Param : C1.VALUE  (C_C1.Value) = 3300u
+Param : R3.VALUE  (R_R3.Value) = 1.1K
+Param : R1.VALUE  (R_R1.Value) = 300
+Param : L1.VALUE  (L_L1.Value) = .22u
+Param : C2.VALUE  (C_C2.Value) = 330u
+Param : C3.VALUE  (C_C3.Value) = 15p
+Param : R5.VALUE  (R_R5.Value) = 68
+Param : R6.VALUE  (R_R6.Value) = 1.8K
+Param : R7.VALUE  (R_R7.Value) = 34.32000000000000
+Param : D1N755(model).bv  (D1N755(model).bv) = 7.5
+
+Specs : cutoff_lowpass_3db(v(out)) = 188.79944738224063meg
+Specs : Max(V(out)) = 7.91982109595822
+Specs : max(db(v(out))) = 17.97430742493206
+Sensitivity run: 10 of 11 completed
+
+
+Simulation Run: 11
+Param : R2.VALUE  (R_R2.Value) = 390
+Param : C1.VALUE  (C_C1.Value) = 3300u
+Param : R3.VALUE  (R_R3.Value) = 1.1K
+Param : R1.VALUE  (R_R1.Value) = 300
+Param : L1.VALUE  (L_L1.Value) = .22u
+Param : C2.VALUE  (C_C2.Value) = 330u
+Param : C3.VALUE  (C_C3.Value) = 15p
+Param : R5.VALUE  (R_R5.Value) = 68
+Param : R6.VALUE  (R_R6.Value) = 1.8K
+Param : R7.VALUE  (R_R7.Value) = 33
+Param : D1N755(model).bv  (D1N755(model).bv) = 7.80000000000000
+
+Specs : cutoff_lowpass_3db(v(out)) = 184.67999451014902meg
+Specs : Max(V(out)) = 8.01035615834349
+Specs : max(db(v(out))) = 18.07303652434282
+Sensitivity run: 11 of 11 completed
+Sensitivity runs completed
+Sensitivity bar lengths computed
+Worstcase runs underway.....
+
+
+Simulation Run: 12
+Param : R2.VALUE  (R_R2.Value) = 351
+Param : C1.VALUE  (C_C1.Value) = 3.63000000000000m
+Param : R3.VALUE  (R_R3.Value) = 990
+Param : R1.VALUE  (R_R1.Value) = 330
+Param : L1.VALUE  (L_L1.Value) = 242n
+Param : C2.VALUE  (C_C2.Value) = 264u
+Param : C3.VALUE  (C_C3.Value) = 16.50000000000000p
+Param : R5.VALUE  (R_R5.Value) = 74.80000000000001
+Param : R6.VALUE  (R_R6.Value) = 1.98000000000000k
+Param : R7.VALUE  (R_R7.Value) = 29.70000000000000
+Param : D1N755(model).bv  (D1N755(model).bv) = 8.25000000000000
+
+Specs : cutoff_lowpass_3db(v(out)) = 147.02084657198728meg
+Specs : Max(V(out)) = 8.54625190045329
+Specs : max(db(v(out))) = 18.63551378966702
+Minimum run: 1 of 3 completed
+
+
+Simulation Run: 13
+Param : R2.VALUE  (R_R2.Value) = 351
+Param : C1.VALUE  (C_C1.Value) = 2.97000000000000m
+Param : R3.VALUE  (R_R3.Value) = 990
+Param : R1.VALUE  (R_R1.Value) = 270
+Param : L1.VALUE  (L_L1.Value) = 198n
+Param : C2.VALUE  (C_C2.Value) = 20.00032999999999
+Param : C3.VALUE  (C_C3.Value) = 13.50000000000000p
+Param : R5.VALUE  (R_R5.Value) = 61.20000000000000
+Param : R6.VALUE  (R_R6.Value) = 1.98000000000000k
+Param : R7.VALUE  (R_R7.Value) = 36.30000000000000
+Param : D1N755(model).bv  (D1N755(model).bv) = 8.25000000000000
+
+Specs : cutoff_lowpass_3db(v(out)) = 202.05650510360394meg
+Specs : Max(V(out)) = 6.87945511850781
+Specs : max(db(v(out))) = 16.75108083332505
+Minimum run: 2 of 3 completed
+
+
+Simulation Run: 14
+Param : R2.VALUE  (R_R2.Value) = 351
+Param : C1.VALUE  (C_C1.Value) = 2.97000000000000m
+Param : R3.VALUE  (R_R3.Value) = 990
+Param : R1.VALUE  (R_R1.Value) = 270
+Param : L1.VALUE  (L_L1.Value) = 198n
+Param : C2.VALUE  (C_C2.Value) = 20.00032999999999
+Param : C3.VALUE  (C_C3.Value) = 13.50000000000000p
+Param : R5.VALUE  (R_R5.Value) = 61.20000000000000
+Param : R6.VALUE  (R_R6.Value) = 1.98000000000000k
+Param : R7.VALUE  (R_R7.Value) = 36.30000000000000
+Param : D1N755(model).bv  (D1N755(model).bv) = 8.25000000000000
+
+Specs : cutoff_lowpass_3db(v(out)) = 202.05650510360394meg
+Specs : Max(V(out)) = 6.87945511850781
+Specs : max(db(v(out))) = 16.75108083332505
+Minimum run: 3 of 3 completed
+Sensitivity minimum runs completed
+
+
+Simulation Run: 15
+Param : R2.VALUE  (R_R2.Value) = 429
+Param : C1.VALUE  (C_C1.Value) = 2.97000000000000m
+Param : R3.VALUE  (R_R3.Value) = 1.21000000000000k
+Param : R1.VALUE  (R_R1.Value) = 270
+Param : L1.VALUE  (L_L1.Value) = 198n
+Param : C2.VALUE  (C_C2.Value) = 20.00032999999999
+Param : C3.VALUE  (C_C3.Value) = 13.50000000000000p
+Param : R5.VALUE  (R_R5.Value) = 61.20000000000000
+Param : R6.VALUE  (R_R6.Value) = 1.62000000000000k
+Param : R7.VALUE  (R_R7.Value) = 36.30000000000000
+Param : D1N755(model).bv  (D1N755(model).bv) = 6.75000000000000
+
+Specs : cutoff_lowpass_3db(v(out)) = 213.38396766297788meg
+Specs : Max(V(out)) = 7.45704476730891
+Specs : max(db(v(out))) = 17.45133500647407
+Maximum run: 1 of 3 completed
+
+
+Simulation Run: 16
+Param : R2.VALUE  (R_R2.Value) = 429
+Param : C1.VALUE  (C_C1.Value) = 3.63000000000000m
+Param : R3.VALUE  (R_R3.Value) = 1.21000000000000k
+Param : R1.VALUE  (R_R1.Value) = 330
+Param : L1.VALUE  (L_L1.Value) = 242n
+Param : C2.VALUE  (C_C2.Value) = 264u
+Param : C3.VALUE  (C_C3.Value) = 16.50000000000000p
+Param : R5.VALUE  (R_R5.Value) = 74.80000000000001
+Param : R6.VALUE  (R_R6.Value) = 1.62000000000000k
+Param : R7.VALUE  (R_R7.Value) = 29.70000000000000
+Param : D1N755(model).bv  (D1N755(model).bv) = 6.75000000000000
+
+Specs : cutoff_lowpass_3db(v(out)) = 173.57171285439563meg
+Specs : Max(V(out)) = 9.56503662033291
+Specs : max(db(v(out))) = 19.61373274179439
+Maximum run: 2 of 3 completed
+
+
+Simulation Run: 17
+Param : R2.VALUE  (R_R2.Value) = 429
+Param : C1.VALUE  (C_C1.Value) = 3.63000000000000m
+Param : R3.VALUE  (R_R3.Value) = 1.21000000000000k
+Param : R1.VALUE  (R_R1.Value) = 330
+Param : L1.VALUE  (L_L1.Value) = 242n
+Param : C2.VALUE  (C_C2.Value) = 264u
+Param : C3.VALUE  (C_C3.Value) = 16.50000000000000p
+Param : R5.VALUE  (R_R5.Value) = 74.80000000000001
+Param : R6.VALUE  (R_R6.Value) = 1.62000000000000k
+Param : R7.VALUE  (R_R7.Value) = 29.70000000000000
+Param : D1N755(model).bv  (D1N755(model).bv) = 6.75000000000000
+
+Specs : cutoff_lowpass_3db(v(out)) = 173.57171285439563meg
+Specs : Max(V(out)) = 9.56503662033291
+Specs : max(db(v(out))) = 19.61373274179439
+Maximum run: 3 of 3 completed
+Sensitivity maximum runs completed
+
+
+Simulation Run: 18
+Param : R2.VALUE  (R_R2.Value) = 390
+Param : C1.VALUE  (C_C1.Value) = 3300u
+Param : R3.VALUE  (R_R3.Value) = 1.1K
+Param : R1.VALUE  (R_R1.Value) = 300
+Param : L1.VALUE  (L_L1.Value) = .22u
+Param : C2.VALUE  (C_C2.Value) = 330u
+Param : C3.VALUE  (C_C3.Value) = 15p
+Param : R5.VALUE  (R_R5.Value) = 68
+Param : R6.VALUE  (R_R6.Value) = 1.8K
+Param : R7.VALUE  (R_R7.Value) = 33
+Param : D1N755(model).bv  (D1N755(model).bv) = 7.5
+
+Specs : I(Q1:C) = 79.27573575651650m
+Specs : W(Q1) = 1.54936299544115
+Specs : I(Q2:C) = 79.83429465538963m
+Specs : W(Q2) = 321.60924490316864m
+Nominal run completed
+Sensitivity runs underway.....
+
+
+Simulation Run: 19
+Param : R2.VALUE  (R_R2.Value) = 405.60000000000002
+Param : C1.VALUE  (C_C1.Value) = 3300u
+Param : R3.VALUE  (R_R3.Value) = 1.1K
+Param : R1.VALUE  (R_R1.Value) = 300
+Param : L1.VALUE  (L_L1.Value) = .22u
+Param : C2.VALUE  (C_C2.Value) = 330u
+Param : C3.VALUE  (C_C3.Value) = 15p
+Param : R5.VALUE  (R_R5.Value) = 68
+Param : R6.VALUE  (R_R6.Value) = 1.8K
+Param : R7.VALUE  (R_R7.Value) = 33
+Param : D1N755(model).bv  (D1N755(model).bv) = 7.5
+
+Specs : I(Q1:C) = 79.25816840106364m
+Specs : W(Q1) = 1.54964214438568
+Specs : I(Q2:C) = 79.81653977080120m
+Specs : W(Q2) = 321.45872427376588m
+Sensitivity run: 1 of 11 completed
+
+
+Simulation Run: 20
+Param : R2.VALUE  (R_R2.Value) = 390
+Param : C1.VALUE  (C_C1.Value) = 3.43200000000000m
+Param : R3.VALUE  (R_R3.Value) = 1.1K
+Param : R1.VALUE  (R_R1.Value) = 300
+Param : L1.VALUE  (L_L1.Value) = .22u
+Param : C2.VALUE  (C_C2.Value) = 330u
+Param : C3.VALUE  (C_C3.Value) = 15p
+Param : R5.VALUE  (R_R5.Value) = 68
+Param : R6.VALUE  (R_R6.Value) = 1.8K
+Param : R7.VALUE  (R_R7.Value) = 33
+Param : D1N755(model).bv  (D1N755(model).bv) = 7.5
+
+Specs : I(Q1:C) = 79.27573575651650m
+Specs : W(Q1) = 1.54936299544115
+Specs : I(Q2:C) = 79.83429465538963m
+Specs : W(Q2) = 321.60924490316864m
+Sensitivity run: 2 of 11 completed
+
+
+Simulation Run: 21
+Param : R2.VALUE  (R_R2.Value) = 390
+Param : C1.VALUE  (C_C1.Value) = 3300u
+Param : R3.VALUE  (R_R3.Value) = 1.14400000000000k
+Param : R1.VALUE  (R_R1.Value) = 300
+Param : L1.VALUE  (L_L1.Value) = .22u
+Param : C2.VALUE  (C_C2.Value) = 330u
+Param : C3.VALUE  (C_C3.Value) = 15p
+Param : R5.VALUE  (R_R5.Value) = 68
+Param : R6.VALUE  (R_R6.Value) = 1.8K
+Param : R7.VALUE  (R_R7.Value) = 33
+Param : D1N755(model).bv  (D1N755(model).bv) = 7.5
+
+Specs : I(Q1:C) = 77.62122076743282m
+Specs : W(Q1) = 1.55542836851501
+Specs : I(Q2:C) = 78.16326674093405m
+Specs : W(Q2) = 319.37989187921733m
+Sensitivity run: 3 of 11 completed
+
+
+Simulation Run: 22
+Param : R2.VALUE  (R_R2.Value) = 390
+Param : C1.VALUE  (C_C1.Value) = 3300u
+Param : R3.VALUE  (R_R3.Value) = 1.1K
+Param : R1.VALUE  (R_R1.Value) = 312
+Param : L1.VALUE  (L_L1.Value) = .22u
+Param : C2.VALUE  (C_C2.Value) = 330u
+Param : C3.VALUE  (C_C3.Value) = 15p
+Param : R5.VALUE  (R_R5.Value) = 68
+Param : R6.VALUE  (R_R6.Value) = 1.8K
+Param : R7.VALUE  (R_R7.Value) = 33
+Param : D1N755(model).bv  (D1N755(model).bv) = 7.5
+
+Specs : I(Q1:C) = 79.22263407201865m
+Specs : W(Q1) = 1.47323177827911
+Specs : I(Q2:C) = 79.83365207610012m
+Specs : W(Q2) = 321.57876290258855m
+Sensitivity run: 4 of 11 completed
+
+
+Simulation Run: 23
+Param : R2.VALUE  (R_R2.Value) = 390
+Param : C1.VALUE  (C_C1.Value) = 3300u
+Param : R3.VALUE  (R_R3.Value) = 1.1K
+Param : R1.VALUE  (R_R1.Value) = 300
+Param : L1.VALUE  (L_L1.Value) = 228.79999999999998n
+Param : C2.VALUE  (C_C2.Value) = 330u
+Param : C3.VALUE  (C_C3.Value) = 15p
+Param : R5.VALUE  (R_R5.Value) = 68
+Param : R6.VALUE  (R_R6.Value) = 1.8K
+Param : R7.VALUE  (R_R7.Value) = 33
+Param : D1N755(model).bv  (D1N755(model).bv) = 7.5
+
+Specs : I(Q1:C) = 79.27573575651650m
+Specs : W(Q1) = 1.54936299544115
+Specs : I(Q2:C) = 79.83429465538963m
+Specs : W(Q2) = 321.60924490316864m
+Sensitivity run: 5 of 11 completed
+
+
+Simulation Run: 24
+Param : R2.VALUE  (R_R2.Value) = 390
+Param : C1.VALUE  (C_C1.Value) = 3300u
+Param : R3.VALUE  (R_R3.Value) = 1.1K
+Param : R1.VALUE  (R_R1.Value) = 300
+Param : L1.VALUE  (L_L1.Value) = .22u
+Param : C2.VALUE  (C_C2.Value) = 8.00033000000000
+Param : C3.VALUE  (C_C3.Value) = 15p
+Param : R5.VALUE  (R_R5.Value) = 68
+Param : R6.VALUE  (R_R6.Value) = 1.8K
+Param : R7.VALUE  (R_R7.Value) = 33
+Param : D1N755(model).bv  (D1N755(model).bv) = 7.5
+
+Specs : I(Q1:C) = 79.27573575651650m
+Specs : W(Q1) = 1.54936299544115
+Specs : I(Q2:C) = 79.83429465538963m
+Specs : W(Q2) = 321.60924490316864m
+Sensitivity run: 6 of 11 completed
+
+
+Simulation Run: 25
+Param : R2.VALUE  (R_R2.Value) = 390
+Param : C1.VALUE  (C_C1.Value) = 3300u
+Param : R3.VALUE  (R_R3.Value) = 1.1K
+Param : R1.VALUE  (R_R1.Value) = 300
+Param : L1.VALUE  (L_L1.Value) = .22u
+Param : C2.VALUE  (C_C2.Value) = 330u
+Param : C3.VALUE  (C_C3.Value) = 15.60000000000000p
+Param : R5.VALUE  (R_R5.Value) = 68
+Param : R6.VALUE  (R_R6.Value) = 1.8K
+Param : R7.VALUE  (R_R7.Value) = 33
+Param : D1N755(model).bv  (D1N755(model).bv) = 7.5
+
+Specs : I(Q1:C) = 79.27573575651650m
+Specs : W(Q1) = 1.54936299544115
+Specs : I(Q2:C) = 79.83429465538963m
+Specs : W(Q2) = 321.60924490316864m
+Sensitivity run: 7 of 11 completed
+
+
+Simulation Run: 26
+Param : R2.VALUE  (R_R2.Value) = 390
+Param : C1.VALUE  (C_C1.Value) = 3300u
+Param : R3.VALUE  (R_R3.Value) = 1.1K
+Param : R1.VALUE  (R_R1.Value) = 300
+Param : L1.VALUE  (L_L1.Value) = .22u
+Param : C2.VALUE  (C_C2.Value) = 330u
+Param : C3.VALUE  (C_C3.Value) = 15p
+Param : R5.VALUE  (R_R5.Value) = 70.72000000000000
+Param : R6.VALUE  (R_R6.Value) = 1.8K
+Param : R7.VALUE  (R_R7.Value) = 33
+Param : D1N755(model).bv  (D1N755(model).bv) = 7.5
+
+Specs : I(Q1:C) = 79.27573575651650m
+Specs : W(Q1) = 1.54936299544115
+Specs : I(Q2:C) = 79.83429465538963m
+Specs : W(Q2) = 321.60924490316864m
+Sensitivity run: 8 of 11 completed
+
+
+Simulation Run: 27
+Param : R2.VALUE  (R_R2.Value) = 390
+Param : C1.VALUE  (C_C1.Value) = 3300u
+Param : R3.VALUE  (R_R3.Value) = 1.1K
+Param : R1.VALUE  (R_R1.Value) = 300
+Param : L1.VALUE  (L_L1.Value) = .22u
+Param : C2.VALUE  (C_C2.Value) = 330u
+Param : C3.VALUE  (C_C3.Value) = 15p
+Param : R5.VALUE  (R_R5.Value) = 68
+Param : R6.VALUE  (R_R6.Value) = 1.87200000000000k
+Param : R7.VALUE  (R_R7.Value) = 33
+Param : D1N755(model).bv  (D1N755(model).bv) = 7.5
+
+Specs : I(Q1:C) = 80.22656068974918m
+Specs : W(Q1) = 1.54510832279444
+Specs : I(Q2:C) = 80.79474930729025m
+Specs : W(Q2) = 322.82603278549226m
+Sensitivity run: 9 of 11 completed
+
+
+Simulation Run: 28
+Param : R2.VALUE  (R_R2.Value) = 390
+Param : C1.VALUE  (C_C1.Value) = 3300u
+Param : R3.VALUE  (R_R3.Value) = 1.1K
+Param : R1.VALUE  (R_R1.Value) = 300
+Param : L1.VALUE  (L_L1.Value) = .22u
+Param : C2.VALUE  (C_C2.Value) = 330u
+Param : C3.VALUE  (C_C3.Value) = 15p
+Param : R5.VALUE  (R_R5.Value) = 68
+Param : R6.VALUE  (R_R6.Value) = 1.8K
+Param : R7.VALUE  (R_R7.Value) = 34.32000000000000
+Param : D1N755(model).bv  (D1N755(model).bv) = 7.5
+
+Specs : I(Q1:C) = 77.30232105612774m
+Specs : W(Q1) = 1.55643064104994
+Specs : I(Q2:C) = 77.84121709163020m
+Specs : W(Q2) = 310.75789688455757m
+Sensitivity run: 10 of 11 completed
+
+
+Simulation Run: 29
+Param : R2.VALUE  (R_R2.Value) = 390
+Param : C1.VALUE  (C_C1.Value) = 3300u
+Param : R3.VALUE  (R_R3.Value) = 1.1K
+Param : R1.VALUE  (R_R1.Value) = 300
+Param : L1.VALUE  (L_L1.Value) = .22u
+Param : C2.VALUE  (C_C2.Value) = 330u
+Param : C3.VALUE  (C_C3.Value) = 15p
+Param : R5.VALUE  (R_R5.Value) = 68
+Param : R6.VALUE  (R_R6.Value) = 1.8K
+Param : R7.VALUE  (R_R7.Value) = 33
+Param : D1N755(model).bv  (D1N755(model).bv) = 7.80000000000000
+
+Specs : I(Q1:C) = 79.27573575651650m
+Specs : W(Q1) = 1.54936299544115
+Specs : I(Q2:C) = 79.83429465538963m
+Specs : W(Q2) = 321.60924490316864m
+Sensitivity run: 11 of 11 completed
+Sensitivity runs completed
+Sensitivity bar lengths computed
+Worstcase runs underway.....
+
+
+Simulation Run: 30
+Param : R2.VALUE  (R_R2.Value) = 429
+Param : C1.VALUE  (C_C1.Value) = 3.30000000000000m
+Param : R3.VALUE  (R_R3.Value) = 1.21000000000000k
+Param : R1.VALUE  (R_R1.Value) = 330
+Param : L1.VALUE  (L_L1.Value) = 220n
+Param : C2.VALUE  (C_C2.Value) = 330u
+Param : C3.VALUE  (C_C3.Value) = 15p
+Param : R5.VALUE  (R_R5.Value) = 68
+Param : R6.VALUE  (R_R6.Value) = 1.62000000000000k
+Param : R7.VALUE  (R_R7.Value) = 36.30000000000000
+Param : D1N755(model).bv  (D1N755(model).bv) = 7.50000000000000
+
+Specs : I(Q1:C) = 68.08283291465659m
+Specs : W(Q1) = 1.42007362162847
+Specs : I(Q2:C) = 68.54720508888671m
+Specs : W(Q2) = 286.60488343965409m
+Minimum run: 1 of 4 completed
+
+
+Simulation Run: 31
+Param : R2.VALUE  (R_R2.Value) = 351
+Param : C1.VALUE  (C_C1.Value) = 3.30000000000000m
+Param : R3.VALUE  (R_R3.Value) = 990
+Param : R1.VALUE  (R_R1.Value) = 330
+Param : L1.VALUE  (L_L1.Value) = 220n
+Param : C2.VALUE  (C_C2.Value) = 330u
+Param : C3.VALUE  (C_C3.Value) = 15p
+Param : R5.VALUE  (R_R5.Value) = 68
+Param : R6.VALUE  (R_R6.Value) = 1.98000000000000k
+Param : R7.VALUE  (R_R7.Value) = 29.70000000000000
+Param : D1N755(model).bv  (D1N755(model).bv) = 7.50000000000000
+
+Specs : I(Q1:C) = 91.70175826818722m
+Specs : W(Q1) = 1.19746856357874
+Specs : I(Q2:C) = 92.46290511172310m
+Specs : W(Q2) = 361.42552261102020m
+Minimum run: 2 of 4 completed
+
+
+Simulation Run: 32
+Param : R2.VALUE  (R_R2.Value) = 429
+Param : C1.VALUE  (C_C1.Value) = 3.30000000000000m
+Param : R3.VALUE  (R_R3.Value) = 1.21000000000000k
+Param : R1.VALUE  (R_R1.Value) = 330
+Param : L1.VALUE  (L_L1.Value) = 220n
+Param : C2.VALUE  (C_C2.Value) = 330u
+Param : C3.VALUE  (C_C3.Value) = 15p
+Param : R5.VALUE  (R_R5.Value) = 68
+Param : R6.VALUE  (R_R6.Value) = 1.62000000000000k
+Param : R7.VALUE  (R_R7.Value) = 36.30000000000000
+Param : D1N755(model).bv  (D1N755(model).bv) = 7.50000000000000
+
+Specs : I(Q1:C) = 68.08283291465659m
+Specs : W(Q1) = 1.42007362162847
+Specs : I(Q2:C) = 68.54720508888671m
+Specs : W(Q2) = 286.60488343965409m
+Minimum run: 3 of 4 completed
+
+
+Simulation Run: 33
+Param : R2.VALUE  (R_R2.Value) = 429
+Param : C1.VALUE  (C_C1.Value) = 3.30000000000000m
+Param : R3.VALUE  (R_R3.Value) = 1.21000000000000k
+Param : R1.VALUE  (R_R1.Value) = 330
+Param : L1.VALUE  (L_L1.Value) = 220n
+Param : C2.VALUE  (C_C2.Value) = 330u
+Param : C3.VALUE  (C_C3.Value) = 15p
+Param : R5.VALUE  (R_R5.Value) = 68
+Param : R6.VALUE  (R_R6.Value) = 1.62000000000000k
+Param : R7.VALUE  (R_R7.Value) = 36.30000000000000
+Param : D1N755(model).bv  (D1N755(model).bv) = 7.50000000000000
+
+Specs : I(Q1:C) = 68.08283291465659m
+Specs : W(Q1) = 1.42007362162847
+Specs : I(Q2:C) = 68.54720508888671m
+Specs : W(Q2) = 286.60488343965409m
+Minimum run: 4 of 4 completed
+Sensitivity minimum runs completed
+
+
+Simulation Run: 34
+Param : R2.VALUE  (R_R2.Value) = 351
+Param : C1.VALUE  (C_C1.Value) = 3.30000000000000m
+Param : R3.VALUE  (R_R3.Value) = 990
+Param : R1.VALUE  (R_R1.Value) = 270
+Param : L1.VALUE  (L_L1.Value) = 220n
+Param : C2.VALUE  (C_C2.Value) = 330u
+Param : C3.VALUE  (C_C3.Value) = 15p
+Param : R5.VALUE  (R_R5.Value) = 68
+Param : R6.VALUE  (R_R6.Value) = 1.98000000000000k
+Param : R7.VALUE  (R_R7.Value) = 29.70000000000000
+Param : D1N755(model).bv  (D1N755(model).bv) = 7.50000000000000
+
+Specs : I(Q1:C) = 91.80054560610027m
+Specs : W(Q1) = 1.70207163912605
+Specs : I(Q2:C) = 92.46813577791065m
+Specs : W(Q2) = 361.64628580954445m
+Maximum run: 1 of 4 completed
+
+
+Simulation Run: 35
+Param : R2.VALUE  (R_R2.Value) = 429
+Param : C1.VALUE  (C_C1.Value) = 3.30000000000000m
+Param : R3.VALUE  (R_R3.Value) = 1.21000000000000k
+Param : R1.VALUE  (R_R1.Value) = 270
+Param : L1.VALUE  (L_L1.Value) = 220n
+Param : C2.VALUE  (C_C2.Value) = 330u
+Param : C3.VALUE  (C_C3.Value) = 15p
+Param : R5.VALUE  (R_R5.Value) = 68
+Param : R6.VALUE  (R_R6.Value) = 1.62000000000000k
+Param : R7.VALUE  (R_R7.Value) = 36.30000000000000
+Param : D1N755(model).bv  (D1N755(model).bv) = 7.50000000000000
+
+Specs : I(Q1:C) = 68.10788342861161m
+Specs : W(Q1) = 1.69805200693858
+Specs : I(Q2:C) = 68.54916487024370m
+Specs : W(Q2) = 286.70903227776313m
+Maximum run: 2 of 4 completed
+
+
+Simulation Run: 36
+Param : R2.VALUE  (R_R2.Value) = 351
+Param : C1.VALUE  (C_C1.Value) = 3.30000000000000m
+Param : R3.VALUE  (R_R3.Value) = 990
+Param : R1.VALUE  (R_R1.Value) = 270
+Param : L1.VALUE  (L_L1.Value) = 220n
+Param : C2.VALUE  (C_C2.Value) = 330u
+Param : C3.VALUE  (C_C3.Value) = 15p
+Param : R5.VALUE  (R_R5.Value) = 68
+Param : R6.VALUE  (R_R6.Value) = 1.98000000000000k
+Param : R7.VALUE  (R_R7.Value) = 29.70000000000000
+Param : D1N755(model).bv  (D1N755(model).bv) = 7.50000000000000
+
+Specs : I(Q1:C) = 91.80054560610027m
+Specs : W(Q1) = 1.70207163912605
+Specs : I(Q2:C) = 92.46813577791065m
+Specs : W(Q2) = 361.64628580954445m
+Maximum run: 3 of 4 completed
+
+
+Simulation Run: 37
+Param : R2.VALUE  (R_R2.Value) = 351
+Param : C1.VALUE  (C_C1.Value) = 3.30000000000000m
+Param : R3.VALUE  (R_R3.Value) = 990
+Param : R1.VALUE  (R_R1.Value) = 270
+Param : L1.VALUE  (L_L1.Value) = 220n
+Param : C2.VALUE  (C_C2.Value) = 330u
+Param : C3.VALUE  (C_C3.Value) = 15p
+Param : R5.VALUE  (R_R5.Value) = 68
+Param : R6.VALUE  (R_R6.Value) = 1.98000000000000k
+Param : R7.VALUE  (R_R7.Value) = 29.70000000000000
+Param : D1N755(model).bv  (D1N755(model).bv) = 7.50000000000000
+
+Specs : I(Q1:C) = 91.80054560610027m
+Specs : W(Q1) = 1.70207163912605
+Specs : I(Q2:C) = 92.46813577791065m
+Specs : W(Q2) = 361.64628580954445m
+Maximum run: 4 of 4 completed
+Sensitivity maximum runs completed
+-------------------- Sensitivity analysis completed --------------------
+Sun Apr  6 18:35:51 2025
+
+Analysis complete
+
+******* Analysis stopped at:Sun Apr  6 18:35:51 2025
+
+Analysis time: 00:00:02
+
+
+Failed to find specification with simulation profile ac.sim and measurement expression Max(V(out))
+End of advanced analysis session
+Failed to find specification with simulation profile ac.sim and measurement expression Max(V(out))
+Failed to find specification with simulation profile ac.sim and measurement expression Max(V(out))
+Failed to find specification with simulation profile ac.sim and measurement expression Max(V(out))
+End of advanced analysis session
+Failed to find specification with simulation profile ac.sim and measurement expression Max(V(out))
+Failed to find specification with simulation profile ac.sim and measurement expression Max(V(out))
+Failed to find specification with simulation profile ac.sim and measurement expression Max(V(out))
+End of advanced analysis session
+Failed to find specification with simulation profile ac.sim and measurement expression Max(V(out))
+Failed to find specification with simulation profile ac.sim and measurement expression Max(V(out))
+Failed to find specification with simulation profile ac.sim and measurement expression Max(V(out))
+End of advanced analysis session

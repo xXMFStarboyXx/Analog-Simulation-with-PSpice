@@ -1,0 +1,6 @@
+.ALIASES
+E_E1            E1(OUT+=OUT OUT-=0 IN+=N00170 IN-=0 ) CN @LOWPASS.SCHEMATIC1(sch_1):INS46@ABM.EFREQ.Normal(chips)
+V_V1            V1(+=N00170 -=0 ) CN @LOWPASS.SCHEMATIC1(sch_1):INS81@SOURCE.VAC.Normal(chips)
+R_R1            R1(1=0 2=OUT ) CN @LOWPASS.SCHEMATIC1(sch_1):INS110@FILTSUB.R.Normal(chips)
+_    _(OUT=OUT)
+.ENDALIASES

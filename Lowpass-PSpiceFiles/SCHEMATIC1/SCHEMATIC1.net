@@ -1,0 +1,5 @@
+* source LOWPASS
+E_E1         OUT 0 FREQ { V(N00170, 0) } =    ( (0,0,0) (5KHz, 0, -5760) (6KHz,
++  -60, -6912) ) 
+V_V1         N00170 0 DC 0Vdc AC 1Vac 
+R_R1         0 OUT  1k  

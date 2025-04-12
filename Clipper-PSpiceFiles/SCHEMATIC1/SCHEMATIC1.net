@@ -1,0 +1,10 @@
+* source CLIPPER
+R_R1         IN MID  1k TC=0,0 
+R_R2         MID VCC  1k TC=0,0 
+R_R3         0 MID  1k TC=0,0 
+R_R4         0 OUT  1k TC=0,0 
+D_D1         MID VCC D1N3940 
+D_D2         0 MID D1N3940 
+V_V2         IN 0 DC 0Vdc AC 1Vac 
+V_V1         VCC 0 5
+C_C1         MID OUT  0.47u  TC=0,0 

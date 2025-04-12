@@ -1,0 +1,10 @@
+* source BUFFER2
+.SUBCKT Buffer IN out VDD VSS  
+R_R1         IN N00185  1k TC=0,0 
+R_R2         N00174 N00185  1k TC=0,0 
+X_U1         0 N01221 VDD VSS OUT LF411
+R_R3         N01221 N00185  1k TC=0,0 
+R_R4         OUT N01221  1k TC=0,0 
+C_C1         N00174 N00185  1n  TC=0,0 
+.ENDS
+.PARAM  cval=1n

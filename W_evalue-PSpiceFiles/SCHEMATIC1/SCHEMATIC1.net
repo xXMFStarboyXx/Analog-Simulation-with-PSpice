@@ -1,0 +1,6 @@
+* source W_EVALUE
+E_E1         N00245 0 VALUE { ABS(V(IN))*GAIN }
+R_R1         0 N00245  1k  
+V_V1         IN 0   STIMULUS=sin10
+R_R2         0 IN  1k  
+.PARAM  gain=1

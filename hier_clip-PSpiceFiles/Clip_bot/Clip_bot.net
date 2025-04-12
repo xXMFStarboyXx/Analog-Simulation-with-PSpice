@@ -1,0 +1,12 @@
+* source HIER_CLIP
+.EXTERNAL INPUT IN
+.EXTERNAL OUTPUT MID
+.EXTERNAL OUTPUT OUT
+R_R1         IN MID  1k  
+R_R2         MID VCC  1k  
+R_R3         0 MID  1k  
+R_R4         0 OUT  1k  
+D_D1         MID VCC D1N3940 
+D_D2         0 MID D1N3940 
+C_C1         MID OUT  0.47u  
+V_V1         VCC 0 5Vdc

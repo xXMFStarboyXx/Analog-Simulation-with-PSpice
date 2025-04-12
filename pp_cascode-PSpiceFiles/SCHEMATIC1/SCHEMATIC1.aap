@@ -1,0 +1,221 @@
+("FILE_TYPE"	"Advanced Analysis Profile"
+    ("Profiles"
+        ("DC"	"")
+        ("pp_dc"	"")
+        ("pp_ac"	"")
+    )
+    ("Optimizer"
+        ("0"
+            ("RUN_INFO"
+                ("Engine"	"Hybrid")
+                ("Curve-fit Gear"	"Reference Only")
+            )
+            ("Engine"
+                ("Lsq"
+                    ("delta"	"0.005")
+                    ("AFCTOL"	"1.0e-20")
+                    ("RFCTOL"	"1.0e-10")
+                    ("XCTOL"	"1.0e-4")
+                    ("XFTOL"	"1.0e-14")
+                    ("INCFAC"	"2.0")
+                    ("RDFCMX"	"4.0")
+                    ("NumRuns"	"0")
+                )
+                ("Random"
+                    ("NumSteps"	"10")
+                    ("NumRuns"	"10")
+                    ("RandomSeed"	"0")
+                    ("ReplayBest"	"0")
+                )
+                ("Hybrid"
+                    ("delta"	"1%")
+                    ("maxiters"	"20")
+                    ("cutback"	"0.25")
+                    ("threshold"	"0")
+                    ("opt"	"0")
+                )
+                ("Discrete"
+                    ("Tables")
+                )
+                ("Simulated Annealing"
+                    ("MovesPerTemperatureFactor"	"5")
+                    ("ConvergenceFactor"	"0.0005")
+                )
+            )
+        )
+    )
+    ("Sensitivity"
+        ("Settings"
+            ("SensVar"	"40")
+        )
+    )
+    ("MonteCarlo"
+        ("Settings"
+            ("Seed"	"1")
+            ("NumOfBins"	"10")
+            ("NumOfRuns"	"50000")
+            ("StartingRun"	"1")
+            ("SelectedRow"	"")
+        )
+    )
+    ("ParametricPlot"
+        ("Settings"
+            ("SweepFile"	"C:\\Cadence\\Pspice sim\\pp_cascode-PSpiceFiles\\SCHEMATIC1\\CurrentPlot.tbl")
+        )
+        ("MEASUREMENTS"
+            ("ROW1"
+                ("Name"	"i(q1:c)")
+                ("Profile"	"pp_dc.sim")
+                ("State"	"ON")
+                ("SortLocked"	"OFF")
+                ("SortIndex"	"-1")
+                ("IsMeasurement"	"ON")
+            )
+            ("ROW2"
+                ("Name"	"w(q1)")
+                ("Profile"	"pp_dc.sim")
+                ("State"	"ON")
+                ("SortLocked"	"OFF")
+                ("SortIndex"	"-1")
+                ("IsMeasurement"	"ON")
+            )
+            ("ROW3"
+                ("Name"	"cutoff_lowpass_3db(v(out))")
+                ("Profile"	"pp_ac.sim")
+                ("State"	"ON")
+                ("SortLocked"	"OFF")
+                ("SortIndex"	"-1")
+                ("IsMeasurement"	"ON")
+            )
+            ("ROW4"
+                ("Name"	"max(db(v(out)))")
+                ("Profile"	"pp_ac.sim")
+                ("State"	"ON")
+                ("SortLocked"	"OFF")
+                ("SortIndex"	"-1")
+                ("IsMeasurement"	"ON")
+            )
+        )
+        ("PARAMETERS"
+            ("ROW1"
+                ("RefDes"	"r7")
+                ("Param"	"value")
+                ("Points"	"3.3,330,33")
+                ("Increment"	"Linear")
+                ("State"	"ON")
+                ("SortLocked"	"OFF")
+                ("SweepVariable"	"outer")
+                ("SortIndex"	"-1")
+                ("Locked"	"-1")
+                ("Notes"	"Okay")
+                ("IsValid"	"YES")
+            )
+            ("ROW2"
+                ("RefDes"	"r3")
+                ("Param"	"value")
+                ("Points"	"110,11000,1100")
+                ("Increment"	"Linear")
+                ("State"	"ON")
+                ("SortLocked"	"OFF")
+                ("SweepVariable"	"inner1")
+                ("SortIndex"	"-1")
+                ("Locked"	"-1")
+                ("Notes"	"Okay")
+                ("IsValid"	"YES")
+            )
+        )
+        ("PLOT INFORMATION"
+            ("Plot 1"
+                ("r7::value"
+                    ("value"	"Parameter")
+                    ("IsMeasurement"	"NO")
+                    ("BasePos"	"0")
+                    ("ConstPos"	"-1")
+                )
+                ("r3::value"
+                    ("value"	"X-Axis")
+                    ("IsMeasurement"	"NO")
+                    ("BasePos"	"1")
+                    ("ConstPos"	"-1")
+                )
+                ("pp_dc.sim::i(q1:c)"
+                    ("value"	"Not Set")
+                    ("IsMeasurement"	"YES")
+                    ("BasePos"	"0")
+                    ("ConstPos"	"-1")
+                )
+                ("pp_dc.sim::w(q1)"
+                    ("value"	"Y-Axis")
+                    ("IsMeasurement"	"YES")
+                    ("BasePos"	"1")
+                    ("ConstPos"	"-1")
+                )
+                ("pp_ac.sim::cutoff_lowpass_3db(v(out))"
+                    ("value"	"Not Set")
+                    ("IsMeasurement"	"YES")
+                    ("BasePos"	"2")
+                    ("ConstPos"	"-1")
+                )
+                ("pp_ac.sim::max(db(v(out)))"
+                    ("value"	"Not Set")
+                    ("IsMeasurement"	"YES")
+                    ("BasePos"	"3")
+                    ("ConstPos"	"-1")
+                )
+            )
+            ("Plot 2"
+                ("r7::value"
+                    ("value"	"Parameter")
+                    ("IsMeasurement"	"NO")
+                    ("BasePos"	"0")
+                    ("ConstPos"	"-1")
+                )
+                ("r3::value"
+                    ("value"	"Constant=4.51000000000000k")
+                    ("IsMeasurement"	"NO")
+                    ("BasePos"	"1")
+                    ("ConstPos"	"4")
+                )
+                ("pp_dc.sim::i(q1:c)"
+                    ("value"	"X-Axis")
+                    ("IsMeasurement"	"YES")
+                    ("BasePos"	"0")
+                    ("ConstPos"	"-1")
+                )
+                ("pp_dc.sim::w(q1)"
+                    ("value"	"Y-Axis")
+                    ("IsMeasurement"	"YES")
+                    ("BasePos"	"1")
+                    ("ConstPos"	"-1")
+                )
+                ("pp_ac.sim::cutoff_lowpass_3db(v(out))"
+                    ("value"	"Not Set")
+                    ("IsMeasurement"	"YES")
+                    ("BasePos"	"2")
+                    ("ConstPos"	"-1")
+                )
+                ("pp_ac.sim::max(db(v(out)))"
+                    ("value"	"Not Set")
+                    ("IsMeasurement"	"YES")
+                    ("BasePos"	"3")
+                    ("ConstPos"	"-1")
+                )
+            )
+        )
+    )
+    ("Smoke"
+        ("DerateType"	"0")
+        ("SelectedFileIndex"	"0")
+        ("CustomFileCount"	"0")
+    )
+    ("SimDataSaveOptions"
+        ("Optimizer"	"0")
+        ("Sensitivity"	"0")
+        ("MonteCarlo"	"0")
+    )
+    ("SimDataFilterNodeOptions"
+        ("Optimizer"	"0")
+        ("Sensitivity"	"0")
+        ("MonteCarlo"	"0")
+    )
+)

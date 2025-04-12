@@ -1,0 +1,15 @@
+.ALIASES
+R_R1            R1(1=IN 2=MID ) CN @CLIPPER.SCHEMATIC1(sch_1):INS40@ANALOG.R.Normal(chips)
+R_R2            R2(1=MID 2=VCC ) CN @CLIPPER.SCHEMATIC1(sch_1):INS56@ANALOG.R.Normal(chips)
+R_R3            R3(1=0 2=MID ) CN @CLIPPER.SCHEMATIC1(sch_1):INS72@ANALOG.R.Normal(chips)
+R_R4            R4(1=0 2=OUT ) CN @CLIPPER.SCHEMATIC1(sch_1):INS88@ANALOG.R.Normal(chips)
+D_D1            D1(1=MID 2=VCC ) CN @CLIPPER.SCHEMATIC1(sch_1):INS113@DIODE.D1N3940.Normal(chips)
+D_D2            D2(1=0 2=MID ) CN @CLIPPER.SCHEMATIC1(sch_1):INS129@DIODE.D1N3940.Normal(chips)
+V_V2            V2(+=IN -=0 ) CN @CLIPPER.SCHEMATIC1(sch_1):INS181@SOURCE.VAC.Normal(chips)
+V_V1            V1(+=VCC -=0 ) CN @CLIPPER.SCHEMATIC1(sch_1):INS234@SOURCE.VDC.Normal(chips)
+C_C1            C1(1=MID 2=OUT ) CN @CLIPPER.SCHEMATIC1(sch_1):INS2024@ANALOG.C.Normal(chips)
+_    _(IN=IN)
+_    _(MID=MID)
+_    _(OUT=OUT)
+_    _(VCC=VCC)
+.ENDALIASES

@@ -1,0 +1,13 @@
+* C:\Cadence\Pspice sim\buffer3-PSpiceFiles\SCHEMATIC1\bias\bias.stl written on Wed Feb 26 17:04:55 2025
+* by Stimulus Editor -- Serial Number: 0 -- Version 24.1.0
+;!Stimulus Get
+;! Mypulse Analog
+;!Ok
+;!Plot Axis_Settings
+;!Xrange 0s 6.0000001s
+;!Yrange 0 1
+;!AutoUniverse
+;!XminRes 1ns
+;!YminRes 1n
+;!Ok
+.STIMULUS Mypulse PULSE( 0 1 100n 10n 1u 1 2 )

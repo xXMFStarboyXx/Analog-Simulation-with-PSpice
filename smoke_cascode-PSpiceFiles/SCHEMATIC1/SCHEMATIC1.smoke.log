@@ -1,0 +1,295 @@
+Smoke Analysis Run : Thu Apr 10 16:20:44 2025
+
+
+Reference Designator = R2
+Info:
+	Smoke test RV will not be done.
+	The Maximum Operating Value is not defined.
+
+Reference Designator = R3
+Info:
+	Smoke test RV will not be done.
+	The Maximum Operating Value is not defined.
+
+Reference Designator = R1
+Info:
+	Smoke test RV will not be done.
+	The Maximum Operating Value is not defined.
+
+Reference Designator = R4
+Info:
+	Smoke test RV will not be done.
+	The Maximum Operating Value is not defined.
+
+Reference Designator = R5
+Info:
+	Smoke test RV will not be done.
+	The Maximum Operating Value is not defined.
+
+Reference Designator = R6
+Info:
+	Smoke test RV will not be done.
+	The Maximum Operating Value is not defined.
+
+Reference Designator = R7
+Info:
+	Smoke test RV will not be done.
+	The Maximum Operating Value is not defined.
+
+Reference Designator = Q1
+Info:
+	Smoke test IB will not be done.
+	The Maximum Operating Value is not defined.
+
+Reference Designator = Q1
+Info:
+	Smoke test SB will not be done.
+	The Maximum Operating Value is not defined.
+
+Reference Designator = Q2
+Info:
+	Smoke test IB will not be done.
+	The Maximum Operating Value is not defined.
+
+Reference Designator = Q2
+Info:
+	Smoke test SB will not be done.
+	The Maximum Operating Value is not defined.
+
+Reference Designator = D1
+Warning:
+	The default PDM value specified in the
+	design property map will be used during smoke check.
+	The following information is missing in the design property map:
+		RCA
+		RJC
+
+Reference Designator = R2
+Warning: Deration
+INFO(ORPSPAA-7028): TBreak (Tknee)is less than Simulation Temprature. Check the slope[RSMAX] or maximum temperature[RTMAX].
+
+Reference Designator = R2
+Info: Deration
+	Tbrk Calculated:0.000000
+
+Reference Designator = R2
+Warning: Deration
+INFO(ORPSPAA-7028): TBreak (Tknee)is less than Simulation Temprature. Check the slope[RSMAX] or maximum temperature[RTMAX].
+
+Reference Designator = R2
+Info: Deration
+	Tbrk Calculated:0.000000
+
+Reference Designator = R2
+Warning: Deration
+INFO(ORPSPAA-7028): TBreak (Tknee)is less than Simulation Temprature. Check the slope[RSMAX] or maximum temperature[RTMAX].
+
+Reference Designator = R2
+Info: Deration
+	Tbrk Calculated:0.000000
+
+Reference Designator = R3
+Warning: Deration
+INFO(ORPSPAA-7028): TBreak (Tknee)is less than Simulation Temprature. Check the slope[RSMAX] or maximum temperature[RTMAX].
+
+Reference Designator = R3
+Info: Deration
+	Tbrk Calculated:0.000000
+
+Reference Designator = R3
+Warning: Deration
+INFO(ORPSPAA-7028): TBreak (Tknee)is less than Simulation Temprature. Check the slope[RSMAX] or maximum temperature[RTMAX].
+
+Reference Designator = R3
+Info: Deration
+	Tbrk Calculated:0.000000
+
+Reference Designator = R3
+Warning: Deration
+INFO(ORPSPAA-7028): TBreak (Tknee)is less than Simulation Temprature. Check the slope[RSMAX] or maximum temperature[RTMAX].
+
+Reference Designator = R3
+Info: Deration
+	Tbrk Calculated:0.000000
+
+Reference Designator = R4
+Warning: Deration
+INFO(ORPSPAA-7028): TBreak (Tknee)is less than Simulation Temprature. Check the slope[RSMAX] or maximum temperature[RTMAX].
+
+Reference Designator = R4
+Info: Deration
+	Tbrk Calculated:0.000000
+
+Reference Designator = R4
+Warning: Deration
+INFO(ORPSPAA-7028): TBreak (Tknee)is less than Simulation Temprature. Check the slope[RSMAX] or maximum temperature[RTMAX].
+
+Reference Designator = R4
+Info: Deration
+	Tbrk Calculated:0.000000
+
+Reference Designator = R4
+Warning: Deration
+INFO(ORPSPAA-7028): TBreak (Tknee)is less than Simulation Temprature. Check the slope[RSMAX] or maximum temperature[RTMAX].
+
+Reference Designator = R4
+Info: Deration
+	Tbrk Calculated:0.000000
+
+Reference Designator = R5
+Warning: Deration
+INFO(ORPSPAA-7028): TBreak (Tknee)is less than Simulation Temprature. Check the slope[RSMAX] or maximum temperature[RTMAX].
+
+Reference Designator = R5
+Info: Deration
+	Tbrk Calculated:0.000000
+
+Reference Designator = R5
+Warning: Deration
+INFO(ORPSPAA-7028): TBreak (Tknee)is less than Simulation Temprature. Check the slope[RSMAX] or maximum temperature[RTMAX].
+
+Reference Designator = R5
+Info: Deration
+	Tbrk Calculated:0.000000
+
+Reference Designator = R5
+Warning: Deration
+INFO(ORPSPAA-7028): TBreak (Tknee)is less than Simulation Temprature. Check the slope[RSMAX] or maximum temperature[RTMAX].
+
+Reference Designator = R5
+Info: Deration
+	Tbrk Calculated:0.000000
+
+Reference Designator = R6
+Warning: Deration
+INFO(ORPSPAA-7028): TBreak (Tknee)is less than Simulation Temprature. Check the slope[RSMAX] or maximum temperature[RTMAX].
+
+Reference Designator = R6
+Info: Deration
+	Tbrk Calculated:0.000000
+
+Reference Designator = R6
+Warning: Deration
+INFO(ORPSPAA-7028): TBreak (Tknee)is less than Simulation Temprature. Check the slope[RSMAX] or maximum temperature[RTMAX].
+
+Reference Designator = R6
+Info: Deration
+	Tbrk Calculated:0.000000
+
+Reference Designator = R6
+Warning: Deration
+INFO(ORPSPAA-7028): TBreak (Tknee)is less than Simulation Temprature. Check the slope[RSMAX] or maximum temperature[RTMAX].
+
+Reference Designator = R6
+Info: Deration
+	Tbrk Calculated:0.000000
+
+Reference Designator = R7
+Warning: Deration
+INFO(ORPSPAA-7028): TBreak (Tknee)is less than Simulation Temprature. Check the slope[RSMAX] or maximum temperature[RTMAX].
+
+Reference Designator = R7
+Info: Deration
+	Tbrk Calculated:0.000000
+
+Reference Designator = R7
+Warning: Deration
+INFO(ORPSPAA-7028): TBreak (Tknee)is less than Simulation Temprature. Check the slope[RSMAX] or maximum temperature[RTMAX].
+
+Reference Designator = R7
+Info: Deration
+	Tbrk Calculated:0.000000
+
+Reference Designator = R7
+Warning: Deration
+INFO(ORPSPAA-7028): TBreak (Tknee)is less than Simulation Temprature. Check the slope[RSMAX] or maximum temperature[RTMAX].
+
+Reference Designator = R7
+Info: Deration
+	Tbrk Calculated:0.000000
+
+
+***** Analysis Summary *****
+
+Reference Designator = D1
+
+
+Reference Designator = R2
+	The following parameter(s) had undefined
+	Maximum Operating Value(s)
+		RV
+
+
+Reference Designator = C1
+
+
+Reference Designator = R3
+	The following parameter(s) had undefined
+	Maximum Operating Value(s)
+		RV
+
+
+Reference Designator = R1
+	The following parameter(s) had undefined
+	Maximum Operating Value(s)
+		RV
+
+
+Reference Designator = L1
+
+
+Reference Designator = R4
+	The following parameter(s) had undefined
+	Maximum Operating Value(s)
+		RV
+
+
+Reference Designator = C2
+
+
+Reference Designator = C3
+
+
+Reference Designator = R5
+	The following parameter(s) had undefined
+	Maximum Operating Value(s)
+		RV
+
+
+Reference Designator = R6
+	The following parameter(s) had undefined
+	Maximum Operating Value(s)
+		RV
+
+
+Reference Designator = R7
+	The following parameter(s) exceeded the
+	Maximum Operating Value(s) specified
+		PDM ( PEAK )
+	The following parameter(s) had undefined
+	Maximum Operating Value(s)
+		RV
+
+
+Reference Designator = Q1
+	The following parameter(s) exceeded the
+	Maximum Operating Value(s) specified
+		PDM ( PEAK  AVG  RMS )
+		VCE ( PEAK  AVG  RMS )
+	The following parameter(s) had undefined
+	Maximum Operating Value(s)
+		IB
+		SB
+
+
+Reference Designator = Q2
+	The following parameter(s) exceeded the
+	Maximum Operating Value(s) specified
+		IC ( PEAK )
+		PDM ( PEAK )
+	The following parameter(s) had undefined
+	Maximum Operating Value(s)
+		IB
+		SB
+
+
